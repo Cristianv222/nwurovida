@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family:'Poppins', 'sans-serif';
+}
+
+/*Este apartadoes todo sobre la parte del header, el menu de navegacion, imagen de fondo, logos, botones este apartado es del index */
+.container{
+    max-width: 3000px;
+    margin: 0 auto;
+}
+.header{
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)),
+        url(../images/imagen\ portada.jpg);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+}
+.logo img {
+    width: 150px; /* Ajusta el tamaño a tu preferencia */
+    height: auto; /* Mantiene las proporciones */
+    margin: 0 auto 0 -100px;
+}
+
+
+.logo-left {
+    max-width: 800px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 0 auto 0 -450px; /* Ajusta el margen izquierdo con un valor negativo */
+}
+.logo{
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+    margin-left: 28px;
+}
+
+.btn-Inicio {
+    display: inline-block; /* Cambia el botón a un bloque en línea */
+    margin-top: 0; /* Ajusta el espacio entre la imagen y el botón */
+    padding: 10px 20px; /* Añade algo de espacio interno al botón */
+    background-color: #ffffff00; /* Color de fondo del botón */
+    color: #00cad8; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la letra */
+    font-weight: 300;
+    border: 3px solid #00cad8; /* Añade un borde de 3px con color */
+    margin: center; /* Ajusta el margen izquierdo con un valor negativo */
+}   
+.menu .navbar {
+    display: flex;
+    flex: 1;              /* Habilita el flexbox en la barra de navegación */
+    justify-content: center;
+}
+
+.menu .navbar ul {
+    padding: 0;                /* Elimina el padding por defecto */
+    margin: 0;                 /* Elimina el margen por defecto */
+    list-style: none;          /* Elimina las viñetas de la lista */
+    display: flex;             /* Usa flexbox para alinear los elementos */
+}
+
+.menu .navbar ul li {
+    position: relative;
+    margin: 0 10px;           /* Espaciado entre los elementos */
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #000000;
+    display: block;
+    font-weight: 300;
+}
+.menu .navbar ul li a:hover {
+    color: rgb(203, 156, 247);
+}
+.menu {
+    position: fixed; /* Hace que el menú se mantenga fijo */
+    top: 0;          /* Fija el menú en la parte superior de la página */
+    width: 100%;     /* Asegura que el menú ocupe todo el ancho de la página */
+    z-index: 1000;   /* Asegura que el menú esté siempre por encima de otros elementos */
+    background-color: rgba(255, 255, 255, 0.685); /* Asegura que el fondo del menú no sea transparente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0); /* Añade una sombra sutil debajo del menú */
+}
+
+.frase{
+    padding: 90px 0;
+    background-color: #fcffff;
+    position: relative;
+}
+.frase-content{
+    text-align: center;
+}
+.frase-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+.txt-p{
+    font-size: 16px;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+
+}
+.boton_cartas:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro en hover */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Sombra más intensa en hover */
+    transform: scale(1.05);
+}
+
+.boton_cartas:focus {
+    outline: none; /* Elimina el contorno predeterminado */
+    box-shadow: 0px 0px 0px 3px rgba(0, 123, 255, 0.5); /* Añade un contorno suave al hacer clic */
+}
+
+.btn-1 {
+    display: inline-block; /* Cambia el botón a un bloque en línea */
+    margin-top: 0px; /* Ajusta el espacio entre la imagen y el botón */
+    padding: 10px 20px; /* Añade algo de espacio interno al botón */
+    background-color: #ffffff00; /* Color de fondo del botón */
+    color: #00cad8; /* Color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la letra */
+    border: 3px solid #00cad8; /* Añade un borde de 3px con color */
+    margin: center ; /* Ajusta el margen izquierdo con un valor negativo */
+}
+
+.btn-1:hover {
+    background-color: #00cad8; /* Color del botón al pasar el ratón */
+
+}
+
+/* Contenedor de los botones para centrarlos y separarlos */
+.navbar div {
+    display: flex;
+    gap: 20px; /* Aumenta el espacio entre los botones */
+    justify-content: right;
+    align-items: center;
+    margin-top: -10px; /* Coloca los botones más abajo */
+}
+
+/* Estilo para el botón de "Estudiantes" */
+.btn-estud {
+    color: #40e0d0;
+    border: 3px solid #40e0d0;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-estud:hover {
+    background-color: #40e0d0;
+    color: #ffffff;
+}
+
+/* Estilo para el botón de "Admin" */
+.btn-Adm {
+    background-color: #40e0d0;
+    color: #000000;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-Adm:hover {
+    background-color: #38c9b8;
+    transform: translateY(-2px);
+}
+
+
+/* Para versiones pequeñas a grandes de pantalla */
+.py-2 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.px-4 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-lg-block {
+    display: inline-block; /* Mantiene los botones en la misma línea en pantallas grandes */
+}
+@media(max-width:961px){
+    .frase{
+        padding: 30px;
+    }
+    .frase-content h2{
+        padding: 0;
+    }
+    .txt-p{
+        padding: 0;
+    }
+    
+}

@@ -15,6 +15,7 @@ if (strlen($_SESSION['alogin']) == "") {
         <div class="content-container">
             <?php include('includes/leftbar.php'); ?>
 
+
             <div class="main-page">
                 <div class="container-fluid">
                     <div class="row page-title-div">

@@ -96,7 +96,7 @@ if (strlen($_SESSION['alogin']) == "") {
                                                     <label for="success" class="control-label">Nombre de Año</label>
                                                     <div class="">
                                                         <input type="text" name="classname" value="<?php echo htmlentities($result->ClassName); ?>" required="required" class="form-control" id="success">
-                                                        <span class="help-block">Eg- Third, Fouth,Sixth etc</span>
+                                                        <span class="help-block">Ejemplo - Tareas Asistidas Primero, Segundo etc</span>
                                                     </div>
                                                 </div>
                                                 <div class="form-group has-success">
@@ -107,7 +107,7 @@ if (strlen($_SESSION['alogin']) == "") {
                                                     </div>
                                                 </div>
                                                 <div class="form-group has-success">
-                                                    <label for="success" class="control-label">Sección</label>
+                                                    <label for="success" class="control-label">Paralelo</label>
                                                     <div class="">
                                                         <input type="text" name="section" value="<?php echo htmlentities($result->Section); ?>" class="form-control" required="required" id="success">
                                                         <span class="help-block">Ejemplo - A,B,C etc</span>
@@ -155,5 +155,33 @@ if (strlen($_SESSION['alogin']) == "") {
 
 
 
+    <style>
+        /* Asegura espacio entre los bordes y el contenido */
+        .panel {
+            padding: 20px;
+            /* Espaciado interno en el panel */
+            margin-top: 20px;
+            /* Espaciado superior */
+            border-radius: 8px;
+            /* Bordes redondeados */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Sombra sutil */
+        }
+
+        /* Estilo para los inputs y el botón */
+        .form-control {
+            margin-bottom: 15px;
+            /* Espacio entre cada campo */
+            padding: 10px;
+            /* Espaciado interno en los campos de entrada */
+        }
+
+        .btn {
+            margin-top: 10px;
+            /* Espaciado superior para el botón */
+        }
+
+        
+    </style>
 
 <?php  } ?>

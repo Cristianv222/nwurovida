@@ -18,11 +18,6 @@
 
 <body>
 
-    <div class="footer">
-    </div>
-    <div class="footer">
-        <p>Resultados Estudiante</p>
-    </div>
 
 </body>
 

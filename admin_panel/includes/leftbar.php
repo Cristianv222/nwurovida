@@ -1,6 +1,6 @@
 <div class="left-sidebar box-shadow 
 " style="
-    background-color: #3d85ed; ">
+    background-color: black; ">
     <div class="sidebar-content">
         <!-- /.user-info -->
 

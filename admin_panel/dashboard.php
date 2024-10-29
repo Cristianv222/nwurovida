@@ -7,6 +7,14 @@ if (strlen($_SESSION['alogin']) == "") {
 } else {
 ?>
 
+    <style>
+        .content {
+            margin-left: 250px;
+            /* Ajusta esto según el ancho de tu barra lateral */
+            padding: 20px;
+            /* Espaciado interno del contenido */
+        }
+    </style>
 
     <?php include('includes/topbar.php'); ?>
     <div class="content-wrapper">

@@ -19,69 +19,132 @@
     <link rel="stylesheet" href="assets/css/main.css" media="screen">
     <link rel="stylesheet" href="assets/css/prism/prism.css" media="screen">
 
-    <!-- <link rel="stylesheet" type="text/css" href="assets/js/DataTables/datatables.min.css"/> -->
     <script src="assets/js/modernizr/modernizr.min.js"></script>
     <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f7; /* Light background for contrast */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: black; /* Primary blue background */
+            border: none; /* Remove border */
+            padding: 15px 20px; /* Add padding for a spacious feel */
+        }
+
+        .navbar .navbar-brand {
+            font-size: 24px; /* Larger brand font size */
+            color: #fff; /* White text color */
+            font-weight: bold; /* Bold text */
+        }
+
+        .navbar .navbar-brand:hover {
+            color: #e0e0e0; /* Lighter text on hover */
+        }
+
+        .navbar .nav>li>a {
+            padding: 15px 20px; /* Consistent link padding */
+            color: #fff; /* White text for links */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+        }
+
+        .navbar .nav>li>a:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent hover background */
+            color: #fff; /* Keep text white on hover */
+        }
+
+        .navbar .nav .active a {
+            background-color: rgba(255, 255, 255, 0.2); /* Active link background */
+        }
+
+        .navbar .nav .dropdown-menu {
+            background-color: #007bff; /* Dropdown background */
+        }
+
+        .navbar .nav .dropdown-menu a {
+            color: #fff; /* Dropdown link color */
+        }
+
+        .navbar .nav .dropdown-menu a:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Dropdown hover effect */
+        }
+
+        .navbar .navbar-toggle {
+            border-color: rgba(255, 255, 255, 0.2); /* Border for toggle button */
+        }
+
+        .navbar .navbar-toggle .icon-bar {
+            background-color: #fff; /* Toggle button color */
+        }
+
+        .errorWrap, .succWrap {
+            padding: 15px; /* Increased padding */
+            margin: 20px 0; /* Consistent margin */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
         .errorWrap {
-            padding: 10px;
-            margin: 0 0 20px 0;
             background: #fff;
-            border-left: 4px solid #dd3d36;
-            -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
-            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+            border-left: 4px solid #dd3d36; /* Error color */
+            color: #dd3d36; /* Text color */
         }
 
         .succWrap {
-            padding: 10px;
-            margin: 0 0 20px 0;
             background: #fff;
-            border-left: 4px solid #5cb85c;
-            -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
-            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
+            border-left: 4px solid #5cb85c; /* Success color */
+            color: #5cb85c; /* Text color */
+        }
+
+        /* Button styles */
+        .btn {
+            border-radius: 5px; /* Rounded buttons */
+            transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+            font-weight: bold; /* Bold text */
+        }
+
+        .btn-primary {
+            background-color: #0056b3; /* Darker primary button color */
+            color: #fff; /* Text color */
+        }
+
+        .btn-primary:hover {
+            background-color: #004494; /* Even darker on hover */
         }
     </style>
 </head>
-<div id="page"></div>
-<div id="loading"></div>
 
 <body class="top-navbar-fixed">
+    <div id="page"></div>
+    <div id="loading"></div>
 
     <div class="main-wrapper">
-        <nav class="navbar top-navbar bg-white">
+        <nav class="navbar top-navbar">
             <div class="container-fluid">
                 <div class="row">
                     <div class="navbar-header no-padding">
-                        <a class="navbar-brand" target="a_blank" style="Width: 165px">
-                        </a>
-                        <span class="small-nav-handle hidden-sm hidden-xs"><i class="fa fa-outdent"></i></span>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false"
-                            <i class="fa fa-ellipsis-v"></i>
+                        <a class="navbar-brand" href="#" target="_blank">NeuroVida</a>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
                         </button>
-                        <button type="button" class="navbar-toggle mobile-nav-toggle">
-                            <i class="fa fa-bars"></i>
-                        </button>
-
                     </div>
                     <!-- /.navbar-header -->
 
                     <div class="collapse navbar-collapse" id="navbar-collapse-1">
                         <ul class="nav navbar-nav" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
                             <li class="hidden-sm hidden-xs"><a href="#" class="full-screen-handle"><i class="fa fa-arrows-alt"></i></a></li>
-
-                            <li class="hidden-xs hidden-xs">
-                                <!-- <a href="#">My Tasks</a> -->
-                            </li>
                         </ul>
                         <!-- /.nav navbar-nav -->
 
                         <ul class="nav navbar-nav navbar-right" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-
                             <li>
-                                <a href="logout.php" class="color-danger text-center"><i class="fa fa-sign-out"></i> Cerrar Sesión</a>
+                                <a href="logout.php" class="text-center"><i class="fa fa-sign-out"></i> Cerrar Sesión</a>
                             </li>
-
-
-
                         </ul>
                         <!-- /.nav navbar-nav navbar-right -->
                     </div>
@@ -91,3 +154,7 @@
             </div>
             <!-- /.container-fluid -->
         </nav>
+        <!-- Rest of your content goes here -->
+    </div>
+</body>
+</html>

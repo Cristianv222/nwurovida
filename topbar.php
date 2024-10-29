@@ -6,7 +6,7 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="bod_dash">
     <div class="topbar">
         <div class="left-section">
             <img src="./neuro/images/logotipo.png" alt="Logo" class="logo"> <!-- Cambia "logo.png" por la ruta de tu logo -->
@@ -34,7 +34,6 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
 }
-
 .topbar {
     display: flex;
     justify-content: space-between;

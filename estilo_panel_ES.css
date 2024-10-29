@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(/neuro/images/logo_neuro.jpg);
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    /* Ajusta la imagen para que cubra todo el contenedor */
+    height: 100vh; /* O el tamaño deseado para el contenedor */
+    width: 100%; /* Asegura que cubra todo el ancho */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #ffffff00;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.student-details {
+    background-color: #fcfcfce8;
+    padding: 30px;
+    margin: 50px 50px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.438);
+}
+
+.student-description h2 {
+    font-size: 25px;
+    color: #474444;
+    margin-bottom: 10px;
+}
+
+.student-description p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.results {
+    background-color: #fcfcfce8;
+    padding: 20px;
+    margin: 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.438);
+}
+
+.results h2 {
+    font-size: 22px;
+    color: #f3feffa4;
+    margin-bottom: 15px;
+}
+
+.results table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results table th, 
+.results table td {
+    border: 1px solid #c0b8b8;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.results table th {
+    background-color: #beaee4;
+    color: #333;
+}
+
+.results table td {
+    background-color: #cde6eed5;
+}
+
+.photo-gallery {
+    padding: 20px;
+    background-color: #abc3f741;
+    margin: 10px 80px;
+    border-radius: 10px;
+}
+
+.photo-gallery h2 {
+    font-size: 22px;
+    color: #222120;
+    margin-bottom: 15px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer .back-button {
+    background-color: #052c31;
+    color: white;
+    text-decoration: none;
+    padding: 18px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+footer .back-button:hover {
+    background-color: #1e5e77;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        max-width: 100%;
+        height: auto;
+    }
+}

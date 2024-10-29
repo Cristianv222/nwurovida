@@ -110,14 +110,13 @@ if (strlen($_SESSION['alogin']) == "") {
                                             </div>
 
                                             <div class="form-group col-md-6">
-                                                <label for="default" class="control-label">ID Rol</label>
+                                                <label for="default" class="control-label">Cedula</label>
                                                 <input type="text" name="rollid" class="form-control" id="rollid" maxlength="5" required="required" autocomplete="off">
 
                                             </div>
 
                                             <div class="form-group col-md-6">
                                                 <label for="default" class="control-label">Correo</label>
-
                                                 <input type="email" name="emailid" class="form-control" id="email" required="required" autocomplete="off">
                                             </div>
 

@@ -100,6 +100,11 @@ if (strlen($_SESSION['alogin']) == "") {
                                                                 <a href="edit-result.php?stid=<?php echo htmlentities($result->StudentId); ?>" class="btn btn-info"><i class="fa fa-edit" title="Edit Record"></i> </a>
 
                                                             </td>
+                                                            <td>
+                                                                <a href="edit-result.php?stid=<?php echo htmlentities($result->StudentId); ?>" class="btn btn-info"><i class="fa fa-edit" title="Edit Record"></i> </a>
+                                                                <a href="delete-result.php?stid=<?php echo htmlentities($result->StudentId); ?>" class="btn btn-danger" onclick="return confirm('¿Estás seguro de que deseas eliminar este resultado?');"><i class="fa fa-trash" title="Delete Record"></i></a>
+                                                            </td>
+
                                                         </tr>
                                                 <?php $cnt = $cnt + 1;
                                                     }

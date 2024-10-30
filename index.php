@@ -39,33 +39,7 @@
 
 
 <body>
-<header class="header">
-        <div class="menu container">
-            <nav class="navbar">
-                <a href="index.php" class="logo"><img src="./neuro/images/logotipo.png" alt=""></a>
-                <ul>
-                    <li><a href="./index.php">Inicio</a></li>
-                    <li><a href="quienes_somos.php">¿Wladimir?</a></li>
-                    <li><a href="./contactanos.php">Contactanos</a></li>
-                    <li><a href="servicios.php">Servicios</a></li>
-                </ul>
-                <div>
-                    <!-- IMPORTANTE, se puede cambiar por botones, pero  el href se debe hacer referencia al mismo -->
-                    <a href="./admin_panel/find-result.php" class="btn-estud">Estudiantes</a>
-                    <a href="./admin_panel/admin-login.php" class="btn-Adm">Maestros</a>
-                </div>
-            </nav>
-        </div>
-
-
-        <div class="header-content container">
-            <img src="./neuro/images/Imagotipo.png" alt="Club Neurovida" class="logo-left">
-            <a href="servicios.php" class="btn-Inicio">Agendar Cita</a>
-        </div>
-    </header>
-
-
-
+<?php include './includes/menu_nav.php'; ?>
 <main class="frase">
        <div class="frase-content container">
             <h2>Nuestos servicios</h2>
@@ -128,12 +102,12 @@
 
     <!-- Botón "Ver más" -->
     <div class="ver-mas-container">
-    <a href="citas.html" class="btn-estud"> Agendar cita</a>
+    <a href="/servicios.php" class="btn-estud"> Agendar cita</a>
     </div>
   </div>
 <main/>
 
-    <script src="./neuro/js/script.js"></script>
+    <?php include './includes/footer.php'; ?>
 </body>
 </html>
 
@@ -258,6 +232,6 @@ function moveCarousel(direction) {
 // Auto avance del carrusel
 setInterval(() => {
   moveCarousel(1);
-}, 3000); // Cada 3 segundos
+}, 2000); // Cada 3 segundos
 
 </script>

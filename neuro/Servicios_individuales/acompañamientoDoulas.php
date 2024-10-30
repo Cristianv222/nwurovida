@@ -33,7 +33,7 @@
     <div class="header-content container">
             <div class="header-txt">
 
-            <h1>ACOMPAÑAMIENTO<br>DE LAS DOULAS</h1>
+            <h1>ACOMPAÑAMIENTO DE LAS DOULAS</h1>
                 <p>
                 
                 </p>
@@ -57,7 +57,7 @@
             <img src="../images/doula2.png" alt="">
         </div>
         <div class="about-txt">
-        <h2>Acompañamiento de las Doulas:</h2>
+        <h2>Mujeres es estado de gestación</h2>
             <p>
             Es fundamental para el bienestar de las mujeres en gestación, 
             especialmente aquellas que enfrentan desafíos emocionales, 
@@ -74,26 +74,6 @@
     <main class="servicios">
         <h2>Beneficios</h2>
         <div class="servicios-content container">
-
-            <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-hospital-user"></i>
-                <h3>Coordinación Motora Fina y Gruesa </h3>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-stethoscope"></i>
-                <h3>Concentración y Memoria  </h3>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Creatividad y Resolución de Problemas   </h3>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-hospital"></i>
-                <h3>Lateralidad y Equilibrio </h3>
-            </div>
 
             <div class="servicio-1">
                 <i class="fa-solid fa-brain"></i>
@@ -129,7 +109,7 @@
     <section class="pricing">
         <div class="plan">
         <h3>Plan Diario</h3>
-            <p class="price"><span class="discount">Antes: $1</span> $1.50/días</p>
+            <p class="price"><span class="discount"></span> $1.50/días</p>
             <p class="benefit">Acceso por 7 días</p>
             <ul class="benefits">
             <li>✔ Flexibilidad: Acceso según la disponibilidad diaria.</li>
@@ -142,7 +122,7 @@
         </div>
         <div class="plan popular">
             <h3>Plan Semanal</h3>
-            <p class="price"><span class="discount">Antes: $10</span> $7/semana</p>
+            <p class="price"><span class="discount"></span> $7/semana</p>
             <p class="benefit">Acceso por 7 días</p>
             <ul class="benefits">
             <li>✔ Compromiso Moderado: Enfoque a corto plazo.</li>
@@ -155,7 +135,7 @@
         </div>
         <div class="plan">
             <h3>Plan Mensual</h3>
-            <p class="price"><span class="discount">Antes: $40</span> $30/mes</p>
+            <p class="price"><span class="discount"></span> $30/mes</p>
             <p class="benefit">Acceso por 30 días</p>
             <ul class="benefits">
             <li>✔ Acceso Ilimitado: Máximo aprovechamiento de sesiones.</li>
@@ -401,6 +381,17 @@
     display: flex;
 }
 
+.header-img {
+    width: 80%; /* Ajusta el ancho de la imagen */
+    padding-top: 100px; /* Ajusta según sea necesario */
+}
+
+.header-img img {
+    width: 100%;
+    max-width: 700px; /* Cambia este valor para ajustar el tamaño máximo en píxeles */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
 .header-txt {
     padding-top: 250px;
     text-align: center;
@@ -410,7 +401,7 @@
     line-height: 1.2;
     color: #323232;
     text-transform: uppercase;
-    font-size: 85px;
+    font-size: 85px; /* Tamaño de fuente para pantallas grandes */
     margin-bottom: 10px;
     letter-spacing: 0;
     white-space: normal;
@@ -423,9 +414,12 @@
     }
 
     .header-txt h1 {
-        font-size: 50px; /* Ajusta el tamaño de fuente */
+        font-size: 40px; /* Cambia el tamaño de fuente para móviles */
+        line-height: 1.3; /* Ajusta el espaciado entre líneas si es necesario */
+        margin-bottom: 5px; /* Ajusta el margen inferior si es necesario */
     }
 }
+
 
 
 /* Media query para dispositivos móviles */
@@ -435,7 +429,7 @@
     }
 
     .header-txt h1 {
-        font-size: 50px; /* Ajusta el tamaño de fuente */
+        font-size: 40px; /* Ajusta el tamaño de fuente */
     }
 }
 
@@ -771,32 +765,32 @@ section {
     background-color: transparent;
     color: #323232;
     padding: 1.5rem;
-    width: 250px;
+    width: 250px; /* Ancho estándar para pantallas grandes */
     border-radius: 8px;
     text-align: center;
     position: relative;
     box-shadow: 0 4px 8px rgba(4, 206, 251, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid #000000;
+    border: 2px solid #c5a5ce;
 }
 
 .plan:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 204, 255, 0.4);
-    border: 2px solid #000000;
+    border: 2px solid #c5a5ce;
 }
 
 .plan.popular {
-    border: 2px solid #000000;
+    border: 2px solid #c5a5ce;
 }
 
 .plan h3 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Tamaño de fuente para el encabezado */
     margin-bottom: 1rem;
 }
 
 .price {
-    font-size: 2rem;
+    font-size: 2rem; /* Tamaño de fuente para el precio */
     font-weight: bold;
     margin-bottom: 1rem;
 }
@@ -809,7 +803,7 @@ section {
 }
 
 .benefit {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Tamaño de fuente para los beneficios */
     margin: 0.5rem 0;
 }
 
@@ -826,13 +820,13 @@ button {
 }
 
 button:hover {
-    background-color: #03e8f4;
+    background-color: #c5a5ce;
 }
 
 /* Media Queries para dispositivos móviles */
 @media (max-width: 600px) {
     .plan {
-        width: 100%; /* Tarjetas ocupan el 100% del ancho en móviles */
+        width: 90%; /* Cambiar el ancho al 90% para mejor ajuste en móviles */
         margin-bottom: 20px; /* Espacio entre tarjetas */
     }
 
@@ -840,7 +834,52 @@ button:hover {
         flex-direction: column; /* Colocar tarjetas en columna en móviles */
         align-items: center; /* Centrar tarjetas */
     }
+
+    /* Ajustes adicionales para mejorar la visualización */
+    .plan h3 {
+        font-size: 1.2rem; /* Ajustar tamaño del encabezado en móviles */
+    }
+
+    .price {
+        font-size: 1.5rem; /* Ajustar tamaño del precio en móviles */
+    }
+
+    .benefit {
+        font-size: 0.8rem; /* Ajustar tamaño de beneficios en móviles */
+    }
 }
+
+
+
+
+/* Eliminar bordes y márgenes del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Quitar el padding */
+    margin: 0; /* Quitar el margen */
+}
+
+/* Ajustar la sección */
+section {
+    width: 100%; /* Asegurarse de que ocupe el 100% del ancho */
+    max-width: 800px; /* Mantener el ancho máximo si es necesario */
+    margin: 0; /* Quitar el margen */
+}
+
+.pricing {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea */
+    justify-content: center; /* Centra las tarjetas */
+}
+
+/* Resto de tu código CSS */
+
+
 
 
     </style>

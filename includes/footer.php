@@ -68,7 +68,7 @@ body{
 
 /* Estilos generales para el footer */
 footer {
-    background-color: #c5e1c8;
+    background-color: #016064;
     color: black;
     padding: 20px 0;
     font-family: Poppins, sans-serif;
@@ -102,7 +102,7 @@ footer {
 }
 
 .footer-section ul li a {
-    color: blueviolet;
+    color: #c3b5d2;
     text-decoration: none;
     font-weight: 300;
     transition: color 0.3s;

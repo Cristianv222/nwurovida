@@ -34,18 +34,19 @@
       salud mental, y educación financiera. ¡Mejora tu calidad de vida con nosotros!">
     <meta property="og:image" content="./neuro/images/logotipo.png">
     <meta property="og:url" content="https://clubneurovida.com/">
-    <link rel="stylesheet" href="./neuro/css/estilo.css">
+    <link rel="stylesheet" href="">
 </head>
 
 
 <body>
 <?php include './includes/menu_nav.php'; ?>
-<main class="frase">
-       <div class="frase-content container">
+<main class="frase_sec1">
+       <div class="frase-content_sec1 container">
             <h2>Nuestos servicios</h2>
-            <p class="txt-p">En NeuroVida, creemos que la transformación y reconstrucción constante, es una
+            <p class="txt-p_sec1">En NeuroVida, creemos que la transformación y reconstrucción constante, es una
                 oportunidad para crecer y mejorar.
             </p>
+          </div>
             <div class="carousel-container">
     <div class="carousel">
       <div class="card">

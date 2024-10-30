@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+img{
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1100%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #fafafa;
+    padding: 150px 0 100px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #323232;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #02B1F4;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #02B1F4;
+    text-transform: uppercase;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    width: 50%;
+}
+
+.header-txt h1 {
+    line-height: 1;
+    color: #323232;
+    text-transform: uppercase;
+    font-size: 75px;
+    margin-bottom: 10px;
+}
+
+.header-txt p {
+    font-size: 16px;
+    color: #818181;
+    margin-bottom: 45px;
+}
+
+.header-img {
+    width: 50%;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 11px 25px;
+  background-color: #02B1F4;  
+  color: #fafafa;
+  border-radius: 15px;
+}
+
+.about {
+    padding: 100px 0;
+    display: flex;
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    width: 500px;
+    border-radius: 25px;
+}
+
+.about-txt {
+    width: 50%;
+    margin-left: 25px;
+}
+
+.about-txt h2 {
+    color: #323232;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.about-txt p {
+    font-size: 16px;
+    color: #818181;
+}
+
+.servicios {
+    padding: 50px 0 100px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.servicios h2 {
+    color: #323232;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.servicios-content {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
+}
+
+.servicio-1 {
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(25% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Efecto de realce al pasar el cursor */
+.servicio-1:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Mayor sombra */
+}
+
+.servicio-1 i {
+    font-size: 30px;
+    color: #02B1F4;
+    margin-bottom: 15px;
+}
+
+.servicio-1 h3 {
+    font-size: 20px;
+    color: #323232;
+    text-transform: capitalize;
+}
+
+/* Diseño responsivo para dispositivos móviles */
+@media (max-width: 768px) {
+    .servicios-content {
+        flex-direction: column; /* Apila los servicios en columna */
+        align-items: center; /* Centra los elementos */
+    }
+    .servicio-1 {
+        flex-basis: 100%; /* Toma el ancho completo */
+        margin-bottom: 20px; /* Espaciado entre servicios */
+    }
+}
+
+.formulario {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 50px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+form h2 {
+    font-size: 25px;
+    color: #323232;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container > i {
+    padding: 14px;
+    border-radius: 50%;
+    background-color: #02B1F4;
+    color: #fafafa;
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .cuadro {
+        padding: 30px;
+        width: 90%; /* Ancho ajustado en móviles */
+    }
+    
+    .titulo {
+        font-size: 30px; /* Tamaño de fuente reducido en móviles */
+    }
+    
+    .subtitulo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cuadro {
+        padding: 20px;
+        width: 95%; /* Ancho casi completo en pantallas muy pequeñas */
+    }
+    
+    .titulo {
+        font-size: 24px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+    
+    .subtitulo {
+        font-size: 16px;
+    }
+}
+
+
+
+@media (max-width:991px) {
+    menu {
+        padding: 20px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f9f9f9;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    .header {
+       min-height: 0vh;
+       padding: 80px 30px 50px 30px; 
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-txt {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .header-img{
+        width: 100%;
+    }
+
+    .header-img img {
+        width: 100%;
+    }
+
+
+
+    .about {
+        padding:30px;
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 100%;
+        order: 2;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .about-txt {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Organizar en columna */
+    align-items: center;
+    padding: 20px; /* Espacio alrededor */
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px; /* Espacio entre secciones */
+}
+
+.pricing {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples filas */
+    gap: 1.5rem;
+}
+
+.plan {
+    background-color: transparent;
+    border: 2px solid #03f8f8;
+    color: #323232;
+    padding: 1.5rem;
+    width: 250px; /* Ancho fijo para escritorio */
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(2, 186, 227, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+    .plan {
+        width: 100%; /* Ancho completo en móvil */
+        margin-bottom: 1rem; /* Espacio inferior entre las tarjetas */
+        padding: 1rem; /* Reducir el padding */
+    }
+
+    .price {
+        font-size: 1.5rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .benefit, .discount {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    }
+
+    button {
+        width: 100%; /* Botón de ancho completo */
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* Organizar en columna */
+    align-items: center;
+    padding: 20px; /* Espacio alrededor */
+}
+
+section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px; /* Espacio entre secciones */
+}
+
+.pricing {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples filas */
+    gap: 1.5rem;
+}
+
+.plan {
+    background-color: transparent;
+    border: 2px solid #03f8f8;
+    color: #323232;
+    padding: 1.5rem;
+    width: 250px; /* Ancho fijo para escritorio */
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(2, 186, 227, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+    .plan {
+        width: calc(100% - 20px); /* Ancho completo en móvil menos espacio para los márgenes */
+        margin: 0 10px 1rem; /* Margen lateral para desalinear */
+        padding: 1rem; /* Reducir el padding */
+        transform: translateY(5px); /* Desplazamiento hacia abajo */
+    }
+
+    .price {
+        font-size: 1.5rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .benefit, .discount {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    }
+
+    button {
+        width: 100%; /* Botón de ancho completo */
+    }
+}
+
+
+/* Estilos existentes */
+.plan:hover {
+    transform: translateY(-10px); /* Levanta la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 204, 255, 0.4); /* Aumenta la sombra */
+}
+
+.plan.popular {
+    border: 2px solid #03f8f8;
+}
+
+.plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.discount {
+    font-size: 0.8rem;
+    color: #ed0909;
+    text-decoration: line-through;
+    margin-right: 0.5rem;
+}
+
+.benefit {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #08d6ec;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8e5cb6;
+}
+
+/* Estilos responsivos para centrar el último plan en modo móvil */
+@media (max-width: 2px) {
+    .plans-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        margin-bottom: 1rem;
+        width: 9010%; /* Ajusta el ancho según sea necesario */
+    }
+}

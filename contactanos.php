@@ -33,21 +33,12 @@
             <img src="./neuro/images/Imagotipo.png" alt="Club Neurovida" class="logo-left">
         </div>
     </header>
-
-    <section>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1410.4706480803052!2d-77.71259786613068!3d0.816259513493242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2968bae7d5eb4d%3A0x2d2e73b19f33388d!2zVHVsY8Ohbg!5e0!3m2!1ses!2sec!4v1730240853658!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-
-<form action="https://formsubmit.co/1029cristianvasquez@gmail.com" method="POST" />
+        <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1410.4706480803052!2d-77.71259786613068!3d0.816259513493242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2968bae7d5eb4d%3A0x2d2e73b19f33388d!2zVHVsY8Ohbg!5e0!3m2!1ses!2sec!4v1730240853658!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <form action="https://formsubmit.co/1029cristianvasquez@gmail.com" method="POST" />
+   <section>
+   <form action="https://formsubmit.co/1029cristianvasquez@gmail.com" method="POST" />
   <h2>Contacto</h2>
   <div class="input-group">
     <label for="name">Nombre</label>
@@ -64,10 +55,8 @@
     <input class="btnEnviar" type="submit" value="Enviar">
   </div>
 </form>
-</body>
-</html>
-    </section>
-</body>
+   </section>
+    </body>
 </html>
 
 
@@ -264,31 +253,13 @@
             }
             
         }
-
-        /* Ajustes para pantallas móviles */
-@media (max-width: 768px) {
-    .logo-left {
-        max-width: 400px; /* Reducimos el tamaño del logo en móviles */
-        top: 60%; /* Bajamos un poco más el logo en pantallas pequeñas */
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    nav {
-        padding: 1rem; /* Reducimos el padding del menú para que se vea mejor */
-    }
-
-    .nav-links {
-        gap: 1rem; /* Reducimos el espacio entre enlaces del menú */
-    }
-}
-/*formulario style*/
-form {
-    padding: 100px 55px;
+        form {
+    padding: 25px 55px;
     box-shadow: 0 20px 230px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
-    width: 340px;
+    width: 700px;
+    margin: -450px 630px;
   }
   
   .input-group {
@@ -349,6 +320,26 @@ form {
   .btn:hover {
     background-color: #48bce0;
   }
+
+        /* Ajustes para pantallas móviles */
+@media (max-width: 768px) {
+    .logo-left {
+        max-width: 400px; /* Reducimos el tamaño del logo en móviles */
+        top: 60%; /* Bajamos un poco más el logo en pantallas pequeñas */
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    nav {
+        padding: 1rem; /* Reducimos el padding del menú para que se vea mejor */
+    }
+
+    .nav-links {
+        gap: 1rem; /* Reducimos el espacio entre enlaces del menú */
+    }
+}
+/*formulario style*/
+
   
   @media (max-width: 991px) {
     body {
@@ -363,6 +354,7 @@ form {
         padding: 15px;
     }
   }
+  
     </style>
 
 <script>

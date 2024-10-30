@@ -216,7 +216,7 @@
             }
 
             .buttons.active {
-                right: 50%;
+                right: 45%;
                 transform: translateX(50%);
             }
 
@@ -249,11 +249,6 @@
 
     .nav-links {
         gap: 1rem; /* Reducimos el espacio entre enlaces del menú */
-    }
-
-    .btn-Inicio {
-        font-size: 14px; /* Ajustamos el tamaño del texto en el botón */
-        padding: 8px 16px; /* Ajustamos el espacio interno del botón */
     }
 }
     </style>

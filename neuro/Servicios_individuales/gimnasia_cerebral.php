@@ -35,8 +35,7 @@
 
             <h1>Gimnasia Cerebral</h1>
                 <p>
-                Descubre ejercicios mentales que mejoran tu memoria, concentración y creatividad. 
-                ¡Fortalece tu mente y transforma tu día a día!
+                
                 </p>
                 <a href="#" class="btn-1">Informacion</a>
             </div>

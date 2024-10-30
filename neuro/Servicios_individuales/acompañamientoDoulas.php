@@ -35,13 +35,12 @@
 
             <h1>ACOMPAÑAMIENTO<br>DE LAS DOULAS</h1>
                 <p>
-                Descubre ejercicios mentales que mejoran tu memoria, concentración y creatividad. 
-                ¡Fortalece tu mente y transforma tu día a día!
+                
                 </p>
                 <a href="#" class="btn-1">Informacion</a>
             </div>
             <div class="header-img">
-                <img src="../images/left.png" alt="">
+                <img src="../images/doula1.png" alt="">
 
             </div>
            
@@ -55,7 +54,7 @@
 
     <section class="about container">
         <div class="about-img">
-            <img src="../images/gs4.jpg" alt="">
+            <img src="../images/doula2.png" alt="">
         </div>
         <div class="about-txt">
         <h2>Acompañamiento de las Doulas:</h2>

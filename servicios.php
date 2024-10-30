@@ -7,29 +7,7 @@
     <title>Neurovida-Servicios</title>
 </head>
 <body>
-<header class="header">
-        <div class="menu container">
-            <nav class="navbar">
-                <a href="index.php" class="logo"><img src="./neuro/images/logotipo.png" alt=""></a>
-                <ul>
-                    <li><a href="./index.php">Inicio</a></li>
-                    <li><a href="quienes_somos.php">¿Quienes somos?</a></li>
-                    <li><a href="./contactanos.php">Contactanos</a></li>
-                    <li><a href="servicios.php">Servicios</a></li>
-                </ul>
-                <div>
-                    <!-- IMPORTANTE, se puede cambiar por botones, pero  el href se debe hacer referencia al mismo -->
-                    <a href="./admin_panel/find-result.php" class="btn-estud">Estudiantes</a>
-                    <a href="./admin_panel/admin-login.php" class="btn-Adm">Maestros</a>
-                </div>
-            </nav>
-        </div>
-
-        <div class="header-content container">
-            <img src="./neuro/images/Imagotipo.png" alt="Club Neurovida" class="logo-left">
-        </div>
-    </header>
-
+<?php include './includes/menu_nav.php'; ?>
     <div class="container_s">
         <h1 class="fade-in">Nuestros Servicios</h1>
         <p class="fade-in">Descubre los mejores servicios que ofrecemos para ti.</p>

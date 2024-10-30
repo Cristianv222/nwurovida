@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Acompañamiento Doulas</title>
 </head>
 <body>
 <header class="header">
@@ -32,7 +32,7 @@
     </nav>
     <div class="header-content container">
             <div class="header-txt">
-<<<<<<< HEAD
+
             <h1>ACOMPAÑAMIENTO<br>DE LAS DOULAS</h1>
                 <p>
                 Descubre ejercicios mentales que mejoran tu memoria, concentración y creatividad. 
@@ -49,36 +49,23 @@
 
 
     </header>
-=======
-                <h1>Gimnasia Cerebral</h1>
-                <p>
-                Descubre ejercicios mentales que mejoran tu memoria.  
-                ¡Fortalece tu mente y transforma tu día a día!
-                </p>
-                <a href=""><button class="btn btn-solid">Agenta tu cita !YA¡</button></a>
-            </div>
-        </div>
+
 
     </header>
 
->>>>>>> e8570a2418ff1c1b60fb04ded88c7d8ef5816bcd
     <section class="about container">
         <div class="about-img">
             <img src="../images/gs4.jpg" alt="">
         </div>
         <div class="about-txt">
-            <h2>Niños de cualquier edad/Adultos mayores</h2>
+        <h2>Acompañamiento de las Doulas:</h2>
             <p>
-            Ejercicios Mentales: A través de ejercicios mentales diseñados 
-            para mejorar la memoria, la atención y el razonamiento, mantener 
-            su mente activa y saludable, ayudando a prevenir el deterioro 
+            Es fundamental para el bienestar de las mujeres en gestación, 
+            especialmente aquellas que enfrentan desafíos emocionales, 
+            físicos o sociales. Mejora las experiencias durante el embarazo, 
+            sino que también facilitaría la creación de vínculos afectivos positivos con sus hijos, 
+            fortaleciendo la salud mental de ambos y ayudando a mitigar los efectos del estrés. 
             cognitivo. 
-            </p>
-
-            <p>
-            Mejora las habilidades cognitivas, sociales y físicas mediante 
-            ejercicios que activan ambos hemisferios del cerebro, mejorando no 
-            solo el aprendizaje sino también el bienestar emocional.  
             </p>
 
         </div>
@@ -181,12 +168,7 @@
             <button>Elegir plan</button>
         </div>
     </section>
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> e8570a2418ff1c1b60fb04ded88c7d8ef5816bcd
 </body>
 </html>
 
@@ -402,7 +384,6 @@
         gap: 1rem; /* Reducimos el espacio entre enlaces del menú */
     }
 }
-<<<<<<< HEAD
 /*seccion nueva sevicios*/
 .btn-1 {
   display: inline-block;
@@ -410,48 +391,44 @@
   background-color: #02B1F4;  
   color: #fafafa;
   border-radius: 20px;
-=======
+}
 
 /* prueba de fuego*/
 .container {
     max-width: 1100%;
     margin: 0 auto;
->>>>>>> e8570a2418ff1c1b60fb04ded88c7d8ef5816bcd
 }
 .header-content {
     display: flex;
 }
 
 .header-txt {
-<<<<<<< HEAD
-    width: 38%;
-    padding-top: 200px; /* Ajusta según sea necesario */
-    text-align: center; /* Centra el texto horizontalmente */
+    padding-top: 250px;
+    text-align: center;
 }
 
 .header-txt h1 {
     line-height: 1.2;
-=======
-    position: absolute;
-    top: 50%; /* Ajusta este valor según necesites */
-    left: 50%;
-    transform: translate(-70%, -50%);
-    text-align: center;
-    width: 100%;
-}
-
-.header-txt h1 {
-    margin-top: 0px;
-    line-height: 1;
->>>>>>> e8570a2418ff1c1b60fb04ded88c7d8ef5816bcd
     color: #323232;
     text-transform: uppercase;
-    font-size: 75px;
+    font-size: 85px;
     margin-bottom: 10px;
-<<<<<<< HEAD
     letter-spacing: 0;
     white-space: normal;
 }
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .header-txt {
+        padding-top: 50px; /* Ajusta según sea necesario */
+    }
+
+    .header-txt h1 {
+        font-size: 50px; /* Ajusta el tamaño de fuente */
+    }
+}
+
+
 /* Media query para dispositivos móviles */
 @media (max-width: 768px) {
     .header-txt {
@@ -468,8 +445,6 @@
     color: #818181;
     margin-bottom: 20px;
 }
-=======
-}
 
 .header-txt p {
     
@@ -478,18 +453,14 @@
     margin-bottom: 45px;
 }
 
->>>>>>> e8570a2418ff1c1b60fb04ded88c7d8ef5816bcd
 .about {
     padding: 100px 0;
     display: flex;
+    
 }
 
 .about-img {
-<<<<<<< HEAD
     width: 200%;
-=======
-    width: 50%;
->>>>>>> e8570a2418ff1c1b60fb04ded88c7d8ef5816bcd
 }
 
 .about-img img {
@@ -500,34 +471,43 @@
 .about-txt {
     width: 50%;
     margin-left: 25px;
+    
 }
 
 .about-txt h2 {
-<<<<<<< HEAD
-    ine-height: 1.2;
+    line-height: 1.2;
     color: #323232;
     text-transform: uppercase;
-    font-size: 75px;
+    font-size: 80px;
     margin-bottom: 10px;
     letter-spacing: 0;
     white-space: normal;
+    margin-left: -650px; /* Ajuste para pantallas grandes */
 }
 
 .about-txt p {
     font-size: 20px;
     color: #818181;
     margin-bottom: 20px;
-=======
-    color: #323232;
-    font-size: 50px;
-    margin-bottom: 15px;
+    margin-left: -650px; /* Ajuste para pantallas grandes */
 }
 
-.about-txt p {
-    font-size: 16px;
-    color: #818181;
->>>>>>> e8570a2418ff1c1b60fb04ded88c7d8ef5816bcd
+@media (max-width: 768px) {
+    .about-txt h2 {
+        font-size: 40px; /* Tamaño más pequeño para móviles */
+        margin-left: 0; /* Ajuste para centrar en móviles */
+        text-align: center;
+    }
+
+    .about-txt p {
+        font-size: 18px; /* Tamaño más pequeño para móviles */
+        margin-left: 0; /* Ajuste para centrar en móviles */
+        text-align: center;
+    }
 }
+
+
+
 
 .servicios {
     padding: 50px 0 100px 0;
@@ -668,7 +648,7 @@ form h2 {
         font-size: 16px;
     }
 }
-<<<<<<< HEAD
+
 
 
 
@@ -696,9 +676,8 @@ form h2 {
         display: initial;
     }
 
-=======
+
 @media (max-width:991px) {
->>>>>>> e8570a2418ff1c1b60fb04ded88c7d8ef5816bcd
     .header {
        min-height: 0vh;
        padding: 80px 30px 50px 30px; 
@@ -713,7 +692,7 @@ form h2 {
         width: 100%;
         margin-bottom: 25px;
     }
-<<<<<<< HEAD
+
 
     .header-img{
         width: 100%;
@@ -723,10 +702,6 @@ form h2 {
         width: 100%;
     }
 
-
-
-=======
->>>>>>> e8570a2418ff1c1b60fb04ded88c7d8ef5816bcd
     .about {
         padding:30px;
         flex-direction: column;
@@ -748,8 +723,6 @@ form h2 {
         margin-bottom: 25px;
     }
 
-<<<<<<< HEAD
-
 }
 
 * {
@@ -771,7 +744,7 @@ form h2 {
     margin: 0;
     padding: 0;
 }
-
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -786,31 +759,17 @@ section {
     width: 100%;
     max-width: 800px;
     margin-bottom: 20px;
-=======
-}
-section {
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 20px; /* Espacio entre secciones */
->>>>>>> e8570a2418ff1c1b60fb04ded88c7d8ef5816bcd
 }
 
 .pricing {
     display: flex;
-<<<<<<< HEAD
     gap: 1.5rem;
     flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea */
     justify-content: center; /* Centra las tarjetas */
-=======
-    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples filas */
-    gap: 1.5rem;
->>>>>>> e8570a2418ff1c1b60fb04ded88c7d8ef5816bcd
 }
 
 .plan {
     background-color: transparent;
-<<<<<<< HEAD
-    border: 2px solid #0054ef;
     color: #323232;
     padding: 1.5rem;
     width: 250px;
@@ -819,104 +778,17 @@ section {
     position: relative;
     box-shadow: 0 4px 8px rgba(4, 206, 251, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #000000;
 }
 
 .plan:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 204, 255, 0.4);
+    border: 2px solid #000000;
 }
 
 .plan.popular {
-    border: 2px solid #0054ef;
-=======
-    border: 2px solid #03f8f8;
-    color: #323232;
-    padding: 1.5rem;
-    width: 250px; /* Ancho fijo para escritorio */
-    border-radius: 8px;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(2, 186, 227, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
-}
-
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 600px) {
-    .plan {
-        width: 100%; /* Ancho completo en móvil */
-        margin-bottom: 1rem; /* Espacio inferior entre las tarjetas */
-        padding: 1rem; /* Reducir el padding */
-    }
-
-    .price {
-        font-size: 1.5rem; /* Tamaño de fuente más pequeño */
-    }
-
-    .benefit, .discount {
-        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
-    }
-
-    button {
-        width: 100%; /* Botón de ancho completo */
-    }
-}
-section {
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 20px; /* Espacio entre secciones */
-}
-
-.pricing {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples filas */
-    gap: 1.5rem;
-}
-
-.plan {
-    background-color: transparent;
-    border: 2px solid #03f8f8;
-    color: #323232;
-    padding: 1.5rem;
-    width: 250px; /* Ancho fijo para escritorio */
-    border-radius: 8px;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(2, 186, 227, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
-}
-
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 600px) {
-    .plan {
-        width: calc(100% - 20px); /* Ancho completo en móvil menos espacio para los márgenes */
-        margin: 0 10px 1rem; /* Margen lateral para desalinear */
-        padding: 1rem; /* Reducir el padding */
-        transform: translateY(5px); /* Desplazamiento hacia abajo */
-    }
-
-    .price {
-        font-size: 1.5rem; /* Tamaño de fuente más pequeño */
-    }
-
-    .benefit, .discount {
-        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
-    }
-
-    button {
-        width: 100%; /* Botón de ancho completo */
-    }
-}
-
-
-/* Estilos existentes */
-.plan:hover {
-    transform: translateY(-10px); /* Levanta la tarjeta */
-    box-shadow: 0 8px 16px rgba(0, 204, 255, 0.4); /* Aumenta la sombra */
-}
-
-.plan.popular {
-    border: 2px solid #03f8f8;
->>>>>>> e8570a2418ff1c1b60fb04ded88c7d8ef5816bcd
+    border: 2px solid #000000;
 }
 
 .plan h3 {
@@ -947,11 +819,7 @@ button {
     padding: 0.7rem 1.5rem;
     font-size: 1rem;
     color: #fff;
-<<<<<<< HEAD
     background-color: #04d3ef;
-=======
-    background-color: #08d6ec;
->>>>>>> e8570a2418ff1c1b60fb04ded88c7d8ef5816bcd
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -959,7 +827,6 @@ button {
 }
 
 button:hover {
-<<<<<<< HEAD
     background-color: #03e8f4;
 }
 
@@ -977,25 +844,6 @@ button:hover {
 }
 
 
-=======
-    background-color: #8e5cb6;
-}
-
-/* Estilos responsivos para centrar el último plan en modo móvil */
-@media (max-width: 2px) {
-    .plans-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .plan {
-        margin-bottom: 1rem;
-        width: 9010%; /* Ajusta el ancho según sea necesario */
-    }
-}
-
->>>>>>> e8570a2418ff1c1b60fb04ded88c7d8ef5816bcd
     </style>
     
     

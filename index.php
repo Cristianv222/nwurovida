@@ -45,7 +45,7 @@
                 <a href="index.php" class="logo"><img src="./neuro/images/logotipo.png" alt=""></a>
                 <ul>
                     <li><a href="./index.php">Inicio</a></li>
-                    <li><a href="quienes_somos.php">¿Quienes somos?</a></li>
+                    <li><a href="quienes_somos.php">¿Wladimir?</a></li>
                     <li><a href="./contactanos.php">Contactanos</a></li>
                     <li><a href="servicios.php">Servicios</a></li>
                 </ul>

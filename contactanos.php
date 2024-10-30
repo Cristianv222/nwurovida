@@ -285,7 +285,7 @@
 /*formulario style*/
 form {
     padding: 100px 55px;
-    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 20px 230px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
     width: 340px;
@@ -315,7 +315,7 @@ form {
     margin-bottom: 20px;
     background-color: #ffffff;
     border: 2px solid #48bce0;
-    color: #00ff11;
+    color: #000000;
     outline: none;
   }
 

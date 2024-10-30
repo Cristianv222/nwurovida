@@ -37,9 +37,7 @@
             </div>
             <div class="header-img">
                 <img src="../images/left.png" alt="">
-
             </div>
-
         </div>
 
 

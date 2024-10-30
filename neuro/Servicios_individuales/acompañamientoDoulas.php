@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
@@ -29,8 +30,138 @@
             <a href=""><button class="btn btn-outline">Estudiante</button></a>
             <a href=""><button class="btn btn-solid">Maestro</button></a>
     </nav>
+    <div class="header-content container">
+            <div class="header-txt">
+                <h1>Gimnasia Cerebral</h1>
+                <p>
+                Descubre ejercicios mentales que mejoran tu memoria.  
+                ¡Fortalece tu mente y transforma tu día a día!
+                </p>
+                <a href=""><button class="btn btn-solid">Agenta tu cita !YA¡</button></a>
+            </div>
+        </div>
 
     </header>
+
+    <section class="about container">
+        <div class="about-img">
+            <img src="../images/gs4.jpg" alt="">
+        </div>
+        <div class="about-txt">
+            <h2>Niños de cualquier edad/Adultos mayores</h2>
+            <p>
+            Ejercicios Mentales: A través de ejercicios mentales diseñados 
+            para mejorar la memoria, la atención y el razonamiento, mantener 
+            su mente activa y saludable, ayudando a prevenir el deterioro 
+            cognitivo. 
+            </p>
+
+            <p>
+            Mejora las habilidades cognitivas, sociales y físicas mediante 
+            ejercicios que activan ambos hemisferios del cerebro, mejorando no 
+            solo el aprendizaje sino también el bienestar emocional.  
+            </p>
+
+        </div>
+
+    </section>
+
+    <main class="servicios">
+        <h2>Beneficios</h2>
+        <div class="servicios-content container">
+
+            <div class="servicio-1">
+                <i class="fa-sharp fa-solid fa-hospital-user"></i>
+                <h3>Coordinación Motora Fina y Gruesa </h3>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-sharp fa-solid fa-stethoscope"></i>
+                <h3>Concentración y Memoria  </h3>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-brain"></i>
+                <h3>Creatividad y Resolución de Problemas   </h3>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-hospital"></i>
+                <h3>Lateralidad y Equilibrio </h3>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-brain"></i>
+                <h3>Atención y Focalización  </h3>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-sharp fa-solid fa-stethoscope"></i>
+                <h3>Coordinación Ojo-Mano   </h3>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-sharp fa-solid fa-book"></i>
+                <h3>Trabajo en Equipo y Comunicación    </h3>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-brain"></i>
+                <h3>Razonamiento Lógico  </h3>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-sharp fa-solid fa-book"></i>
+                <h3>Ejercicios Cruzados  </h3>
+            </div>
+
+
+
+        </div>
+
+    </main>
+
+    <section class="pricing">
+        <div class="plan">
+        <h3>Plan Diario</h3>
+            <p class="price"><span class="discount">Antes: $1</span> $1.50/días</p>
+            <p class="benefit">Acceso por 7 días</p>
+            <ul class="benefits">
+            <li>✔ Flexibilidad: Acceso según la disponibilidad diaria.</li>
+            <li>✔ Costo Asequible: Ideal para probar el servicio.</li>
+            <li>✔ Opción de Adaptación: Práctica ajustable diariamente.</li>
+            <li>✔ Ejercicios Breves: Actividades cortas y efectivas.</li>
+
+            </ul>
+            <button>Elegir plan</button>
+        </div>
+        <div class="plan popular">
+            <h3>Plan Semanal</h3>
+            <p class="price"><span class="discount">Antes: $10</span> $7/semana</p>
+            <p class="benefit">Acceso por 7 días</p>
+            <ul class="benefits">
+            <li>✔ Compromiso Moderado: Enfoque a corto plazo.</li>
+            <li>✔ Pruebas Rápidas: Evaluación intensiva en una semana.</li>
+            <li>✔ Variedad de Ejercicios: Sesiones frescas y motivadoras.</li>
+            <li>✔ Conexión Social: Participación en sesiones grupales.</li>
+
+            </ul>
+            <button>Elegir plan</button>
+        </div>
+        <div class="plan">
+            <h3>Plan Mensual</h3>
+            <p class="price"><span class="discount">Antes: $40</span> $30/mes</p>
+            <p class="benefit">Acceso por 30 días</p>
+            <ul class="benefits">
+            <li>✔ Acceso Ilimitado: Máximo aprovechamiento de sesiones.</li>
+            <li>✔ Progreso Sostenido: Mejoras en memoria y concentración.</li>
+            <li>✔ Recursos Exclusivos: Guías y ejercicios adicionales.</li>
+            <li>✔ Evaluación Mensual: Medición de progreso mensual.</li>
+
+            </ul>
+            <button>Elegir plan</button>
+        </div>
+    </section>
 </body>
 </html>
 
@@ -244,6 +375,403 @@
         gap: 1rem; /* Reducimos el espacio entre enlaces del menú */
     }
 }
+
+/* prueba de fuego*/
+.container {
+    max-width: 1100%;
+    margin: 0 auto;
+}
+.header-content {
+    display: flex;
+}
+
+.header-txt {
+    position: absolute;
+    top: 50%; /* Ajusta este valor según necesites */
+    left: 50%;
+    transform: translate(-70%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.header-txt h1 {
+    margin-top: 0px;
+    line-height: 1;
+    color: #323232;
+    text-transform: uppercase;
+    font-size: 75px;
+    margin-bottom: 10px;
+}
+
+.header-txt p {
+    
+    font-size: 16px;
+    color: #818181;
+    margin-bottom: 45px;
+}
+
+.about {
+    padding: 100px 0;
+    display: flex;
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    width: 500px;
+    border-radius: 25px;
+}
+
+.about-txt {
+    width: 50%;
+    margin-left: 25px;
+}
+
+.about-txt h2 {
+    color: #323232;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.about-txt p {
+    font-size: 16px;
+    color: #818181;
+}
+
+.servicios {
+    padding: 50px 0 100px 0;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+.servicios h2 {
+    color: #323232;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.servicios-content {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
+}
+
+.servicio-1 {
+    padding: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(25% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Efecto de realce al pasar el cursor */
+.servicio-1:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); /* Mayor sombra */
+}
+
+.servicio-1 i {
+    font-size: 30px;
+    color: #02B1F4;
+    margin-bottom: 15px;
+}
+
+.servicio-1 h3 {
+    font-size: 20px;
+    color: #323232;
+    text-transform: capitalize;
+}
+
+/* Diseño responsivo para dispositivos móviles */
+@media (max-width: 768px) {
+    .servicios-content {
+        flex-direction: column; /* Apila los servicios en columna */
+        align-items: center; /* Centra los elementos */
+    }
+    .servicio-1 {
+        flex-basis: 100%; /* Toma el ancho completo */
+        margin-bottom: 20px; /* Espaciado entre servicios */
+    }
+}
+
+.formulario {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    padding: 50px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+form h2 {
+    font-size: 25px;
+    color: #323232;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container > i {
+    padding: 14px;
+    border-radius: 50%;
+    background-color: #02B1F4;
+    color: #fafafa;
+    position: absolute;
+    font-size: 20px;
+    top: 4px;
+    left: 10px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .cuadro {
+        padding: 30px;
+        width: 90%; /* Ancho ajustado en móviles */
+    }
+    
+    .titulo {
+        font-size: 30px; /* Tamaño de fuente reducido en móviles */
+    }
+    
+    .subtitulo {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cuadro {
+        padding: 20px;
+        width: 95%; /* Ancho casi completo en pantallas muy pequeñas */
+    }
+    
+    .titulo {
+        font-size: 24px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+    }
+    
+    .subtitulo {
+        font-size: 16px;
+    }
+}
+@media (max-width:991px) {
+    .header {
+       min-height: 0vh;
+       padding: 80px 30px 50px 30px; 
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-txt {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .about {
+        padding:30px;
+        flex-direction: column;
+    }
+
+    .about-img {
+        width: 100%;
+        order: 2;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .about-txt {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+}
+section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px; /* Espacio entre secciones */
+}
+
+.pricing {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples filas */
+    gap: 1.5rem;
+}
+
+.plan {
+    background-color: transparent;
+    border: 2px solid #03f8f8;
+    color: #323232;
+    padding: 1.5rem;
+    width: 250px; /* Ancho fijo para escritorio */
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(2, 186, 227, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+    .plan {
+        width: 100%; /* Ancho completo en móvil */
+        margin-bottom: 1rem; /* Espacio inferior entre las tarjetas */
+        padding: 1rem; /* Reducir el padding */
+    }
+
+    .price {
+        font-size: 1.5rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .benefit, .discount {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    }
+
+    button {
+        width: 100%; /* Botón de ancho completo */
+    }
+}
+section {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px; /* Espacio entre secciones */
+}
+
+.pricing {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples filas */
+    gap: 1.5rem;
+}
+
+.plan {
+    background-color: transparent;
+    border: 2px solid #03f8f8;
+    color: #323232;
+    padding: 1.5rem;
+    width: 250px; /* Ancho fijo para escritorio */
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(2, 186, 227, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+    .plan {
+        width: calc(100% - 20px); /* Ancho completo en móvil menos espacio para los márgenes */
+        margin: 0 10px 1rem; /* Margen lateral para desalinear */
+        padding: 1rem; /* Reducir el padding */
+        transform: translateY(5px); /* Desplazamiento hacia abajo */
+    }
+
+    .price {
+        font-size: 1.5rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .benefit, .discount {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    }
+
+    button {
+        width: 100%; /* Botón de ancho completo */
+    }
+}
+
+
+/* Estilos existentes */
+.plan:hover {
+    transform: translateY(-10px); /* Levanta la tarjeta */
+    box-shadow: 0 8px 16px rgba(0, 204, 255, 0.4); /* Aumenta la sombra */
+}
+
+.plan.popular {
+    border: 2px solid #03f8f8;
+}
+
+.plan h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.discount {
+    font-size: 0.8rem;
+    color: #ed0909;
+    text-decoration: line-through;
+    margin-right: 0.5rem;
+}
+
+.benefit {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #08d6ec;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8e5cb6;
+}
+
+/* Estilos responsivos para centrar el último plan en modo móvil */
+@media (max-width: 2px) {
+    .plans-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        margin-bottom: 1rem;
+        width: 9010%; /* Ajusta el ancho según sea necesario */
+    }
+}
+
     </style>
 
 <script>

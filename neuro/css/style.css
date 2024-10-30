@@ -285,29 +285,6 @@ form h2 {
 
 
 @media (max-width:991px) {
-    menu {
-        padding: 20px;
-    }
-    .menu label {
-        display: initial;
-    }
-    .menu .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #f9f9f9;
-        display: none;
-    }
-
-    .menu .navbar ul li {
-        width: 100%;
-    }
-    
-    #menu:checked ~ .navbar{
-        display: initial;
-    }
-
     .header {
        min-height: 0vh;
        padding: 80px 30px 50px 30px; 
@@ -322,17 +299,6 @@ form h2 {
         width: 100%;
         margin-bottom: 25px;
     }
-
-    .header-img{
-        width: 100%;
-    }
-
-    .header-img img {
-        width: 100%;
-    }
-
-
-
     .about {
         padding:30px;
         flex-direction: column;

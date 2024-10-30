@@ -30,6 +30,69 @@
             <a href=""><button class="btn btn-solid">Maestro</button></a>
     </nav>
     </header>
+    <section>
+    <div class="quote-container">
+        <p class="quote">"Somos nuestros sueños, si no soñamos estamos muertos"</p>
+        <p class="quote-author">Kilian Jornet</p>
+    </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <!-- Logo -->
+            <div class="logo-container">
+                <svg class="logo" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"/>
+                    <path d="M25 50 L75 50" stroke="currentColor" stroke-width="2"/>
+                    <path d="M50 25 L50 75" stroke="currentColor" stroke-width="2"/>
+                </svg>
+            </div>
+
+            <!-- Mini Explorers -->
+            <div class="footer-section">
+                <h3>mini EXPLORERS</h3>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Escapadas</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Tienda online</a></li>
+                    <li><a href="#">Mercadillo</a></li>
+                </ul>
+            </div>
+
+            <!-- Información -->
+            <div class="footer-section">
+                <h3>INFORMACIÓN</h3>
+                <ul>
+                    <li><a href="#">Sobre Mini Explorers</a></li>
+                    <li><a href="#">Guía de tallas</a></li>
+                    <li><a href="#">Cómo comprar</a></li>
+                    <li><a href="#">Envío y pago seguro</a></li>
+                    <li><a href="#">Cambios y devoluciones</a></li>
+                </ul>
+            </div>
+
+            <!-- Contacto -->
+            <div class="footer-section">
+                <h3>CONTACTO</h3>
+                <ul>
+                    <li><a href="#">Rivas (Madrid)</a></li>
+                    <li><a href="#">¿Quieres contarnos algo?</a></li>
+                    <li><a href="#">Hazlo aquí</a></li>
+                    <li><a href="#">Atención al cliente</a></li>
+                    <li><a href="#">¿Quieres colaborar con nosotros?</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
 
@@ -244,6 +307,107 @@
         gap: 1rem; /* Reducimos el espacio entre enlaces del menú */
     }
 }
+
+/*foteer ##############################*/
+.quote-container {
+            background-color: #fef9c3;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #4a4a4a;
+            margin-bottom: 5px;
+        }
+
+        .quote-author {
+            color: #666;
+        }
+
+        .footer {
+            background-color: #ecfdf5;
+            padding: 40px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .logo_footer-container {
+            text-align: center;
+        }
+
+        .logo_footer {
+            width: 120px;
+            height: 120px;
+        }
+
+        .footer-section h3 {
+            color: #4a4a4a;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #333;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: flex-start;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .logo_footer-container {
+                grid-column: 1 / -1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-section {
+                text-align: center;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+        }
 </style>
 
 <script>

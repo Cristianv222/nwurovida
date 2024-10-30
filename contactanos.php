@@ -7,12 +7,16 @@
 </head>
 <body>
 <?php include './includes/menu_nav.php'; ?>
+<header>
+<div class="header-content container">
+            <img src="./neuro/images/Imagotipo.png" alt="Club Neurovida" class="logo-left">
+            <a href="servicios.php" class="btn-Inicio">Agendar Cita</a>
+        </div>
+</header>
         <section>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1410.4706480803052!2d-77.71259786613068!3d0.816259513493242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2968bae7d5eb4d%3A0x2d2e73b19f33388d!2zVHVsY8Ohbg!5e0!3m2!1ses!2sec!4v1730240853658!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <form action="https://formsubmit.co/1029cristianvasquez@gmail.com" method="POST" />
-   <section>
-   <form action="https://formsubmit.co/1029cristianvasquez@gmail.com" method="POST" />
   <h2>Contacto</h2>
   <div class="input-group">
     <label for="name">Nombre</label>

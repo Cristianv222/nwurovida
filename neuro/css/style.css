@@ -377,127 +377,48 @@ form h2 {
     padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column; /* Organizar en columna */
-    align-items: center;
-    padding: 20px; /* Espacio alrededor */
-}
-
-section {
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 20px; /* Espacio entre secciones */
-}
-
-.pricing {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples filas */
-    gap: 1.5rem;
-}
-
-.plan {
-    background-color: transparent;
-    border: 2px solid #03f8f8;
-    color: #323232;
-    padding: 1.5rem;
-    width: 250px; /* Ancho fijo para escritorio */
-    border-radius: 8px;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(2, 186, 227, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
-}
-
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 600px) {
-    .plan {
-        width: 100%; /* Ancho completo en móvil */
-        margin-bottom: 1rem; /* Espacio inferior entre las tarjetas */
-        padding: 1rem; /* Reducir el padding */
-    }
-
-    .price {
-        font-size: 1.5rem; /* Tamaño de fuente más pequeño */
-    }
-
-    .benefit, .discount {
-        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
-    }
-
-    button {
-        width: 100%; /* Botón de ancho completo */
-    }
-}
-
 
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     display: flex;
-    flex-direction: column; /* Organizar en columna */
+    flex-direction: column;
     align-items: center;
-    padding: 20px; /* Espacio alrededor */
+    padding: 20px;
 }
 
 section {
     width: 100%;
     max-width: 800px;
-    margin-bottom: 20px; /* Espacio entre secciones */
+    margin-bottom: 20px;
 }
 
 .pricing {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples filas */
     gap: 1.5rem;
+    flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea */
+    justify-content: center; /* Centra las tarjetas */
 }
 
 .plan {
     background-color: transparent;
-    border: 2px solid #03f8f8;
     color: #323232;
     padding: 1.5rem;
-    width: 250px; /* Ancho fijo para escritorio */
+    width: 250px;
     border-radius: 8px;
     text-align: center;
     position: relative;
-    box-shadow: 0 4px 8px rgba(2, 186, 227, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    box-shadow: 0 4px 8px rgba(4, 206, 251, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 600px) {
-    .plan {
-        width: calc(100% - 20px); /* Ancho completo en móvil menos espacio para los márgenes */
-        margin: 0 10px 1rem; /* Margen lateral para desalinear */
-        padding: 1rem; /* Reducir el padding */
-        transform: translateY(5px); /* Desplazamiento hacia abajo */
-    }
-
-    .price {
-        font-size: 1.5rem; /* Tamaño de fuente más pequeño */
-    }
-
-    .benefit, .discount {
-        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
-    }
-
-    button {
-        width: 100%; /* Botón de ancho completo */
-    }
-}
-
-
-/* Estilos existentes */
 .plan:hover {
-    transform: translateY(-10px); /* Levanta la tarjeta */
-    box-shadow: 0 8px 16px rgba(0, 204, 255, 0.4); /* Aumenta la sombra */
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 204, 255, 0.4);
 }
 
 .plan.popular {
-    border: 2px solid #03f8f8;
+    border: 2px solid #0054ef;
 }
 
 .plan h3 {
@@ -528,7 +449,7 @@ button {
     padding: 0.7rem 1.5rem;
     font-size: 1rem;
     color: #fff;
-    background-color: #08d6ec;
+    background-color: #04d3ef;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -536,19 +457,18 @@ button {
 }
 
 button:hover {
-    background-color: #8e5cb6;
+    background-color: #03e8f4;
 }
 
-/* Estilos responsivos para centrar el último plan en modo móvil */
-@media (max-width: 2px) {
-    .plans-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    .plan {
+        width: 100%; /* Tarjetas ocupan el 100% del ancho en móviles */
+        margin-bottom: 20px; /* Espacio entre tarjetas */
     }
 
-    .plan {
-        margin-bottom: 1rem;
-        width: 9010%; /* Ajusta el ancho según sea necesario */
+    .pricing {
+        flex-direction: column; /* Colocar tarjetas en columna en móviles */
+        align-items: center; /* Centrar tarjetas */
     }
 }

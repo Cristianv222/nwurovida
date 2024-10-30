@@ -48,7 +48,7 @@
 
     <section class="about container">
         <div class="about-img">
-            <img src="../images/gs4.jpg" alt="">
+            <img src="../images/gs3.jpeg" alt="">
         </div>
         <div class="about-txt">
             <h2>Niños de cualquier edad/Adultos mayores</h2>

@@ -4,18 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neurovida contactanos</title>
-</head>
-<body>
-    <header class="header">
+<header class="header">
     <nav class="navbar">
         <a href="index.php" class="logo">
             <img src="/neuro/images/logotipo.png" alt="">
@@ -38,17 +29,13 @@
             <a href=""><button class="btn btn-outline">Estudiante</button></a>
             <a href=""><button class="btn btn-solid">Maestro</button></a>
     </nav>
-    <div class="header-content container">
-            <img src="./neuro/images/Imagotipo.png" alt="Club Neurovida" class="logo-left">
-        </div>
     </header>
-
 </body>
 </html>
 
 
 <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         * {
             margin: 0;
             padding: 0;
@@ -222,7 +209,7 @@
             }
 
             .buttons.active {
-                right: 50%;
+                right: 45%;
                 transform: translateX(50%);
             }
 
@@ -256,15 +243,11 @@
     .nav-links {
         gap: 1rem; /* Reducimos el espacio entre enlaces del menú */
     }
-
-    .btn-Inicio {
-        font-size: 14px; /* Ajustamos el tamaño del texto en el botón */
-        padding: 8px 16px; /* Ajustamos el espacio interno del botón */
-    }
 }
-    </style>
+</style>
 
 <script>
+    
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
         const buttons = document.querySelector('.buttons');
@@ -283,6 +266,5 @@
                 nav.classList.remove('scrolled');
             }
         });
-    </script>
-</body>
-</html>
+    
+</script>

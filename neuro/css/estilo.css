@@ -82,11 +82,11 @@ body{
 }
 
 .menu .navbar ul li a {
-    font-size: 18px;
-    padding: 20px;
+    font-size: 20px;
+    padding: 15px;
     color: #000000;
     display: block;
-    font-weight: 300;
+    font-weight: 200;
 }
 .menu .navbar ul li a:hover {
     color: rgb(203, 156, 247);

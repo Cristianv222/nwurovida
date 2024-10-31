@@ -40,7 +40,7 @@
                 <a href="#" class="btn-1">Informacion</a>
             </div>
             <div class="header-img">
-                <img src="../images/left.png" alt="">
+                <img src="../images/g1.png" alt="">
 
             </div>
            
@@ -57,21 +57,19 @@
             <img src="../images/gs4.jpg" alt="">
         </div>
         <div class="about-txt">
-        <h2>  Niños de cualquier edad/Adultos mayores:</h2>
+        <h2>Niños de cualquier edad/Adultos mayores</h2>
             <p>
             A través de ejercicios mentales diseñados 
 para mejorar la memoria, la atención y el razonamiento, mantener 
 su mente activa y saludable, ayudando a prevenir el deterioro 
 cognitivo. 
-</p>
-<p>
+            <p>
 Mejora las habilidades cognitivas, sociales y físicas mediante 
 ejercicios que activan ambos hemisferios del cerebro, mejorando no 
-solo el aprendizaje sino también el bienestar emocional.
-</p>
+solo el aprendizaje sino también el bienestar emocional. 
+            </p> 
+            </p>
  
-          
-
         </div>
 
     </section>
@@ -81,52 +79,74 @@ solo el aprendizaje sino también el bienestar emocional.
         <div class="servicios-content container">
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-hospital-user"></i>
-                <h3>Coordinación Motora Fina y Gruesa </h3>
+                <i class="fa-solid fa-user"></i>
+                <h3>Coordinación Motora Fina y Gruesa  </h3>
+                <p>
+                
+                </p>
             </div>
 
             <div class="servicio-1">
                 <i class="fa-sharp fa-solid fa-stethoscope"></i>
                 <h3>Concentración y Memoria  </h3>
+                <p>
+                
+                </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
+                <i class="fa-sharp fa-solid fa-book"></i>
                 <h3>Creatividad y Resolución de Problemas   </h3>
+                <p>
+                
+                </p>
             </div>
 
             <div class="servicio-1">
                 <i class="fa-solid fa-hospital"></i>
-                <h3>Lateralidad y Equilibrio </h3>
+                <h3>Lateralidad y Equilibrio  </h3>
+                <p> 
+            
+                </p>
             </div>
 
             <div class="servicio-1">
                 <i class="fa-solid fa-brain"></i>
                 <h3>Atención y Focalización  </h3>
+                <p> 
+            
+                </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-stethoscope"></i>
-                <h3>Coordinación Ojo-Mano   </h3>
+                <i class="fa-sharp fa-solid fa-user"></i>
+                <h3>Coordinación Ojo-Mano</h3>
+                <p>
+                
+                </p>
             </div>
-
-            <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-book"></i>
-                <h3>Trabajo en Equipo y Comunicación    </h3>
-            </div>
-
             <div class="servicio-1">
                 <i class="fa-solid fa-brain"></i>
-                <h3>Razonamiento Lógico  </h3>
+                <h3>Trabajo en Equipo y Comunicación </h3>
+                <p>
+                
+                </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-book"></i>
-                <h3>Ejercicios Cruzados  </h3>
+                <i class="fa-solid fa-book"></i>
+                <h3>Razonamiento Lógico  </h3>
+                <p>
+                
+                </p>
             </div>
 
+            <div class="servicio-1">
+                <i class="fa-sharp fa-solid fa-user"></i>
+                <h3>Ejercicios Cruzados </h3>
+                <p></p>
 
-
+    
         </div>
 
     </main>
@@ -134,8 +154,8 @@ solo el aprendizaje sino también el bienestar emocional.
     <section class="pricing">
         <div class="plan">
         <h3>Plan Diario</h3>
-            <p class="price"><span class="discount">Antes: $1</span> $1.50/días</p>
-            <p class="benefit">Acceso por 7 días</p>
+            <p class="price"><span class="discount"></span> $1.50/días</p>
+            <p class="benefit">Acceso por 1 día</p>
             <ul class="benefits">
             <li> Flexibilidad: Acceso según la disponibilidad diaria.</li>
             <li> Costo Asequible: Ideal para probar el servicio.</li>
@@ -147,31 +167,90 @@ solo el aprendizaje sino también el bienestar emocional.
         </div>
         <div class="plan popular">
             <h3>Plan Semanal</h3>
-            <p class="price"><span class="discount">Antes: $10</span> $7/semana</p>
+            <p class="price"><span class="discount"></span> $7/semana</p>
             <p class="benefit">Acceso por 7 días</p>
             <ul class="benefits">
-            <li> Compromiso Moderado: Enfoque a corto plazo.</li>
-            <li> Pruebas Rápidas: Evaluación intensiva en una semana.</li>
-            <li> Variedad de Ejercicios: Sesiones frescas y motivadoras.</li>
-            <li> Conexión Social: Participación en sesiones grupales.</li>
+            <li>Compromiso Moderado: Enfoque a corto plazo.</li>
+            <li>Pruebas Rápidas: Evaluación intensiva en una semana.</li>
+            <li>Variedad de Ejercicios: Sesiones frescas y motivadoras.</li>
+            <li>Conexión Social: Participación en sesiones grupales.</li>
 
             </ul>
             <button>Elegir plan</button>
         </div>
         <div class="plan">
             <h3>Plan Mensual</h3>
-            <p class="price"><span class="discount">Antes: $40</span> $30/mes</p>
+            <p class="price"><span class="discount"></span> $30/mes</p>
             <p class="benefit">Acceso por 30 días</p>
             <ul class="benefits">
-            <li> Acceso Ilimitado: Máximo aprovechamiento de sesiones.</li>
-            <li> Progreso Sostenido: Mejoras en memoria y concentración.</li>
-            <li> Recursos Exclusivos: Guías y ejercicios adicionales.</li>
-            <li> Evaluación Mensual: Medición de progreso mensual.</li>
-
+            <li>Acceso Ilimitado: Máximo aprovechamiento de sesiones.</li>
+            <li>Progreso Sostenido: Mejoras en memoria y concentración.</li>
+            <li>Recursos Exclusivos: Guías y ejercicios adicionales.</li>
+            <li>Evaluación Mensual: Medición de progreso mensual.</li>
             </ul>
             <button>Elegir plan</button>
         </div>
     </section>
+    <section>
+
+    </section>
+    <div style="height: 40px; background-color: white;"></div>
+    <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Sobre mí</h4>
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Autores Invitados</a></li>
+            </ul>
+           
+ 
+   
+        </div>
+        
+        <div class="footer-section">
+            <h4>Digital</h4>
+            <ul>
+                <li><a href="/index.php">Inicio</a></li>
+                <li><a href="/servicios.php">Servicios</a></li>
+                <li><a href="/contactanos.php">Contacto</a></li>
+                <li><a href="/quienres_somos.php">¿Quines somos?</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>Todos nuestros servicios</h4>
+            <ul>
+                <li><a href="/neuro/Servicios_individuales/manulidades.php">Manualidades</a></li>
+                <li><a href="/neuro/Servicios_individuales/programacion.php">Programación</a></li>
+                <li><a href="/neuro/Servicios_individuales/EduFinanciero.php">Educacion financiera</a></li>
+                <li><a href="/neuro/Servicios_individuales/saludMental.php">Salud Mental</a></li>
+                <li><a href="/neuro/Servicios_individuales/cursos_de_computacion.php">Curso de Computación</a></li>
+                <li><a href="/neuro/Servicios_individuales/gimnasia_cerebral.php">Gimnasia cerebral</a></li>
+                <li><a href="/neuro/Servicios_individuales/EduFinanciero.php">Educacion financiera</a></li>
+                <li><a href="/neuro/Servicios_individuales/meditaciones.php">Meditación</a></li>
+                <li><a href="/neuro/Servicios_individuales/acompañamientoDoulas.php">Acompañamiento de doulas</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Mi Comunidad</h4>
+            <div class="social-icons">
+                <a href="#"><img src="/neuro/images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="/neuro/images/instagram..png" alt="Instagram"></a>
+                <a href="#"><img src="/neuro/images/X.png" alt="Twitter"></a>
+                <a href="#"><img src="/neuro/images/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+        <a href="index.php" class="logo">
+            <img src="/neuro/images/logotipo.png" alt="">
+        </a>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024. Todos los derechos reservados <a href="/index.php">NeuroVida</a></p>  | Desarrollado por <a href="#">PixelByte</a></p>
+    </div>
+</footer>
+
 
 </body>
 </html>
@@ -388,6 +467,8 @@ solo el aprendizaje sino también el bienestar emocional.
         gap: 1rem; /* Reducimos el espacio entre enlaces del menú */
     }
 }
+
+
 /*seccion nueva sevicios*/
 .btn-1 {
   display: inline-block;
@@ -406,6 +487,17 @@ solo el aprendizaje sino también el bienestar emocional.
     display: flex;
 }
 
+.header-img {
+    width: 75%; /* Ajusta el ancho de la imagen */
+    padding-top: 50px; /* Ajusta según sea necesario */
+}
+
+.header-img img {
+    width: 200%;
+    max-width: 700px; /* Cambia este valor para ajustar el tamaño máximo en píxeles */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
 .header-txt {
     padding-top: 250px;
     text-align: center;
@@ -415,7 +507,7 @@ solo el aprendizaje sino también el bienestar emocional.
     line-height: 1.2;
     color: #323232;
     text-transform: uppercase;
-    font-size: 85px;
+    font-size: 85px; /* Tamaño de fuente para pantallas grandes */
     margin-bottom: 10px;
     letter-spacing: 0;
     white-space: normal;
@@ -428,9 +520,12 @@ solo el aprendizaje sino también el bienestar emocional.
     }
 
     .header-txt h1 {
-        font-size: 50px; /* Ajusta el tamaño de fuente */
+        font-size: 40px; /* Cambia el tamaño de fuente para móviles */
+        line-height: 1.3; /* Ajusta el espaciado entre líneas si es necesario */
+        margin-bottom: 5px; /* Ajusta el margen inferior si es necesario */
     }
 }
+
 
 
 /* Media query para dispositivos móviles */
@@ -440,7 +535,7 @@ solo el aprendizaje sino también el bienestar emocional.
     }
 
     .header-txt h1 {
-        font-size: 50px; /* Ajusta el tamaño de fuente */
+        font-size: 40px; /* Ajusta el tamaño de fuente */
     }
 }
 
@@ -482,12 +577,13 @@ solo el aprendizaje sino también el bienestar emocional.
     line-height: 1.2;
     color: #323232;
     text-transform: uppercase;
-    font-size: 80px;
-    margin-bottom: 30px; 
+    font-size: 50px;
+    margin-bottom: 10px;
     letter-spacing: 0;
     white-space: normal;
     margin-left: -650px; /* Ajuste para pantallas grandes */
 }
+
 
 .about-txt p {
     font-size: 20px;
@@ -782,26 +878,28 @@ section {
     position: relative;
     box-shadow: 0 4px 8px rgba(4, 206, 251, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid #02B1F4;
+    border: 2px solid #c5a5ce;
+    margin: 0 60px; /* Espacio a los lados */
+    margin-left: -60px;
 }
 
 .plan:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 204, 255, 0.4);
-    border: 2px solid #02B1F4;
+    border: 2px solid #c5a5ce;
 }
 
 .plan.popular {
-    border: 2px solid #02B1F4;
+    border: 2px solid #c5a5ce;
 }
 
 .plan h3 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Tamaño de fuente para el encabezado */
     margin-bottom: 1rem;
 }
 
 .price {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Tamaño de fuente para el precio */
     font-weight: bold;
     margin-bottom: 1rem;
 }
@@ -814,7 +912,7 @@ section {
 }
 
 .benefit {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Tamaño de fuente para los beneficios */
     margin: 0.5rem 0;
 }
 
@@ -831,13 +929,14 @@ button {
 }
 
 button:hover {
-    background-color: #03e8f4;
+    background-color: #c5a5ce;
 }
 
 /* Media Queries para dispositivos móviles */
 @media (max-width: 600px) {
     .plan {
-        width: 100%; /* Tarjetas ocupan el 100% del ancho en móviles */
+        width: 90%; /* Cambiar el ancho al 90% para mejor ajuste en móviles */
+        margin: 0 auto; /* Centrar las tarjetas en la pantalla */
         margin-bottom: 20px; /* Espacio entre tarjetas */
     }
 
@@ -845,10 +944,237 @@ button:hover {
         flex-direction: column; /* Colocar tarjetas en columna en móviles */
         align-items: center; /* Centrar tarjetas */
     }
+
+    /* Ajustes adicionales para mejorar la visualización */
+    .plan h3 {
+        font-size: 1.2rem; /* Ajustar tamaño del encabezado en móviles */
+    }
+
+    .price {
+        font-size: 1.5rem; /* Ajustar tamaño del precio en móviles */
+    }
+
+    .benefit {
+        font-size: 0.8rem; /* Ajustar tamaño de beneficios en móviles */
+    }
 }
 
 
+
+
+/* Eliminar bordes y márgenes del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0; /* Quitar el padding */
+    margin: 0; /* Quitar el margen */
+}
+
+/* Ajustar la sección */
+section {
+    width: 100%; /* Asegurarse de que ocupe el 100% del ancho */
+    max-width: 800px; /* Mantener el ancho máximo si es necesario */
+    margin: 0; /* Quitar el margen */
+}
+
+.pricing {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea */
+    justify-content: center; /* Centra las tarjetas */
+}
+
+/* Resto de tu código CSS */
+
+
+
+
     </style>
+    
+    
+
+
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Poppins', 'sans-serif';
+}
+
+/* Estilos generales para el footer */
+footer {
+    background-color: #c5e1c8; /* Color de fondo */
+    color: black; /* Color del texto */
+    padding: 20px 0; /* Espaciado vertical */
+    font-family: Poppins, sans-serif; /* Fuente utilizada */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    position: relative; /* Permite el ajuste relativo */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Espaciado entre secciones */
+    flex-wrap: wrap; /* Permite que las secciones se envuelvan en pantallas pequeñas */
+    padding: 0 20px; /* Espaciado horizontal */
+    max-width: 1100px; /* Ajuste a un ancho máximo */
+    margin: 0 auto; /* Centra el contenedor del footer */
+    
+}
+
+.footer-section {
+    flex: 1; /* Permite que las secciones crezcan */
+    min-width: 200px; /* Ancho mínimo */
+    margin: 10px; /* Margen entre secciones */
+    
+}
+
+.footer-section h4 {
+    font-size: 18px; /* Tamaño del encabezado */
+    margin-bottom: 10px; /* Margen inferior */
+    
+}
+
+.footer-section ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+}
+
+.footer-section ul li {
+    margin-bottom: 8px; /* Espaciado entre elementos de lista */
+}
+
+.footer-section ul li a {
+    color: blueviolet; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: 300; /* Peso de la fuente */
+    transition: color 0.3s; /* Transición suave para color */
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00; /* Color al pasar el ratón */
+}
+
+.social-icons a {
+    margin-right: 10px; /* Espaciado entre iconos sociales */
+}
+
+.social-icons img {
+    width: 24px; /* Ancho de los iconos */
+    height: 24px; /* Alto de los iconos */
+    transition: transform 0.3s; /* Transición suave para escalado */
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1); /* Escala al pasar el ratón */
+}
+
+.footer-bottom {
+    text-align: center; /* Centrado del texto */
+    padding: 20px 0; /* Espaciado vertical */
+    border-top: 2px solid rgba(78, 47, 99, 0.705); /* Línea superior */
+    margin-top: 20px; /* Margen superior */
+}
+
+.footer-bottom p {
+    margin: 0; /* Sin margen */
+    font-size: 14px; /* Tamaño del texto */
+}
+
+.footer-bottom a {
+    color: #ffcc00; /* Color de los enlaces en la parte inferior */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.logo {
+    height: 80px; /* Ajusta esto al tamaño que necesites */
+    display: flex; /* Flex para alinear */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.logo img {
+    
+    height: 100%; /* Imagen ocupa todo el alto */
+    width: auto; /* Mantiene la proporción */
+    object-fit: contain; /* Ajusta la imagen dentro del contenedor */
+}
+
+/* Estilos responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Apilar secciones en columna */
+        text-align: center; /* Centrar texto */
+    }
+
+    .footer-section {
+        margin-bottom: 20px; /* Espaciado inferior */
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center; /* Centrar iconos sociales */
+    }
+}
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

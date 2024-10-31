@@ -130,26 +130,27 @@
     <section class="pricing">
         <div class="plan">
         <h3>Plan Diario</h3>
-            <p class="price"><span class="discount"></span> $1.50/días</p>
-            <p class="benefit">Acceso por 7 días</p>
+        <p class="price"><span class="discount"></span> $1.33/Dia</p>
+            <p class="benefit">Acceso por 1 día</p>
             <ul class="benefits">
-            <li>✔ Flexibilidad: Acceso según la disponibilidad diaria.</li>
-            <li>✔ Costo Asequible: Ideal para probar el servicio.</li>
-            <li>✔ Opción de Adaptación: Práctica ajustable diariamente.</li>
-            <li>✔ Ejercicios Breves: Actividades cortas y efectivas.</li>
+            <li>Flexibilidad: Acceso según la disponibilidad diaria.</li>
+                <li>Costo Asequible: Ideal para probar el servicio por un día.</li>
+                <li>Adaptación Rápida: Práctica ajustable diariamente.</li>
+                <li>Apoyo Emocional Inmediato: Sesiones breves de acompañamiento emocional y físico.</li>
+                <li>Herramientas de Empoderamiento: Ejercicios para fortalecer la autoconfianza y la toma de decisiones.</li>
 
             </ul>
             <button>Elegir plan</button>
         </div>
         <div class="plan popular">
-            <h3>Plan Semanal</h3>
-            <p class="price"><span class="discount"></span> $7/semana</p>
+        <h3>Plan Semanal</h3>
+            <p class="price"><span class="discount"></span> $10/semana</p>
             <p class="benefit">Acceso por 7 días</p>
             <ul class="benefits">
-            <li>✔ Compromiso Moderado: Enfoque a corto plazo.</li>
-            <li>✔ Pruebas Rápidas: Evaluación intensiva en una semana.</li>
-            <li>✔ Variedad de Ejercicios: Sesiones frescas y motivadoras.</li>
-            <li>✔ Conexión Social: Participación en sesiones grupales.</li>
+            <li>Compromiso Moderado: Ideal para un enfoque a corto plazo.</li>
+             <li>Sesiones de Empoderamiento: Herramientas para la toma de decisiones informadas sobre el embarazo y el parto.</li>
+            <li>Apoyo Continuo: Acompañamiento constante durante la semana para reducir el estrés y la ansiedad.</li>
+            <li>Mejora del Bienestar: Ejercicios de empoderamiento y bienestar mental.</li>
 
             </ul>
             <button>Elegir plan</button>
@@ -157,12 +158,13 @@
         <div class="plan">
             <h3>Plan Mensual</h3>
             <p class="price"><span class="discount"></span> $40/mes</p>
-            <p class="benefit">Acceso por 30 días</p>
+            <p class="benefit">$50/mes con acompañante, Acceso por 30 días </p>
             <ul class="benefits">
-            <li>✔ Acceso Ilimitado: Máximo aprovechamiento de sesiones.</li>
-            <li>✔ Progreso Sostenido: Mejoras en memoria y concentración.</li>
-            <li>✔ Recursos Exclusivos: Guías y ejercicios adicionales.</li>
-            <li>✔ Evaluación Mensual: Medición de progreso mensual.</li>
+
+            <li>Acceso Ilimitado: Máximo aprovechamiento del servicio durante el embarazo, el parto y el posparto.</li>
+                <li>Reducción de Estrés: Apoyo continuo que promueve una recuperación más rápida y sin complicaciones.</li>
+        
+                <li>Beneficios para la Salud: Menor probabilidad de intervenciones médicas y una experiencia de parto más cómoda.</li>
 
             </ul>
             <button>Elegir plan</button>
@@ -554,12 +556,13 @@
     line-height: 1.2;
     color: #323232;
     text-transform: uppercase;
-    font-size: 80px;
+    font-size: 50px;
     margin-bottom: 10px;
     letter-spacing: 0;
     white-space: normal;
     margin-left: -650px; /* Ajuste para pantallas grandes */
 }
+
 
 .about-txt p {
     font-size: 20px;
@@ -848,13 +851,15 @@ section {
     background-color: transparent;
     color: #323232;
     padding: 1.5rem;
-    width: 250px; /* Ancho estándar para pantallas grandes */
+    width: 250px;
     border-radius: 8px;
     text-align: center;
     position: relative;
     box-shadow: 0 4px 8px rgba(4, 206, 251, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 2px solid #c5a5ce;
+    margin: 0 60px; /* Espacio a los lados */
+    margin-left: -60px;
 }
 
 .plan:hover {
@@ -873,7 +878,7 @@ section {
 }
 
 .price {
-    font-size: 2rem; /* Tamaño de fuente para el precio */
+    font-size: 1.5rem; /* Tamaño de fuente para el precio */
     font-weight: bold;
     margin-bottom: 1rem;
 }
@@ -910,6 +915,7 @@ button:hover {
 @media (max-width: 600px) {
     .plan {
         width: 90%; /* Cambiar el ancho al 90% para mejor ajuste en móviles */
+        margin: 0 auto; /* Centrar las tarjetas en la pantalla */
         margin-bottom: 20px; /* Espacio entre tarjetas */
     }
 
@@ -961,13 +967,16 @@ section {
 }
 
 /* Resto de tu código CSS */
-
-
-
-
     </style>
     
     
+
+
+
+
+
+
+
 
 
     <style>
@@ -977,6 +986,7 @@ section {
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family:'Poppins', 'sans-serif';
 }

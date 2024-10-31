@@ -2,8 +2,10 @@
 session_start();
 error_reporting(0);
 include('includes/config.php');
-if (strlen($_SESSION['alogin']) == "") {
-    header("Location: index.php");
+if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
+    // Redirige al usuario a la página de inicio de sesión si no está autenticado
+    header('Location: admin-login.php');
+    exit();
 } else {
     if (isset($_POST['submit'])) {
         $classname = $_POST['classname'];

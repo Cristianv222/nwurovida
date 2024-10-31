@@ -2,9 +2,17 @@
 session_start();
 error_reporting(0);
 include('includes/config.php');
+
 if (strlen($_SESSION['alogin']) == "") {
     header("Location: index.php");
 } else {
+
+// Verifica si el usuario ha iniciado sesión
+if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
+    // Redirige al usuario a la página de inicio de sesión si no está autenticado
+    header('Location: admin-login.php');
+    exit();
+}
 ?>
 
     <style>
@@ -14,6 +22,7 @@ if (strlen($_SESSION['alogin']) == "") {
             padding: 20px;
             /* Espaciado interno del contenido */
         }
+        
     </style>
 
     <?php include('includes/topbar.php'); ?>

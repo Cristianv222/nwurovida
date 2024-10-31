@@ -2,8 +2,10 @@
 session_start();
 error_reporting(0);
 include('includes/config.php');
-if (strlen($_SESSION['alogin']) == "") {
-    header("Location: index.php");
+if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
+    // Redirige al usuario a la página de inicio de sesión si no está autenticado
+    header('Location: admin-login.php');
+    exit();
 } else {
 
 ?>
@@ -15,7 +17,120 @@ if (strlen($_SESSION['alogin']) == "") {
         <div class="content-container">
             <?php include('includes/leftbar.php'); ?>
 
+            <style>
+                /* Estilos base de la tabla */
+                .display.table {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                    background-color: #fff;
+                    border-collapse: collapse;
+                }
 
+                /* Estilos para escritorio */
+                @media screen and (min-width: 769px) {
+
+                    .display.table th,
+                    .display.table td {
+                        padding: 0.75rem;
+                        vertical-align: top;
+                        border: 1px solid #dee2e6;
+                    }
+
+                    .action-buttons {
+                        white-space: nowrap;
+                    }
+                }
+
+                /* Estilos para móvil */
+                @media screen and (max-width: 768px) {
+
+                    /* Contenedor de la tabla con scroll horizontal */
+                    .panel-body {
+                        overflow-x: auto;
+                        -webkit-overflow-scrolling: touch;
+                        margin: 0 -15px;
+                        padding: 15px !important;
+                    }
+
+                    .display.table {
+                        /* Mantener estructura de tabla en móvil */
+                        display: table;
+                        margin: 0;
+                    }
+
+                    /* Ajustes de celdas para móvil */
+                    .display.table th,
+                    .display.table td {
+                        padding: 0.5rem;
+                        font-size: 0.9rem;
+                        white-space: nowrap;
+                        border: 1px solid #dee2e6;
+                    }
+
+                    /* Hacer las columnas más compactas */
+                    .display.table th:first-child,
+                    .display.table td:first-child {
+                        padding-left: 15px;
+                    }
+
+                    .display.table th:last-child,
+                    .display.table td:last-child {
+                        padding-right: 15px;
+                    }
+
+                    /* Mejorar visualización de botones en móvil */
+                    .action-buttons {
+                        display: flex;
+                        gap: 0.25rem;
+                        justify-content: flex-start;
+                    }
+
+                    .action-buttons .btn {
+                        padding: 0.25rem 0.5rem;
+                        font-size: 0.875rem;
+                    }
+
+                    /* Ajustar ancho mínimo de columnas importantes */
+                    .display.table td[data-label="Nombre de Estudiante"] {
+                        min-width: 150px;
+                    }
+
+                    .display.table td[data-label="Fecha de Registro"] {
+                        min-width: 100px;
+                    }
+                }
+
+                /* Estilos para los botones de acción */
+                .action-buttons .btn {
+                    border-radius: 4px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                .btn-info {
+                    background-color: #17a2b8;
+                    border-color: #17a2b8;
+                    color: white;
+                }
+
+                .btn-danger {
+                    background-color: #dc3545;
+                    border-color: #dc3545;
+                    color: white;
+                }
+
+                /* Efectos hover */
+                .btn-info:hover {
+                    background-color: #138496;
+                    border-color: #117a8b;
+                }
+
+                .btn-danger:hover {
+                    background-color: #c82333;
+                    border-color: #bd2130;
+                }
+            </style>
             <div class="main-page">
                 <div class="container-fluid">
                     <div class="row page-title-div">

@@ -4,177 +4,235 @@ error_reporting(0);
 include('includes/config.php');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resultados Estudiante</title>
+    <title>Avance del Estudiante</title>
+    
+    <!-- Estilos originales y nuevos estilos -->
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
     <link rel="stylesheet" href="css/animate-css/animate.min.css" media="screen">
     <link rel="stylesheet" href="css/lobipanel/lobipanel.min.css" media="screen">
     <link rel="stylesheet" href="css/prism/prism.css" media="screen">
     <link rel="stylesheet" href="css/main.css" media="screen">
-    <script src="js/modernizr/modernizr.min.js"></script>
     <link rel="stylesheet" href="./assets/css/resultados/style.css">
     <link rel="stylesheet" href="./assets/css/resultad/style.css">
 
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header.header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: #333;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        /* Sección de detalles del estudiante */
+        .student-details, .results {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+        }
+        .student-details h2, .results h2 {
+            font-size: 20px;
+            color: #4CAF50;
+        }
+        .student-description p {
+            margin: 10px 0;
+        }
+        strong {
+            color: #333;
+        }
+        
+        /* Tabla de resultados */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: #f2f2f2;
+        }
+        table tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        /* Galería de fotos */
+        .photo-gallery {
+            margin: 20px auto;
+            width: 80%;
+        }
+        .photo-gallery h2 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .gallery img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+
+    <script src="js/modernizr/modernizr.min.js"></script>
 </head>
 
 <body>
+    <header class="header">
+        <h1>Avance del Estudiante</h1>
+    </header>
+
     <div class="main-wrapper">
         <div class="content-wrapper">
             <div class="content-container">
+                <section class="student-details">
+                    <div class="student-description">
+                        <h2>Descripción del Estudiante</h2>
+                        <?php
+                        $rollid = $_POST['rollid'];
+                        $classid = $_POST['class'];
+                        $_SESSION['rollid'] = $rollid;
+                        $_SESSION['classid'] = $classid;
+                        $qery = "SELECT tblstudents.StudentName, tblstudents.RollId, tblstudents.RegDate, tblstudents.StudentId, tblstudents.Status, tblclasses.ClassName, tblclasses.Section, tblstudents.Image FROM tblstudents JOIN tblclasses ON tblclasses.id=tblstudents.ClassId WHERE tblstudents.RollId=:rollid AND tblstudents.ClassId=:classid";
+                        $stmt = $dbh->prepare($qery);
+                        $stmt->bindParam(':rollid', $rollid, PDO::PARAM_STR);
+                        $stmt->bindParam(':classid', $classid, PDO::PARAM_STR);
+                        $stmt->execute();
+                        $resultss = $stmt->fetchAll(PDO::FETCH_OBJ);
 
-                <div class="main-page">
-                    <div class="container-fluid">
-                        <h1><span class="blue"></span>Avance del<span class="blue"></span> <span class="yellow"> Estudiante</span></h1>
+                        if ($stmt->rowCount() > 0) {
+                            foreach ($resultss as $row) { ?>
+                                <p><strong>Nombre de Estudiante:</strong> <?php echo htmlentities($row->StudentName); ?></p>
+                                <p><strong>ID Roll:</strong> <?php echo htmlentities($row->RollId); ?></p>
+                                <p><strong>Año Lectivo:</strong> <?php echo htmlentities($row->ClassName); ?> (<?php echo htmlentities($row->Section); ?>)</p>
+                                <?php if ($row->Image) { ?>
+                                    <img src="data:image/jpeg;base64,<?php echo $row->Image; ?>" alt="Imagen del estudiante" style="width:150px;height:150px;border-radius:50%;">
+                                <?php }
+                            }
+                        }
+                        ?>
                     </div>
+                </section>
 
-                    <div class="container my-5">
-                        <div class="custom-container text-center">
-                            <section class="section" id="exampl">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-md-8 col-md-offset-2">
-                                            <div class="panel">
-                                                <div class="panel-heading">
-                                                    <div class="container my-4">
-                                                        <div class="custom-container text-center">
-                                                            <div class="panel-title">
-                                                                <hr />
-                                                                <?php
-                                                                // Code to retrieve student data
-                                                                $rollid = $_POST['rollid'];
-                                                                $classid = $_POST['class'];
-                                                                $_SESSION['rollid'] = $rollid;
-                                                                $_SESSION['classid'] = $classid;
-                                                                $qery = "SELECT tblstudents.StudentName, tblstudents.RollId, tblstudents.RegDate, tblstudents.StudentId, tblstudents.Status, tblclasses.ClassName, tblclasses.Section, tblstudents.Image FROM tblstudents JOIN tblclasses ON tblclasses.id=tblstudents.ClassId WHERE tblstudents.RollId=:rollid AND tblstudents.ClassId=:classid";
-                                                                $stmt = $dbh->prepare($qery);
-                                                                $stmt->bindParam(':rollid', $rollid, PDO::PARAM_STR);
-                                                                $stmt->bindParam(':classid', $classid, PDO::PARAM_STR);
-                                                                $stmt->execute();
-                                                                $resultss = $stmt->fetchAll(PDO::FETCH_OBJ);
+                <section class="results">
+                    <h2>Resultados Académicos</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Materia</th>
+                                <th>Calificación</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $query = "SELECT t.StudentName, t.RollId, t.ClassId, t.marks, SubjectId, tblsubjects.SubjectName FROM (SELECT sts.StudentName, sts.RollId, sts.ClassId, tr.marks, SubjectId FROM tblstudents AS sts JOIN tblresult AS tr ON tr.StudentId=sts.StudentId) AS t JOIN tblsubjects ON tblsubjects.id=t.SubjectId WHERE (t.RollId=:rollid AND t.ClassId=:classid)";
+                            $query = $dbh->prepare($query);
+                            $query->bindParam(':rollid', $rollid, PDO::PARAM_STR);
+                            $query->bindParam(':classid', $classid, PDO::PARAM_STR);
+                            $query->execute();
+                            $results = $query->fetchAll(PDO::FETCH_OBJ);
+                            $cnt = 1;
+                            $totlcount = 0;
 
-                                                                if ($stmt->rowCount() > 0) {
-                                                                    foreach ($resultss as $row) { ?>
-                                                                        <p><b>Nombre de Estudiante:</b> <?php echo htmlentities($row->StudentName); ?></p>
-                                                                        <p><b>Cedula:</b> <?php echo htmlentities($row->RollId); ?></p>
-                                                                        <p><b>Año Lectivo:</b> <?php echo htmlentities($row->ClassName); ?>(<?php echo htmlentities($row->Section); ?>)</p>
-                                                                        <?php
-                                                                        // Mostrar la imagen
-                                                                        if ($row->Image) { ?>
-                                                                            <img src="data:image/jpeg;base64,<?php echo $row->Image; ?>" alt="Imagen del estudiante" style="width:150px;height:150px;border-radius:50%;">
-                                                                        <?php }
-                                                                    }
-                                                                ?>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="panel-body p-20">
-                                                        <table class="table table-hover table-bordered" border="1" width="100%">
-                                                            <thead>
-                                                                <tr style="text-align: center">
-                                                                    <th style="text-align: center">#</th>
-                                                                    <th style="text-align: center ">Materia</th>
-                                                                    <th style="text-align: center">Calificaciones</th>
-                                                                </tr>
-                                                            </thead>
-
-                                                            <tbody>
-                                                                <?php
-                                                                    // Code for result
-                                                                    $query = "SELECT t.StudentName, t.RollId, t.ClassId, t.marks, SubjectId, tblsubjects.SubjectName FROM (SELECT sts.StudentName, sts.RollId, sts.ClassId, tr.marks, SubjectId FROM tblstudents AS sts JOIN tblresult AS tr ON tr.StudentId=sts.StudentId) AS t JOIN tblsubjects ON tblsubjects.id=t.SubjectId WHERE (t.RollId=:rollid AND t.ClassId=:classid)";
-                                                                    $query = $dbh->prepare($query);
-                                                                    $query->bindParam(':rollid', $rollid, PDO::PARAM_STR);
-                                                                    $query->bindParam(':classid', $classid, PDO::PARAM_STR);
-                                                                    $query->execute();
-                                                                    $results = $query->fetchAll(PDO::FETCH_OBJ);
-                                                                    $cnt = 1;
-                                                                    $totlcount = 0; // Inicializar la variable
-                                                                    if ($countrow = $query->rowCount() > 0) {
-                                                                        foreach ($results as $result) {
-                                                                ?>
-                                                                        <tr>
-                                                                            <th scope="row" style="text-align: center"><?php echo htmlentities($cnt); ?></th>
-                                                                            <td style="text-align: center"><?php echo htmlentities($result->SubjectName); ?></td>
-                                                                            <td style="text-align: center"><?php echo htmlentities($totalmarks = $result->marks); ?></td>
-                                                                        </tr>
-                                                                    <?php
-                                                                            $totlcount += $totalmarks;
-                                                                            $cnt++;
-                                                                        }
-                                                                    ?>
-                                                                    <tr>
-                                                                        <th scope="row" colspan="2" style="text-align: center">Total</th>
-                                                                        <td style="text-align: center"><b><?php echo htmlentities($totlcount); ?></b> de <b><?php echo htmlentities($outof = ($cnt - 1) * 100); ?></b></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <th scope="row" colspan="2" style="text-align: center">Porcentaje</th>
-                                                                        <td style="text-align: center"><b><?php echo htmlentities($totlcount * (100) / $outof); ?> %</b></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td colspan="3" align="center"><i class="fa fa-print fa-2x" aria-hidden="true" style="cursor:pointer" OnClick="CallPrint(this.value)"></i></td>
-                                                                    </tr>
-
-                                                                <?php } else { ?>
-                                                                    <div class="alert alert-warning left-icon-alert" role="alert">
-                                                                        <strong>Importante!</strong> Aun no se han declarado tus resultados
-                                                                    </div>
-                                                                <?php }
-                                                                } else { ?>
-                                                                    <div class="alert alert-danger left-icon-alert" role="alert">
-                                                                        <strong>Hubo inconvenientes!</strong>
-                                                                        <?php echo htmlentities("ID Roll inválido"); ?>
-                                                                    </div>
-                                                                <?php } ?>
-                                                            </tbody>
-                                                        </table>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group">
-                                                <div class="col-sm-6">
-                                                    <a href="../index.php" style="color:white;">Volver</a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
+                            if ($countrow = $query->rowCount() > 0) {
+                                foreach ($results as $result) { ?>
+                                    <tr>
+                                        <td><?php echo htmlentities($cnt); ?></td>
+                                        <td><?php echo htmlentities($result->SubjectName); ?></td>
+                                        <td><?php echo htmlentities($totalmarks = $result->marks); ?></td>
+                                    </tr>
+                                    <?php
+                                    $totlcount += $totalmarks;
+                                    $cnt++;
+                                } ?>
+                                <tr>
+                                    <td colspan="2">Total</td>
+                                    <td><b><?php echo htmlentities($totlcount); ?></b> de <b><?php echo htmlentities(($cnt - 1) * 100); ?></b></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Porcentaje</td>
+                                    <td><b><?php echo htmlentities($totlcount * (100) / (($cnt - 1) * 100)); ?> %</b></td>
+                                </tr>
+                            <?php } else { ?>
+                                <div class="alert alert-warning left-icon-alert" role="alert">
+                                    <strong>Importante!</strong> Aún no se han declarado tus resultados.
                                 </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                </section>
 
+                <section class="photo-gallery">
+                    <h2>Actividades Realizadas en Clase</h2>
+                    <div class="gallery">
+                        <img src="fotos/actividad1.jpg" alt="Actividad 1">
+                        <img src="fotos/actividad2.jpg" alt="Actividad 2">
+                        <img src="fotos/actividad3.jpg" alt="Actividad 3">
+                        <img src="fotos/actividad4.jpg" alt="Actividad 4">
+                    </div>
+                </section>
+
+                <footer>
+                    <a href="../index.php" class="back-button">Volver</a>
+                </footer>
             </div>
         </div>
     </div>
 
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
-    <script src="js/pace/pace.min.js"></script>
-    <script src="js/lobipanel/lobipanel.min.js"></script>
-    <script src="js/iscroll/iscroll.js"></script>
-    <script src="js/prism/prism.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-        function CallPrint(strid) {
-            var prtContent = document.getElementById("exampl");
-            var WinPrint = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
-            WinPrint.document.write(prtContent.innerHTML);
-            WinPrint.document.close();
-            WinPrint.focus();
-            WinPrint.print();
-            WinPrint.close();
-        }
-    </script>
-
 </body>
 
 </html>

@@ -4,10 +4,11 @@ error_reporting(E_ALL); // Muestra todos los errores
 ini_set('display_errors', 1); // Muestra los errores en la página
 include('includes/config.php');
 
-if (strlen($_SESSION['alogin']) == "") {
-    header("Location: index.php");
-    exit;
-} else {
+if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
+    // Redirige al usuario a la página de inicio de sesión si no está autenticado
+    header('Location: admin-login.php');
+    exit();
+}else {
     // Comprobar si se pasó el StudentId
     if (isset($_GET['stid'])) {
         $stid = intval($_GET['stid']); // Convierte a entero para mayor seguridad

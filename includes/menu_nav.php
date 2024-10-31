@@ -20,8 +20,8 @@
         </ul>
 
         <div class="buttons">
-            <a href=""><button class="btn btn-outline">Estudiante</button></a>
-            <a href=""><button class="btn btn-solid">Maestro</button></a>
+            <a href="../admin_panel/find-result.php"><button class="btn btn-outline">Estudiante</button></a>
+            <a href="../admin_panel/admin-login.php"><button class="btn btn-solid">Maestro</button></a>
     </nav>
     </header>
 

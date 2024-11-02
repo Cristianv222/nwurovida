@@ -160,11 +160,11 @@
         <p class="price"><span class="discount"></span> $1.50/Dia</p>
             <p class="benefit">Acceso por 1 día</p>
             <ul class="benefits">
-            <li>Flexibilidad: Acceso según la disponibilidad diaria.</li>
-                <li>Costo Asequible: Ideal para probar el servicio por un día.</li>
-                <li>Adaptación Rápida: Práctica ajustable diariamente.</li>
-                <li>Apoyo Emocional Inmediato: Sesiones breves de acompañamiento emocional y físico.</li>
-                <li>Herramientas de Empoderamiento: Ejercicios para fortalecer la autoconfianza y la toma de decisiones.</li>
+            <li>Acceso rápido a todas las herramientas.</li>
+            <li>Asistencia inmediata en cada sesión.</li>
+            <li>Almacenamiento temporal para trabajos diarios.</li>
+            <li>Plantillas básicas para aprendizaje visual.</li>
+            <li>Repaso intensivo para conocimientos rápidos.</li>
 
             </ul>
             <button>Elegir plan</button>
@@ -174,11 +174,11 @@
             <p class="price"><span class="discount"></span> $7/semana</p>
             <p class="benefit">Acceso por 7 días</p>
             <ul class="benefits">
-            <li>Compromiso Moderado: Ideal para un enfoque a corto plazo.</li>
-             <li>Sesiones de Empoderamiento: Herramientas para la toma de decisiones informadas sobre el embarazo y el parto.</li>
-            <li>Apoyo Continuo: Acompañamiento constante durante la semana para reducir el estrés y la ansiedad.</li>
-            <li>Mejora del Bienestar: Ejercicios de empoderamiento y bienestar mental.</li>
-
+            <li>Proyectos semanales para aplicar lo aprendido.</li>
+            <li>Asesoría personalizada semanal.</li>
+            <li>Espacio moderado para trabajos en curso.</li>
+            <li>Copias de seguridad de los proyectos.</li>
+            <li>Certificado de participación al finalizar.</li>
             </ul>
             <button>Elegir plan</button>
         </div>
@@ -187,11 +187,11 @@
             <p class="price"><span class="discount"></span> $30/mes</p>
             <p class="benefit">$50/mes con acompañante, Acceso por 30 días </p>
             <ul class="benefits">
-
-            <li>Acceso Ilimitado: Máximo aprovechamiento del servicio durante el embarazo, el parto y el posparto.</li>
-                <li>Reducción de Estrés: Apoyo continuo que promueve una recuperación más rápida y sin complicaciones.</li>
-        
-                <li>Beneficios para la Salud: Menor probabilidad de intervenciones médicas y una experiencia de parto más cómoda.</li>
+            <li>Dominio avanzado de todas las herramientas.</li>
+            <li>Soporte prioritario durante el curso.</li>
+            <li>Almacenamiento amplio para varios proyectos.</li>
+            <li>Proyecto final y certificación oficial.</li>
+            <li>Recursos premium para enriquecer trabajos.</li>
 
             </ul>
             <button>Elegir plan</button>
@@ -541,7 +541,8 @@
     }
 
     .header-txt h1 {
-        font-size: 40px; /* Ajusta el tamaño de fuente */
+        font-size: 50px; /* Ajusta el tamaño de fuente */
+        margin-left: 3px;
     }
 }
 

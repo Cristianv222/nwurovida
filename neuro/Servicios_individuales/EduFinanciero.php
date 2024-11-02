@@ -123,11 +123,11 @@
         <p class="price"><span class="discount"></span> $1.50/Dia</p>
             <p class="benefit">Acceso por 1 día</p>
             <ul class="benefits">
-            <li>Flexibilidad: Acceso según la disponibilidad diaria.</li>
-                <li>Costo Asequible: Ideal para probar el servicio por un día.</li>
-                <li>Adaptación Rápida: Práctica ajustable diariamente.</li>
-                <li>Apoyo Emocional Inmediato: Sesiones breves de acompañamiento emocional y físico.</li>
-                <li>Herramientas de Empoderamiento: Ejercicios para fortalecer la autoconfianza y la toma de decisiones.</li>
+            <li>Refuerzo de la Memoria: Mejora la retención de información.</li>
+                <li>Manejo del Estrés: Reduce la sensación de abrumo al enfocarse en tareas individuales.</li>
+                <li>Desarrollo de la Autonomía: Fomenta la independencia en la gestión del tiempo.</li>
+                <li>Incorporación de Hábitos Saludables: Permite incluir descansos y actividades físicas.</li>
+                <li>Fomento de la Creatividad: Estimula la creatividad con actividades variadas.</li>
 
             </ul>
             <button>Elegir plan</button>
@@ -137,10 +137,11 @@
             <p class="price"><span class="discount"></span> $7/semana</p>
             <p class="benefit">Acceso por 7 días</p>
             <ul class="benefits">
-            <li>Compromiso Moderado: Ideal para un enfoque a corto plazo.</li>
-             <li>Sesiones de Empoderamiento: Herramientas para la toma de decisiones informadas sobre el embarazo y el parto.</li>
-            <li>Apoyo Continuo: Acompañamiento constante durante la semana para reducir el estrés y la ansiedad.</li>
-            <li>Mejora del Bienestar: Ejercicios de empoderamiento y bienestar mental.</li>
+            <li>Evaluación del Progreso: Permite ver resultados inmediatos del trabajo.</li>
+             <li>Organización de Recursos: Facilita la preparación de materiales necesarios.</li>
+            <li>Desarrollo de la Planificación: Enseña a anticipar y planificar actividades.</li>
+            <li>Fomento de la Disciplina: Ayuda a seguir un horario y cumplir responsabilidades.</li>
+            <li>Refuerzo de Relaciones Interpersonales: Mejora las habilidades sociales a través de interacciones regulares.</li>
 
             </ul>
             <button>Elegir plan</button>
@@ -151,10 +152,11 @@
             <p class="benefit">$50/mes con acompañante, Acceso por 30 días </p>
             <ul class="benefits">
 
-            <li>Acceso Ilimitado: Máximo aprovechamiento del servicio durante el embarazo, el parto y el posparto.</li>
-                <li>Reducción de Estrés: Apoyo continuo que promueve una recuperación más rápida y sin complicaciones.</li>
-        
-                <li>Beneficios para la Salud: Menor probabilidad de intervenciones médicas y una experiencia de parto más cómoda.</li>
+            <li>Establecimiento de Metas: Ayuda a definir y trabajar hacia objetivos más amplios.</li>
+                <li>Desarrollo de Habilidades de Análisis: Promueve el pensamiento crítico al evaluar resultados.</li>
+                <li>Ajuste de Estrategias: Permite adaptar enfoques según el progreso observado.</li>
+                <li>Motivación y Compromiso: Los hitos mensuales mantienen el interés en el curso.</li>
+                <li>Documentación del Progreso: Facilita la recopilación de logros para evaluación y reflexión.</li>
 
             </ul>
             <button>Elegir plan</button>
@@ -504,7 +506,8 @@
     }
 
     .header-txt h1 {
-        font-size: 40px; /* Ajusta el tamaño de fuente */
+        font-size: 49px; /* Ajusta el tamaño de fuente */
+        margin-left: -8px;
     }
 }
 

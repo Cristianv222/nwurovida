@@ -5,27 +5,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Neurovida</title>
-  <link rel="shortcut icon" href="./neuro/images/ICO.png" type="image/x-icon" sizes="114x114">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="El Centro NeuroVida tiene como misión transformar y reconstruir el desarrollo integral de los miembros de la familia">
-  <meta name="keywords" content="Tulcan, NeuroVida, bienestar, neurociencia, salud mental, Tulcán, desarrollo cognitivo, educación financiera, emprendimiento, sostenibilidad, gimnasia cerebral, yoga prenatal, tareas dirigidas, acompañamiento de doulas, robótica, programación, nutrición, fisioterapia, inclusividad, responsabilidad social, resiliencia">
+  <title>NeuroVida</title>
+  <link rel="shortcut icon" href="./neuro/images/ICO.png" type="image/x-icon">
+
+  <meta name="description" content="El Centro NeuroVida tiene como misión transformar y reconstruir el desarrollo integral de los miembros de la familia.">
+  <meta name="keywords" content="Tulcan, NeuroVida, bienestar, neurociencia, salud mental, desarrollo cognitivo, educación financiera, emprendimiento, sostenibilidad, gimnasia cerebral, yoga prenatal, nutrición, fisioterapia, inclusividad, responsabilidad social, resiliencia">
+
   <meta property="og:title" content="NeuroVida - Centro Integral para el Bienestar Cognitivo y Emocional">
-  <meta property="og:description" content="NeuroVida es el primer centro en Tulcán que ofrece servicios enfocados en el bienestar integral familiar, combinando neurociencia, salud mental, y educación financiera. ¡Mejora tu calidad de vida con nosotros!">
+  <meta property="og:description" content="NeuroVida es el primer centro en Tulcán que ofrece servicios enfocados en el bienestar integral familiar, combinando neurociencia y salud mental. ¡Mejora tu calidad de vida con nosotros!">
   <meta property="og:image" content="./neuro/images/logotipo.png">
   <meta property="og:url" content="https://clubneurovida.com/">
 
   <link rel="stylesheet" href="./neuro/style.css">
   <script defer src="./neuro/script.js"></script>
-</head>
-
-<body>
-  <?php include './includes/menu_nav.php'; ?>
   <div class="header-content container">
-    <img src="./neuro/images/MARCA NEUROVIDA.png" alt="Club Neurovida" class="logo-left">
-    <a href="servicios.php" class="btn-Inicio">Agendar Cita</a>
+    <?php include './includes/menu_nav.php'; ?>
   </div>
-  <main class="frase_sec1">
+  <div class="background-image" id="backgroundDiv">
+    <div class="content-left">
+      <img src="./neuro/images/MARCA NEUROVIDA.svg" alt="Club Neurovida" class="logo-left">
+      <a href="servicios.php" class="btn-Inicio">Agendar Cita</a>
+    </div>
+  </div>
+
+</head>
+<main class="frase_sec1">
     <div class="frase-content_sec1 container">
       <h2>Nuestos servicios</h2>
       <p class="txt-p_sec1">En NeuroVida, creemos que la transformación y reconstrucción constante, es una oportunidad para crecer y mejorar.</p>
@@ -86,6 +90,51 @@
       </div>
     </div>
   </main>
+<body>
+  <div class="valores-container">
+    <img src="./neuro/images/QuienesSomos.png" alt="Valor 1" class="valor-img">
+    <img src="./neuro/images/Mision.png" alt="Valor 2" class="valor-img">
+    <img src="./neuro/images/Vision.png" alt="Valor 3" class="valor-img">
+    <img src="./neuro/images/Valores.png" alt="Valor 4" class="valor-img">
+  </div>
+  <div class="contenedor-principal">
+    <div class="objetivos-container">
+      <img src="./neuro/images/Objetivo2.png" alt="Objetivos" class="objetivos-img">
+      <div class="objetivos-texto">
+        <h2>Objetivos</h2>
+        <ul>
+  <li><strong>Desarrollar Habilidades Cognitivas:</strong> Fortalecer capacidades mentales mediante gimnasia cerebral para estimular el pensamiento crítico y la creatividad.</li>
+  <li><strong>Promover el Bienestar Emocional:</strong> Proveer herramientas para gestionar emociones, fomentando la autoestima y el bienestar.</li>
+  <li><strong>Fomentar la Sostenibilidad y el Emprendimiento:</strong> Enseñar principios financieros y sostenibilidad para formar emprendedores conscientes.</li>
+  <li><strong>Fortalecer la Responsabilidad Social:</strong> Inculcar responsabilidad hacia la comunidad y el medio ambiente, promoviendo prácticas éticas.</li>
+  <li><strong>Crear un Ambiente Inclusivo y Seguro:</strong> Asegurar acceso a una educación de calidad que respete las diferencias.</li>
+</ul>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="profesionales-container">
+      <img src="./neuro/images/Profesiones.png" alt="Profesionales" class="profesionales-img">
+      <div class="profesionales-texto">
+        <h2>Profesionales</h2>
+        <ul>
+          <li>Neuropsicología y Educación</li>
+          <li>Psicología</li>
+          <li>Nutrición y Salud</li>
+          <li>Educación</li>
+          <li>Fisioterapia</li>
+          <li>Inglés</li>
+          <li>Computación</li>
+          <li>Riesgos Financieros</li>
+          <li>Personal de apoyo: estudiantes de Educación Inicial, Educación Básica, Cultura Física, Computación, y Enfermería de la Universidad Politécnica Estatal del Carchi.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
   <?php include './includes/footer.php'; ?>
 </body>
 

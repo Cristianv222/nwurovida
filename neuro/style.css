@@ -1,36 +1,168 @@
-/* Estilos generales del contenedor principal */
-.header-content {
-  display: flex;
-  flex-direction: column; /* Coloca los elementos en una columna para que el botón quede debajo de la imagen */
-  align-items: center; /* Centra los elementos horizontalmente dentro del contenedor */
-  padding: 20px;
+.background-image {
+  background-image: url('ruta/a/tu/imagen portada.jpg'); /* Cambia esto a la ruta correcta de tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el div */
+  background-position: center; /* Centra la imagen en el div */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  padding: 50px; /* Espaciado interno (ajústalo según sea necesario) */
+  color: rgba(255, 255, 255, 0); /* Color del texto para asegurarse de que sea visible */
+  min-height: 500px; /* Asegúrate de que el div tenga una altura mínima */
+  display: flex; /* Utiliza Flexbox para el contenido */
+  align-items: center; /* Centra el contenido verticalmente */
 }
 
-/* Imagen del logotipo */
+.content-left {
+  display: flex; /* Usar flexbox para alinear los elementos dentro */
+  flex-direction: column; /* Alinea los elementos en columna */
+  align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
+  justify-content: center; /* Centra los elementos verticalmente */
+  height: 100%; /* Asegura que el contenedor llene la altura disponible */
+}
+
 .logo-left {
-  width: 500px; /* Mantiene el ancho natural de la imagen */
-  height: 500px; /* Mantiene la altura natural de la imagen */
-  margin-bottom: 15px; /* Añade un espacio debajo de la imagen para separar del botón */
+  width: 900px; /* Ajusta según sea necesario */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 15px; /* Espacio debajo de la imagen */
 }
 
-/* Botón para agendar cita */
 .btn-Inicio {
-  background-color: #00ABAA; /* Color de fondo del botón */
-  color: #fff; /* Color del texto del botón */
-  padding: 10px 20px; /* Añade espacio interno para agrandar el botón horizontal y verticalmente */
-  text-decoration: none; /* Elimina el subrayado del texto */
-  border-radius: 8px; /* Borde redondeado para el botón */
-  font-size: 16px; /* Tamaño de fuente del texto del botón */
-  font-weight: bold; /* Hace el texto en negrita */
-  transition: background-color 0.3s ease; /* Añade una transición suave al color de fondo cuando se haga hover */
+  padding: 10px 20px; /* Espaciado del botón */
+  background-color: #40e0d0; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s; /* Transición para el hover */
+  margin-top: 10px; /* Espacio entre el logo y el botón */
 }
 
-/* Cambia el color de fondo del botón cuando el cursor está encima */
 .btn-Inicio:hover {
-  background-color: #96D0EE; /* Color de fondo al pasar el cursor */
+  background-color: #38c9b8; /* Cambia el color en hover */
+}
+
+ /*CONTENEDOR VALORES*/
+ .valores-container {
+  display: flex; /* Usamos flexbox para alinear horizontalmente las imágenes */
+  justify-content: space-around; /* Espacio igual entre imágenes */
+  align-items: center; /* Centra verticalmente las imágenes */
+  padding: 20px; /* Espacio alrededor del contenedor */
+}
+
+.valor-img {
+  width: 450px; /* Ajusta el tamaño de las imágenes según necesites */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Bordes redondeados (opcional) */
+  transition: transform 0.3s; /* Suaviza el efecto de hover */
+}
+
+.valor-img:hover {
+  transform: scale(1.3); /* Aumenta el tamaño de la imagen al pasar el cursor */
 }
 
   
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor-principal {
+  display: flex; /* Usa flexbox para alinear los contenedores uno al lado del otro */
+  justify-content: space-between; /* Espacio entre los contenedores */
+  padding: 20px; /* Espacio alrededor del contenedor principal */
+}
+
+/* DIVS DE INFORMACION LATERAL */
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor-principal {
+  display: flex; /* Usa flexbox para alinear los contenedores uno al lado del otro */
+  justify-content: space-between; /* Espacio entre los contenedores */
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+/* DIVS DE INFORMACION LATERAL */
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor-principal {
+  display: flex; /* Usa flexbox para alinear los contenedores uno al lado del otro */
+  justify-content: space-between; /* Espacio entre los contenedores */
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor-principal {
+  display: flex; /* Usa flexbox para alinear los contenedores uno al lado del otro */
+  justify-content: space-between; /* Espacio entre los contenedores */
+  height: auto; /* Cambiar a auto para que se ajuste al contenido */
+}
+
+/* CONTENEDOR PRINCIPAL */
+
+.contenedor-principal {
+  display: flex; /* Usa flexbox para alinear los contenedores uno al lado del otro */
+  justify-content: space-between; /* Espacio entre los contenedores */
+  height: auto; /* Cambiar a auto para que se ajuste al contenido */
+}
+
+/* DIVS DE INFORMACION LATERAL */
+
+.objetivos-container {
+  display: flex; /* Usar flexbox para alinear horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos en el contenedor */
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  padding: 20px; /* Espacio alrededor del contenedor */
+  background-color: #CDE4CA; /* Color de fondo para el contenedor de objetivos */
+  width: 50%; /* Ocupa el 50% del ancho de la pantalla */
+  max-height: 600px; /* Altura máxima del contenedor de objetivos */
+  overflow-y: auto; /* Permite el desplazamiento vertical si el contenido excede la altura máxima */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+  transition: transform 0.3s; /* Animación de transición para el efecto hover */
+  margin: 0; /* Eliminar márgenes para evitar espacio extra */
+}
+
+.objetivos-container:hover {
+  transform: scale(1.02); /* Efecto de aumento al pasar el mouse */
+}
+
+.objetivos-img {
+  width: 300px; /* Ajusta según sea necesario */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-left: 30px; /* Espacio entre la imagen y el texto */
+}
+
+.objetivos-texto {
+  padding-left: 15%;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.profesionales-container {
+  display: flex; /* Usar flexbox para alinear horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos en el contenedor */
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  padding: 20px; /* Espacio alrededor del contenedor */
+  background-color: #96D0EE; /* Color de fondo para el contenedor de profesionales */
+  width: 50%; /* Ocupa el 50% del ancho de la pantalla */
+  max-height: 600px; /* Altura máxima del contenedor de profesionales */
+  overflow-y: auto; /* Permite el desplazamiento vertical si el contenido excede la altura máxima */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
+  transition: transform 0.3s; /* Animación de transición para el efecto hover */
+  margin: 0; /* Eliminar márgenes para evitar espacio extra */
+}
+
+.profesionales-container:hover {
+  transform: scale(1.02); /* Efecto de aumento al pasar el mouse */
+}
+
+.profesionales-texto {
+  padding-left: 15%;
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.profesionales-img {
+  width: 450px; /* Ajusta según sea necesario */
+  height: auto; /* Mantiene la proporción de la imagen */
+
+}
+
+
+/*CONENEDOR CARUSEL*/
 .frase-content_sec1 {
   display: flex;
   flex-direction: column;
@@ -39,6 +171,7 @@
   text-align: center;
   height: auto; /* Solo si quieres centrarlo en la pantalla completa */
 }
+
 .frase-content_sec1 h2 {
   color: #274193; /* Cambia a cualquier color que desees */
 }

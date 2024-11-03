@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #96D0EE; /* Color de fondo */
+    color: #274193;
+    padding: 20px;
+    border-radius: 12px; /* Bordes redondeados */
+    margin: 0 15px; /* Espacio en los lados laterales */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 10px;
+    gap: 15px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
+}
+.social-icons a {
+    display: flex;
+    justify-content: center; /* Centrar los iconos */
+    gap: 15px; /* Espacio entre los iconos */
+}
+
+.social-icons img {
+    width: var(--icon-size, 60px); /* Tamaño ajustable */
+    height: var(--icon-size, 60px);
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    border-top: 2px solid rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Estilos responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+}

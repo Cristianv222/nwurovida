@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+nav.scrolled {
+    background: white; /* Cambiado a blanco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    width: 200px; /* Ajusta el tamaño según lo necesites */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Opcional: asegura que la imagen no exceda el contenedor */
+}
+
+.header {
+    position: relative;
+    background-color: white; /* Fondo blanco para todo el encabezado */
+    width: 100%;
+    min-height: 80px; /* Ajusta la altura mínima según tus necesidades */
+    z-index: 1000; /* Asegúrate de que el encabezado esté por encima de otros elementos */
+}
+
+nav {
+    position: fixed; /* Mantiene el menú fijo en la parte superior */
+    top: 0; /* Asegúrate de que esté alineado al top */
+    left: 0; /* Asegúrate de que esté alineado al left */
+    width: 100%;
+    padding: 0 35px; /* Ajusta el padding según tus necesidades */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1001; /* Asegúrate de que esté por encima del fondo */
+    background-color: white; /* Fondo blanco para el menú */
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.btn {
+    padding: 8px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    text-align: center;
+}
+
+/* Botón sólido */
+.btn-solid {
+    background-color: #40e0d0;
+    color: #000;
+}
+
+.btn-solid:hover {
+    background-color: #38c9b8;
+}
+
+/* Botón outline */
+.btn-outline {
+    background-color: transparent;
+    color: black;
+    border: 2px solid #40e0d0;
+}
+
+.btn-outline:hover {
+    background-color: #40e0d0;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        transition: right 0.3s ease;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .buttons {
+        position: fixed;
+        bottom: 5rem;
+        right: -100%;
+        transition: right 0.3s ease;
+    }
+
+    .buttons.active {
+        right: 45%;
+    }
+
+    /* Animación del menú hamburguesa */
+    .hamburger.active div:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 6px);
+    }
+
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+}

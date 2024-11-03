@@ -42,3 +42,36 @@ function moveCarousel(direction) {
 setInterval(() => {
   moveCarousel(1);
 }, 2000); // Cada 3 segundos
+
+// imagen de fondo
+
+document.addEventListener('DOMContentLoaded', () => {
+  const backgroundDiv = document.getElementById('backgroundDiv');
+  const imageUrl = './neuro/images/imagen portada.jpg';
+
+  // Crea un nuevo objeto de imagen para comprobar la carga
+  const img = new Image();
+  img.src = imageUrl;
+
+  img.onload = () => {
+      // Si la imagen se carga correctamente, la establece como fondo
+      backgroundDiv.style.backgroundImage = `url('${imageUrl}')`;
+  };
+
+  img.onerror = () => {
+      // Si hay un error en la carga de la imagen, puedes ocultar el div
+      console.error('La imagen de fondo no se pudo cargar.');
+      backgroundDiv.classList.add('hidden'); // O puedes cambiar el fondo a un color sólido
+      // backgroundDiv.style.backgroundColor = '#f00'; // Por ejemplo, rojo
+  };
+});
+
+
+
+const images = document.querySelectorAll('.valor-img');
+
+images.forEach(img => {
+    img.addEventListener('click', () => {
+        alert(`Has seleccionado ${img.alt}`);
+    });
+});

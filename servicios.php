@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./neuro/css/estilo.css">
     <title>Neurovida-Servicios</title>
+    <?php include './includes/menu_nav.php'; ?>
+
 </head>
 <body>
-<?php include './includes/menu_nav.php'; ?>
     <div class="container_s">
         <h1 class="fade-in">Nuestros Servicios</h1>
         <p class="fade-in">Descubre los mejores servicios que ofrecemos para ti.</p>

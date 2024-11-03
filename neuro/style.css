@@ -9,7 +9,7 @@
 /* Imagen del logotipo */
 .logo-left {
   width: 500px; /* Mantiene el ancho natural de la imagen */
-  height: auto; /* Mantiene la altura natural de la imagen */
+  height: 500px; /* Mantiene la altura natural de la imagen */
   margin-bottom: 15px; /* Añade un espacio debajo de la imagen para separar del botón */
 }
 
@@ -31,7 +31,21 @@
 }
 
   
+.frase-content_sec1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: auto; /* Solo si quieres centrarlo en la pantalla completa */
+}
+.frase-content_sec1 h2 {
+  color: #274193; /* Cambia a cualquier color que desees */
+}
 
+.frase-content_sec1 .txt-p_sec1 {
+  color: #00ABAA; /* Cambia a cualquier color que desees */
+}
 .carousel-container {
     position: relative;
     width: 100%;
@@ -114,7 +128,7 @@
     padding: 20px;
   }
   
-/* Botón para agendar cita */
+/* Botón para carrusel */
 .btn-estud {
   background-color: #00ABAA; /* Color de fondo del botón */
   color: #fff; /* Color del texto del botón */

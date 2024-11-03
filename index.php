@@ -22,7 +22,7 @@
 <body>
   <?php include './includes/menu_nav.php'; ?>
   <div class="header-content container">
-    <img src="./neuro/images/MARCA NEUROVIDA.svg" alt="Club Neurovida" class="logo-left">
+    <img src="./neuro/images/MARCA NEUROVIDA.png" alt="Club Neurovida" class="logo-left">
     <a href="servicios.php" class="btn-Inicio">Agendar Cita</a>
   </div>
   <main class="frase_sec1">

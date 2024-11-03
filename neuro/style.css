@@ -54,7 +54,7 @@
 }
 
 .valor-img:hover {
-  transform: scale(1.3); /* Aumenta el tamaño de la imagen al pasar el cursor */
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el cursor */
 }
 
   
@@ -115,6 +115,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
   transition: transform 0.3s; /* Animación de transición para el efecto hover */
   margin: 0; /* Eliminar márgenes para evitar espacio extra */
+  border-radius: 10px;
 }
 
 .objetivos-container:hover {
@@ -144,6 +145,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
   transition: transform 0.3s; /* Animación de transición para el efecto hover */
   margin: 0; /* Eliminar márgenes para evitar espacio extra */
+  border-radius: 10px;
 }
 
 .profesionales-container:hover {

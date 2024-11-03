@@ -3,7 +3,7 @@
 <header class="header">
     <nav class="navbar">
         <a href="index.php" class="logo">
-            <img src="/neuro/images/logotipo.png" alt="">
+            <img src="/neuro/images/headBanner.png" alt="">
         </a>
         
         <button class="hamburger">
@@ -25,6 +25,9 @@
     </nav>
     </header>
 
+
+
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
@@ -50,7 +53,7 @@ min-height: 100vh;  /* Cambiado a 100vh para cubrir toda la pantalla */
 width: 100%;
 }
 .logo-left {
-max-width: 800px;
+max-width: 40px;
 height: auto;
 display: block;
 position: absolute;
@@ -61,8 +64,8 @@ margin-top: 0px;
 }  
 nav {
     position: fixed; /* Cambiado a absolute en lugar de fixed */
-    top: 0;
-    left: 0;
+    top: 10;
+    left: 10;
     width: 100%;
     padding: 0 35px;
     display: flex;
@@ -82,12 +85,12 @@ nav.scrolled {
 
 .logo {
 
-    height: 80px; /* Ajusta esto al tamaño que necesites */
+    height: 10px; /* Ajusta esto al tamaño que necesites */
     display: flex;
     align-items: center;
 }
 .logo img {
-    height: 100%;
+    height: 70%;
     width: auto;
     object-fit: contain;
 }

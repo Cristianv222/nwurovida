@@ -45,17 +45,20 @@
             </div>
         </div>
         <a href="index.php" class="logo">
-            <img src="/neuro/images/logotipo.png" alt="">
+            <img src="../neuro/images/Footer_Mesa de trabajo 1.png" alt="">
         </a>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2024. Todos los derechos reservados <a href="/index.php">NeuroVida</a></p>  | Desarrollado por <a href="#">PixelByte</a></p>
+        <p>&copy; 2024. Todos los derechos reservados <a href="/index.php">NeuroVida</a></p>  Desarrollado por <a href="#">PixelByte</a></p>
     </div>
 </footer>
 
 </body>
 </html>
 <style>
+
+
+
   @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
@@ -68,8 +71,8 @@ body{
 
 /* Estilos generales para el footer */
 footer {
-    background-color: #016064;
-    color: black;
+    background-color: #07DBD5;
+    color: #274193;
     padding: 20px 0;
     font-family: Poppins, sans-serif;
 }
@@ -88,6 +91,7 @@ footer {
 }
 
 .footer-section h4 {
+
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -102,7 +106,7 @@ footer {
 }
 
 .footer-section ul li a {
-    color: #c3b5d2;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: 300;
     transition: color 0.3s;
@@ -148,7 +152,7 @@ footer {
 }
 .logo {
 
-height: 80px; /* Ajusta esto al tamaño que necesites */
+height: 50px; /* Ajusta esto al tamaño que necesites */
 display: flex;
 align-items: center;
 }

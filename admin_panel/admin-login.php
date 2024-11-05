@@ -2,11 +2,9 @@
 session_start();
 error_reporting(0);
 include('includes/config.php');
-
 if ($_SESSION['alogin'] != '') {
    $_SESSION['alogin'] = '';
 }
-
 if (isset($_POST['login'])) {
    $uname = $_POST['username'];
    $password = md5($_POST['password']);
@@ -24,10 +22,8 @@ if (isset($_POST['login'])) {
    }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,7 +49,6 @@ if (isset($_POST['login'])) {
          transform: translateY(0);
       }
    }
-
    * {
       margin: 0;
       padding: 0;
@@ -157,6 +152,8 @@ if (isset($_POST['login'])) {
    .btn-login:hover {
       background-color: #354c57;
    }
+
+   
 </style>
 
 <body>
@@ -168,36 +165,26 @@ if (isset($_POST['login'])) {
       <div class="login-right">
          <div class="login-form">
             <div class="logo text-center">
-               <a href="#"><img style="height: 70px" src="assets/images/footer-logo.png" alt="Logo"></a>
                <h5 style="color: #4d626f;"> <strong>Bienvenido Neurovida</strong></h5>
             </div>
-
             <form method="post">
                <div class="input-group">
                   <label for="inputEmail3">Correo</label>
                   <input type="text" name="username" id="inputEmail3" class="form-control" placeholder="Correo" required>
                </div>
-
                <div class="input-group">
                   <label for="inputPassword3">Contraseña</label>
                   <input type="password" name="password" id="inputPassword3" class="form-control" placeholder="Contraseña" required>
                   <span class="show-password" onclick="togglePassword()">Mostrar</span>
                </div>
-
                <div class="form-group mt-20">
                   <button type="submit" name="login" class="btn login-btn">Acceder</button>
                   <button type="button" onclick="window.location.href='../index.php'" class="btn login-btn">Volver</button>
-
-
                </div>
-
             </form>
-            
-
          </div>
       </div>
    </div>
-
    <script>
       function togglePassword() {
          var passwordField = document.getElementById("inputPassword3");
@@ -208,7 +195,6 @@ if (isset($_POST['login'])) {
          }
       }
    </script>
-
    <!-- Scripts comunes -->
    <script src="assets/js/jquery/jquery-2.2.4.min.js"></script>
    <script src="assets/js/jquery-ui/jquery-ui.min.js"></script>

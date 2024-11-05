@@ -6,7 +6,7 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
     // Redirige al usuario a la página de inicio de sesión si no está autenticado
     header('Location: admin-login.php');
     exit();
-}else {
+} else {
 
 ?>
 
@@ -47,7 +47,45 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                     <div class="container-fluid">
 
 
+                        <style>
+                            /* Asegura que la tabla se ajuste a diferentes pantallas */
+                            @media (max-width: 768px) {
+                                .table-responsive {
+                                    margin-bottom: 15px;
+                                    /* Espaciado inferior */
+                                }
 
+                                table {
+                                    width: 100%;
+                                    /* Asegúrate de que la tabla use el 100% de ancho */
+                                    table-layout: auto;
+                                    /* Permite que las columnas se ajusten */
+                                }
+
+                                th,
+                                td {
+                                    white-space: nowrap;
+                                    /* Evita que el texto se divida en varias líneas */
+                                }
+
+                                th {
+                                    font-size: 14px;
+                                    /* Ajusta el tamaño de la fuente de los encabezados */
+                                }
+
+                                td {
+                                    font-size: 12px;
+                                    /* Ajusta el tamaño de la fuente de las celdas */
+                                }
+
+                                .btn {
+                                    padding: 5px 10px;
+                                    /* Reduce el tamaño de los botones en pantallas pequeñas */
+                                }
+                            }
+                        </style>
+
+                        </style>
                         <div class="row">
                             <div class="col-md-12">
 
@@ -65,7 +103,7 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                             <strong>Algo salió mal! </strong> <?php echo htmlentities($error); ?>
                                         </div>
                                     <?php } ?>
-                                    <div class="panel-body p-20">
+                                    <div class="panel-body table-responsive">
 
                                         <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
                                             <thead>
@@ -101,7 +139,7 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                                                 ?></td>
                                                             <td>
                                                                 <a href="edit-student.php?stid=<?php echo htmlentities($result->StudentId); ?>" class="btn btn-info"><i class="fa fa-edit" title="Edit Record"></i> </a>
-
+                                                                <a href="delete-student.php?stid=<?php echo htmlentities($result->StudentId); ?>" class="btn btn-danger" onclick="return confirm('¿Estás seguro de que quieres eliminar este estudiante?');"><i class="fa fa-trash" title="Delete Record"></i></a>
                                                             </td>
                                                         </tr>
                                                 <?php $cnt = $cnt + 1;

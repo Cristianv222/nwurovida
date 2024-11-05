@@ -6,9 +6,115 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
     // Redirige al usuario a la página de inicio de sesión si no está autenticado
     header('Location: admin-login.php');
     exit();
-}else {
+} else {
 ?>
+    <style>
+        /* Estilos base de la tabla */
+        .display.table {
+            width: 100%;
+            margin-bottom: 1rem;
+            background-color: #fff;
+            border-collapse: collapse;
+        }
 
+        /* Estilos para escritorio */
+        @media screen and (min-width: 769px) {
+
+            .display.table th,
+            .display.table td {
+                padding: 0.75rem;
+                vertical-align: top;
+                border: 1px solid #dee2e6;
+            }
+
+            .action-buttons {
+                white-space: nowrap;
+            }
+        }
+
+        /* Estilos para móvil */
+        @media screen and (max-width: 768px) {
+
+            /* Contenedor de la tabla con scroll horizontal */
+            .panel-body {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 0 -15px;
+                padding: 15px !important;
+            }
+
+            .display.table {
+                display: table;
+                margin: 0;
+            }
+
+            .display.table th,
+            .display.table td {
+                padding: 0.5rem;
+                font-size: 0.9rem;
+                white-space: nowrap;
+                border: 1px solid #dee2e6;
+            }
+
+            .action-buttons {
+                display: flex;
+                gap: 0.25rem;
+                justify-content: flex-start;
+            }
+
+            .action-buttons .btn {
+                padding: 0.25rem 0.5rem;
+                font-size: 0.875rem;
+            }
+
+            .display.table td[data-label="Nombre de Año"] {
+                min-width: 150px;
+            }
+
+            .display.table td[data-label="Año en número"] {
+                min-width: 100px;
+            }
+
+            .display.table td[data-label="Sección"] {
+                min-width: 100px;
+            }
+
+            .display.table td[data-label="Fecha de Creación"] {
+                min-width: 100px;
+            }
+        }
+
+        /* Estilos para los botones de acción */
+        .action-buttons .btn {
+            border-radius: 4px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-info {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+            color: white;
+        }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            color: white;
+        }
+
+        /* Efectos hover */
+        .btn-info:hover {
+            background-color: #138496;
+            border-color: #117a8b;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+    </style>
     <link rel="stylesheet" type="text/css" href="assets/js/DataTables/datatables.min.css" />
     <!-- ========== TOP NAVBAR ========== -->
     <?php include('includes/topbar.php'); ?>
@@ -93,7 +199,7 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                                             <td><?php echo htmlentities($result->CreationDate); ?></td>
                                                             <td>
                                                                 <a href="edit-class.php?classid=<?php echo htmlentities($result->id); ?>" class="btn btn-info"><i class="fa fa-edit" title="Edit Record"></i> </a>
-
+                                                                <a href="delete-class.php?classid=<?php echo htmlentities($result->id); ?>" class="btn btn-danger" onclick="return confirm('¿Estás seguro de que deseas eliminar este año?');"><i class="fa fa-trash" title="Delete Record"></i></a>
                                                             </td>
                                                         </tr>
                                                 <?php $cnt = $cnt + 1;

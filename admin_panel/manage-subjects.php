@@ -42,6 +42,44 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                 </div>
                 <!-- /.container-fluid -->
 
+
+                <style>
+                    @media (max-width: 768px) {
+                        .table-responsive {
+                            margin-bottom: 15px;
+                            /* Espaciado inferior */
+                        }
+
+                        table {
+                            width: 100%;
+                            /* Asegúrate de que la tabla use el 100% de ancho */
+                            table-layout: auto;
+                            /* Permite que las columnas se ajusten */
+                        }
+
+                        th,
+                        td {
+                            white-space: nowrap;
+                            /* Evita que el texto se divida en varias líneas */
+                        }
+
+                        th {
+                            font-size: 14px;
+                            /* Ajusta el tamaño de la fuente de los encabezados */
+                        }
+
+                        td {
+                            font-size: 12px;
+                            /* Ajusta el tamaño de la fuente de las celdas */
+                        }
+
+                        .btn {
+                            padding: 5px 10px;
+                            /* Reduce el tamaño de los botones en pantallas pequeñas */
+                        }
+                    }
+                </style>
+
                 <section class="section">
                     <div class="container-fluid">
 
@@ -65,48 +103,51 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                         </div>
                                     <?php } ?>
                                     <div class="panel-body p-20">
-
-                                        <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>Nombre Materia</th>
-                                                    <th>Código Materia</th>
-                                                    <th>Fecha Creación</th>
-                                                    <th>Fecha Actualización</th>
-                                                    <th>Acción</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <?php $sql = "SELECT * from tblsubjects";
-                                                $query = $dbh->prepare($sql);
-                                                $query->execute();
-                                                $results = $query->fetchAll(PDO::FETCH_OBJ);
-                                                $cnt = 1;
-                                                if ($query->rowCount() > 0) {
-                                                    foreach ($results as $result) {   ?>
-                                                        <tr>
-                                                            <td><?php echo htmlentities($cnt); ?></td>
-                                                            <td><?php echo htmlentities($result->SubjectName); ?></td>
-                                                            <td><?php echo htmlentities($result->SubjectCode); ?></td>
-                                                            <td><?php echo htmlentities($result->Creationdate); ?></td>
-                                                            <td><?php echo htmlentities($result->UpdationDate); ?></td>
-                                                            <td>
-                                                                <a href="edit-subject.php?subjectid=<?php echo htmlentities($result->id); ?>" class="btn btn-info"><i class="fa fa-edit" title="Edit Record"></i> </a>
-
-                                                            </td>
-                                                        </tr>
-                                                <?php $cnt = $cnt + 1;
-                                                    }
-                                                } ?>
-
-
-                                            </tbody>
-                                        </table>
-
-
-                                        <!-- /.col-md-12 -->
+                                        <div class="table-responsive">
+                                            <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Nombre Materia</th>
+                                                        <th>Código Materia</th>
+                                                        <th>Fecha Creación</th>
+                                                        <th>Fecha Actualización</th>
+                                                        <th>Acción</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <?php
+                                                    $sql = "SELECT * from tblsubjects";
+                                                    $query = $dbh->prepare($sql);
+                                                    $query->execute();
+                                                    $results = $query->fetchAll(PDO::FETCH_OBJ);
+                                                    $cnt = 1;
+                                                    if ($query->rowCount() > 0) {
+                                                        foreach ($results as $result) {   ?>
+                                                            <tr>
+                                                                <td><?php echo htmlentities($cnt); ?></td>
+                                                                <td><?php echo htmlentities($result->SubjectName); ?></td>
+                                                                <td><?php echo htmlentities($result->SubjectCode); ?></td>
+                                                                <td><?php echo htmlentities($result->Creationdate); ?></td>
+                                                                <td><?php echo htmlentities($result->UpdationDate); ?></td>
+                                                                <td>
+                                                                    <a href="edit-subject.php?subjectid=<?php echo htmlentities($result->id); ?>" class="btn btn-info">
+                                                                        <i class="fa fa-edit" title="Edit Record"></i>
+                                                                    </a>
+                                                                    <a href="delete-subject.php?id=<?php echo htmlentities($result->id); ?>" class="btn btn-danger" onclick="return confirm('¿Estás seguro de que deseas eliminar esta materia?');">
+                                                                        <i class="fa fa-trash" title="Delete Record"></i>
+                                                                    </a>
+                                                                </td>
+                                                            </tr>
+                                                    <?php
+                                                            $cnt++;
+                                                        }
+                                                    } ?>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
+
                                 </div>
                             </div>
                             <!-- /.col-md-6 -->

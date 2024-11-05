@@ -18,7 +18,6 @@ session_start();
 error_reporting(0);
 include('includes/config.php');
 if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
-    // Redirige al usuario a la página de inicio de sesión si no está autenticado
     header('Location: admin-login.php');
     exit();
 } else {
@@ -31,30 +30,40 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
         $dob = $_POST['dob'];
         $status = 1;
 
-        // Manejar la carga de la imagen
-        $image = null;
-        if (isset($_FILES['imagen']) && $_FILES['imagen']['error'] == UPLOAD_ERR_OK) {
-            $image = file_get_contents($_FILES['imagen']['tmp_name']);
-            $image = base64_encode($image); // Codificamos la imagen en base64 si es necesario
-        }
+        // Verificar si la cédula ya existe
+        $checkSql = "SELECT * FROM tblstudents WHERE RollId = :roolid";
+        $checkQuery = $dbh->prepare($checkSql);
+        $checkQuery->bindParam(':roolid', $roolid, PDO::PARAM_STR);
+        $checkQuery->execute();
 
-        $sql = "INSERT INTO tblstudents (StudentName, RollId, StudentEmail, Gender, ClassId, DOB, Status, Image) VALUES (:studentname, :roolid, :studentemail, :gender, :classid, :dob, :status, :image)";
-        $query = $dbh->prepare($sql);
-        $query->bindParam(':studentname', $studentname, PDO::PARAM_STR);
-        $query->bindParam(':roolid', $roolid, PDO::PARAM_STR);
-        $query->bindParam(':studentemail', $studentemail, PDO::PARAM_STR);
-        $query->bindParam(':gender', $gender, PDO::PARAM_STR);
-        $query->bindParam(':classid', $classid, PDO::PARAM_STR);
-        $query->bindParam(':dob', $dob, PDO::PARAM_STR);
-        $query->bindParam(':status', $status, PDO::PARAM_STR);
-        $query->bindParam(':image', $image, PDO::PARAM_LOB); // Usar PDO::PARAM_LOB para manejar blobs
-
-        $query->execute();
-        $lastInsertId = $dbh->lastInsertId();
-        if ($lastInsertId) {
-            $msg = "Información del estudiante agregada correctamente";
+        if ($checkQuery->rowCount() > 0) {
+            $error = "La cédula ya existe. Por favor, verifica la información.";
         } else {
-            $error = "Algo salió mal. Inténtalo de nuevo";
+            // Manejar la carga de la imagen
+            $image = null;
+            if (isset($_FILES['imagen']) && $_FILES['imagen']['error'] == UPLOAD_ERR_OK) {
+                $image = file_get_contents($_FILES['imagen']['tmp_name']);
+                $image = base64_encode($image); // Codificamos la imagen en base64 si es necesario
+            }
+
+            $sql = "INSERT INTO tblstudents (StudentName, RollId, StudentEmail, Gender, ClassId, DOB, Status, Image) VALUES (:studentname, :roolid, :studentemail, :gender, :classid, :dob, :status, :image)";
+            $query = $dbh->prepare($sql);
+            $query->bindParam(':studentname', $studentname, PDO::PARAM_STR);
+            $query->bindParam(':roolid', $roolid, PDO::PARAM_STR);
+            $query->bindParam(':studentemail', $studentemail, PDO::PARAM_STR);
+            $query->bindParam(':gender', $gender, PDO::PARAM_STR);
+            $query->bindParam(':classid', $classid, PDO::PARAM_STR);
+            $query->bindParam(':dob', $dob, PDO::PARAM_STR);
+            $query->bindParam(':status', $status, PDO::PARAM_STR);
+            $query->bindParam(':image', $image, PDO::PARAM_LOB);
+
+            $query->execute();
+            $lastInsertId = $dbh->lastInsertId();
+            if ($lastInsertId) {
+                $msg = "Información del estudiante agregada correctamente";
+            } else {
+                $error = "Algo salió mal. Inténtalo de nuevo";
+            }
         }
     }
 ?>
@@ -67,7 +76,6 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
 
         <!-- ========== LEFT SIDEBAR ========== -->
         <?php include('includes/leftbar.php'); ?>
-        <!-- /.left-sidebar -->
 
         <div class="main-page">
 
@@ -106,7 +114,7 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                             <strong>Algo salió mal!</strong> <?php echo htmlentities($error); ?>
                                         </div>
                                     <?php } ?>
-                                    <form class="row" method="post" enctype="multipart/form-data"> <!-- Modificación aquí -->
+                                    <form class="row" method="post" enctype="multipart/form-data">
 
                                         <div class="form-group col-md-6">
                                             <label for="default" class="control-label">Nombre Completo</label>
@@ -115,7 +123,7 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
 
                                         <div class="form-group col-md-6">
                                             <label for="default" class="control-label">Cedula</label>
-                                            <input type="text" name="rollid" class="form-control" id="rollid" maxlength="5" required="required" autocomplete="off">
+                                            <input type="text" name="rollid" class="form-control" id="rollid" required="required" autocomplete="off">
                                         </div>
 
                                         <div class="form-group col-md-6">

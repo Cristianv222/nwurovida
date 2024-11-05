@@ -4,37 +4,37 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family:'Poppins', 'sans-serif';
-}
-.header{
-    position: relative;
-    background-image: linear-gradient(
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 0)
-    ),
-url(/neuro/images/imagen\ portada.jpg);
-background-position: center bottom;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-min-height: 100vh;  /* Cambiado a 100vh para cubrir toda la pantalla */
-width: 100%;
+
+body {
+    font-family: 'Poppins', 'sans-serif';
 }
 
+.header {
+    position: relative;
+    background-image: linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(/neuro/images/imagen\ portada.webp);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    /* Cambiado a 100vh para cubrir toda la pantalla */
+    width: 100%;
+}
 
 .logo-left {
-max-width: 800px;
-height: auto;
-display: block;
-position: absolute;
-top: 50%;
-left: 35%;
-transform: translate(-50%, -50%);
-margin-top: 0px;
-}  
+    max-width: 800px;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    margin-top: 0px;
+}
+
 nav {
-    position: fixed; /* Cambiado a absolute en lugar de fixed */
+    position: fixed;
+    /* Cambiado a absolute en lugar de fixed */
     top: 0;
     left: 0;
     width: 100%;
@@ -44,22 +44,26 @@ nav {
     font-weight: 200;
     align-items: center;
     z-index: 1000;
-    transition: background-color 0.3s ease; /* Agregado para suavizar la transición */
+    transition: background-color 0.3s ease;
+    /* Agregado para suavizar la transición */
 }
- .navbar ul li a:hover {
+
+.navbar ul li a:hover {
     color: rgb(203, 156, 247);
 }
+
 nav.scrolled {
     background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
-
-    height: 25px; /* Ajusta esto al tamaño que necesites */
+    height: 25px;
+    /* Ajusta esto al tamaño que necesites */
     display: flex;
     align-items: center;
 }
+
 .logo img {
     height: 100%;
     width: auto;
@@ -78,6 +82,7 @@ nav.scrolled {
     text-decoration: none;
     color: #333;
 }
+
 .btn {
     padding: 8px 24px;
     font-size: 16px;
@@ -89,7 +94,9 @@ nav.scrolled {
     text-align: center;
 }
 
+
 /* Botón sólido */
+
 .btn-solid {
     background-color: #40e0d0;
     color: #000000;
@@ -106,7 +113,9 @@ nav.scrolled {
     transform: translateY(-5px);
 }
 
+
 /* Botón outline */
+
 .btn-outline {
     background-color: transparent;
     font-weight: 200;
@@ -120,13 +129,16 @@ nav.scrolled {
     transform: translateY(-5px);
 }
 
+
 /* Contenedor para demostración */
+
 .button-container {
     display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 20px;
 }
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -148,7 +160,6 @@ nav.scrolled {
         display: block;
         z-index: 101;
     }
-
     .nav-links {
         position: fixed;
         top: 0;
@@ -161,61 +172,60 @@ nav.scrolled {
         background: white;
         transition: right 0.3s ease;
     }
-
     .nav-links.active {
         right: 0;
     }
-
     .buttons {
         position: fixed;
         bottom: 5rem;
         right: -100%;
         transition: right 0.3s ease;
     }
-
     .buttons.active {
         right: 45%;
         transform: translateX(50%);
     }
-
     /* Animación del menú hamburguesa */
     .hamburger.active div:nth-child(1) {
         transform: rotate(45deg) translate(8px, 6px);
     }
-
     .hamburger.active div:nth-child(2) {
         opacity: 0;
     }
-
     .hamburger.active div:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
     }
 }
 
+
 /* Ajustes para pantallas móviles */
+
 @media (max-width: 768px) {
-.logo-left {
-max-width: 400px; /* Reducimos el tamaño del logo en móviles */
-top: 60%; /* Bajamos un poco más el logo en pantallas pequeñas */
-left: 50%;
-transform: translate(-50%, -50%);
-}
-
-nav {
-padding: 1rem; /* Reducimos el padding del menú para que se vea mejor */
-}
-
-.nav-links {
-gap: 1rem; /* Reducimos el espacio entre enlaces del menú */
-}
+    .logo-left {
+        max-width: 400px;
+        /* Reducimos el tamaño del logo en móviles */
+        top: 60%;
+        /* Bajamos un poco más el logo en pantallas pequeñas */
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    nav {
+        padding: 1rem;
+        /* Reducimos el padding del menú para que se vea mejor */
+    }
+    .nav-links {
+        gap: 1rem;
+        /* Reducimos el espacio entre enlaces del menú */
+    }
 }
 
 
 /*seccion nueva sevicios*/
+
 .btn-1 {
-display: inline-block;
-padding: 20px 25px;
-background-color: #02B1F4;  
-color: #fafafa;
-border-radius: 20px;
+    display: inline-block;
+    padding: 20px 25px;
+    background-color: #02B1F4;
+    color: #fafafa;
+    border-radius: 20px;
 }

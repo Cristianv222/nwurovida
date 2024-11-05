@@ -80,20 +80,20 @@
                 <img src="./neuro/images/curso ingles.jpg" alt="Servicio 8">
                 <h3>Inglés </h3>
                 <p>Descripción del servicio 8.</p>
-                <button class="quick-view">Vista rápida</button>
+           <button class="quick-view">Vista rápida</button>
+                
             </div>
             <div class="card fade-up">
                 <img src="./neuro/images/robotica.jpg" alt="Servicio 9">
                 <h3>Robótica </h3>
                 <p>Descripción del servicio 9.</p>
-                <a href="./neuro/Servicios_individuales/">
                 <button class="quick-view">Vista rápida</button>
                 </a>
             </div>
             <div class="card fade-up">
                 <img src="./neuro/images/manualidades.jpg" alt="Servicio 9">
                 <h3> Manualidades  </h3>
-                <p>Descripción del servicio 9.</p>
+                <p>Descripción del servicio 10.</p>
                 <a href="./neuro/Servicios_individuales/manulidades.php">
                 <button class="quick-view">Vista rápida</button>
                 </a>

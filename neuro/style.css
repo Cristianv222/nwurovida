@@ -1,14 +1,3 @@
-.background-image {
-  background-image: url('ruta/a/tu/imagen portada.jpg'); /* Cambia esto a la ruta correcta de tu imagen */
-  background-size: cover; /* Asegura que la imagen cubra todo el div */
-  background-position: center; /* Centra la imagen en el div */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  padding: 50px; /* Espaciado interno (ajústalo según sea necesario) */
-  color: rgba(255, 255, 255, 0); /* Color del texto para asegurarse de que sea visible */
-  min-height: 500px; /* Asegúrate de que el div tenga una altura mínima */
-  display: flex; /* Utiliza Flexbox para el contenido */
-  align-items: center; /* Centra el contenido verticalmente */
-}
 
 .content-left {
   display: flex; /* Usar flexbox para alinear los elementos dentro */

@@ -105,8 +105,7 @@
   <li><strong>Desarrollar Habilidades Cognitivas:</strong> Fortalecer capacidades mentales mediante gimnasia cerebral para estimular el pensamiento crítico y la creatividad.</li>
   <li><strong>Promover el Bienestar Emocional:</strong> Proveer herramientas para gestionar emociones, fomentando la autoestima y el bienestar.</li>
   <li><strong>Fomentar la Sostenibilidad y el Emprendimiento:</strong> Enseñar principios financieros y sostenibilidad para formar emprendedores conscientes.</li>
-  <li><strong>Fortalecer la Responsabilidad Social:</strong> Inculcar responsabilidad hacia la comunidad y el medio ambiente, promoviendo prácticas éticas.</li>
-  <li><strong>Crear un Ambiente Inclusivo y Seguro:</strong> Asegurar acceso a una educación de calidad que respete las diferencias.</li>
+ 
 </ul>
 
         </ul>

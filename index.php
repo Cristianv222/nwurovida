@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NeuroVida</title>
   <link rel="shortcut icon" href="./neuro/images/ICO.png" type="image/x-icon">
-
   <meta name="description" content="El Centro NeuroVida tiene como misión transformar y reconstruir el desarrollo integral de los miembros de la familia.">
   <meta name="keywords" content="Tulcan, NeuroVida, bienestar, neurociencia, salud mental, desarrollo cognitivo, educación financiera, emprendimiento, sostenibilidad, gimnasia cerebral, yoga prenatal, nutrición, fisioterapia, inclusividad, responsabilidad social, resiliencia">
 
@@ -18,8 +17,11 @@
 
   <link rel="stylesheet" href="./neuro/style.css">
   <script defer src="./neuro/script.js"></script>
-  <div class="header-content container">
-    <?php include './includes/menu_nav.php'; ?>
+</head>
+
+<body>
+<?php include './includes/menu_nav.php'; ?>
+<div class="header-content container">
   </div>
   <div class="background-image" id="backgroundDiv">
     <div class="content-left">
@@ -28,7 +30,6 @@
     </div>
   </div>
 
-</head>
 <main class="frase_sec1">
     <div class="frase-content_sec1 container">
       <h2>Nuestos servicios</h2>
@@ -90,7 +91,6 @@
       </div>
     </div>
   </main>
-<body>
   <div class="valores-container">
     <img src="./neuro/images/Mision.png" alt="Valor 2" class="valor-img">
     <img src="./neuro/images/Vision.png" alt="Valor 3" class="valor-img">

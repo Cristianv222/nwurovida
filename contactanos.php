@@ -6,10 +6,10 @@
     <title>Neurovida Contáctanos</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="/Contacto.css">
-    <?php include './includes/menu_nav.php'; ?>
-
 </head>
 <body>
+<?php include './includes/menu_nav.php'; ?>
+
     <div class="contact-container">
         <section class="contact-info">
             <form action="https://formsubmit.co/1029cristianvasquez@gmail.com" method="POST">

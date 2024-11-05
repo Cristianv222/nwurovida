@@ -92,10 +92,9 @@
   </main>
 <body>
   <div class="valores-container">
-    <img src="./neuro/images/QuienesSomos.png" alt="Valor 1" class="valor-img">
     <img src="./neuro/images/Mision.png" alt="Valor 2" class="valor-img">
     <img src="./neuro/images/Vision.png" alt="Valor 3" class="valor-img">
-    <img src="./neuro/images/Valores.png" alt="Valor 4" class="valor-img">
+
   </div>
   <div class="contenedor-principal">
     <div class="objetivos-container">

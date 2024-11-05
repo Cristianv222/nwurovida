@@ -1,64 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family:'Poppins', 'sans-serif';
+}
+.header{
+    position: relative;
+    background-image: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+    ),
+url(/neuro/images/imagen\ portada.jpg);
+background-position: center bottom;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+min-height: 100vh;  /* Cambiado a 100vh para cubrir toda la pantalla */
+width: 100%;
+}
 
-body {
-    font-family: 'Poppins', sans-serif;
+
+.logo-left {
+max-width: 800px;
+height: auto;
+display: block;
+position: absolute;
+top: 50%;
+left: 35%;
+transform: translate(-50%, -50%);
+margin-top: 0px;
+}  
+nav {
+    position: fixed; /* Cambiado a absolute en lugar de fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 200;
+    align-items: center;
+    z-index: 1000;
+    transition: background-color 0.3s ease; /* Agregado para suavizar la transición */
+}
+ .navbar ul li a:hover {
+    color: rgb(203, 156, 247);
 }
 nav.scrolled {
-    background: white; /* Cambiado a blanco */
+    background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.logo img {
-    width: 200px; /* Ajusta el tamaño según lo necesites */
-    height: auto; /* Mantiene la proporción de la imagen */
-    max-width: 100%; /* Opcional: asegura que la imagen no exceda el contenedor */
-}
+.logo {
 
-.header {
-    position: relative;
-    background-color: white; /* Fondo blanco para todo el encabezado */
-    width: 100%;
-    min-height: 80px; /* Ajusta la altura mínima según tus necesidades */
-    z-index: 1000; /* Asegúrate de que el encabezado esté por encima de otros elementos */
-}
-
-nav {
-    position: fixed; /* Mantiene el menú fijo en la parte superior */
-    top: 0; /* Asegúrate de que esté alineado al top */
-    left: 0; /* Asegúrate de que esté alineado al left */
-    width: 100%;
-    padding: 0 35px; /* Ajusta el padding según tus necesidades */
+    height: 25px; /* Ajusta esto al tamaño que necesites */
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    z-index: 1001; /* Asegúrate de que esté por encima del fondo */
-    background-color: white; /* Fondo blanco para el menú */
 }
-
+.logo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
 
 .nav-links {
     display: flex;
     gap: 2rem;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #333;
 }
-
 .btn {
     padding: 8px 24px;
     font-size: 16px;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-family: Arial, sans-serif;
     min-width: 120px;
     text-align: center;
 }
@@ -66,16 +92,24 @@ nav {
 /* Botón sólido */
 .btn-solid {
     background-color: #40e0d0;
-    color: #000;
+    color: #000000;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-weight: 200;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .btn-solid:hover {
     background-color: #38c9b8;
+    transform: translateY(-5px);
 }
 
 /* Botón outline */
 .btn-outline {
     background-color: transparent;
+    font-weight: 200;
     color: black;
     border: 2px solid #40e0d0;
 }
@@ -83,13 +117,22 @@ nav {
 .btn-outline:hover {
     background-color: #40e0d0;
     color: white;
+    transform: translateY(-5px);
 }
 
+/* Contenedor para demostración */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+}
 .hamburger {
     display: none;
     cursor: pointer;
     background: none;
     border: none;
+    padding: 0.5rem;
 }
 
 .hamburger div {
@@ -103,6 +146,7 @@ nav {
 @media (max-width: 768px) {
     .hamburger {
         display: block;
+        z-index: 101;
     }
 
     .nav-links {
@@ -131,6 +175,7 @@ nav {
 
     .buttons.active {
         right: 45%;
+        transform: translateX(50%);
     }
 
     /* Animación del menú hamburguesa */
@@ -145,4 +190,32 @@ nav {
     .hamburger.active div:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
     }
+}
+
+/* Ajustes para pantallas móviles */
+@media (max-width: 768px) {
+.logo-left {
+max-width: 400px; /* Reducimos el tamaño del logo en móviles */
+top: 60%; /* Bajamos un poco más el logo en pantallas pequeñas */
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+nav {
+padding: 1rem; /* Reducimos el padding del menú para que se vea mejor */
+}
+
+.nav-links {
+gap: 1rem; /* Reducimos el espacio entre enlaces del menú */
+}
+}
+
+
+/*seccion nueva sevicios*/
+.btn-1 {
+display: inline-block;
+padding: 20px 25px;
+background-color: #02B1F4;  
+color: #fafafa;
+border-radius: 20px;
 }

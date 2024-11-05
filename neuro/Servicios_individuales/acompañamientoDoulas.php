@@ -551,7 +551,6 @@
     margin-left: 25px;
     
 }
-
 .about-txt h2 {
     line-height: 1.2;
     color: #323232;

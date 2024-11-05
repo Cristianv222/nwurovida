@@ -441,7 +441,7 @@
 
 
 /*seccion nueva sevicios*/
-.btn-1 {
+.btn-1 { 
   display: inline-block;
   padding: 20px 25px;
   background-color: #02B1F4;  

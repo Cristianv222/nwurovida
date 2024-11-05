@@ -613,7 +613,7 @@ solo el aprendizaje sino también el bienestar emocional.
     padding: 50px 0 100px 0;
     text-align: center;
     background-color: #fafafa;
-}
+} 
 
 .servicios h2 {
     color: #323232;

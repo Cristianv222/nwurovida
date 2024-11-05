@@ -6,5 +6,9 @@
 </head>
 <body>
 <?php include './includes/menu_nav.php'; ?>
+
+<?php include './includes/menu_nav.php'; ?>
 </body>
+<?php include './includes/footer.php'; ?>
+
 </html>

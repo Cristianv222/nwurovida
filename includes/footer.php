@@ -67,7 +67,7 @@
 </ul>
 
         </div>
-        <a href="index.php" class="logo">
+        <a href="index.php" class="logofooter">
             <img src="../neuro/images/Footer_Mesa de trabajo 1.png" alt="Logo">
         </a>
     </div>

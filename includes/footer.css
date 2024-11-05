@@ -90,14 +90,14 @@ footer {
     text-decoration: underline;
 }
 
-.logo {
+.logofooter {
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.logo img {
+.logofooter img {
     height: 100%;
     width: auto;
     object-fit: contain;

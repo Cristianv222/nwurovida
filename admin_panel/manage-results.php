@@ -28,7 +28,6 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
 
                 /* Estilos para escritorio */
                 @media screen and (min-width: 769px) {
-
                     .display.table th,
                     .display.table td {
                         padding: 0.75rem;
@@ -43,8 +42,6 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
 
                 /* Estilos para móvil */
                 @media screen and (max-width: 768px) {
-
-                    /* Contenedor de la tabla con scroll horizontal */
                     .panel-body {
                         overflow-x: auto;
                         -webkit-overflow-scrolling: touch;
@@ -53,12 +50,10 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                     }
 
                     .display.table {
-                        /* Mantener estructura de tabla en móvil */
                         display: table;
                         margin: 0;
                     }
 
-                    /* Ajustes de celdas para móvil */
                     .display.table th,
                     .display.table td {
                         padding: 0.5rem;
@@ -67,18 +62,6 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                         border: 1px solid #dee2e6;
                     }
 
-                    /* Hacer las columnas más compactas */
-                    .display.table th:first-child,
-                    .display.table td:first-child {
-                        padding-left: 15px;
-                    }
-
-                    .display.table th:last-child,
-                    .display.table td:last-child {
-                        padding-right: 15px;
-                    }
-
-                    /* Mejorar visualización de botones en móvil */
                     .action-buttons {
                         display: flex;
                         gap: 0.25rem;
@@ -90,7 +73,6 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                         font-size: 0.875rem;
                     }
 
-                    /* Ajustar ancho mínimo de columnas importantes */
                     .display.table td[data-label="Nombre de Estudiante"] {
                         min-width: 150px;
                     }
@@ -136,12 +118,8 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                     <div class="row page-title-div">
                         <div class="col-md-6">
                             <h2 class="title">Gestionar Resultados</h2>
-
                         </div>
-
-                        <!-- /.col-md-6 text-right -->
                     </div>
-                    <!-- /.row -->
                     <div class="row breadcrumb-div">
                         <div class="col-md-6">
                             <ul class="breadcrumb">
@@ -150,20 +128,13 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                 <li class="active">Gestionar Resultados</li>
                             </ul>
                         </div>
-
                     </div>
-                    <!-- /.row -->
                 </div>
-                <!-- /.container-fluid -->
 
                 <section class="section">
                     <div class="container-fluid">
-
-
-
                         <div class="row">
                             <div class="col-md-12">
-
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
@@ -179,7 +150,6 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                         </div>
                                     <?php } ?>
                                     <div class="panel-body p-20">
-
                                         <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
                                             <thead>
                                                 <tr>
@@ -193,79 +163,44 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <?php $sql = "SELECT  distinct tblstudents.StudentName,tblstudents.RollId,tblstudents.RegDate,tblstudents.StudentId,tblstudents.Status,tblclasses.ClassName,tblclasses.Section from tblresult join tblstudents on tblstudents.StudentId=tblresult.StudentId  join tblclasses on tblclasses.id=tblresult.ClassId";
+                                                <?php
+                                                $sql = "SELECT DISTINCT tblstudents.StudentName, tblstudents.RollId, tblstudents.RegDate, tblstudents.StudentId, tblstudents.Status, tblclasses.ClassName, tblclasses.Section 
+                                                        FROM tblresult 
+                                                        JOIN tblstudents ON tblstudents.StudentId = tblresult.StudentId  
+                                                        JOIN tblclasses ON tblclasses.id = tblresult.ClassId";
                                                 $query = $dbh->prepare($sql);
                                                 $query->execute();
                                                 $results = $query->fetchAll(PDO::FETCH_OBJ);
                                                 $cnt = 1;
                                                 if ($query->rowCount() > 0) {
-                                                    foreach ($results as $result) {   ?>
+                                                    foreach ($results as $result) { ?>
                                                         <tr>
                                                             <td><?php echo htmlentities($cnt); ?></td>
                                                             <td><?php echo htmlentities($result->StudentName); ?></td>
                                                             <td><?php echo htmlentities($result->RollId); ?></td>
                                                             <td><?php echo htmlentities($result->ClassName); ?>(<?php echo htmlentities($result->Section); ?>)</td>
                                                             <td><?php echo htmlentities($result->RegDate); ?></td>
-                                                            <td><?php if ($result->Status == 1) {
-                                                                    echo htmlentities('Active');
-                                                                } else {
-                                                                    echo htmlentities('Blocked');
-                                                                }
-                                                                ?></td>
-                                                            <td>
-                                                                <a href="edit-result.php?stid=<?php echo htmlentities($result->StudentId); ?>" class="btn btn-info"><i class="fa fa-edit" title="Edit Record"></i> </a>
-
-                                                            </td>
-                                                            <td>
+                                                            <td><?php echo $result->Status == 1 ? 'Active' : 'Blocked'; ?></td>
+                                                            <td class="action-buttons">
                                                                 <a href="edit-result.php?stid=<?php echo htmlentities($result->StudentId); ?>" class="btn btn-info"><i class="fa fa-edit" title="Edit Record"></i> </a>
                                                                 <a href="delete-result.php?stid=<?php echo htmlentities($result->StudentId); ?>" class="btn btn-danger" onclick="return confirm('¿Estás seguro de que deseas eliminar este resultado?');"><i class="fa fa-trash" title="Delete Record"></i></a>
                                                             </td>
-
                                                         </tr>
-                                                <?php $cnt = $cnt + 1;
+                                                <?php $cnt++;
                                                     }
                                                 } ?>
-
-
                                             </tbody>
                                         </table>
-
-
-                                        <!-- /.col-md-12 -->
                                     </div>
                                 </div>
                             </div>
-                            <!-- /.col-md-6 -->
-
-
                         </div>
-                        <!-- /.col-md-12 -->
                     </div>
+                </section>
             </div>
-            <!-- /.panel -->
         </div>
-        <!-- /.col-md-6 -->
-
     </div>
-    <!-- /.row -->
-
-    </div>
-    <!-- /.container-fluid -->
-    </section>
-    <!-- /.section -->
-
-    </div>
-    <!-- /.main-page -->
-
-
-
-    </div>
-    <!-- /.content-container -->
-    </div>
-    <!-- /.content-wrapper -->
 
     <?php include('includes/footer.php'); ?>
-
-
 
 <?php } ?>

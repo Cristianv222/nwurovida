@@ -18,20 +18,20 @@
                     <span class="">Configuración</span>
                 </li>
                 <li class="has-children">
-                    <a href="#"><i class="fa fa-file-text"></i> <span>Años Escolares</span> <i class="fa fa-angle-right arrow"></i></a>
+                    <a href="#"><i class="fa fa-file-text"></i> <span>Horarios</span> <i class="fa fa-angle-right arrow"></i></a>
                     <ul class="child-nav">
-                        <li><a href="create-class.php"><i class="fa fa-plus"></i> <span>Crear Años</span></a></li>
-                        <li><a href="manage-classes.php"><i class="fa fa-bars"></i> <span>Gestionar Años</span></a></li>
+                        <li><a href="create-class.php"><i class="fa fa-plus"></i> <span>Crear Horarios</span></a></li>
+                        <li><a href="manage-classes.php"><i class="fa fa-bars"></i> <span>Gestionar Horarios</span></a></li>
 
                     </ul>
                 </li>
                 <li class="has-children">
-                    <a href="#"><i class="fa fa-book"></i> <span>Materias</span> <i class="fa fa-angle-right arrow"></i></a>
+                    <a href="#"><i class="fa fa-book"></i> <span>Actividades</span> <i class="fa fa-angle-right arrow"></i></a>
                     <ul class="child-nav">
-                        <li><a href="create-subject.php"><i class="fa fa-plus"></i> <span>Crear Materias</span></a></li>
-                        <li><a href="manage-subjects.php"><i class="fa fa-bars"></i> <span>Gestionar Materias</span></a></li>
-                        <li><a href="add-subjectcombination.php"><i class="fa fa-plus"></i> <span>Gestionar Relación Materias</span></a></li>
-                        <a href="manage-subjectcombination.php"><i class="fa fa-bars"></i> <span>Ver Relación de Materias</span></a>
+                        <li><a href="create-subject.php"><i class="fa fa-plus"></i> <span>Crear Actividades</span></a></li>
+                        <li><a href="manage-subjects.php"><i class="fa fa-bars"></i> <span>Gestionar Actividades</span></a></li>
+                        <li><a href="add-subjectcombination.php"><i class="fa fa-plus"></i> <span>Gestionar Relación Actividades</span></a></li>
+                        <a href="manage-subjectcombination.php"><i class="fa fa-bars"></i> <span>Ver Relación de Actividades</span></a>
                 </li>
             </ul>
             </li>

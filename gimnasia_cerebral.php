@@ -20,21 +20,15 @@
                 </p>
             </div>
             <div class="header-img">
-                <img src="../images/g1.png" alt="">
+                <img src="/neuro/images/g1.png" alt="">
 
             </div>
-           
         </div>
-
-
-    </header>
-
-
     </header>
 
     <section class="about container">
         <div class="about-img">
-            <img src="../images/gs4.jpg" alt="">
+            <img src="/neuro/images/gs4.jpg" alt="">
         </div>
         <div class="about-txt">
         <h2>Niños de cualquier edad/Adultos mayores</h2>
@@ -171,8 +165,6 @@ solo el aprendizaje sino también el bienestar emocional.
             <button>Elegir plan</button>
         </div>
     
-    <div style="height: 40px; background-color: white;"></div>
-
 <?php include '../nwurovida/includes/footer.php'; ?>
 </body>
 </html>

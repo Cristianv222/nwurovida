@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
 
-body {
-font-family: 'Poppins', sans-serif;
-background-color: #f4f4f4;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 0; /* Quitar el padding */
-margin: 0; /* Quitar el margen */
-}
 
 /*seccion nueva sevicios*/
 .btn-1 {
@@ -40,7 +26,7 @@ padding-top: 100px; /* Ajusta según sea necesario */
 
 .header-img img {
 width: 100%;
-max-width: 700px; /* Cambia este valor para ajustar el tamaño máximo en píxeles */
+max-width: 500px; /* Cambia este valor para ajustar el tamaño máximo en píxeles */
 height: auto; /* Mantiene la relación de aspecto */
 }
 
@@ -91,13 +77,6 @@ color: #818181;
 margin-bottom: 20px;
 }
 
-.header-txt p {
-
-font-size: 16px;
-color: #818181;
-margin-bottom: 45px;
-}
-
 .about {
 padding: 100px 0;
 display: flex;
@@ -126,7 +105,7 @@ font-size: 50px;
 margin-bottom: 10px;
 letter-spacing: 0;
 white-space: normal;
-margin-left: -650px; /* Ajuste para pantallas grandes */
+margin-left: -550px; /* Ajuste para pantallas grandes */
 }
 
 
@@ -134,7 +113,7 @@ margin-left: -650px; /* Ajuste para pantallas grandes */
 font-size: 20px;
 color: #818181;
 margin-bottom: 20px;
-margin-left: -650px; /* Ajuste para pantallas grandes */
+margin-left: -550px; /* Ajuste para pantallas grandes */
 }
 
 @media (max-width: 768px) {
@@ -150,9 +129,6 @@ margin-left: 0; /* Ajuste para centrar en móviles */
 text-align: center;
 }
 }
-
-
-
 
 .servicios {
 padding: 50px 0 100px 0;
@@ -248,7 +224,6 @@ top: 4px;
 left: 10px;
 }
 
-
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
 .cuadro {
@@ -279,34 +254,6 @@ font-size: 24px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
 font-size: 16px;
 }
 }
-
-
-
-
-@media (max-width:991px) {
-menu {
-padding: 20px;
-}
-.menu label {
-display: initial;
-}
-.menu .navbar {
-position: absolute;
-top: 100%;
-left: 0;
-right: 0;
-background-color: #f9f9f9;
-display: none;
-}
-
-.menu .navbar ul li {
-width: 100%;
-}
-
-#menu:checked ~ .navbar{
-display: initial;
-}
-
 
 @media (max-width:991px) {
 .header {
@@ -354,125 +301,4 @@ text-align: center;
 margin-bottom: 25px;
 }
 
-}
-
-}
-
-section {
-width: 100%;
-max-width: 800px;
-margin-bottom: 20px;
-}
-
-.pricing {
-display: flex;
-gap: 1.5rem;
-flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea */
-justify-content: center; /* Centra las tarjetas */
-}
-
-.plan {
-background-color: transparent;
-color: #323232;
-padding: 1.5rem;
-width: 250px;
-border-radius: 8px;
-text-align: center;
-position: relative;
-box-shadow: 0 4px 8px rgba(4, 206, 251, 0.2);
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-border: 2px solid #c5a5ce;
-margin: 0 60px; /* Espacio a los lados */
-margin-left: -60px;
-}
-
-.plan:hover {
-transform: translateY(-10px);
-box-shadow: 0 8px 16px rgba(0, 204, 255, 0.4);
-border: 2px solid #c5a5ce;
-}
-
-.plan.popular {
-border: 2px solid #c5a5ce;
-}
-
-.plan h3 {
-font-size: 1.5rem; /* Tamaño de fuente para el encabezado */
-margin-bottom: 1rem;
-}
-
-.price {
-font-size: 1.5rem; /* Tamaño de fuente para el precio */
-font-weight: bold;
-margin-bottom: 1rem;
-}
-
-.discount {
-font-size: 0.8rem;
-color: #ed0909;
-text-decoration: line-through;
-margin-right: 0.5rem;
-}
-
-.benefit {
-font-size: 0.9rem; /* Tamaño de fuente para los beneficios */
-margin: 0.5rem 0;
-}
-
-button {
-margin-top: 1rem;
-padding: 0.7rem 1.5rem;
-font-size: 1rem;
-color: #fff;
-background-color: #04d3ef;
-border: none;
-border-radius: 5px;
-cursor: pointer;
-transition: background-color 0.3s;
-}
-
-button:hover {
-background-color: #c5a5ce;
-}
-
-/* Media Queries para dispositivos móviles */
-@media (max-width: 600px) {
-.plan {
-width: 90%; /* Cambiar el ancho al 90% para mejor ajuste en móviles */
-margin: 0 auto; /* Centrar las tarjetas en la pantalla */
-margin-bottom: 20px; /* Espacio entre tarjetas */
-}
-
-.pricing {
-flex-direction: column; /* Colocar tarjetas en columna en móviles */
-align-items: center; /* Centrar tarjetas */
-}
-
-/* Ajustes adicionales para mejorar la visualización */
-.plan h3 {
-font-size: 1.2rem; /* Ajustar tamaño del encabezado en móviles */
-}
-
-.price {
-font-size: 1.5rem; /* Ajustar tamaño del precio en móviles */
-}
-
-.benefit {
-font-size: 0.8rem; /* Ajustar tamaño de beneficios en móviles */
-}
-}
-
-
-/* Ajustar la sección */
-section {
-width: 100%; /* Asegurarse de que ocupe el 100% del ancho */
-max-width: 800px; /* Mantener el ancho máximo si es necesario */
-margin: 0; /* Quitar el margen */
-}
-
-.pricing {
-display: flex;
-gap: 1.5rem;
-flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea */
-justify-content: center; /* Centra las tarjetas */
 }

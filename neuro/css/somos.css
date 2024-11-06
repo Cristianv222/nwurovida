@@ -1,0 +1,48 @@
+.hero{
+    position: relative;
+            background-image: linear-gradient(
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0)
+            ),
+        url(/neuro/images/imagen\ portada.webp);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100vh;  /* Cambiado a 100vh para cubrir toda la pantalla */
+        width: 100%;
+}
+    .container {
+    max-width: 1100%;
+    margin: 0 auto;
+    }
+    .hero-content {
+    display: flex;
+    }
+    .hero-txt {
+    padding-top: 300px;
+    text-align: center;
+    }
+    
+    .hero-txt h1 {
+    line-height: 1.2;
+    color: #323232;
+    text-transform: uppercase;
+    font-size: 85px; /* Tamaño de fuente para pantallas grandes */
+    margin-bottom: 10px;
+    letter-spacing: 0;
+    white-space: normal;
+    }
+    .btn_somos {
+        background-color: transparent;
+        font-weight: 200;
+        color: black;
+        border: 2px solid #40e0d0;
+        display: none;
+    }
+    
+    .btn_somos:hover {
+        background-color: #40e0d0;
+        color: white;
+        transform: translateY(-5px);
+    }

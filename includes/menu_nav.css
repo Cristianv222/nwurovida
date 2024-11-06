@@ -9,18 +9,6 @@ body {
     font-family: 'Poppins', 'sans-serif';
 }
 
-.header {
-    position: relative;
-    background-image: linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(/neuro/images/imagen\ portada.webp);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-    /* Cambiado a 100vh para cubrir toda la pantalla */
-    width: 100%;
-}
-
 .logo-left {
     max-width: 800px;
     height: auto;

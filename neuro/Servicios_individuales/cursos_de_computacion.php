@@ -528,7 +528,7 @@
     .header-txt h1 {
         font-size: 40px; /* Cambia el tamaño de fuente para móviles */
         line-height: 1.3; /* Ajusta el espaciado entre líneas si es necesario */
-        margin-bottom: 5px; /* Ajusta el margen inferior si es necesario */
+        margin-bottom: 5px; /* Ajusta el margen inferior si es necesario */ 
     }
 }
 

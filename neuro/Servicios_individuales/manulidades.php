@@ -512,7 +512,7 @@
         margin-bottom: 5px; /* Ajusta el margen inferior si es necesario */
     }
 }
-
+ 
 
 
 /* Media query para dispositivos móviles */

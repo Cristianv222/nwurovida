@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neurovida Contáctanos</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="/Contacto.css">
+    <link rel="stylesheet" href="./neuro/css/Contacto.css">
 </head>
 <body>
+
+<header>
 <?php include './includes/menu_nav.php'; ?>
+<div class="header-content container">
+            <div class="header-txt">
+
+            <h1>Contatanos</h1>
+            </div>
+            <div class="header-img">
+                <img src="/neuro/images/imagen portada.webp" alt="">
+
+            </div>
+        </div>
+</header>
+
 
     <div class="contact-container">
         <section class="contact-info">

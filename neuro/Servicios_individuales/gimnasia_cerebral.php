@@ -20,21 +20,15 @@
                 </p>
             </div>
             <div class="header-img">
-                <img src="../images/g1.png" alt="">
+                <img src="/neuro/images/g1.png" alt="">
 
             </div>
-           
         </div>
-
-
-    </header>
-
-
     </header>
 
     <section class="about container">
         <div class="about-img">
-            <img src="../images/gs4.jpg" alt="">
+            <img src="/neuro/images/gs4.jpg" alt="">
         </div>
         <div class="about-txt">
         <h2>Niños de cualquier edad/Adultos mayores</h2>
@@ -130,49 +124,49 @@ solo el aprendizaje sino también el bienestar emocional.
         </div>
 
     </main>
-
-    <section class="pricing">
-        <div class="plan">
-        <h3>Plan Diario</h3>
-            <p class="price"><span class="discount"></span> $1.50/días</p>
-            <p class="benefit">Acceso por 1 día</p>
-            <ul class="benefits">
-            <li> Flexibilidad: Acceso según la disponibilidad diaria.</li>
-            <li> Costo Asequible: Ideal para probar el servicio.</li>
-            <li> Opción de Adaptación: Práctica ajustable diariamente.</li>
-            <li> Ejercicios Breves: Actividades cortas y efectivas.</li>
-
-            </ul>
-            <button>Elegir plan</button>
-        </div>
-        <div class="plan popular">
-            <h3>Plan Semanal</h3>
-            <p class="price"><span class="discount"></span> $7/semana</p>
-            <p class="benefit">Acceso por 7 días</p>
-            <ul class="benefits">
-            <li>Compromiso Moderado: Enfoque a corto plazo.</li>
-            <li>Pruebas Rápidas: Evaluación intensiva en una semana.</li>
-            <li>Variedad de Ejercicios: Sesiones frescas y motivadoras.</li>
-            <li>Conexión Social: Participación en sesiones grupales.</li>
-
-            </ul>
-            <button>Elegir plan</button>
-        </div>
-        <div class="plan">
-            <h3>Plan Mensual</h3>
-            <p class="price"><span class="discount"></span> $30/mes</p>
-            <p class="benefit">Acceso por 30 días</p>
-            <ul class="benefits">
-            <li>Acceso Ilimitado: Máximo aprovechamiento de sesiones.</li>
-            <li>Progreso Sostenido: Mejoras en memoria y concentración.</li>
-            <li>Recursos Exclusivos: Guías y ejercicios adicionales.</li>
-            <li>Evaluación Mensual: Medición de progreso mensual.</li>
-            </ul>
-            <button>Elegir plan</button>
-        </div>
+    <div class="pricing-container">
+    <div class="pricing-card">
+        <h3>Premium</h3>
+        <p class="price"><span>€</span>2.49<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+            <li>SEO avanzado</li>
+            <li>Análisis de visitas</li>
+            <li>Chat en vivo con WhatsApp</li>
+            <li>Soporte técnico 24/7</li>
+        </ul>
+    </div>
     
-    <div style="height: 40px; background-color: white;"></div>
-
+    <div class="pricing-card popular">
+        <h3>Business</h3>
+        <p class="price"><span>€</span>3.49<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+            <li>SEO avanzado</li>
+            <li>Análisis de visitas</li>
+            <li>Chat en vivo con WhatsApp</li>
+            <li>Soporte técnico 24/7</li>
+            <li>Más espacio de almacenamiento</li>
+        </ul>
+    </div>
+    
+    <div class="pricing-card">
+        <h3>Cloud Startup</h3>
+        <p class="price"><span>€</span>7.99<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+            <li>SEO avanzado</li>
+            <li>Análisis de visitas</li>
+            <li>Chat en vivo con WhatsApp</li>
+            <li>Soporte técnico 24/7</li>
+            <li>Almacenamiento en la nube</li>
+        </ul>
+    </div>
+</div>
+    
 <?php include '../nwurovida/includes/footer.php'; ?>
 </body>
 </html>

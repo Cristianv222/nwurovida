@@ -75,3 +75,47 @@ images.forEach(img => {
         alert(`Has seleccionado ${img.alt}`);
     });
 });
+
+
+// Obtener el botón y el formulario (si es necesario)
+const btnInicio = document.querySelector('.btn-Inicio');
+const logForm = document.querySelector('#logForm'); // Asegúrate de tener un formulario con este ID si lo estás usando
+
+// Agregar evento de clic al botón
+btnInicio.addEventListener('click', (event) => {
+  event.preventDefault(); // Evita la acción por defecto (si el botón está dentro de un formulario)
+
+  // Aquí puedes definir qué hacer cuando se hace clic en el botón
+  console.log("Botón presionado, subiendo log...");
+
+  // Si estás enviando un formulario para subir el log, puedes usar fetch o XMLHttpRequest para hacerlo de manera automática
+  const logData = new FormData(logForm); // Recoge los datos del formulario si los tienes
+
+  // Usar Fetch para enviar los datos al servidor (ajustar la URL según sea necesario)
+  fetch('/ruta/donde/subir/log', {
+    method: 'POST',
+    body: logData
+  })
+  .then(response => response.json()) // Asumiendo que el servidor responde con JSON
+  .then(data => {
+    console.log("Log subido con éxito:", data);
+  })
+  .catch(error => {
+    console.error("Error al subir el log:", error);
+  });
+
+  // Opcionalmente, cambiar algo en la interfaz para indicar que el log está siendo subido
+  btnInicio.textContent = 'Subiendo log...'; // Cambia el texto del botón, por ejemplo
+  btnInicio.disabled = true; // Deshabilita el botón mientras se sube el log
+});
+
+// Si estás utilizando un input file para seleccionar el log, puedes añadir un evento adicional para manejarlo
+const logInput = document.querySelector('#logFileInput'); // Asegúrate de tener un input con este ID
+
+logInput.addEventListener('change', (event) => {
+  const file = event.target.files[0];
+  if (file) {
+    console.log("Log seleccionado:", file.name);
+    // Aquí puedes hacer algo con el archivo, como prepararlo para el envío
+  }
+});

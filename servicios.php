@@ -5,10 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./neuro/css/estilo.css">
     <title>Neurovida-Servicios</title>
-    <?php include './includes/menu_nav.php'; ?>
+    
 
 </head>
 <body>
+    <header>
+    <?php include './includes/menu_nav.php'; ?>
+    <div class="header-content container">
+            <div class="header-txt">
+
+            <h1>Conoce sobre nuestros servicios</h1>
+                <p>
+                
+                </p>
+            </div>
+            <div class="header-img">
+                <img src="/neuro/images/imagen portada.webp" alt="">
+
+            </div>
+           
+        </div>
+    </header>
     <div class="container_s">
         <h1 class="fade-in">Nuestros Servicios</h1>
         <p class="fade-in">Descubre los mejores servicios que ofrecemos para ti.</p>
@@ -107,6 +124,41 @@
 
 
 <style>
+    .container {
+max-width: 1100%;
+margin: 0 auto;
+}
+.header-content {
+display: flex;
+}
+
+.header-img {
+width: 200%; /* Ajusta el ancho de la imagen */
+padding-top: 100px; /* Ajusta según sea necesario */
+}
+
+.header-img img {
+width: 100%;
+max-width: 500px; /* Cambia este valor para ajustar el tamaño máximo en píxeles */
+height: auto; /* Mantiene la relación de aspecto */
+}
+
+.header-txt {
+padding-top: 150px;
+text-align: center;
+}
+
+.header-txt h1 {
+line-height: 1.2;
+color: #323232;
+text-transform: uppercase;
+font-size: 70px; /* Tamaño de fuente para pantallas grandes */
+margin-bottom: 10px;
+letter-spacing: 0;
+white-space: normal;
+}
+
+
 .container_s {
     max-width: 1200px;
     margin: 0 auto;
@@ -114,10 +166,6 @@
     background-color: #ffffff00; 
 }
 
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
 
 p {
     font-size: 18px;

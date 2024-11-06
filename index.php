@@ -25,7 +25,7 @@
   </div>
   <div class="background-image" id="backgroundDiv">
     <div class="content-left">
-      <img src="./neuro/images/MARCA NEUROVIDA.svg" alt="Club Neurovida" class="logo-left">
+      <img src="/neuro/images/MARCA NEUROVIDA.svg" alt="Club Neurovida" class="logo-left">
       <a href="servicios.php" class="btn-Inicio">Agendar Cita</a>
     </div>
   </div>
@@ -94,7 +94,6 @@
   <div class="valores-container">
     <img src="./neuro/images/Mision.png" alt="Valor 2" class="valor-img">
     <img src="./neuro/images/Vision.png" alt="Valor 3" class="valor-img">
-
   </div>
   <div class="contenedor-principal">
     <div class="objetivos-container">

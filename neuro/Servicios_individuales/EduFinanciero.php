@@ -144,9 +144,7 @@
             <button>Elegir plan</button>
         </div>
     </section>
-    <section>
-
-    </section>
+   
     <div style="height: 40px; background-color: white;"></div>
 </body>
     <?php include './includes/footer.php'; ?>

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Gimnasia Cerebral</title>
     <link rel="shortcut icon" href="./neuro/images/apple-icon-144x144.png" type="image/x-icon">
-    <link rel="stylesheet" href="./neuro/css/gimnasia.css">
+    <link rel="stylesheet" href="/neuro/css/gimnasia.css">
 </head>
 <body>
 <header class="header_gimnasia">
@@ -165,6 +165,9 @@ solo el aprendizaje sino también el bienestar emocional.
             <button>Elegir plan</button>
         </div>
     
-<?php include '../nwurovida/includes/footer.php'; ?>
+        <div style="height: 40px; background-color: white;"></div>
 </body>
+    <?php include './includes/footer.php'; ?>
+</html>
+
 </html>

@@ -147,10 +147,12 @@
             <button>Elegir plan</button>
         </div>
     </section>
-
-    <?php include '../nwurovida/includes/footer.php'; ?>
-
+    
+    <div style="height: 40px; background-color: white;"></div>
 </body>
+    <?php include './includes/footer.php'; ?>
+</html>
+
 </html>
 
 

@@ -179,11 +179,7 @@
         </div>
     </section>
    
-    <section>
-    <?php include '../nwurovida/includes/footer.php'; ?>
-
-    </section>
-
-
+    <div style="height: 40px; background-color: white;"></div>
 </body>
+    <?php include './includes/footer.php'; ?>
 </html>

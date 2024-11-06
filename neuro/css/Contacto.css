@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
+<<<<<<< Updated upstream
 .hero_contac{
     position: relative;
             background-image: linear-gradient(
@@ -18,19 +19,62 @@ body {
         width: 100%;
 }
     .hero_contac-txt {
+=======
+
+.container {
+    max-width: 1100%;
+    margin: 0 auto;
+    }
+
+    .header-content {
+    display: flex;
+    }
+    
+    .header-img {
+        background-size: cover; /* Ajusta la imagen para que cubra todo el div */
+        background-position: center; /* Centra la imagen */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        height: 90vh; /* Ajusta la altura al tamaño de la ventana */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.btn-Inicio-contactanos {
+    padding: 10px 50px;
+    background-color: #40e0d0;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 250px;
+    margin-left: -270px; /* Ajusta el valor según lo que necesites */
+  }
+  
+  .btn-Inicio-contactanos {
+    background-color: #38c9b8;
+  }
+    .header-img img {
+    width: 100%;
+    max-width: 900px; /* Cambia este valor para ajustar el tamaño máximo en píxeles */
+    height: auto; /* Mantiene la relación de aspecto */
+    }
+    
+    .header-txt {
+>>>>>>> Stashed changes
     padding-top: 150px;
     text-align: center;
     }
     
     .hero_contac-txt h1 {
     line-height: 1.2;
-    color: #323232;
+    color: #36e3f0;
     text-transform: uppercase;
     font-size: 70px; /* Tamaño de fuente para pantallas grandes */
-    margin-bottom: 10px;
+    margin-bottom: 80px;
     letter-spacing: 0;
     white-space: normal;
     }
+
 .contact-container {
     display: flex; /* Alinea los elementos horizontalmente */
     justify-content: space-between; /* Espacio entre el contacto y el mapa */
@@ -152,7 +196,9 @@ input::placeholder, textarea::placeholder {
     }
 
     iframe {
-        height: 250px;
+    width: 100%; /* Asegura que el iframe ocupe todo el espacio */
+    height: 100%; /* Asegura que el iframe tenga la misma altura que el contenedor */
+    border: 0; /* Elimina el borde del iframe */
     }
 
     form {
@@ -162,8 +208,9 @@ input::placeholder, textarea::placeholder {
     .logo-left {
         max-width: 370px;
     }
-
-    .btn-Inicio {
-        padding: 8px 15px;
-    }
+    .btn-Inicio-contactanos {
+        padding: 12px 24px; /* Aumenta el tamaño del botón para que sea más accesible en pantallas pequeñas */
+        width: 60%; /* Hace que el botón ocupe todo el ancho disponible */
+        margin-top: 30px; /* Reduce el margen superior */
+      }
 }

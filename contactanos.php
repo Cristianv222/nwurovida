@@ -11,10 +11,22 @@
 
 <header>
 <?php include './includes/menu_nav.php'; ?>
+<<<<<<< Updated upstream
 <header class="hero_contac">
     <?php include './includes/menu_nav.php'; ?>
     <div class="hero_contac-content container">
             <div class="hero-txt">
+=======
+<div class="header-content container">
+            <div class="header-txt">
+            <h1>Contactanos</h1>
+            <div class="content-left">
+                    <a href="servicios.php" class="btn-Inicio">Agendar Cita</a>
+    </div>
+            </div>
+            <div class="header-img">
+                <img src="/neuro/images/imagen portada.webp" alt="">
+>>>>>>> Stashed changes
 
             <h1>Contactanos</h1>
                 <p>
@@ -47,33 +59,11 @@
                 </div>
             </form>
         </section>
-
-        <section class="map">
+    </div>
+    <section class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1410.4706480803052!2d-77.71259786613068!3d0.816259513493242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e2968bae7d5eb4d%3A0x2d2e73b19f33388d!2zVHVsY8Ohbg!5e0!3m2!1ses!2sec!4v1730240853658!5m2!1ses!2sec" 
                 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
-    </div>
-
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        const buttons = document.querySelector('.buttons');
-        const nav = document.querySelector('nav');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('active');
-            buttons.classList.toggle('active');
-        });
-
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-    </script>
     <?php include './includes/footer.php'; ?>
 </body>
 

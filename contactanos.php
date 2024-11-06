@@ -11,30 +11,12 @@
 
 <header>
 <?php include './includes/menu_nav.php'; ?>
-<<<<<<< Updated upstream
 <header class="hero_contac">
-    <?php include './includes/menu_nav.php'; ?>
     <div class="hero_contac-content container">
             <div class="hero-txt">
-=======
-<div class="header-content container">
-            <div class="header-txt">
-            <h1>Contactanos</h1>
-            <div class="content-left">
-                    <a href="servicios.php" class="btn-Inicio">Agendar Cita</a>
-    </div>
-            </div>
-            <div class="header-img">
-                <img src="/neuro/images/imagen portada.webp" alt="">
->>>>>>> Stashed changes
-
-            <h1>Contactanos</h1>
-                <p>
-                
-                </p>
-                <a href="#" class="btn_somos">Agenda tu cita</a>
-            </div>
-        </div>
+                <h1>Contactanos</h1>
+                <a href="">Agenda tu cita</a>
+                </div>
 
     </header>
 

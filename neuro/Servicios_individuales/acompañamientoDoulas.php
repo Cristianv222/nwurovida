@@ -153,6 +153,6 @@
     <?php include './includes/footer.php'; ?>
 </html>
 
-</html>
+
 
 

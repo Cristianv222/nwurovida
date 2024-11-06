@@ -11,18 +11,20 @@
 
 <header>
 <?php include './includes/menu_nav.php'; ?>
-<div class="header-content container">
-            <div class="header-txt">
+<header class="hero_contac">
+    <?php include './includes/menu_nav.php'; ?>
+    <div class="hero_contac-content container">
+            <div class="hero-txt">
 
-            <h1>Contatanos</h1>
-            </div>
-            <div class="header-img">
-                <img src="/neuro/images/imagen portada.webp" alt="">
-
+            <h1>Contactanos</h1>
+                <p>
+                
+                </p>
+                <a href="#" class="btn_somos">Agenda tu cita</a>
             </div>
         </div>
-</header>
 
+    </header>
 
     <div class="contact-container">
         <section class="contact-info">

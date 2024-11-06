@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        
+
 /*seccion nueva sevicios*/
 .btn-1 { 
   display: inline-block;
@@ -27,6 +27,10 @@
     width: 100%;
     max-width: 700px; /* Cambia este valor para ajustar el tamaño máximo en píxeles */
     height: auto; /* Mantiene la relación de aspecto */
+
+width: 100%;
+max-width: 500px; /* Cambia este valor para ajustar el tamaño máximo en píxeles */
+height: auto; /* Mantiene la relación de aspecto */
 }
 
 .header-txt {
@@ -84,6 +88,7 @@
     margin-bottom: 45px;
 }
 
+
 .about {
     padding: 100px 0;
     display: flex;
@@ -106,6 +111,7 @@
 }
 
 .about-txt h2 {
+
     line-height: 1.2;
     color: #323232;
     text-transform: uppercase;
@@ -114,6 +120,15 @@
     letter-spacing: 0;
     white-space: normal;
     margin-left: -650px; /* Ajuste para pantallas grandes */
+
+line-height: 1.2;
+color: #323232;
+text-transform: uppercase;
+font-size: 50px;
+margin-bottom: 10px;
+letter-spacing: 0;
+white-space: normal;
+margin-left: -550px; /* Ajuste para pantallas grandes */
 }
 
 .about-txt p {
@@ -121,6 +136,11 @@
     color: #818181;
     margin-bottom: 20px;
     margin-left: -650px; /* Ajuste para pantallas grandes */
+
+font-size: 20px;
+color: #818181;
+margin-bottom: 20px;
+margin-left: -550px; /* Ajuste para pantallas grandes */
 }
 
 @media (max-width: 768px) {
@@ -136,9 +156,6 @@
         text-align: center;
     }
 }
-
-
-
 
 .servicios {
     padding: 50px 0 100px 0;
@@ -235,11 +252,6 @@ form h2 {
 }
 
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 * {
     box-sizing: border-box;
@@ -247,6 +259,11 @@ form h2 {
     padding: 0;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 
 /* Media queries para dispositivos móviles */
@@ -281,8 +298,6 @@ form h2 {
 }
 
 
-
-
 @media (max-width:991px) {
     menu {
         padding: 20px;
@@ -306,6 +321,7 @@ form h2 {
     #menu:checked ~ .navbar{
         display: initial;
     }
+
 
 
 @media (max-width:991px) {
@@ -518,5 +534,4 @@ section {
     justify-content: center; /* Centra las tarjetas */
 }
 
-/* Resto de tu código CSS */
-    
+/* Resto de tu código CSS 

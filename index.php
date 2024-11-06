@@ -26,7 +26,7 @@
   <div class="background-image" id="backgroundDiv">
     <div class="content-left">
       <img src="/neuro/images/MARCA NEUROVIDA.svg" alt="Club Neurovida" class="logo-left">
-      <a href="servicios.php" class="btn-Inicio-Contactanos">Agendar Cita</a>
+      <a href="servicios.php" class="btn-Inicio">Agendar Cita</a>
     </div>
   </div>
 

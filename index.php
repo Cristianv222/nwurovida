@@ -130,10 +130,10 @@
         </ul>
       </div>
     </div>
-  </div>
+  </div>  
 
 
-  <?php include './includes/footer.php'; ?>
 </body>
 
+<?php include './includes/footer.php'; ?>
 </html>

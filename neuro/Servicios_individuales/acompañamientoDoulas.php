@@ -121,6 +121,39 @@
             <li>Soporte técnico 24/7</li>
         </ul>
     </div>
+<<<<<<< Updated upstream
+=======
+    
+    <div class="pricing-card popular">
+        <h3>Business</h3>
+        <p class="price"><span>€</span>3.49<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+            <li>SEO avanzado</li>
+            <li>Análisis de visitas</li>
+            <li>Chat en vivo con WhatsApp</li>
+            <li>Soporte técnico 24/7</li>
+            <li>Más espacio de almacenamiento</li>
+        </ul>
+    </div>
+    
+    <div class="pricing-card">
+        <h3>Cloud Startup</h3>
+        <p class="price"><span>€</span>7.99<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+            <li>SEO avanzado</li>
+            <li>Análisis de visitas</li>
+            <li>Chat en vivo con WhatsApp</li>
+            <li>Soporte técnico 24/7</li>
+            <li>Almacenamiento en la nube</li>
+        </ul>
+</div>
+</div>
+    </section>
+>>>>>>> Stashed changes
     
     <div class="pricing-card popular">
         <h3>Business</h3>

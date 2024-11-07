@@ -377,8 +377,13 @@ form h2 {
 }
 }
 
+<<<<<<< Updated upstream
 .pricing-container {    
 display: flex;
+=======
+.pricing-container {
+    display: flex;
+>>>>>>> Stashed changes
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;

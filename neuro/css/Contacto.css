@@ -40,25 +40,16 @@
   .btn-Inicio-contactanos {
     background-color: #38c9b8;
   }
-    .header-img img {
-    width: 100%;
-    max-width: 900px; /* Cambia este valor para ajustar el tamaño máximo en píxeles */
-    height: auto; /* Mantiene la relación de aspecto */
-    }
-    
-    .header-txt {
-    padding-top: 150px;
-    text-align: center;
-    }
-    
     .hero_contac-txt h1 {
     line-height: 1.2;
-    color: #36e3f0;
+    color: #000000;
     text-transform: uppercase;
     font-size: 70px; /* Tamaño de fuente para pantallas grandes */
     margin-bottom: 80px;
     letter-spacing: 0;
     white-space: normal;
+    margin: 0px;
+    padding: 100px;
     }
 
 .contact-container {
@@ -66,6 +57,7 @@
     justify-content: space-between; /* Espacio entre el contacto y el mapa */
     align-items: center; /* Centra verticalmente ambos elementos */
     padding: 20px; /* Espacio interior */
+    margin: 0px 0px;
 }
 
 .contact-info {
@@ -83,6 +75,7 @@
     display: flex; /* Para centrar el iframe */
     align-items: center; /* Centra verticalmente el iframe */
     justify-content: center; /* Centra horizontalmente el iframe */
+    margin: 15px 15px;
 }
 
 .map:hover {
@@ -199,4 +192,28 @@ input::placeholder, textarea::placeholder {
         width: 60%; /* Hace que el botón ocupe todo el ancho disponible */
         margin-top: 30px; /* Reduce el margen superior */
       }
+      
+.map {
+    width: 650px; /* Ancho del mapa, ajustado para que haya menos espacio */
+    height: 500px; /* Altura igual al ancho para hacerlo cuadrado */
+    border: 2px solid #96D0EE; /* Borde del mapa */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    transition: transform 0.3s ease; /* Transición suave */
+    display: flex; /* Para centrar el iframe */
+    align-items: center; /* Centra verticalmente el iframe */
+    justify-content: center; /* Centra horizontalmente el iframe */
+    margin: 15px 0px;
+}
+.contact-container {
+    display: flex; /* Alinea los elementos horizontalmente */
+    justify-content: space-between; /* Espacio entre el contacto y el mapa */
+    align-items: center; /* Centra verticalmente ambos elementos */
+    padding: 20px; /* Espacio interior */
+    margin: 5px 0px;
+}
+.hero_contac-txt {
+    padding-top: 100px;
+    text-align: center;
+    }
 }

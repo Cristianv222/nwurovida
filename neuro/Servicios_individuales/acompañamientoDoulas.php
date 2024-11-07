@@ -121,8 +121,6 @@
             <li>Soporte técnico 24/7</li>
         </ul>
     </div>
-<<<<<<< Updated upstream
-=======
     
     <div class="pricing-card popular">
         <h3>Business</h3>
@@ -152,9 +150,7 @@
         </ul>
 </div>
 </div>
-    </section>
->>>>>>> Stashed changes
-    
+    </section>    
     <div class="pricing-card popular">
         <h3>Business</h3>
         <p class="price"><span>€</span>3.49<span>/mes</span></p>

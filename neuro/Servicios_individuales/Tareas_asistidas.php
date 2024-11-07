@@ -22,7 +22,7 @@
                 <a href="#" class="btn-1">Informacion</a>
             </div>
             <div class="header-img">
-                <img src="../images/man1.png" alt="">
+                <img src="../images/man1.png" alt=""> 
 
             </div>
            

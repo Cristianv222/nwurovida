@@ -8,6 +8,9 @@
   color: #fafafa;
   border-radius: 20px;
 }
+.footer {
+    width: 100%;          /* Asegura que ocupe todo el ancho */
+}
 
 /* prueba de fuego*/
 .container {
@@ -160,11 +163,14 @@
 }
 
 .servicio-1 {
-    padding: 25px;
+    border-radius: 10px; /* Redondear los bordes */
+    padding: 20px; /* Padding general */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    flex-basis: calc(25% - 20px);
+    flex-basis: calc(25% - 30px); /* Redefinir el tamaño para separar las tarjetas */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+    margin: 10px; /* Añadir separación entre las tarjetas */
 }
+
 
 /* Efecto de realce al pasar el cursor */
 .servicio-1:hover {

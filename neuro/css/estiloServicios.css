@@ -1,0 +1,180 @@
+.container {
+    max-width: 1100%;
+    margin: 0 auto;
+    }
+    .header-content {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center;     /* Centra verticalmente */
+        height: 30vh;           /* Altura total de la ventana para centrar verticalmente */
+    }
+    
+    .header-txt {
+        text-align: center;
+    }
+    
+    .header-txt h1 {
+        color: #56b1df;
+        text-transform: uppercase;
+        font-size: 70px;
+        margin-bottom: 10px;
+        letter-spacing: 0;
+        white-space: normal;
+    }
+    
+    
+    .container_s {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #ca000000; 
+    }
+    
+    
+    p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    /* Estilos para las tarjetas */
+    .card {
+        position: relative; /* Importante para posicionar el botón de forma absoluta */
+        background-color: white;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 10px; /* Redondear los bordes */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más intensa */
+        transition: transform 0.3s ease;
+    }
+    
+    .card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    
+    .card:hover {
+        transform: translateY(-10px);
+    }
+    
+    /* Botón de Vista Rápida */
+    .quick-view {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 10px; /* Redondear los bordes */
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    
+    /* Mostrar botón al hacer hover en la tarjeta */
+    .card:hover .quick-view {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+    
+    .quick-view:hover {
+        background-color: #555;
+    }
+    
+    /* Animaciones de entrada */
+    .fade-in, .fade-up {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s forwards;
+    }
+    
+    .fade-in {
+        animation-delay: 0.5s;
+    }
+    
+    .fade-up {
+        animation-delay: 1s;
+    }
+    
+    @keyframes fadeInUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive: Ajustes para pantallas más pequeñas */
+    
+    /* Tablets en orientación vertical y horizontal */
+    @media (max-width: 992px) {
+        .gallery {
+            grid-template-columns: repeat(2, 1fr); /* 2 columnas en tabletas */
+        }
+    
+        h1 {
+            font-size: 30px;
+        }
+    
+        p {
+            font-size: 16px;
+        }
+    }
+    
+    /* Móviles: ajustar a una sola columna */
+    @media (max-width: 768px) {
+        .gallery {
+            grid-template-columns: 1fr; /* 1 columna en dispositivos móviles */
+        }
+    
+        h1 {
+            font-size: 26px;
+        }
+    
+        p {
+            font-size: 14px;
+        }
+    
+        .card {
+            padding: 15px;
+        }
+        .header-content {
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center;     /* Centra verticalmente */
+            height: 50vh;           /* Altura total de la ventana para centrar verticalmente */
+        }
+    }
+    
+    /* Ajustes adicionales para pantallas más pequeñas */
+    @media (max-width: 576px) {
+        h1 {
+            font-size: 22px;
+        }
+    
+        p {
+            font-size: 12px;
+        }
+        .header-content {
+            display: flex;
+            justify-content: center; /* Centra horizontalmente */
+            align-items: center;     /* Centra verticalmente */
+            height: 20vh;    
+            margin-top: 20%;       /* Altura total de la ventana para centrar verticalmente */
+        }
+        .header-txt h1 {
+            color: #56b1df;
+            text-transform: uppercase;
+            font-size: 30px;
+            margin-bottom: 10px;
+            letter-spacing: 0;
+            white-space: normal;
+        }
+    }

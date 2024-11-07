@@ -7,11 +7,15 @@
     color: #fafafa;
     border-radius: 20px;
   }
-  
+  .footer {
+    width: 100%;          /* Asegura que ocupe todo el ancho */
+}
   /* prueba de fuego*/
   .container {
       max-width: 1100%;
       margin: 0 auto;
+      margin-bottom: 10px;
+
   }
   .header-content {
       display: flex;
@@ -162,7 +166,8 @@
   
   .servicio-1 {
       padding: 25px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 20px; /* Redondear los bordes */
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
       flex-basis: calc(25% - 20px);
       transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
   }

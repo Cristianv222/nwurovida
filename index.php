@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="./neuro/css/style.css">
   <script defer src="./neuro/script.js"></script>
 </head>
-
+ 
 <body>
 <?php include './includes/menu_nav.php'; ?>
 <div class="header-content container">

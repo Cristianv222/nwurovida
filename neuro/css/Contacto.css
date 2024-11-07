@@ -13,17 +13,17 @@
         width: 100%;
 }
     .hero_contac-txt {
-    padding-top: 150px;
+    padding-top: 80px;
     text-align: center;
+    color: #56b1df;
     }
     
     .hero_contac-txt h1 {
     line-height: 1.2;
-    color: #323232;
     text-transform: uppercase;
     font-size: 70px; /* Tamaño de fuente para pantallas grandes */
     margin-bottom: 10px;
-    letter-spacing: 0;
+    letter-spacing: 2;
     white-space: normal;
     }
 .btn-Inicio-contactanos {
@@ -40,17 +40,7 @@
   .btn-Inicio-contactanos {
     background-color: #38c9b8;
   }
-    .hero_contac-txt h1 {
-    line-height: 1.2;
-    color: #000000;
-    text-transform: uppercase;
-    font-size: 70px; /* Tamaño de fuente para pantallas grandes */
-    margin-bottom: 80px;
-    letter-spacing: 0;
-    white-space: normal;
-    margin: 0px;
-    padding: 100px;
-    }
+
 
 .contact-container {
     display: flex; /* Alinea los elementos horizontalmente */
@@ -167,53 +157,24 @@ input::placeholder, textarea::placeholder {
     background-color: #48bce0;
 }
 
-/* Responsivo */
+/* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
-    .header-content {
+    .contact-container {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
     }
-
-    iframe {
-    width: 100%; /* Asegura que el iframe ocupe todo el espacio */
-    height: 100%; /* Asegura que el iframe tenga la misma altura que el contenedor */
-    border: 0; /* Elimina el borde del iframe */
+    
+    .map {
+        width: 100%;
+        height: auto;
     }
-
-    form {
-        padding: 15px;
-    }
-
-    .logo-left {
-        max-width: 370px;
-    }
-    .btn-Inicio-contactanos {
-        padding: 12px 24px; /* Aumenta el tamaño del botón para que sea más accesible en pantallas pequeñas */
-        width: 60%; /* Hace que el botón ocupe todo el ancho disponible */
-        margin-top: 30px; /* Reduce el margen superior */
-      }
-      
-.map {
-    width: 650px; /* Ancho del mapa, ajustado para que haya menos espacio */
-    height: 500px; /* Altura igual al ancho para hacerlo cuadrado */
-    border: 2px solid #96D0EE; /* Borde del mapa */
-    border-radius: 15px; /* Bordes redondeados */
-    overflow: hidden; /* Asegura que el contenido no se desborde */
-    transition: transform 0.3s ease; /* Transición suave */
-    display: flex; /* Para centrar el iframe */
-    align-items: center; /* Centra verticalmente el iframe */
-    justify-content: center; /* Centra horizontalmente el iframe */
-    margin: 15px 0px;
-}
-.contact-container {
-    display: flex; /* Alinea los elementos horizontalmente */
-    justify-content: space-between; /* Espacio entre el contacto y el mapa */
-    align-items: center; /* Centra verticalmente ambos elementos */
-    padding: 20px; /* Espacio interior */
-    margin: 5px 0px;
-}
-.hero_contac-txt {
-    padding-top: 100px;
-    text-align: center;
-    }
+    .hero_contac-txt h1 {
+        padding-top: 40px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-size: 40px; /* Tamaño de fuente para pantallas pequeñas */
+        margin-bottom: 10px;
+        letter-spacing: 2;
+        white-space: normal;
+        }
 }

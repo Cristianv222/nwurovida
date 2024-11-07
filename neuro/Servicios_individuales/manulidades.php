@@ -7,10 +7,12 @@
     <title>Manualidades</title>
     <link rel="shortcut icon" href="/neuro/images/apple-icon-144x144.png" type="image/x-icon">
     <link rel="stylesheet" href="/neuro/css/manualidades.css">
+    <link rel="stylesheet" href="../../includes/footer.css">
+    <link rel="stylesheet" href="../../includes/menu_nav.css">
 </head>
 <body>
 <header class="header">
-<?php include '../nwurovida/includes/menu_nav.php'; ?>
+<?php include '../../../nwurovida/includes/menu_nav.php'; ?>
     <div class="header-content container">
             <div class="header-txt">
 
@@ -26,9 +28,6 @@
             </div>
            
         </div>
-
-
-    </header>
 
 
     </header>
@@ -163,5 +162,6 @@
     <div style="height: 40px; background-color: white;"></div>
     <div style="height: 40px; background-color: white;"></div>
 </body>
-    <?php include './includes/footer.php'; ?>
-</html>
+<div class="footer">
+    <?php include '../../includes/footer.php'; ?>
+</div></html>

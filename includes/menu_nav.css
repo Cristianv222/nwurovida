@@ -148,6 +148,7 @@ nav.scrolled {
         display: block;
         z-index: 101;
     }
+
     .nav-links {
         position: fixed;
         top: 0;
@@ -159,20 +160,31 @@ nav.scrolled {
         align-items: center;
         background: white;
         transition: right 0.3s ease;
+        gap: 1rem; /* Reducimos el espacio entre enlaces del menú */
+        text-align: center; /* Centra el texto dentro del contenedor */
     }
+
     .nav-links.active {
         right: 0;
     }
+
     .buttons {
         position: fixed;
-        bottom: 5rem;
-        right: -100%;
+        bottom: 18rem;
+        right: 100%;
         transition: right 0.3s ease;
+        display: flex;
+        flex-direction: column; /* Coloca los botones uno debajo del otro */
+        align-items: center; /* Centra los botones en el contenedor */
+        gap: 8px; /* Espacio entre cada botón */
+        text-align: center; /* Asegura que el texto de los botones esté centrado */
     }
+
     .buttons.active {
-        right: 45%;
+        right: 50%;
         transform: translateX(50%);
     }
+
     /* Animación del menú hamburguesa */
     .hamburger.active div:nth-child(1) {
         transform: rotate(45deg) translate(8px, 6px);
@@ -183,29 +195,19 @@ nav.scrolled {
     .hamburger.active div:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
     }
-}
 
-
-/* Ajustes para pantallas móviles */
-
-@media (max-width: 768px) {
     .logo-left {
-        max-width: 400px;
-        /* Reducimos el tamaño del logo en móviles */
-        top: 60%;
-        /* Bajamos un poco más el logo en pantallas pequeñas */
+        max-width: 400px; /* Reducimos el tamaño del logo en móviles */
+        top: 60%; /* Bajamos un poco más el logo en pantallas pequeñas */
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
     nav {
-        padding: 1rem;
-        /* Reducimos el padding del menú para que se vea mejor */
-    }
-    .nav-links {
-        gap: 1rem;
-        /* Reducimos el espacio entre enlaces del menú */
+        padding: 1rem; /* Reducimos el padding del menú para que se vea mejor */
     }
 }
+
 
 
 /*seccion nueva sevicios*/

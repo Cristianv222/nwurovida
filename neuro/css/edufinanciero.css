@@ -377,146 +377,110 @@ form h2 {
 }
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.pricing-container {    
+display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pricing-card {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
     padding: 20px;
-}
-
-section {
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 20px;
-}
-
-.pricing {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea */
-    justify-content: center; /* Centra las tarjetas */
-}
-
-.plan {
-    background-color: transparent;
-    color: #323232;
-    padding: 1.5rem;
     width: 250px;
-    border-radius: 8px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-    box-shadow: 0 4px 8px rgba(4, 206, 251, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid #c5a5ce;
-    margin: 0 60px; /* Espacio a los lados */
-    margin-left: -60px;
 }
 
-.plan:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 204, 255, 0.4);
-    border: 2px solid #c5a5ce;
+.pricing-card.popular {
+    border: 2px solid #6633cc;
 }
 
-.plan.popular {
-    border: 2px solid #c5a5ce;
-}
-
-.plan h3 {
-    font-size: 1.5rem; /* Tamaño de fuente para el encabezado */
-    margin-bottom: 1rem;
+.pricing-card h3 {
+    color: #333;
+    margin-bottom: 10px;
 }
 
 .price {
-    font-size: 1.5rem; /* Tamaño de fuente para el precio */
-    font-weight: bold;
-    margin-bottom: 1rem;
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
 }
 
-.discount {
-    font-size: 0.8rem;
-    color: #ed0909;
-    text-decoration: line-through;
-    margin-right: 0.5rem;
+.price span {
+    font-size: 16px;
+    color: #666;
 }
 
-.benefit {
-    font-size: 0.9rem; /* Tamaño de fuente para los beneficios */
-    margin: 0.5rem 0;
+.offer {
+    background-color: #e7f3ff;
+    color: #007bff;
+    font-size: 14px;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 5px;
 }
 
 button {
-    margin-top: 1rem;
-    padding: 0.7rem 1.5rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #04d3ef;
+    background-color: #6633cc;
+    color: #ffffff;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #c5a5ce;
+    background-color: #552299;
 }
 
-/* Media Queries para dispositivos móviles */
-@media (max-width: 600px) {
-    .plan {
-        width: 90%; /* Cambiar el ancho al 90% para mejor ajuste en móviles */
-        margin: 0 auto; /* Centrar las tarjetas en la pantalla */
-        margin-bottom: 20px; /* Espacio entre tarjetas */
-    }
-
-    .pricing {
-        flex-direction: column; /* Colocar tarjetas en columna en móviles */
-        align-items: center; /* Centrar tarjetas */
-    }
-
-    /* Ajustes adicionales para mejorar la visualización */
-    .plan h3 {
-        font-size: 1.2rem; /* Ajustar tamaño del encabezado en móviles */
-    }
-
-    .price {
-        font-size: 1.5rem; /* Ajustar tamaño del precio en móviles */
-    }
-
-    .benefit {
-        font-size: 0.8rem; /* Ajustar tamaño de beneficios en móviles */
-    }
+ul {
+    list-style: none;
+    margin-top: 15px;
 }
 
-
-
-
-/* Eliminar bordes y márgenes del body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0; /* Quitar el padding */
-    margin: 0; /* Quitar el margen */
+ul li {
+    margin: 5px 0;
+    color: #333;
 }
 
-/* Ajustar la sección */
-section {
-    width: 100%; /* Asegurarse de que ocupe el 100% del ancho */
-    max-width: 800px; /* Mantener el ancho máximo si es necesario */
-    margin: 0; /* Quitar el margen */
+.popular::before {
+    content: "MÁS VENDIDO";
+    color: #fff;
+    background-color: #6633cc;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.pricing {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea */
-    justify-content: center; /* Centra las tarjetas */
+/* Efecto de realce en hover */
+.pricing-card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
 }
 
-/* Resto de tu código CSS */
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .pricing-card {
+        width: 90%;
+        max-width: 300px;
+        margin-bottom:20px;
+}
+}
     

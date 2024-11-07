@@ -7,6 +7,8 @@
     <title>Programación</title>
     <link rel="shortcut icon" href="/neuro/images/apple-icon-144x144.png" type="image/x-icon">
     <link rel="stylesheet" href="/neuro/css/manualidades.css">
+    <link rel="stylesheet" href="/includes/footer.css">
+
 </head>
 <body>
 <header class="header">
@@ -116,48 +118,52 @@
     </main>
 
     <section class="pricing">
-        <div class="plan">
-        <h3>Plan Diario</h3>
-        <p class="price"><span class="discount"></span> $3/Dia</p>
-            <p class="benefit">Acceso por 1 día</p>
-            <ul class="benefits">
-            <li>Flexibilidad: Participación ocasional según el horario.</li>
-        <li>Introducción Accesible: Ideal para probar el curso sin compromiso.</li>
-        <li>Proyectos Adaptados: Enfoque en actividades apropiadas para la edad.</li>
-        <li>Aprendizaje Divertido: Sesiones cortas y variadas para mantener el interés.</li>
-        <li>Socialización: Fomenta la interacción entre participantes.</li>
-            </ul>
-            <button>Elegir plan</button>
-        </div>
-        <div class="plan popular">
-        <h3>Plan Semanal</h3>
-            <p class="price"><span class="discount"></span> $10/semana</p>
-            <p class="benefit">Acceso por 7 días</p>
-            <ul class="benefits">
-            <li>Aprendizaje Progresivo: Desarrollo de habilidades a lo largo de la semana.</li>
-        <li>Diversidad de Proyectos: Variedad de manualidades cada semana.</li>
-        <li>Interacción Regular: Fortalece los lazos entre los participantes.</li>
-        <li>Estructura de Clase: Mejora la concentración y disciplina de los niños.</li>
-        <li>Mejor Relación Calidad-Precio: Ahorro en comparación con el plan diario.</li>
-            </ul>
-            <button>Elegir plan</button>
-        </div>
-        <div class="plan">
-            <h3>Plan Mensual</h3>
-            <p class="price"><span class="discount"></span> $20/mes</p>
-            <p class="benefit">$50/mes con acompañante, Acceso por 30 días </p>
-            <ul class="benefits">
-            <li>Acceso Completo: Participación en todas las clases del mes.</li>
-        <li>Desarrollo de Habilidades Completas: Exploración de técnicas más complejas.</li>
-        <li>Cohesión del Grupo: Fomenta un sentido de comunidad.</li>
-        <li>Evaluación del Progreso: Observación del avance de los niños.</li>
-        <li>Valor Económico: Mejor costo por clase, incentivando la participación continua.</li>
-                
-            </ul>
-            <button>Elegir plan</button>
-        </div>
+    <div class="pricing-container">
+    <div class="pricing-card">
+        <h3>Premium</h3>
+        <p class="price"><span>€</span>2.49<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+            <li>SEO avanzado</li>
+            <li>Análisis de visitas</li>
+            <li>Chat en vivo con WhatsApp</li>
+            <li>Soporte técnico 24/7</li>
+        </ul>
+    </div>
+    
+    <div class="pricing-card popular">
+        <h3>Business</h3>
+        <p class="price"><span>€</span>3.49<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+            <li>SEO avanzado</li>
+            <li>Análisis de visitas</li>
+            <li>Chat en vivo con WhatsApp</li>
+            <li>Soporte técnico 24/7</li>
+            <li>Más espacio de almacenamiento</li>
+        </ul>
+    </div>
+    
+    <div class="pricing-card">
+        <h3>Cloud Startup</h3>
+        <p class="price"><span>€</span>7.99<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+            <li>SEO avanzado</li>
+            <li>Análisis de visitas</li>
+            <li>Chat en vivo con WhatsApp</li>
+            <li>Soporte técnico 24/7</li>
+            <li>Almacenamiento en la nube</li>
+        </ul>
+    </div>
+</div>
     </section>
+
     <div style="height: 40px; background-color: white;"></div>
-</body>
     <?php include './includes/footer.php'; ?>
+
+</body>
 </html>

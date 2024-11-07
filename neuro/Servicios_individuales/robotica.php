@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>EduFinanciero</title>
-    <link rel="stylesheet" href="/neuro/css/edufinanciero.css">
-    <link rel="stylesheet" href="/includes/footer.css">
+    <title>Robótica</title>
     <link rel="shortcut icon" href="/neuro/images/apple-icon-144x144.png" type="image/x-icon">
+    <link rel="stylesheet" href="/includes/footer.css">
+    <link rel="stylesheet" href="/neuro/css/robotica.css">
 </head>
 <body>
-<header class="header-edufin">
+<header class="header">
 <?php include '../nwurovida/includes/menu_nav.php'; ?>
     <div class="header-content container">
             <div class="header-txt">
 
-            <h1>Educación Financiera y Emprendimiento </h1>
+            <h1>Robótica</h1>
                 <p>
                 
                 </p>
                 <a href="#" class="btn-1">Informacion</a>
             </div>
             <div class="header-img">
-                <img src="../images/ef1.webp" alt="">
+                <img src="../images/man1.png" alt="">
 
             </div>
            
@@ -36,18 +36,17 @@
 
     <section class="about container">
         <div class="about-img">
-            <img src="../images/ccp2.jpeg" alt="">
+            <img src="../images/man2.jpg" alt="">
         </div>
         <div class="about-txt">
-        <h2>Niños de 9 a 12 años/cualquier público </h2>
+        <h2>Desde 4 años en adelante cualquier público </h2>
             <p>
-            Este curso está diseñado para niños de 9 a 12 años y cualquier público interesado 
-            en aprender sobre el manejo del dinero y cómo iniciar un negocio. A través de actividades
-             divertidas y dinámicas, los participantes descubrirán conceptos básicos de finanzas, 
-             como el ahorro, la inversión y el presupuesto, así como las habilidades necesarias 
-             para emprender, como la creatividad, la planificación y la toma de decisiones. 
-             Al finalizar, los estudiantes tendrán una mejor comprensión de cómo manejar su dinero 
-             y las herramientas para convertir sus ideas en realidades emprendedoras.
+            Este curso está diseñado para niños de 4 años en adelante
+             y cualquier persona interesada en explorar su creatividad 
+             a través de manualidades. Los participantes aprenderán a 
+             utilizar diferentes materiales y técnicas para crear
+              proyectos únicos, desarrollando habilidades motoras,
+               concentración y trabajo en equipo.
             </p>
 
         </div>
@@ -60,7 +59,7 @@
 
             <div class="servicio-1">
                 <i class="fa-solid fa-brain"></i>
-                <h3>Introducción a los Objetivos de Desarrollo Sostenible (ODS)</h3>
+                <h3>Manualidades según temporada</h3>
                 <p>
                 
                 </p>
@@ -68,36 +67,55 @@
 
             <div class="servicio-1">
                 <i class="fa-sharp fa-solid fa-stethoscope"></i>
-                <h3>Plan de negocios básico (Producto Mínimo Viable)  </h3>
+                <h3></h3>
                 <p>
-                
+                El curso "Manualidades Según Temporada" está diseñado 
+                para todas las edades, ofreciendo la oportunidad de crear
+                 proyectos creativos basados en cada estación del año.
+                  Los participantes aprenderán a elaborar manualidades 
+                  como decoraciones de primavera, accesorios veraniegos, 
+                  adornos otoñales y festivos invernales. A través de clases
+                   prácticas e interactivas, se desarrollarán habilidades 
+                   artísticas y se fomentará la autoexpresión en un ambiente
+                    divertido.
+
+
                 </p>
             </div>
 
             <div class="servicio-1">
                 <i class="fa-sharp fa-solid fa-book"></i>
-                <h3>Campaña básica de marketing  </h3>
+                <h3> </h3>
                 <p>
-                
+                "Manualidades Según Temporada" es un curso que invita a niños y adultos
+                 a explorar su creatividad a través de manualidades estacionales.
+                  Cada módulo se centra en una temporada específica, permitiendo
+                   a los participantes crear desde flores de papel en primavera 
+                   hasta decoraciones navideñas en invierno. El curso promueve
+                    el aprendizaje práctico y la interacción social, 
+                    todo sin necesidad de experiencia previa.
                 </p>
             </div>
 
             <div class="servicio-1">
                 <i class="fa-solid fa-brain"></i>
-                <h3>Ventas</h3>
+                <h3></h3>
                 <p>
-               
+                Este curso de "Manualidades Según Temporada" está orientado 
+                a fomentar la creatividad en personas de todas las edades.
+                 Los participantes realizarán proyectos temáticos que capturan 
+                 la esencia de cada estación, incluyendo decoraciones de otoño 
+                 y manualidades de verano. Las clases se desarrollan en un 
+                 ambiente colaborativo, permitiendo el desarrollo de habilidades
+                  motoras y la celebración de tradiciones estacionales.
             
                 </p>
             </div>
-
-           
-
-
     
         </div>
 
     </main>
+
     <section class="pricing">
     <div class="pricing-container">
     <div class="pricing-card">
@@ -147,5 +165,4 @@
     <?php include './includes/footer.php'; ?>
 
 </body>
-
 </html>

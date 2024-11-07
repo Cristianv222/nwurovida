@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Acompañamiento Doulas</title>
     <link rel="stylesheet" href="/neuro/css/doulas.css">
+    <link rel="stylesheet" href="/includes/footer.css">
     <link rel="shortcut icon" href="./neuro/images/apple-icon-144x144.png" type="image/x-icon">
 </head>
 
 <body>
     <header class="header_doulas">
-    <?php include '../../includes/menu_nav.php'; ?>
+    <?php include '../nwurovida/includes/menu_nav.php'; ?>
     <div class="header-content container">
             <div class="header-txt">
 
@@ -107,51 +108,52 @@
     </main>
 
     <section class="pricing">
-        <div class="plan">
-            <h3>Plan Diario</h3>
-            <p class="price"><span class="discount"></span> $1.33/Dia</p>
-            <p class="benefit">Acceso por 1 día</p>
-            <ul class="benefits">
-                <li>Flexibilidad: Acceso según la disponibilidad diaria.</li>
-                <li>Costo Asequible: Ideal para probar el servicio por un día.</li>
-                <li>Adaptación Rápida: Práctica ajustable diariamente.</li>
-                <li>Apoyo Emocional Inmediato: Sesiones breves de acompañamiento emocional y físico.</li>
-                <li>Herramientas de Empoderamiento: Ejercicios para fortalecer la autoconfianza y la toma de decisiones.</li>
-
-            </ul>
-            <button>Elegir plan</button>
-        </div>
-        <div class="plan popular">
-            <h3>Plan Semanal</h3>
-            <p class="price"><span class="discount"></span> $10/semana</p>
-            <p class="benefit">Acceso por 7 días</p>
-            <ul class="benefits">
-                <li>Compromiso Moderado: Ideal para un enfoque a corto plazo.</li>
-                <li>Sesiones de Empoderamiento: Herramientas para la toma de decisiones informadas sobre el embarazo y el parto.</li>
-                <li>Apoyo Continuo: Acompañamiento constante durante la semana para reducir el estrés y la ansiedad.</li>
-                <li>Mejora del Bienestar: Ejercicios de empoderamiento y bienestar mental.</li>
-
-            </ul>
-            <button>Elegir plan</button>
-        </div>
-        <div class="plan">
-            <h3>Plan Mensual</h3>
-            <p class="price"><span class="discount"></span> $40/mes</p>
-            <p class="benefit">$50/mes con acompañante, Acceso por 30 días </p>
-            <ul class="benefits">
-
-                <li>Acceso Ilimitado: Máximo aprovechamiento del servicio durante el embarazo, el parto y el posparto.</li>
-                <li>Reducción de Estrés: Apoyo continuo que promueve una recuperación más rápida y sin complicaciones.</li>
-
-                <li>Beneficios para la Salud: Menor probabilidad de intervenciones médicas y una experiencia de parto más cómoda.</li>
-
-            </ul>
-            <button>Elegir plan</button>
-        </div>
+    <div class="pricing-container">
+    <div class="pricing-card">
+        <h3>Premium</h3>
+        <p class="price"><span>€</span>2.49<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+            <li>SEO avanzado</li>
+            <li>Análisis de visitas</li>
+            <li>Chat en vivo con WhatsApp</li>
+            <li>Soporte técnico 24/7</li>
+        </ul>
+    </div>
+    
+    <div class="pricing-card popular">
+        <h3>Business</h3>
+        <p class="price"><span>€</span>3.49<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+            <li>SEO avanzado</li>
+            <li>Análisis de visitas</li>
+            <li>Chat en vivo con WhatsApp</li>
+            <li>Soporte técnico 24/7</li>
+            <li>Más espacio de almacenamiento</li>
+        </ul>
+    </div>
+    
+    <div class="pricing-card">
+        <h3>Cloud Startup</h3>
+        <p class="price"><span>€</span>7.99<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+            <li>SEO avanzado</li>
+            <li>Análisis de visitas</li>
+            <li>Chat en vivo con WhatsApp</li>
+            <li>Soporte técnico 24/7</li>
+            <li>Almacenamiento en la nube</li>
+        </ul>
+    </div>
+</div>
     </section>
 
     <div style="height: 40px; background-color: white;"></div>
-    <?php include '../../includes/footer.php'; ?>
+    <?php include './includes/footer.php'; ?>
 
 </body>
 

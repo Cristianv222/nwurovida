@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Curso Computación</title>
     <link rel="stylesheet" href="/neuro/css/cursocompu.css">
+    <link rel="stylesheet" href="/includes/footer.css">
     <link rel="shortcut icon" href="../images/apple-icon-144x144.png" type="image/x-icon">
 </head>
 <body>
@@ -134,52 +135,55 @@
         </div>
 
     </main>
-
+    
     <section class="pricing">
-        <div class="plan">
-        <h3>Plan Diario</h3>
-        <p class="price"><span class="discount"></span> $1.50/Dia</p>
-            <p class="benefit">Acceso por 1 día</p>
-            <ul class="benefits">
-            <li>Acceso rápido a todas las herramientas.</li>
-            <li>Asistencia inmediata en cada sesión.</li>
-            <li>Almacenamiento temporal para trabajos diarios.</li>
-            <li>Plantillas básicas para aprendizaje visual.</li>
-            <li>Repaso intensivo para conocimientos rápidos.</li>
-
-            </ul>
-            <button>Elegir plan</button>
-        </div>
-        <div class="plan popular">
-        <h3>Plan Semanal</h3>
-            <p class="price"><span class="discount"></span> $7/semana</p>
-            <p class="benefit">Acceso por 7 días</p>
-            <ul class="benefits">
-            <li>Proyectos semanales para aplicar lo aprendido.</li>
-            <li>Asesoría personalizada semanal.</li>
-            <li>Espacio moderado para trabajos en curso.</li>
-            <li>Copias de seguridad de los proyectos.</li>
-            <li>Certificado de participación al finalizar.</li>
-            </ul>
-            <button>Elegir plan</button>
-        </div>
-        <div class="plan">
-            <h3>Plan Mensual</h3>
-            <p class="price"><span class="discount"></span> $30/mes</p>
-            <p class="benefit">$50/mes con acompañante, Acceso por 30 días </p>
-            <ul class="benefits">
-            <li>Dominio avanzado de todas las herramientas.</li>
-            <li>Soporte prioritario durante el curso.</li>
-            <li>Almacenamiento amplio para varios proyectos.</li>
-            <li>Proyecto final y certificación oficial.</li>
-            <li>Recursos premium para enriquecer trabajos.</li>
-
-            </ul>
-            <button>Elegir plan</button>
-        </div>
+    <div class="pricing-container">
+    <div class="pricing-card">
+        <h3>Premium</h3>
+        <p class="price"><span>€</span>2.49<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+            <li>SEO avanzado</li>
+            <li>Análisis de visitas</li>
+            <li>Chat en vivo con WhatsApp</li>
+            <li>Soporte técnico 24/7</li>
+        </ul>
+    </div>
+    
+    <div class="pricing-card popular">
+        <h3>Business</h3>
+        <p class="price"><span>€</span>3.49<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+            <li>SEO avanzado</li>
+            <li>Análisis de visitas</li>
+            <li>Chat en vivo con WhatsApp</li>
+            <li>Soporte técnico 24/7</li>
+            <li>Más espacio de almacenamiento</li>
+        </ul>
+    </div>
+    
+    <div class="pricing-card">
+        <h3>Cloud Startup</h3>
+        <p class="price"><span>€</span>7.99<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+            <li>SEO avanzado</li>
+            <li>Análisis de visitas</li>
+            <li>Chat en vivo con WhatsApp</li>
+            <li>Soporte técnico 24/7</li>
+            <li>Almacenamiento en la nube</li>
+        </ul>
+    </div>
+</div>
     </section>
-   
+
     <div style="height: 40px; background-color: white;"></div>
-</body>
     <?php include './includes/footer.php'; ?>
+
+</body>
+
 </html>

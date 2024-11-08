@@ -8,9 +8,6 @@
   color: #fafafa;
   border-radius: 20px;
 }
-.footer {
-    width: 100%;          /* Asegura que ocupe todo el ancho */
-}
 
 /* prueba de fuego*/
 .container {
@@ -163,14 +160,11 @@
 }
 
 .servicio-1 {
-    border-radius: 10px; /* Redondear los bordes */
-    padding: 20px; /* Padding general */
+    padding: 25px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    flex-basis: calc(25% - 30px); /* Redefinir el tamaño para separar las tarjetas */
+    flex-basis: calc(25% - 20px);
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
-    margin: 10px; /* Añadir separación entre las tarjetas */
 }
-
 
 /* Efecto de realce al pasar el cursor */
 .servicio-1:hover {
@@ -362,59 +356,32 @@ form h2 {
 
 }
 
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-
-section {
-    width: 100%;
-    max-width: 800px;
-    margin-bottom: 20px;
-}
-
-.pricing {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea */
-    justify-content: center; /* Centra las tarjetas */
-}
-
-.plan {
-    background-color: transparent;
-    color: #323232;
-    padding: 1.5rem;
-    width: 250px;
-    border-radius: 8px;
-    text-align: center;
-    position: relative;
-    box-shadow: 0 4px 8px rgba(4, 206, 251, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 2px solid #c5a5ce;
-    margin: 0 60px; /* Espacio a los lados */
-    margin-left: -60px;
-}
-
-.plan:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 204, 255, 0.4);
-    border: 2px solid #c5a5ce;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
-.pricing-container {
-    display: flex;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+}
+
+.pricing-container {    
+display: flex;
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 25px;  
 }
 
 .pricing-card {
@@ -426,6 +393,7 @@ section {
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .pricing-card.popular {
@@ -466,6 +434,7 @@ button {
     cursor: pointer;
     font-size: 16px;
     margin-top: 15px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -495,6 +464,12 @@ ul li {
     transform: translateX(-50%);
 }
 
+/* Efecto de realce en hover */
+.pricing-card:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+}
+
 /* Media Query para pantallas pequeñas */
 @media (max-width: 768px) {
     .pricing-container {
@@ -505,106 +480,7 @@ ul li {
     .pricing-card {
         width: 90%;
         max-width: 300px;
-        margin-bottom: 20px;
-    }
+        margin-bottom:20px;
 }
-.plan.popular {
-    border: 2px solid #c5a5ce;
 }
-
-.plan h3 {
-    font-size: 1.5rem; /* Tamaño de fuente para el encabezado */
-    margin-bottom: 1rem;
-}
-
-.price {
-    font-size: 1.5rem; /* Tamaño de fuente para el precio */
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.discount {
-    font-size: 0.8rem;
-    color: #ed0909;
-    text-decoration: line-through;
-    margin-right: 0.5rem;
-}
-
-.benefit {
-    font-size: 0.9rem; /* Tamaño de fuente para los beneficios */
-    margin: 0.5rem 0;
-}
-
-button {
-    margin-top: 1rem;
-    padding: 0.7rem 1.5rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #04d3ef;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #c5a5ce;
-}
-
-/* Media Queries para dispositivos móviles */
-@media (max-width: 600px) {
-    .plan {
-        width: 90%; /* Cambiar el ancho al 90% para mejor ajuste en móviles */
-        margin: 0 auto; /* Centrar las tarjetas en la pantalla */
-        margin-bottom: 20px; /* Espacio entre tarjetas */
-    }
-
-    .pricing {
-        flex-direction: column; /* Colocar tarjetas en columna en móviles */
-        align-items: center; /* Centrar tarjetas */
-    }
-
-    /* Ajustes adicionales para mejorar la visualización */
-    .plan h3 {
-        font-size: 1.2rem; /* Ajustar tamaño del encabezado en móviles */
-    }
-
-    .price {
-        font-size: 1.5rem; /* Ajustar tamaño del precio en móviles */
-    }
-
-    .benefit {
-        font-size: 0.8rem; /* Ajustar tamaño de beneficios en móviles */
-    }
-}
-
-
-
-
-/* Eliminar bordes y márgenes del body */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0; /* Quitar el padding */
-    margin: 0; /* Quitar el margen */
-}
-
-/* Ajustar la sección */
-section {
-    width: 100%; /* Asegurarse de que ocupe el 100% del ancho */
-    max-width: 800px; /* Mantener el ancho máximo si es necesario */
-    margin: 0; /* Quitar el margen */
-}
-
-.pricing {
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap; /* Permite que las tarjetas se muevan a la siguiente línea */
-    justify-content: center; /* Centra las tarjetas */
-}
-
-/* Resto de tu código CSS */
     

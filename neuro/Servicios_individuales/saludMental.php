@@ -7,7 +7,7 @@
     <title>Saud Mental</title>
     <link rel="shortcut icon" href="/neuro/images/apple-icon-144x144.png" type="image/x-icon">
     <link rel="stylesheet" href="/includes/footer.css">
-    <link rel="stylesheet" href="/neuro/css/saludmental.css">
+    <link rel="stylesheet" href="/neuro/css/saludmental.css"> 
 </head>
 <body>
 <header class="header">

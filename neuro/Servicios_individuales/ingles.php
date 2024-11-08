@@ -16,7 +16,7 @@
             <div class="header-txt">
 
             <h1>Ingles</h1>
-                <p>
+                <p> 
                 
                 </p>
                 <a href="#" class="btn-1">Informacion</a>

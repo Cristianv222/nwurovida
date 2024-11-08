@@ -22,6 +22,8 @@
   transition: background-color 0.3s;
   margin-top: 250px;
   margin-left: -270px; /* Ajusta el valor según lo que necesites */
+  text-decoration: none; /* Elimina el subrayado */
+
 }
 
 .btn-Inicio:hover {
@@ -39,24 +41,25 @@
 }
 
 @media (max-width: 768px) {
-  .content-left {
-    height: auto; /* Elimina la altura fija de 100vh */
-    padding: 20px; /* Añadir algo de espacio alrededor */
-  }
-
-  .logo-left {
-    margin-top: 20px; /* Sube el logo un poco */
-    width: 100%; /* Hace que el logo ocupe todo el ancho disponible */
-    max-width: 400px; /* Limita el tamaño máximo del logo */
-    margin-bottom: 20px; /* Mantiene un pequeño espacio debajo */
-  }
 
   .btn-Inicio {
-    padding: 12px 24px; /* Aumenta el tamaño del botón para que sea más accesible en pantallas pequeñas */
-    width: 60%; /* Hace que el botón ocupe todo el ancho disponible */
-    margin-top: 30px; /* Reduce el margen superior */
+    padding: 10px 22px;
+    font-size: 14px;
+    width: auto;
+    margin-left: 0%;
+    margin-top: 350%;
+    text-decoration: none; /* Elimina el subrayado */
+
   }
+  .logo-left {
+    width: 90%;       /* Ajusta el ancho del logo */
+    max-width: 50px;  
+    margin-top: -120px; /* Sube el logo hacia arriba */
 }
+
+}
+
+
 
 
 .background-image {

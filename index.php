@@ -21,8 +21,7 @@
  
 <body>
 <?php include './includes/menu_nav.php'; ?>
-<div class="header-content container">
-  </div>
+
   <div class="background-image" id="backgroundDiv">
     <div class="content-left">
       <img src="/neuro/images/MARCA NEUROVIDA.svg" alt="Club Neurovida" class="logo-left">

@@ -12,7 +12,7 @@
 </head>
 <body>
 <header class="header">
-<?php include '../nwurovida/includes/menu_nav.php'; ?>
+<?php include "../../../nwurovida/includes/menu_nav.php"; ?>
     <div class="header-content container">
             <div class="header-txt">
 
@@ -163,7 +163,7 @@
     </section>
 
     <div style="height: 40px; background-color: white;"></div>
-    <?php include './includes/footer.php'; ?>
+    <?php include "../../../nwurovida/includes/footer.php"; ?>
 
 </body>
 </html>

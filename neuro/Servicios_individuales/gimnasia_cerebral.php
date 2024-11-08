@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Gimnasia Cerebral</title>
-    <link rel="stylesheet" href="/neuro/css/cursocompu.css">
+    <link rel="stylesheet" href="/neuro/css/gimnasia.css">
     <link rel="stylesheet" href="/includes/footer.css">
     <link rel="shortcut icon" href="../images/apple-icon-144x144.png" type="image/x-icon">
 </head>
 
 <body>
     <header class="header_gimnasia">
-    <?php include '../../../nwurovida/includes/menu_nav.php'; ?>
+    <?php include '../nwurovida/includes/menu_nav.php'; ?>
     <div class="header-content container">
             <div class="header-txt">
                 <h1>Gimnasia Cerebral</h1>

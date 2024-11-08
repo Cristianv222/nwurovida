@@ -21,7 +21,6 @@
  
 <body>
 <?php include './includes/menu_nav.php'; ?>
-
   <div class="background-image" id="backgroundDiv">
     <div class="content-left">
       <img src="/neuro/images/MARCA NEUROVIDA.svg" alt="Club Neurovida" class="logo-left">
@@ -96,7 +95,7 @@
   </div>
   <div class="contenedor-principal">
     <div class="objetivos-container">
-      <img src="./neuro/images/Objetivo2.png" alt="Objetivos" class="objetivos-img">
+      <img src="./neuro/images/Objetivo2-min.png" alt="Objetivos" class="objetivos-img">
       <div class="objetivos-texto">
         <h2>Objetivos</h2>
         <ul>
@@ -112,7 +111,7 @@
     </div>
 
     <div class="profesionales-container">
-      <img src="./neuro/images/Profesiones.png" alt="Profesionales" class="profesionales-img">
+      <img src="./neuro/images/Profesiones-min.png" alt="Profesionales" class="profesionales-img">
       <div class="profesionales-texto">
         <h2>Profesionales</h2>
         <ul>

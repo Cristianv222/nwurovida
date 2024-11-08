@@ -177,17 +177,15 @@
             <li>Soporte técnico 24/7</li>
             <li>Almacenamiento en la nube</li>
         </ul>
-<<<<<<< Updated upstream
     </div>
 </div>
     </section>
 
-=======
+
 </div>
 </div>
     </section>
     
->>>>>>> Stashed changes
     <div style="height: 40px; background-color: white;"></div>
     <?php include './includes/footer.php'; ?>
 

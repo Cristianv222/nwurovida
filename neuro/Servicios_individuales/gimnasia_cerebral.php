@@ -12,7 +12,7 @@
 
 <body>
     <header class="header_gimnasia">
-    <?php include '../nwurovida/includes/menu_nav.php'; ?>
+    <?php include '../../../nwurovida/includes/menu_nav.php'; ?>
     <div class="header-content container">
             <div class="header-txt">
                 <h1>Gimnasia Cerebral</h1>

@@ -32,7 +32,7 @@
                 </a>
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/yoga.jpg" alt="Servicio 2">
+                <img src="./neuro/images/Salud mental.png" alt="Servicio 2">
                 <h3>Salud mental</h3>
                 <p>Descripción del servicio 2.</p>
                 <a href="./neuro/Servicios_individuales/saludMental.php">
@@ -40,7 +40,7 @@
                 </a>
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/tareas dirigidas.jpg" alt="Servicio 3">
+                <img src="./neuro/images/Tareas dirigidas.png" alt="Servicio 3">
                 <h3>Tareas dirigidas</h3>
                 <p> Los niños tendrán un rendimiento
                     académico más sólido.</p>
@@ -49,9 +49,8 @@
                 </a>
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/acompañamiento de doulas.jpg" alt="Servicio 4">
-                <h3>Acompañamiento de
-                    las Doulas </h3>
+                <img src="./neuro/images/Acompañamiento de las Doulas.png" alt="Servicio 4">
+                <h3>Acompañamiento de las Doulas </h3>
                 <p>Mejora las experiencias
                     durante el embarazo.</p>
                 <a href="./neuro/Servicios_individuales/acompañamientoDoulas.php">
@@ -59,7 +58,7 @@
                 </a>
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/educacion financiera y emprendimienot.jpg" alt="Servicio 5">
+                <img src="./neuro/images/Educación Financiera y Emprendimiento.png" alt="Servicio 5">
                 <h3>Educación Financiera
                     y Emprendimiento</h3>
                 <p>Descripción del servicio 5.</p>
@@ -69,7 +68,7 @@
 
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/cursos de computacion.jpg" alt="Servicio 6">
+                <img src="./neuro/images/Cursos de Computación.png" alt="Servicio 6">
                 <h3>Cursos de
                     Computación </h3>
                 <p>Descripción del servicio 6.</p>
@@ -78,7 +77,7 @@
                 </a>
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/programacion.jpg" alt="Servicio 7">
+                <img src="./neuro/images/Programación.png" alt="Servicio 7">
                 <h3>Programación</h3>
                 <p>Descripción del servicio 7.</p>
                 <a href="./neuro/Servicios_individuales/programacion.php">
@@ -86,7 +85,7 @@
                 </a>
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/curso ingles.jpg" alt="Servicio 8">
+                <img src="./neuro/images/Inglés.png" alt="Servicio 8">
                 <h3>Inglés </h3>
                 <p>Descripción del servicio 8.</p>
                 <a href="/neuro/Servicios_individuales/ingles.php">

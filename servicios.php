@@ -34,7 +34,7 @@
             <div class="card fade-up">
                 <img src="./neuro/images/Salud mental.png" alt="Servicio 2">
                 <h3>Salud mental</h3>
-                <p>Descripción del servicio 2.</p>
+                <p>Sesiones de yoga adaptadas a diferentes públicos: embarazadas, niños y adultos, con el objetivo de promover el bienestar físico y emocional.</p>
                 <a href="./neuro/Servicios_individuales/saludMental.php">
                     <button class="quick-view">Vista rápida</button>
                 </a>
@@ -43,7 +43,9 @@
                 <img src="./neuro/images/Tareas dirigidas.png" alt="Servicio 3">
                 <h3>Tareas dirigidas</h3>
                 <p> Los niños tendrán un rendimiento
-                    académico más sólido.</p>
+                    académico más sólido, lo que les permitirá progresar en su
+                    educación y superar las dificultades relacionadas con la
+                    disrupción en su formación.</p>
                 <a href="./neuro/Servicios_individuales/Tareas_asistidas.php">
                     <button class="quick-view">Vista rápida</button>
                 </a>
@@ -51,8 +53,11 @@
             <div class="card fade-up">
                 <img src="./neuro/images/Acompañamiento de las Doulas.png" alt="Servicio 4">
                 <h3>Acompañamiento de las Doulas </h3>
-                <p>Mejora las experiencias
-                    durante el embarazo.</p>
+                <p>es fundamental para el bienestar
+                    de las mujeres en gestación, especialmente aquellas que enfrentan
+                    desafíos emocionales, físicos o sociales. Mejora las experiencias
+                    durante el embarazo, sino que también facilitaría la creación de
+                    vínculos afectivos positivos con sus hijos</p>
                 <a href="./neuro/Servicios_individuales/acompañamientoDoulas.php">
                     <button class="quick-view">Vista rápida</button>
                 </a>
@@ -61,7 +66,10 @@
                 <img src="./neuro/images/Educación Financiera y Emprendimiento.png" alt="Servicio 5">
                 <h3>Educación Financiera
                     y Emprendimiento</h3>
-                <p>Descripción del servicio 5.</p>
+                <p>▪ Introducción a los Objetivos de Desarrollo Sostenible (ODS)
+                ▪ Plan de negocios básico (Producto Mínimo Viable)
+                    ▪ Campaña básica de marketing
+                    ▪ Ventas</p>
                 <a href="./neuro/Servicios_individuales/EduFinanciero.php">
                     <button class="quick-view">Vista rápida</button>
                 </a>
@@ -71,7 +79,14 @@
                 <img src="./neuro/images/Cursos de Computación.png" alt="Servicio 6">
                 <h3>Cursos de
                     Computación </h3>
-                <p>Descripción del servicio 6.</p>
+                <p>Manejo de principios básicos (Paquete Office):
+                    ▪ Word
+                    ▪ Excel
+                    ▪ PowerPoint
+                    Herramientas de diseño gráfico:
+                    ▪ Canva
+                    ▪ Genially
+                    ▪ Paint</p>
                 <a href="./neuro/Servicios_individuales/cursos_de_computacion.php">
                     <button class="quick-view">Vista rápida</button>
                 </a>
@@ -79,7 +94,10 @@
             <div class="card fade-up">
                 <img src="./neuro/images/Programación.png" alt="Servicio 7">
                 <h3>Programación</h3>
-                <p>Descripción del servicio 7.</p>
+                <p>▪ Introducción a la programación
+▪ Introducción a la inteligencia artificial
+▪ Creación de páginas web
+▪ Creación de juegos interactivos en Pyton</p>
                 <a href="./neuro/Servicios_individuales/programacion.php">
                     <button class="quick-view">Vista rápida</button>
                 </a>
@@ -89,12 +107,12 @@
                 <h3>Inglés </h3>
                 <p>Descripción del servicio 8.</p>
                 <a href="/neuro/Servicios_individuales/ingles.php">
-                <button class="quick-view">Vista rápida</button>
+                    <button class="quick-view">Vista rápida</button>
                 </a>
 
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/robotica.jpg" alt="Servicio 9">
+                <img src="./neuro/images/Robotica.png" alt="Servicio 9">
                 <h3>Robótica </h3>
                 <p>Descripción del servicio 9.</p>
                 <a href="./neuro/Servicios_individuales/robotica.php">
@@ -102,7 +120,7 @@
                 </a>
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/manualidades.jpg" alt="Servicio 10">
+                <img src="./neuro/images/manualidades.png" alt="Servicio 10">
                 <h3> Manualidades </h3>
                 <p>Descripción del servicio 10.</p>
                 <a href="./neuro/Servicios_individuales/manulidades.php">

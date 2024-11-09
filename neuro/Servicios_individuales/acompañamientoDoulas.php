@@ -13,22 +13,13 @@
 
 <body>
     <header class="header_doulas">
-    <?php include '../nwurovida/includes/menu_nav.php'; ?>
-    <div class="header-content container">
+        <div class="header-content container">
             <div class="header-txt">
-
                 <h1>ACOMPAÑAMIENTO DE LAS DOULAS</h1>
-                <p>
-
-                </p>
-                <a href="#" class="btn-1">Informacion</a>
+                <div class="header-img">
+                    <img src="/neuro/images/doula1.png" alt="">
+                </div>
             </div>
-            <div class="header-img">
-                <img src="/neuro/images/doula1.png" alt="">
-
-            </div>
-
-        </div>
 
 
     </header>
@@ -108,52 +99,48 @@
     </main>
 
     <section class="pricing">
-    <div class="pricing-container">
-    <div class="pricing-card">
-        <h3>Premium</h3>
-        <p class="price"><span>€</span>2.49<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-            <li>SEO avanzado</li>
-            <li>Análisis de visitas</li>
-            <li>Chat en vivo con WhatsApp</li>
-            <li>Soporte técnico 24/7</li>
-        </ul>
-    </div>
-    
-    <div class="pricing-card popular">
-        <h3>Business</h3>
-        <p class="price"><span>€</span>3.49<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-            <li>SEO avanzado</li>
-            <li>Análisis de visitas</li>
-            <li>Chat en vivo con WhatsApp</li>
-            <li>Soporte técnico 24/7</li>
-            <li>Más espacio de almacenamiento</li>
-        </ul>
-    </div>
-    
-    <div class="pricing-card">
-        <h3>Cloud Startup</h3>
-        <p class="price"><span>€</span>7.99<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-            <li>SEO avanzado</li>
-            <li>Análisis de visitas</li>
-            <li>Chat en vivo con WhatsApp</li>
-            <li>Soporte técnico 24/7</li>
-            <li>Almacenamiento en la nube</li>
-        </ul>
-</div>
-</div>
-  
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <p class="price"><span>€</span>2.49<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>SEO avanzado</li>
+                    <li>Análisis de visitas</li>
+                    <li>Chat en vivo con WhatsApp</li>
+                    <li>Soporte técnico 24/7</li>
+                </ul>
+            </div>
 
-    <div style="height: 40px; background-color: white;"></div>
-    <?php include './includes/footer.php'; ?>
+            <div class="pricing-card popular">
+                <h3>Business</h3>
+                <p class="price"><span>€</span>3.49<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>SEO avanzado</li>
+                    <li>Análisis de visitas</li>
+                    <li>Chat en vivo con WhatsApp</li>
+                    <li>Soporte técnico 24/7</li>
+                    <li>Más espacio de almacenamiento</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Cloud Startup</h3>
+                <p class="price"><span>€</span>7.99<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>SEO avanzado</li>
+                    <li>Análisis de visitas</li>
+                    <li>Chat en vivo con WhatsApp</li>
+                    <li>Soporte técnico 24/7</li>
+                    <li>Almacenamiento en la nube</li>
+                </ul>
+            </div>
+        </div>
 
 </body>
 

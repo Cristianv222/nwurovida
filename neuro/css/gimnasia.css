@@ -118,7 +118,7 @@
     text-align: center;
     background-color: #fafafa;
     border-radius: 10px;
-
+    margin-top: 10px; /* Ajusta este valor según lo que necesites */
 }
 
 .servicios h2 {
@@ -246,8 +246,9 @@ form h2 {
 
 /* Precios */
 .pricing-container {    
+    margin-top:30px; /* Ajusta este valor según lo que necesites */
     display: flex;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }

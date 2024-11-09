@@ -152,7 +152,6 @@ footer {
     content: "";
     height: 8px;
     width: 8px;
-    background: #fff;
     bottom: -3px;
     left: 50%;
     transform: translate(-50%) rotate(45deg);
@@ -177,12 +176,20 @@ footer {
     background: #1877f2;
     color: #fff;
   }
-  
+
   .wrapper .tiktok:hover,
   .wrapper .tiktok:hover .tooltip,
   .wrapper .tiktok:hover .tooltip::before {
     background: black; /* Cambia a negro */
     color: #fff; /* Texto blanco */
+  }  
+  .wrapper .tiktok img {
+    filter: invert(0) sepia(0) saturate(100%) hue-rotate(0deg);
+    transition: filter 0.3s ease;
+  }
+  
+  .wrapper .tiktok:hover img {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg); /* Cambia el color */
   }
   
   
@@ -198,6 +205,15 @@ footer {
   background: #25D366;
   color: #fff;
   }
+  .wrapper .whatsapp img {
+    filter: invert(0) sepia(0) saturate(100%) hue-rotate(0deg);
+    transition: filter 0.3s ease;
+  }
+  
+  .wrapper .whatsapp:hover img {
+    filter: invert(1) brightness(100) saturate(100%); /* Cambia el icono a blanco */
+  }
+  
   
 /* Estilos responsive para dispositivos móviles */
 @media (max-width: 768px) {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +15,8 @@
     <header class="header_gimnasia">
     <?php include "../../../nwurovida/includes/menu_nav.php"; ?>
     <div class="header-content container">
+
+        <div class="header-content container">
             <div class="header-txt">
                 <h1>Gimnasia Cerebral</h1>
             </div>
@@ -44,7 +47,6 @@
         </div>
 
     </section>
-
     <main class="servicios">
         <h2>Beneficios</h2>
         <div class="servicios-content container">
@@ -121,53 +123,54 @@
         </div>
     </main>
 
-    <section class="pricing">
-    <div class="pricing-container">
-    <div class="pricing-card">
-        <h3>Premium</h3>
-        <p class="price"><span>€</span>2.49<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-            <li>SEO avanzado</li>
-            <li>Análisis de visitas</li>
-            <li>Chat en vivo con WhatsApp</li>
-            <li>Soporte técnico 24/7</li>
-        </ul>
-    </div>
-    
-    <div class="pricing-card popular">
-        <h3>Business</h3>
-        <p class="price"><span>€</span>3.49<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-            <li>SEO avanzado</li>
-            <li>Análisis de visitas</li>
-            <li>Chat en vivo con WhatsApp</li>
-            <li>Soporte técnico 24/7</li>
-            <li>Más espacio de almacenamiento</li>
-        </ul>
-    </div>
-    
-    <div class="pricing-card">
-        <h3>Cloud Startup</h3>
-        <p class="price"><span>€</span>7.99<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-            <li>SEO avanzado</li>
-            <li>Análisis de visitas</li>
-            <li>Chat en vivo con WhatsApp</li>
-            <li>Soporte técnico 24/7</li>
-            <li>Almacenamiento en la nube</li>
-        </ul>
-    </div>
-</div>
-    </section>
 
+    <section class="pricing">
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <p class="price"><span>€</span>2.49<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>SEO avanzado</li>
+                    <li>Análisis de visitas</li>
+                    <li>Chat en vivo con WhatsApp</li>
+                    <li>Soporte técnico 24/7</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card popular">
+                <h3>Business</h3>
+                <p class="price"><span>€</span>3.49<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>SEO avanzado</li>
+                    <li>Análisis de visitas</li>
+                    <li>Chat en vivo con WhatsApp</li>
+                    <li>Soporte técnico 24/7</li>
+                    <li>Más espacio de almacenamiento</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Cloud Startup</h3>
+                <p class="price"><span>€</span>7.99<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>SEO avanzado</li>
+                    <li>Análisis de visitas</li>
+                    <li>Chat en vivo con WhatsApp</li>
+                    <li>Soporte técnico 24/7</li>
+                    <li>Almacenamiento en la nube</li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <div style="height: 40px; background-color: white;"></div>
     <?php include "../../../nwurovida/includes/footer.php"; ?>
 
 </body>
+
 </html>

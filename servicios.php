@@ -24,88 +24,109 @@
         <div class="gallery">
             <div class="card fade-up">
                 <img src="./neuro/images/gimnasia.png" alt="Servicio 1">
-                <h3>Gimansia Cerebral</h3>
-                <p>Mejora las habilidades cognitivas, sociales y físicas mediante
-                    ejercicios que activan ambos hemisferios del cerebro.</p>
-                <a href="./neuro/Servicios_individuales/gimnasia_cerebral.php">
-                    <button class="quick-view">Vista rápida</button>
-                </a>
+                <h3>Gimnasia Cerebral</h3>
+                <p>Mejora las habilidades cognitivas, sociales y físicas mediante ejercicios que activan ambos hemisferios del cerebro.</p>
+                <button class="quick-view" onclick="openModal()">Vista rápida</button>
             </div>
+
+            <!-- Modal -->
+            <div id="myModal" class="modal" onclick="closeModal(event)">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <span class="close" onclick="closeModal(event)">&times;</span>
+                    <div id="modal-body"></div>
+                </div>
+            </div>
+
+
+
             <div class="card fade-up">
-                <img src="./neuro/images/yoga.jpg" alt="Servicio 2">
+                <img src="./neuro/images/Salud mental.png" alt="Servicio 2">
                 <h3>Salud mental</h3>
-                <p>Descripción del servicio 2.</p>
+                <p> Sesiones de yoga para embarazadas, niños y adultos, enfocadas en el bienestar físico y emocional.</p>
                 <a href="./neuro/Servicios_individuales/saludMental.php">
                     <button class="quick-view">Vista rápida</button>
                 </a>
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/tareas dirigidas.jpg" alt="Servicio 3">
+                <img src="./neuro/images/Tareas dirigidas.png" alt="Servicio 3">
                 <h3>Tareas dirigidas</h3>
-                <p> Los niños tendrán un rendimiento
-                    académico más sólido.</p>
+                <p> Los niños mejorarán su rendimiento académico, facilitando su progreso y superación de dificultades educativas.</p>
                 <a href="./neuro/Servicios_individuales/Tareas_asistidas.php">
                     <button class="quick-view">Vista rápida</button>
                 </a>
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/acompañamiento de doulas.jpg" alt="Servicio 4">
-                <h3>Acompañamiento de
-                    las Doulas </h3>
-                <p>Mejora las experiencias
-                    durante el embarazo.</p>
+                <img src="./neuro/images/Acompañamiento de las Doulas.png" alt="Servicio 4">
+                <h3>Acompañamiento de las Doulas </h3>
+                <p>Es crucial para el bienestar de las gestantes, especialmente si enfrentan desafíos, mejorando su experiencia y fomentando vínculos afectivos con sus hijos.</p>
                 <a href="./neuro/Servicios_individuales/acompañamientoDoulas.php">
                     <button class="quick-view">Vista rápida</button>
                 </a>
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/educacion financiera y emprendimienot.jpg" alt="Servicio 5">
+                <img src="./neuro/images/Educación Financiera y Emprendimiento.png" alt="Servicio 5">
                 <h3>Educación Financiera
                     y Emprendimiento</h3>
-                <p>Descripción del servicio 5.</p>
+                <p>
+                    ▪ Introducción a los Objetivos de Desarrollo Sostenible (ODS) <br>
+                    ▪ Plan de negocios básico (Producto Mínimo Viable) <br>
+                    ▪ Campaña básica de marketing <br>
+                    ▪ Ventas
+                </p>
+
                 <a href="./neuro/Servicios_individuales/EduFinanciero.php">
                     <button class="quick-view">Vista rápida</button>
                 </a>
 
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/cursos de computacion.jpg" alt="Servicio 6">
+                <img src="./neuro/images/Cursos de Computación.png" alt="Servicio 6">
                 <h3>Cursos de
                     Computación </h3>
-                <p>Descripción del servicio 6.</p>
+                <p>Manejo de principios básicos:<br>
+                    ▪ Word<br>
+                    ▪ Excel<br>
+                    ▪ PowerPoint<br>
+                    Herramientas de diseño gráfico:<br>
+                    ▪ Canva<br>
+                    ▪ Genially<br>
+                    ▪ Paint<br></p>
                 <a href="./neuro/Servicios_individuales/cursos_de_computacion.php">
                     <button class="quick-view">Vista rápida</button>
                 </a>
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/programacion.jpg" alt="Servicio 7">
+                <img src="./neuro/images/Programación.png" alt="Servicio 7">
                 <h3>Programación</h3>
-                <p>Descripción del servicio 7.</p>
+                <p>▪ Introducción a la programación<br>
+                    ▪ Introducción a la inteligencia artificial<br>
+                    ▪ Creación de páginas web<br>
+                    ▪ Creación de juegos interactivos en Pyton<br></p>
                 <a href="./neuro/Servicios_individuales/programacion.php">
                     <button class="quick-view">Vista rápida</button>
                 </a>
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/curso ingles.jpg" alt="Servicio 8">
+                <img src="./neuro/images/Inglés.png" alt="Servicio 8">
                 <h3>Inglés </h3>
-                <p>Descripción del servicio 8.</p>
+                <p> Para niños de 7 a 10 años, con juegos, canciones y actividades interactivas que fomentan el aprendizaje divertido y efectivo del inglés.</p>
                 <a href="/neuro/Servicios_individuales/ingles.php">
-                <button class="quick-view">Vista rápida</button>
+                    <button class="quick-view">Vista rápida</button>
                 </a>
 
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/robotica.jpg" alt="Servicio 9">
+                <img src="./neuro/images/Robotica.png" alt="Servicio 9">
                 <h3>Robótica </h3>
-                <p>Descripción del servicio 9.</p>
+                <p>Curso de robótica para desarrollar habilidades en la construcción y programación de robots mediante proyectos prácticos e innovadores.</p>
                 <a href="./neuro/Servicios_individuales/robotica.php">
                     <button class="quick-view">Vista rápida</button>
                 </a>
             </div>
             <div class="card fade-up">
-                <img src="./neuro/images/manualidades.jpg" alt="Servicio 10">
+                <img src="./neuro/images/manualidades.png" alt="Servicio 10">
                 <h3> Manualidades </h3>
-                <p>Descripción del servicio 10.</p>
+                <p> Para crear proyectos originales y desarrollar la creatividad a través de técnicas variadas y materiales diversos.</p>
                 <a href="./neuro/Servicios_individuales/manulidades.php">
                     <button class="quick-view">Vista rápida</button>
                 </a>
@@ -133,4 +154,29 @@
             });
         }, 300);
     });
+
+    function openModal() {
+    var modal = document.getElementById("myModal");
+    var modalBody = document.getElementById("modal-body");
+
+    // Realizamos la carga del contenido PHP dentro del modal
+    fetch('./neuro/Servicios_individuales/gimnasia_cerebral.php')
+        .then(response => response.text())
+        .then(data => {
+            modalBody.innerHTML = data; // Inserta el contenido dentro del modal
+            modal.style.display = "flex"; // Muestra el modal usando flexbox
+        })
+        .catch(error => {
+            console.error('Error cargando el contenido:', error);
+        });
+}
+
+function closeModal(event) {
+    var modal = document.getElementById("myModal");
+    // Si el clic ocurrió en el fondo (no en el contenido), cerrar el modal
+    if (event.target === modal) {
+        modal.style.display = "none"; // Cierra el modal
+    }
+}
+
 </script>

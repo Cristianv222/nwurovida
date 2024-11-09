@@ -40,18 +40,10 @@
     </svg>
   </li>
   <li class="icon tiktok">
-    <span class="tooltip">TikTok</span>
-    <svg
-      viewBox="0 0 48 48"
-      height="1.8em"
-      fill="currentColor"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M24 4C16.536 4 10 10.536 10 18c0 6.23 4.658 11.69 10.625 11.96v-8.073H16.125c-1.392 0-2.625-1.134-2.625-2.625v-7.5c0-1.392 1.134-2.625 2.625-2.625h5.083V18h7.24c.554 0 1.076.224 1.465.617a2.609 2.609 0 0 1 .621 1.9c-.021 1.124-.856 2.113-1.943 2.113h-5.868v8.073C28.113 29.33 34 23.472 34 16c0-7.464-5.536-12-10-12zm-.032 3.925c.467-.051.933-.083 1.4-.083 3.88 0 7 3.12 7 7 0 3.88-3.12 7-7 7-1.23 0-2.39-.312-3.4-.865v-6.395h4.11c1.404 0 2.562-1.158 2.562-2.563s-1.158-2.563-2.562-2.563h-4.11v-1.036z"
-      ></path>
-    </svg>
-  </li>
+  <span class="tooltip">TikTok</span>
+  <img src="/neuro/images/tiktok-icon.svg" alt="TikTok Icon" height="30.8em">
+</li>
+
   <li class="icon instagram">
     <span class="tooltip">Instagram</span>
     <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -59,11 +51,11 @@
     </svg>
   </li>
   <li class="icon whatsapp">
-    <span class="tooltip">WhatsApp</span>
-    <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" viewBox="0 0 448 512">
-      <path d="M380.9 97.1C339.3 55.5 285.7 32 228.4 32 103.5 32 0 135.6 0 260.5c0 45.4 12.2 89.4 35.3 127L0 480l97.8-34.4c36.6 19.7 77.9 30.1 119.8 30.1 124.9 0 228.5-103.6 228.5-228.5 0-57.3-23.5-110.9-65.2-152.5zm-6.5 275.1c-10 27.5-49.4 50.5-79.6 53-21.6 2.1-51.6 3.9-150.3-64-39.6-27.6-67-61.9-75-87.6-8.2-27.3-8.4-50.4-5.9-62 6.5-27.5 41-47.2 68.8-46.7 18.3.3 36.6 9.2 49.3 25.3l21.4 27.4c1.9 2.4 3 5.5 3 8.7 0 7.1-3.6 13.7-9.8 17.6l-20.7 13.6c-3.6 2.3-4.9 6.9-3.1 10.8 8.6 18.6 26.8 39.4 50.2 51.1 3.7 2 8.4 1.9 12-1l21.5-16.7c2.3-1.8 5.2-2.7 8.1-2.7 4.9 0 9.4 2.5 12.4 6.6l24.5 34.3c7.4 10.5 11.6 22.9 11.7 35.4.1 12.6-4.2 25-12.2 35.2z"></path>
-    </svg>
-  </li>
+  <span class="tooltip">WhatsApp</span>
+  <img src="/neuro/images/whatsapp-icon.svg" alt="WhatsApp Icon" height="35.2em">
+</li>
+
+
 </ul>
 
         </div>

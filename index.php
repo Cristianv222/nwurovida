@@ -36,50 +36,40 @@
     <div class="carousel-container">
       <div class="carousel">
         <div class="card">
-          <img src="./neuro/images/manualidades.jpg" alt="Imagen 1">
+          <img src="./neuro/images/manualidades.png" alt="Imagen 1">
           <h3>Manualidades</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="card">
-          <img src="./neuro/images/cursos de computacion.jpg" alt="Imagen 2">
+          <img src="./neuro/images/Cursos de Computación.png" alt="Imagen 2">
           <h3>Cursos de computacion</h3>
-          <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="card">
           <img src="./neuro/images/gimnasia.png" alt="Imagen 3">
           <h3>Gimnasia cerebral</h3>
-          <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="card">
-          <img src="./neuro/images/programacion.jpg" alt="Imagen 4">
+          <img src="./neuro/images/Programación.png" alt="Imagen 4">
           <h3>Programación</h3>
-          <P>ipsum dolor sit amet consectetur adipisicing elit.</P>
         </div>
         <div class="card">
-          <img src="./neuro/images/yoga.jpg" alt="Imagen 5">
+          <img src="./neuro/images/Salud mental.png" alt="Imagen 5">
           <h3>Salud mental</h3>
-          <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="card">
-          <img src="./neuro/images/educacion financiera y emprendimienot.jpg" alt="Imagen 6">
-          <h3> Educación Financiera
-            y Emprendimiento</h3>
-          <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <img src="./neuro/images/Educación Financiera y Emprendimiento.png" alt="Imagen 6">
+          <h3> Educación Financiera y Emprendimiento</h3>
         </div>
         <div class="card">
-          <img src="./neuro/images/tareas dirigidas.jpg" alt="Imagen 7">
+          <img src="./neuro/images/Tareas dirigidas.png" alt="Imagen 7">
           <h3>Tareas dirigidas</h3>
-          <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <div class="card">
-          <img src="./neuro/images/acompañamiento de doulas.jpg" alt="Imagen 9">
+          <img src="./neuro/images/Acompañamiento de las Doulas.png" alt="Imagen 9">
           <h3>Acompañamiento de doulas</h3>
-          <P>ipsum dolor sit amet consectetur adipisicing elit.</P>
         </div>
         <div class="card">
-          <img src="./neuro/images/curso ingles.jpg" alt="Imagen 10">
+          <img src="./neuro/images/Inglés.png" alt="Imagen 10">
           <h3>Curso de ingles</h3>
-          <p>ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
       <img src="./neuro/images/flecha_izquierda.svg" alt="Flecha Izquierda" class="prev" onclick="moveCarousel(-1)">

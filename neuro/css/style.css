@@ -60,8 +60,6 @@
 }
 
 
-
-
 .background-image {
   background-image: url('/neuro/images/imagen portada.webp'); /* Ruta de la imagen de fondo */
   background-size: cover; /* Ajusta la imagen para que cubra todo el div */
@@ -293,7 +291,7 @@
   }
   
   .card img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     margin-bottom: 15px;
   }
@@ -301,7 +299,7 @@
   .card h3 {
     padding: 10px;
     font-size: 18px;
-    color: #333;
+    color: #02B1F4;
   }
   
   .ver-mas-container {

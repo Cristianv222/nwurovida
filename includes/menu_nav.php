@@ -17,22 +17,7 @@
             <li><a href="/index.php">Inicio</a></li>
             <li><a href="/quienres_somos.php">Quiénes Somos</a></li>
             <li><a href="/contactanos.php">Contáctanos</a></li>
-            <li class="services">
-                <a href="/servicios.php">Servicios</a>
-                <div class="dropdown-content">
-                    <p>Gimansia Cerebral</p>
-                    <p>Salud mental</p>
-                    <p>Tareas dirigidas</p>
-                    <p>Acompañamiento de las Doulas </p>
-                    <p>Educación Financiera y Emprendimiento </p>
-                    <p>Cursos de Computación </p>
-                    <p>Programación</p>
-                    <p>Inglés</p>
-                    <p>Robótica</p>
-                    <p>Manualidades</p>
-
-                </div>
-            </li>
+            <li><a href="/servicios.php">Servicios</a></li>
         </ul>
 
         <div class="buttons">

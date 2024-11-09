@@ -18,32 +18,29 @@
                 <h1>Gimnasia Cerebral</h1>
             </div>
             <div class="header-img">
-                <img src="/neuro/images/g1.png" alt="">
+                <img src="/neuro/images/gimnasia.png" alt="">
             </div>
         </div>
     </header>
-
     <section class="about container">
-        <div class="about-img">
-            <img src="/neuro/images/gs4.jpg" alt="">
-        </div>
-        <div class="about-txt">
-            <h2>Niños de cualquier edad/Adultos mayores</h2>
-            <p>
-                A través de ejercicios mentales diseñados
-                para mejorar la memoria, la atención y el razonamiento, mantener
-                su mente activa y saludable, ayudando a prevenir el deterioro
-                cognitivo.
-            <p>
-                Mejora las habilidades cognitivas, sociales y físicas mediante
-                ejercicios que activan ambos hemisferios del cerebro, mejorando no
-                solo el aprendizaje sino también el bienestar emocional.
-            </p>
-            </p>
-
-        </div>
-
-    </section>
+    <div class="about-img">
+        <img src="/neuro/images/Niño y Viejo.png" alt="">
+    </div>
+    <div class="about-txt">
+        <h2>Niños de cualquier edad/Adultos mayores</h2>
+        <p>
+            A través de ejercicios mentales diseñados
+            para mejorar la memoria, la atención y el razonamiento, mantener
+            su mente activa y saludable, ayudando a prevenir el deterioro
+            cognitivo.
+        </p>
+        <p>
+            Mejora las habilidades cognitivas, sociales y físicas mediante
+            ejercicios que activan ambos hemisferios del cerebro, mejorando no
+            solo el aprendizaje sino también el bienestar emocional.
+        </p>
+    </div>
+</section>
     <main class="servicios">
         <h2>Beneficios</h2>
         <div class="servicios-content container">
@@ -165,7 +162,6 @@
             </div>
         </div>
     </section>
-    <div style="height: 40px; background-color: white;"></div>
 </body>
 
 </html>

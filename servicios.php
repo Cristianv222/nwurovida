@@ -44,7 +44,7 @@
                 <h3>Salud mental</h3>
                 <p> Sesiones de yoga para embarazadas, niños y adultos, enfocadas en el bienestar físico y emocional.</p>
                 <a href="./neuro/Servicios_individuales/saludMental.php">
-                    <button class="quick-view">Vista rápida</button>
+                <button class="quick-view" onclick="openModal()">Vista rápida</button>
                 </a>
             </div>
             <div class="card fade-up">

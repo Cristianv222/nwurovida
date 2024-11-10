@@ -265,8 +265,8 @@
 }
 .carousel-container {
     position: relative;
-    width: 100%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1500px;
     margin: auto;
     overflow: hidden;
   }
@@ -329,20 +329,15 @@
   /* Responsive */
   @media (max-width: 768px) {
     .card {
-      min-width: calc(50% - 20px); /* Muestra 2 cartas */
+      min-width: 100%; /* Una carta por fila */
     }
   }
   
+  /* Para pantallas muy pequeñas (hasta 480px), se muestra una carta */
   @media (max-width: 480px) {
     .card {
-      min-width: 100%; /* Muestra 1 carta */
+      min-width: 100%; /* Una carta por fila */
     }
-  }
-  .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
   }
   
 /* Botón para carrusel */

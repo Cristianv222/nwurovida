@@ -178,6 +178,14 @@
         p {
             font-size: 16px;
         }
+        .card {
+            padding: 5px;
+        }
+        .card img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 10px;
+        }
     }
     
     /* Móviles: ajustar a una sola columna */
@@ -195,7 +203,12 @@
         }
     
         .card {
-            padding: 15px;
+            padding: 5px;
+        }
+        .card img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 10px;
         }
         .header-content {
             display: flex;
@@ -228,5 +241,10 @@
             margin-bottom: 10px;
             letter-spacing: 0;
             white-space: normal;
+        }
+        .card img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 10px;
         }
     }

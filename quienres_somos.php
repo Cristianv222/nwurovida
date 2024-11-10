@@ -51,7 +51,7 @@
         if (index >= images.length) {
             index = 0;
         }
-        carrusel.style.transform = `translateX(${-index * 900}px)`;
+        carrusel.style.transform = `translateX(${-index * 700}px)`;
     }
 
     setInterval(runCarousel, 3000); // Cambia de imagen cada 3 segundos

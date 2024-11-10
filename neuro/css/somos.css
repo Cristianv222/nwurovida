@@ -27,14 +27,16 @@
   align-items: flex-start; /* Alinea las secciones al top */
   gap: 3rem; /* Espacio entre las secciones */
   flex-wrap: wrap; /* Permite que las secciones se ajusten en pantallas pequeñas */
+  
 }
 .hero-txt h1 {
-
   color: #56b1df;
   text-transform: uppercase;
-  font-size: 80px; /* Tamaño de fuente para pantallas grandes */
+  font-size: 60px; /* Tamaño de fuente para pantallas grandes */
   line-height: 1.2;
   margin: 0;
+  margin-left: 320px; /* Mueve el texto hacia la derecha */
+
 }
 /* Contenedor principal que alinea las secciones horizontalmente */
 .contenedor-horizontal {
@@ -46,17 +48,18 @@
   display: flex;
   justify-content: left;
   overflow: hidden;
-  width: 900px; /* Este ancho debe coincidir con el ancho de las imágenes */
+  width: 700px; /* Este ancho debe coincidir con el ancho de las imágenes */
   height: auto;
 }
 
 .carrusel {
   display: flex;
   transition: transform 1s ease;
+
 }
 
 .carrusel img {
-  width: 900px; /* Asegúrate de que las imágenes tengan este tamaño */
+  width: 700px; /* Asegúrate de que las imágenes tengan este tamaño */
   height: auto;
   border-radius: 10px;
 }
@@ -90,6 +93,7 @@
   }
 
   .hero-txt h1 {
+    margin-left: 10px; /* Mueve el texto hacia la derecha */
     font-size: 48px; /* Reduce el tamaño de fuente en pantallas pequeñas */
     text-align: center; /* Centra el título */
   }

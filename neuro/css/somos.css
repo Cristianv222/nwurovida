@@ -76,3 +76,44 @@
 .imagen-efecto:hover {
   transform: scale(1.1);
 }
+/* Media Queries para hacerlo responsive en dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .hero-content {
+    padding-top: 100px; /* Ajuste el espacio superior en pantallas más pequeñas */
+    max-width: 90%; /* Reduce el ancho máximo */
+  }
+
+  .hero-txt {
+    flex-direction: column; /* Cambia la disposición a vertical */
+    align-items: center; /* Centra las secciones */
+    gap: 2rem; /* Reduce el espacio entre las secciones */
+  }
+
+  .hero-txt h1 {
+    font-size: 48px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+    text-align: center; /* Centra el título */
+  }
+
+  .contenedor-horizontal {
+    flex-direction: column; /* Disposición vertical */
+    align-items: center; /* Centra las secciones */
+    gap: 1.5rem; /* Reduce el espacio entre las secciones */
+  }
+
+  .carrusel-container {
+    width: 100%; /* Asegura que el carrusel ocupe todo el ancho disponible */
+  }
+
+  .carrusel img {
+    width: 100%; /* Asegura que las imágenes se ajusten al ancho disponible */
+  }
+
+  .imagenes-hover {
+    flex-direction: column; /* Disposición vertical para las imágenes */
+    gap: 1rem; /* Espacio reducido entre las imágenes */
+  }
+
+  .imagen-efecto {
+    width: 100%; /* Asegura que las imágenes ocupen todo el ancho disponible */
+  }
+}

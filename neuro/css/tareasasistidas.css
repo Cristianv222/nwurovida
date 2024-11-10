@@ -11,8 +11,9 @@
 
 /* prueba de fuego*/
 .container {
-    max-width: 1100%;
-    margin: 0 auto;
+    max-width: 1200px; /* Ajustar según tu diseño */  
+    margin: 0 auto;  
+    padding: 20px;  
 }
 .header-content {
     display: flex;
@@ -38,7 +39,7 @@
     line-height: 1.2;
     color: #323232;
     text-transform: uppercase;
-    font-size: 63px; /* Tamaño de fuente para pantallas grandes */
+    font-size: 120px; /* Tamaño de fuente para pantallas grandes */
     margin-bottom: 10px;
     letter-spacing: 0;
     white-space: normal;
@@ -84,59 +85,61 @@
     margin-bottom: 45px;
 }
 
-.about {
-    padding: 100px 0;
-    display: flex;
+.about {  
+    display: flex;  
+    flex-direction: row; /* Cambiar a columna en pantallas pequeñas */  
+    align-items: center; /* Centrar verticalmente */  
+    justify-content: space-between; /* Espacio entre elementos */  
+}  
+
+.about-img {  
+    flex: 1; /* Hacer la imagen flexible */  
+    max-width: 50%; /* Ajustar el ancho máximo */  
+}  
+
+.about-img img {  
+    width: 100%; /* Asegurar que sea responsiva */  
+    height: auto; /* Mantener proporciones */  
+}  
+
+.about-txt {  
+    flex: 1; /* Hacer el texto flexible */  
+    padding-left: 20px; /* Espacio a la izquierda */  
+}  
+
+/* Ajustar elementos textuales */  
+.about-txt h2 {  
+    font-size: 2.5rem; /* Tamaño adaptativo */  
+    margin-bottom: 15px;  
+}  
+
+.about-txt p {  
+    font-size: 1rem;  
+}  
+
+/* Media Queries para pantallas pequeñas */  
+@media (max-width: 768px) {  
+    .about {  
+        flex-direction: column; /* Cambiar a columna */  
+        text-align: center; /* Centrar texto */  
+    }  
     
-}
+    .about-img {  
+        max-width: 100%; /* Asegurar que ocupe todo el ancho */  
+    }  
 
-.about-img {
-    width: 200%;
-}
-
-.about-img img {
-    width: 500px;
-    border-radius: 25px;
-}
-
-.about-txt {
-    width: 50%;
-    margin-left: 25px;
+    .about-txt {  
+        padding-left: 0; /* Remover padding en vista móvil */  
+    }  
     
-}
+    .about-txt h2 {  
+        font-size: 2rem; /* Reducir fuente en móvil */  
+    }  
 
-.about-txt h2 {
-    line-height: 1.2;
-    color: #323232;
-    text-transform: uppercase;
-    font-size: 50px;
-    margin-bottom: 10px;
-    letter-spacing: 0;
-    white-space: normal;
-    margin-left: -650px; /* Ajuste para pantallas grandes */
-}
-
-.about-txt p {
-    font-size: 20px;
-    color: #818181;
-    margin-bottom: 20px;
-    margin-left: -650px; /* Ajuste para pantallas grandes */
-}
-
-@media (max-width: 768px) {
-    .about-txt h2 {
-        font-size: 40px; /* Tamaño más pequeño para móviles */
-        margin-left: 0; /* Ajuste para centrar en móviles */
-        text-align: center;
-    }
-
-    .about-txt p {
-        font-size: 18px; /* Tamaño más pequeño para móviles */
-        margin-left: 0; /* Ajuste para centrar en móviles */
-        text-align: center;
-    }
-}
-
+    .about-txt p {  
+        font-size: 0.9rem; /* Reducir fuente para párrafo en móvil */  
+    }  
+}  
 
 
 
@@ -483,4 +486,38 @@ ul li {
         margin-bottom:20px;
 }
 }
+    
+
+@media (max-width: 480px) {
+    .header-txt h1,
+    .about-txt h2,
+    .servicios h2,
+    .pricing-card h3 {
+        font-size: 24px; /* Reducir el tamaño de letra */
+    }
+
+    .header-txt,
+    .about-txt,
+    .servicios-content,
+    .pricing-container {
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    /* Ajustes de botón */
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Ajuste para centrar y reducir los elementos que causan desbordamiento en móviles */
+@media (max-width: 768px) {
+    /* Centrar contenido */
+    .header-txt, .about-txt, .servicios, .pricing-container {
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+     }
     

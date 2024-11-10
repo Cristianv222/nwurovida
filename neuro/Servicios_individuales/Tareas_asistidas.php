@@ -22,7 +22,7 @@
                 <a href="#" class="btn-1">Informacion</a>
             </div>
             <div class="header-img">
-                <img src="../images/man1.png" alt=""> 
+                <img src="../images/tdir.png" alt=""> 
 
             </div>
            
@@ -39,14 +39,17 @@
             <img src="../images/man2.jpg" alt="">
         </div>
         <div class="about-txt">
-        <h2>Desde 4 años en adelante cualquier público </h2>
+        <h2>Niños de cualquier edad </h2>
             <p>
-            Este curso está diseñado para niños de 4 años en adelante
-             y cualquier persona interesada en explorar su creatividad 
-             a través de manualidades. Los participantes aprenderán a 
-             utilizar diferentes materiales y técnicas para crear
-              proyectos únicos, desarrollando habilidades motoras,
-               concentración y trabajo en equipo.
+            Nuestro curso de tareas dirigidas está diseñado 
+            para apoyar a niños de todas las edades en sus 
+            actividades escolares. Ofrecemos un ambiente 
+            de aprendizaje guiado donde los estudiantes 
+            reciben asistencia personalizada para completar
+             sus tareas, resolver dudas y mejorar 
+             sus habilidades académicas, fomentando 
+             la autonomía y el desarrollo de buenos hábitos 
+             de estudio.
             </p>
 
         </div>
@@ -59,25 +62,23 @@
 
             <div class="servicio-1">
                 <i class="fa-solid fa-brain"></i>
-                <h3>Manualidades según temporada</h3>
+                <h3>Mejora Académica</h3>
                 <p>
-                
+                Los niños tendrán un rendimiento académico 
+                más sólido, lo que les permitirá progresar en su 
+                educación y superar las dificultades relacionadas con la 
+                disrupción en su formación.
                 </p>
             </div>
 
             <div class="servicio-1">
                 <i class="fa-sharp fa-solid fa-stethoscope"></i>
-                <h3></h3>
+                <h3>Bienestar Emocional</h3>
                 <p>
-                El curso "Manualidades Según Temporada" está diseñado 
-                para todas las edades, ofreciendo la oportunidad de crear
-                 proyectos creativos basados en cada estación del año.
-                  Los participantes aprenderán a elaborar manualidades 
-                  como decoraciones de primavera, accesorios veraniegos, 
-                  adornos otoñales y festivos invernales. A través de clases
-                   prácticas e interactivas, se desarrollarán habilidades 
-                   artísticas y se fomentará la autoexpresión en un ambiente
-                    divertido.
+                La intervención psicosocial en el marco 
+                de las tareas dirigidas ayudará a los niños a manejar
+                 el estrés, la ansiedad y los traumas asociados con la migración y el entorno 
+                 familiar. 
 
 
                 </p>
@@ -85,30 +86,22 @@
 
             <div class="servicio-1">
                 <i class="fa-sharp fa-solid fa-book"></i>
-                <h3> </h3>
+                <h3>Reducción del Abandono Escolar </h3>
                 <p>
-                "Manualidades Según Temporada" es un curso que invita a niños y adultos
-                 a explorar su creatividad a través de manualidades estacionales.
-                  Cada módulo se centra en una temporada específica, permitiendo
-                   a los participantes crear desde flores de papel en primavera 
-                   hasta decoraciones navideñas en invierno. El curso promueve
-                    el aprendizaje práctico y la interacción social, 
-                    todo sin necesidad de experiencia previa.
+                Al proporcionar un apoyo continuo,
+                 se disminuye el riesgo de deserción escolar, que es 
+                 común entre los niños migrantes debido a las barreras 
+                 educativas y sociales.
                 </p>
             </div>
 
             <div class="servicio-1">
                 <i class="fa-solid fa-brain"></i>
-                <h3></h3>
+                <h3>Integración Social</h3>
                 <p>
-                Este curso de "Manualidades Según Temporada" está orientado 
-                a fomentar la creatividad en personas de todas las edades.
-                 Los participantes realizarán proyectos temáticos que capturan 
-                 la esencia de cada estación, incluyendo decoraciones de otoño 
-                 y manualidades de verano. Las clases se desarrollan en un 
-                 ambiente colaborativo, permitiendo el desarrollo de habilidades
-                  motoras y la celebración de tradiciones estacionales.
-            
+                El programa contribuirá a la inclusión de 
+                los niños en la comunidad local, ayudándolos a construir nuevas 
+                relaciones y desarrollar un sentido de pertenencia. 
                 </p>
             </div>
     
@@ -120,42 +113,42 @@
     <div class="pricing-container">
     <div class="pricing-card">
         <h3>Premium</h3>
-        <p class="price"><span>€</span>2.49<span>/mes</span></p>
+        <p class="price"><span>$</span>30<span>/mes</span></p>
         <p class="offer">2 meses GRATIS</p>
         <button>Elegir plan</button>
         <ul>
-            <li>SEO avanzado</li>
-            <li>Análisis de visitas</li>
-            <li>Chat en vivo con WhatsApp</li>
-            <li>Soporte técnico 24/7</li>
+        <li>✔ Asesoría en todas las materias</li>
+    <li>✔ Refuerzo en habilidades de estudio</li>
+    <li>✔ Apoyo emocional básico</li>
+    <li>✔ Seguimiento de progreso semanal</li>
         </ul>
     </div>
     
     <div class="pricing-card popular">
         <h3>Business</h3>
-        <p class="price"><span>€</span>3.49<span>/mes</span></p>
+        <p class="price"><span>$</span>45<span>/mes</span></p>
         <p class="offer">2 meses GRATIS</p>
         <button>Elegir plan</button>
         <ul>
-            <li>SEO avanzado</li>
-            <li>Análisis de visitas</li>
-            <li>Chat en vivo con WhatsApp</li>
-            <li>Soporte técnico 24/7</li>
-            <li>Más espacio de almacenamiento</li>
+        <li>✔Todo lo incluido en Premium</li>
+        <li>✔Actividades para desarrollo socioemocional</li>
+        <li>✔Sesiones grupales para integración social</li>
+        <li>✔Asesoría personalizada en temas específicos</li>
+        <li>✔Reporte mensual de progreso académico</li>
         </ul>
     </div>
     
     <div class="pricing-card">
         <h3>Cloud Startup</h3>
-        <p class="price"><span>€</span>7.99<span>/mes</span></p>
+        <p class="price"><span>€</span>60<span>/mes</span></p>
         <p class="offer">2 meses GRATIS</p>
         <button>Elegir plan</button>
         <ul>
-            <li>SEO avanzado</li>
-            <li>Análisis de visitas</li>
-            <li>Chat en vivo con WhatsApp</li>
-            <li>Soporte técnico 24/7</li>
-            <li>Almacenamiento en la nube</li>
+        <li>✔Todo lo incluido en Business</li>
+        <li>✔Acceso a recursos educativos en la nube</li>
+        <li>✔Almacenamiento de materiales en línea</li>
+        <li>✔Sesiones especiales para integración de migrantes</li>
+        <li>✔Reporte trimestral de progreso académico</li>
         </ul>
     </div>
 </div>

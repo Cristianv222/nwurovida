@@ -169,6 +169,8 @@ input::placeholder, textarea::placeholder {
     .map {
         width: 100%;
         height: auto;
+        margin-left: 20px; /* Ajusta este valor para mover más o menos a la derecha */
+
     }
     .hero_contac-txt h1 {
         padding-top: 40px;

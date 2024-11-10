@@ -180,6 +180,8 @@ nav.scrolled {
         align-items: center; /* Centra los botones en el contenedor */
         gap: 8px; /* Espacio entre cada botón */
         text-align: center; /* Asegura que el texto de los botones esté centrado */
+        margin-top: 10px; /* Ajusta este valor según lo que necesites */
+
     }
 
     .buttons.active {

@@ -45,8 +45,11 @@
     line-height: 1.2;
     color: #007BFF;
     text-transform: uppercase;
-    font-size: 63px;
+    font-size: 25px; /* Tamaño de fuente para pantallas grandes */
     margin-bottom: 10px;
+    margin-left: -600px;
+    margin-top: -200px;
+
 }
 
 .header-txt p {
@@ -66,14 +69,16 @@
 
 .about-img,
 .about-txt {
-    width: 48%; /* Ajustamos al 50% para mejor separación y alineación */
+    width: 50%; /* Ajustamos al 50% para mejor separación y alineación */
+    margin-left: -600px;
 }
 
 .about-img img {
-    width: 50%;
-    border-radius: 25px;
+    width: 5%;
+    border-radius: 5px;
     display: block;
-    margin-left: 20%;
+    margin-left: 5%;
+   
 }
 
 .about-txt {
@@ -85,6 +90,8 @@
     color: #323232;
     text-transform: uppercase;
     margin-bottom: 10px;
+    margin-top: -300px;
+
 }
 
 .about-txt p {
@@ -118,7 +125,7 @@
     text-align: center;
     background-color: #fafafa;
     border-radius: 10px;
-    margin-top: -60px; /* Ajusta este valor según lo que necesites */
+    margin-top: 100px; /* Ajusta este valor según lo que necesites */
 }
 
 .servicios h2 {

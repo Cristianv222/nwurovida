@@ -11,14 +11,11 @@
     <link rel="stylesheet" href="/includes/footer.css">
 
 </head>
-<<<<<<< HEAD
 <body>
 <header class="header">
 <?php include "../../../nwurovida/includes/menu_nav.php"; ?>
     <div class="header-content container">
             <div class="header-txt">
-=======
->>>>>>> 9e290546fb8230d9f7384842e2cd9a397129306f
 
 <body>
     <header class="header">
@@ -73,13 +70,7 @@
                     El curso "Manualidades Según Temporada" está diseñado
                     para todas las edades, ofreciendo la oportunidad de crear
                     proyectos creativos basados en cada estación del año.
-                    Los participantes aprenderán a elaborar manualidades
-                    como decoraciones de primavera, accesorios veraniegos,
-                    adornos otoñales y festivos invernales. A través de clases
-                    prácticas e interactivas, se desarrollarán habilidades
-                    artísticas y se fomentará la autoexpresión en un ambiente
-                    divertido.
-
+                    
 
                 </p>
             </div>
@@ -90,11 +81,7 @@
                 <p>
                     "Manualidades Según Temporada" es un curso que invita a niños y adultos
                     a explorar su creatividad a través de manualidades estacionales.
-                    Cada módulo se centra en una temporada específica, permitiendo
-                    a los participantes crear desde flores de papel en primavera
-                    hasta decoraciones navideñas en invierno. El curso promueve
-                    el aprendizaje práctico y la interacción social,
-                    todo sin necesidad de experiencia previa.
+                 
                 </p>
             </div>
 
@@ -104,11 +91,7 @@
                 <p>
                     Este curso de "Manualidades Según Temporada" está orientado
                     a fomentar la creatividad en personas de todas las edades.
-                    Los participantes realizarán proyectos temáticos que capturan
-                    la esencia de cada estación, incluyendo decoraciones de otoño
-                    y manualidades de verano. Las clases se desarrollan en un
-                    ambiente colaborativo, permitiendo el desarrollo de habilidades
-                    motoras y la celebración de tradiciones estacionales.
+                   
 
                 </p>
             </div>
@@ -162,12 +145,9 @@
         </div>
     </section>
 
-<<<<<<< HEAD
     <div style="height: 40px; background-color: white;"></div>
     <?php include "../../../nwurovida/includes/footer.php"; ?>
 
-=======
->>>>>>> 9e290546fb8230d9f7384842e2cd9a397129306f
 </body>
 
 </html>

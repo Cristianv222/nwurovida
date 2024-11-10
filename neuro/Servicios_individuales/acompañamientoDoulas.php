@@ -13,16 +13,12 @@
 
 <body>
     <header class="header_doulas">
-<<<<<<< HEAD
     <?php include "../../../nwurovida/includes/menu_nav.php"; ?>
     <div class="header-content container">
-=======
-        <div class="header-content container">
->>>>>>> 9e290546fb8230d9f7384842e2cd9a397129306f
             <div class="header-txt">
                 <h1>ACOMPAÑAMIENTO DE LAS DOULAS</h1>
                 <div class="header-img">
-                    <img src="/neuro/images/doula1.png" alt="">
+                    <img src="/neuro/images/" alt="">
                 </div>
             </div>
 
@@ -37,10 +33,7 @@
             <p>
                 Es fundamental para el bienestar de las mujeres en gestación,
                 especialmente aquellas que enfrentan desafíos emocionales,
-                físicos o sociales. Mejora las experiencias durante el embarazo,
-                sino que también facilitaría la creación de vínculos afectivos positivos con sus hijos,
-                fortaleciendo la salud mental de ambos y ayudando a mitigar los efectos del estrés.
-                cognitivo.
+                físicos o sociales.
             </p>
 
         </div>
@@ -57,8 +50,7 @@
                 <p>
                     Las Doulas proporcionan una presencia constante durante el embarazo,
                     el parto y el posparto, lo que genera una sensación de seguridad
-                    y tranquilidad. Su apoyo ayuda a reducir los niveles de estrés y ansiedad,
-                    lo que es particularmente importante para las mujeres que viven situaciones difíciles.
+                    y tranquilidad. 
                 </p>
             </div>
 
@@ -68,9 +60,7 @@
                 <p>
                     Las doulas promueven el empoderamiento de la mujer durante
                     su proceso de gestación, dándole herramientas para tomar decisiones
-                    informadas sobre su cuerpo y su parto. Este acompañamiento ayuda a
-                    que la madre se sienta más en control de su experiencia, lo que tiene un impacto
-                    positivo en su bienestar mental y emocional.
+                    informadas sobre su cuerpo y su parto. 
                 </p>
             </div>
 
@@ -81,8 +71,7 @@
                     Estudios han mostrado que las mujeres que cuentan con el apoyo de una doula tienen menos
                     probabilidades de requerir intervenciones médicas durante el
                     parto, como cesáreas, y es más probable que experimenten un
-                    parto más corto y menos doloroso. Estos beneficios se traducen
-                    en una recuperación más rápida y menos complicaciones en el posparto.
+                    parto más corto y menos doloroso. 
                 </p>
             </div>
 
@@ -104,53 +93,52 @@
     </main>
 
     <section class="pricing">
-        <div class="pricing-container">
-            <div class="pricing-card">
-                <h3>Premium</h3>
-                <p class="price"><span>€</span>2.49<span>/mes</span></p>
-                <p class="offer">2 meses GRATIS</p>
-                <button>Elegir plan</button>
-                <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                </ul>
-            </div>
+    <div class="pricing-container">
+    <div class="pricing-card">
+        <h3>Premium</h3>
+        <p class="price"><span>$</span>30<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+        <li>✔ Asesoría en todas las materias</li>
+    <li>✔ Refuerzo en habilidades de estudio</li>
+    <li>✔ Apoyo emocional básico</li>
+    <li>✔ Seguimiento de progreso semanal</li>
+        </ul>
+    </div>
+    
+    <div class="pricing-card popular">
+        <h3>Business</h3>
+        <p class="price"><span>$</span>45<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+        <li>✔Todo lo incluido en Premium</li>
+        <li>✔Actividades para desarrollo socioemocional</li>
+        <li>✔Sesiones grupales para integración social</li>
+        <li>✔Asesoría personalizada en temas específicos</li>
+        <li>✔Reporte mensual de progreso académico</li>
+        </ul>
+    </div>
+    
+    <div class="pricing-card">
+        <h3>Cloud Startup</h3>
+        <p class="price"><span>€</span>60<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+        <li>✔Todo lo incluido en Business</li>
+        <li>✔Acceso a recursos educativos en la nube</li>
+        <li>✔Almacenamiento de materiales en línea</li>
+        <li>✔Sesiones especiales para integración de migrantes</li>
+        <li>✔Reporte trimestral de progreso académico</li>
+        </ul>
+    </div>
+</div>
+    </section>
 
-<<<<<<< HEAD
     <div style="height: 40px; background-color: white;"></div>
     <?php include "../../../nwurovida/includes/footer.php"; ?>
-=======
-            <div class="pricing-card popular">
-                <h3>Business</h3>
-                <p class="price"><span>€</span>3.49<span>/mes</span></p>
-                <p class="offer">2 meses GRATIS</p>
-                <button>Elegir plan</button>
-                <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                    <li>Más espacio de almacenamiento</li>
-                </ul>
-            </div>
-
-            <div class="pricing-card">
-                <h3>Cloud Startup</h3>
-                <p class="price"><span>€</span>7.99<span>/mes</span></p>
-                <p class="offer">2 meses GRATIS</p>
-                <button>Elegir plan</button>
-                <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                    <li>Almacenamiento en la nube</li>
-                </ul>
-            </div>
-        </div>
->>>>>>> 9e290546fb8230d9f7384842e2cd9a397129306f
 
 </body>
 

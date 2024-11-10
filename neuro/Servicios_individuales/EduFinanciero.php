@@ -12,14 +12,9 @@
 </head>
 
 <body>
-<<<<<<< HEAD
 <header class="header-edufin">
 <?php include "../../../nwurovida/includes/menu_nav.php"; ?>
     <div class="header-content container">
-=======
-    <header class="header-edufin">
-        <div class="header-content container">
->>>>>>> 9e290546fb8230d9f7384842e2cd9a397129306f
             <div class="header-txt">
                 <h1>Educación Financiera y Emprendimiento </h1>
                 <div class="header-img">
@@ -40,8 +35,6 @@
                 divertidas y dinámicas, los participantes descubrirán conceptos básicos de finanzas,
                 como el ahorro, la inversión y el presupuesto, así como las habilidades necesarias
                 para emprender, como la creatividad, la planificación y la toma de decisiones.
-                Al finalizar, los estudiantes tendrán una mejor comprensión de cómo manejar su dinero
-                y las herramientas para convertir sus ideas en realidades emprendedoras.
             </p>
 
         </div>
@@ -93,54 +86,52 @@
 
     </main>
     <section class="pricing">
-        <div class="pricing-container">
-            <div class="pricing-card">
-                <h3>Premium</h3>
-                <p class="price"><span>€</span>2.49<span>/mes</span></p>
-                <p class="offer">2 meses GRATIS</p>
-                <button>Elegir plan</button>
-                <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                </ul>
-            </div>
+    <div class="pricing-container">
+    <div class="pricing-card">
+        <h3>Premium</h3>
+        <p class="price"><span>$</span>30<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+        <li>✔ Asesoría en todas las materias</li>
+    <li>✔ Refuerzo en habilidades de estudio</li>
+    <li>✔ Apoyo emocional básico</li>
+    <li>✔ Seguimiento de progreso semanal</li>
+        </ul>
+    </div>
+    
+    <div class="pricing-card popular">
+        <h3>Business</h3>
+        <p class="price"><span>$</span>45<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+        <li>✔Todo lo incluido en Premium</li>
+        <li>✔Actividades para desarrollo socioemocional</li>
+        <li>✔Sesiones grupales para integración social</li>
+        <li>✔Asesoría personalizada en temas específicos</li>
+        <li>✔Reporte mensual de progreso académico</li>
+        </ul>
+    </div>
+    
+    <div class="pricing-card">
+        <h3>Cloud Startup</h3>
+        <p class="price"><span>€</span>60<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+        <li>✔Todo lo incluido en Business</li>
+        <li>✔Acceso a recursos educativos en la nube</li>
+        <li>✔Almacenamiento de materiales en línea</li>
+        <li>✔Sesiones especiales para integración de migrantes</li>
+        <li>✔Reporte trimestral de progreso académico</li>
+        </ul>
+    </div>
+</div>
+    </section>
 
-<<<<<<< HEAD
     <div style="height: 40px; background-color: white;"></div>
     <?php include "../../../nwurovida/includes/footer.php"; ?>
-=======
-            <div class="pricing-card popular">
-                <h3>Business</h3>
-                <p class="price"><span>€</span>3.49<span>/mes</span></p>
-                <p class="offer">2 meses GRATIS</p>
-                <button>Elegir plan</button>
-                <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                    <li>Más espacio de almacenamiento</li>
-                </ul>
-            </div>
-
-            <div class="pricing-card">
-                <h3>Cloud Startup</h3>
-                <p class="price"><span>€</span>7.99<span>/mes</span></p>
-                <p class="offer">2 meses GRATIS</p>
-                <button>Elegir plan</button>
-                <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                    <li>Almacenamiento en la nube</li>
-                </ul>
-            </div>
-        </div>
-    </section>
->>>>>>> 9e290546fb8230d9f7384842e2cd9a397129306f
 
 </body>
 

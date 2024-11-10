@@ -4,34 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./neuro/css/saludmental.css">
-    <title>Salud Mental</title>
-</head>
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Salud Mental</title>
-    <link rel="shortcut icon" href="/neuro/images/apple-icon-144x144.png" type="image/x-icon">
-    <link rel="stylesheet" href="/includes/footer.css">
     <link rel="stylesheet" href="/neuro/css/saludmental.css">
+    <link rel="stylesheet" href="/includes/footer.css">
+    <link rel="shortcut icon" href="./neuro/images/apple-icon-144x144.png" type="image/x-icon">
 </head>
 <body>
-<<<<<<< HEAD
 <header class="header">
 <?php include "../../../nwurovida/includes/menu_nav.php"; ?>
-    <div class="header-content container">
-=======
-    <header class="header">
-        <div class="header-content container">
->>>>>>> 9e290546fb8230d9f7384842e2cd9a397129306f
+  
+            <div class="header-content container">
             <div class="header-txt">
                 <h1>Salud Mental</h1>
                 <div class="header-img">
-                    <img src="../images/Salud mental.png" alt="">
+                    <img src="../images/gimnasia.png" alt="">
                 </div>
             </div>
             </div>
@@ -39,17 +26,14 @@
 
     <section class="about container">
         <div class="about-img">
-            <img src="../images/Salud mental.png" alt="">
+            <img src="../images/salmen.png" alt="">
         </div>
         <div class="about-txt">
             <h2>Desde 4 años en adelante cualquier público </h2>
             <p>
                 Este curso está diseñado para niños de 4 años en adelante
                 y cualquier persona interesada en explorar su creatividad
-                a través de manualidades. Los participantes aprenderán a
-                utilizar diferentes materiales y técnicas para crear
-                proyectos únicos, desarrollando habilidades motoras,
-                concentración y trabajo en equipo.
+                a través de manualidades. 
             </p>
 
         </div>
@@ -74,13 +58,6 @@
                     El curso "Manualidades Según Temporada" está diseñado
                     para todas las edades, ofreciendo la oportunidad de crear
                     proyectos creativos basados en cada estación del año.
-                    Los participantes aprenderán a elaborar manualidades
-                    como decoraciones de primavera, accesorios veraniegos,
-                    adornos otoñales y festivos invernales. A través de clases
-                    prácticas e interactivas, se desarrollarán habilidades
-                    artísticas y se fomentará la autoexpresión en un ambiente
-                    divertido.
-
 
                 </p>
             </div>
@@ -91,11 +68,7 @@
                 <p>
                     "Manualidades Según Temporada" es un curso que invita a niños y adultos
                     a explorar su creatividad a través de manualidades estacionales.
-                    Cada módulo se centra en una temporada específica, permitiendo
-                    a los participantes crear desde flores de papel en primavera
-                    hasta decoraciones navideñas en invierno. El curso promueve
-                    el aprendizaje práctico y la interacción social,
-                    todo sin necesidad de experiencia previa.
+                    
                 </p>
             </div>
 
@@ -105,12 +78,7 @@
                 <p>
                     Este curso de "Manualidades Según Temporada" está orientado
                     a fomentar la creatividad en personas de todas las edades.
-                    Los participantes realizarán proyectos temáticos que capturan
-                    la esencia de cada estación, incluyendo decoraciones de otoño
-                    y manualidades de verano. Las clases se desarrollan en un
-                    ambiente colaborativo, permitiendo el desarrollo de habilidades
-                    motoras y la celebración de tradiciones estacionales.
-
+                    
                 </p>
             </div>
 
@@ -162,13 +130,10 @@
             </div>
         </div>
     </section>
-<<<<<<< HEAD
 
     <div style="height: 40px; background-color: white;"></div>
     <?php include "../../../nwurovida/includes/footer.php"; ?>
 
-=======
->>>>>>> 9e290546fb8230d9f7384842e2cd9a397129306f
 </body>
 
 </html>

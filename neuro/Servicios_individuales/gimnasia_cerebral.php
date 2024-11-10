@@ -165,12 +165,9 @@
             </div>
         </div>
     </section>
-<<<<<<< HEAD
     <div style="height: 40px; background-color: white;"></div>
     <?php include "../../../nwurovida/includes/footer.php"; ?>
 
-=======
->>>>>>> 9e290546fb8230d9f7384842e2cd9a397129306f
 </body>
 
 </html>

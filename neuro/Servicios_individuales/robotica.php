@@ -5,45 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Robótica</title>
-    <link rel="shortcut icon" href="/neuro/images/apple-icon-144x144.png" type="image/x-icon">
-    <link rel="stylesheet" href="/includes/footer.css">
+    <title>Robotica</title>
     <link rel="stylesheet" href="/neuro/css/robotica.css">
+    <link rel="stylesheet" href="/includes/footer.css">
+    <link rel="shortcut icon" href="./neuro/images/apple-icon-144x144.png" type="image/x-icon">
 </head>
-<<<<<<< HEAD
+
 <body>
-<header class="header">
-<?php include "../../../nwurovida/includes/menu_nav.php"; ?>
+    <header class="header_doulas">
+    <?php include "../../../nwurovida/includes/menu_nav.php"; ?>
     <div class="header-content container">
             <div class="header-txt">
-=======
->>>>>>> 9e290546fb8230d9f7384842e2cd9a397129306f
+                <h1>Robotica</h1>
+                <div class="header-img">
+                    <img src="/neuro/images/" alt="">
+                </div>
+            </div>
 
-<body>
-    <header class="header">
-        <div class="header-content container">
-            <div class="header-txt">
-                <h1>Robótica</h1>
-            </div>
-            <div class="header-img">
-                <img src="../images/man1.png" alt="">
-            </div>
-        </div>
+
     </header>
-
     <section class="about container">
         <div class="about-img">
-            <img src="../images/man2.jpg" alt="">
+            <img src="../images/doula2.png" alt="">
         </div>
         <div class="about-txt">
-            <h2>Desde 4 años en adelante cualquier público </h2>
+            <h2>Mujeres es estado de gestación</h2>
             <p>
-                Este curso está diseñado para niños de 4 años en adelante
-                y cualquier persona interesada en explorar su creatividad
-                a través de manualidades. Los participantes aprenderán a
-                utilizar diferentes materiales y técnicas para crear
-                proyectos únicos, desarrollando habilidades motoras,
-                concentración y trabajo en equipo.
+                Es fundamental para el bienestar de las mujeres en gestación,
+                especialmente aquellas que enfrentan desafíos emocionales,
+                físicos o sociales.
             </p>
 
         </div>
@@ -56,114 +46,100 @@
 
             <div class="servicio-1">
                 <i class="fa-solid fa-brain"></i>
-                <h3>Manualidades según temporada</h3>
+                <h3>Apoyo emocional y físico </h3>
                 <p>
-
+                    Las Doulas proporcionan una presencia constante durante el embarazo,
+                    el parto y el posparto, lo que genera una sensación de seguridad
+                    y tranquilidad. 
                 </p>
             </div>
 
             <div class="servicio-1">
                 <i class="fa-sharp fa-solid fa-stethoscope"></i>
-                <h3></h3>
+                <h3>Empoderamiento </h3>
                 <p>
-                    El curso "Manualidades Según Temporada" está diseñado
-                    para todas las edades, ofreciendo la oportunidad de crear
-                    proyectos creativos basados en cada estación del año.
-                    Los participantes aprenderán a elaborar manualidades
-                    como decoraciones de primavera, accesorios veraniegos,
-                    adornos otoñales y festivos invernales. A través de clases
-                    prácticas e interactivas, se desarrollarán habilidades
-                    artísticas y se fomentará la autoexpresión en un ambiente
-                    divertido.
-
-
+                    Las doulas promueven el empoderamiento de la mujer durante
+                    su proceso de gestación, dándole herramientas para tomar decisiones
+                    informadas sobre su cuerpo y su parto. 
                 </p>
             </div>
 
             <div class="servicio-1">
                 <i class="fa-sharp fa-solid fa-book"></i>
-                <h3> </h3>
+                <h3>Beneficios para la salud </h3>
                 <p>
-                    "Manualidades Según Temporada" es un curso que invita a niños y adultos
-                    a explorar su creatividad a través de manualidades estacionales.
-                    Cada módulo se centra en una temporada específica, permitiendo
-                    a los participantes crear desde flores de papel en primavera
-                    hasta decoraciones navideñas en invierno. El curso promueve
-                    el aprendizaje práctico y la interacción social,
-                    todo sin necesidad de experiencia previa.
+                    Estudios han mostrado que las mujeres que cuentan con el apoyo de una doula tienen menos
+                    probabilidades de requerir intervenciones médicas durante el
+                    parto, como cesáreas, y es más probable que experimenten un
+                    parto más corto y menos doloroso. 
                 </p>
             </div>
 
             <div class="servicio-1">
                 <i class="fa-solid fa-brain"></i>
-                <h3></h3>
+                <h3>Acompañamiento continuo: </h3>
                 <p>
-                    Este curso de "Manualidades Según Temporada" está orientado
-                    a fomentar la creatividad en personas de todas las edades.
-                    Los participantes realizarán proyectos temáticos que capturan
-                    la esencia de cada estación, incluyendo decoraciones de otoño
-                    y manualidades de verano. Las clases se desarrollan en un
-                    ambiente colaborativo, permitiendo el desarrollo de habilidades
-                    motoras y la celebración de tradiciones estacionales.
+                    Las doulas también juegan un papel crucial en el posparto,
+                    brindando apoyo en el cuidado del recién nacido, la lactancia y la adaptación a la maternidad.
+                    Esto es vital para las mujeres que se encuentran en condiciones de vulnerabilidad o estrés,
+                    ya que contribuye a la creación de un entorno más estable y amoroso para el bebé y la madre.
 
                 </p>
             </div>
+
 
         </div>
 
     </main>
 
     <section class="pricing">
-        <div class="pricing-container">
-            <div class="pricing-card">
-                <h3>Premium</h3>
-                <p class="price"><span>€</span>2.49<span>/mes</span></p>
-                <p class="offer">2 meses GRATIS</p>
-                <button>Elegir plan</button>
-                <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                </ul>
-            </div>
-
-            <div class="pricing-card popular">
-                <h3>Business</h3>
-                <p class="price"><span>€</span>3.49<span>/mes</span></p>
-                <p class="offer">2 meses GRATIS</p>
-                <button>Elegir plan</button>
-                <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                    <li>Más espacio de almacenamiento</li>
-                </ul>
-            </div>
-
-            <div class="pricing-card">
-                <h3>Cloud Startup</h3>
-                <p class="price"><span>€</span>7.99<span>/mes</span></p>
-                <p class="offer">2 meses GRATIS</p>
-                <button>Elegir plan</button>
-                <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                    <li>Almacenamiento en la nube</li>
-                </ul>
-            </div>
-        </div>
+    <div class="pricing-container">
+    <div class="pricing-card">
+        <h3>Premium</h3>
+        <p class="price"><span>$</span>30<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+        <li>✔ Asesoría en todas las materias</li>
+    <li>✔ Refuerzo en habilidades de estudio</li>
+    <li>✔ Apoyo emocional básico</li>
+    <li>✔ Seguimiento de progreso semanal</li>
+        </ul>
+    </div>
+    
+    <div class="pricing-card popular">
+        <h3>Business</h3>
+        <p class="price"><span>$</span>45<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+        <li>✔Todo lo incluido en Premium</li>
+        <li>✔Actividades para desarrollo socioemocional</li>
+        <li>✔Sesiones grupales para integración social</li>
+        <li>✔Asesoría personalizada en temas específicos</li>
+        <li>✔Reporte mensual de progreso académico</li>
+        </ul>
+    </div>
+    
+    <div class="pricing-card">
+        <h3>Cloud Startup</h3>
+        <p class="price"><span>€</span>60<span>/mes</span></p>
+        <p class="offer">2 meses GRATIS</p>
+        <button>Elegir plan</button>
+        <ul>
+        <li>✔Todo lo incluido en Business</li>
+        <li>✔Acceso a recursos educativos en la nube</li>
+        <li>✔Almacenamiento de materiales en línea</li>
+        <li>✔Sesiones especiales para integración de migrantes</li>
+        <li>✔Reporte trimestral de progreso académico</li>
+        </ul>
+    </div>
+</div>
     </section>
 
-<<<<<<< HEAD
     <div style="height: 40px; background-color: white;"></div>
     <?php include "../../../nwurovida/includes/footer.php"; ?>
 
-=======
->>>>>>> 9e290546fb8230d9f7384842e2cd9a397129306f
 </body>
 
 </html>

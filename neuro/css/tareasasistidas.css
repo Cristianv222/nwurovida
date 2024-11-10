@@ -17,9 +17,8 @@
 
 /* Contenedor general */
 .container {
-    max-width: 1200px; /* Ajustar según tu diseño */  
-    margin: 0 auto;  
-    padding: 20px;  
+    max-width: 1100%;
+    margin: 0 auto;
 }
 
 .header-content {
@@ -46,8 +45,11 @@
     line-height: 1.2;
     color: #007BFF;
     text-transform: uppercase;
-    font-size: 120px; /* Tamaño de fuente para pantallas grandes */
+    font-size: 50px; /* Tamaño de fuente para pantallas grandes */
     margin-bottom: 10px;
+    margin-left: -700px;
+    margin-top: -100px;
+
 }
 
 .header-txt p {
@@ -56,61 +58,64 @@
     margin-bottom: 45px;
 }
 
-.about {  
-    display: flex;  
-    flex-direction: row; /* Cambiar a columna en pantallas pequeñas */  
-    align-items: center; /* Centrar verticalmente */  
-    justify-content: space-between; /* Espacio entre elementos */  
-}  
+/* About section */
+.about {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
-.about-img {  
-    flex: 1; /* Hacer la imagen flexible */  
-    max-width: 50%; /* Ajustar el ancho máximo */  
-}  
+.about-img,
+.about-txt {
+    width: 48%; /* Ajustamos al 50% para mejor separación y alineación */
+}
 
-.about-img img {  
-    width: 100%; /* Asegurar que sea responsiva */  
-    height: auto; /* Mantener proporciones */  
-}  
+.about-img img {
+    width: 50%;
+    border-radius: 25px;
+    display: block;
+    margin-left: 20%;
+}
 
-.about-txt {  
-    flex: 1; /* Hacer el texto flexible */  
-    padding-left: 20px; /* Espacio a la izquierda */  
-}  
+.about-txt {
+    padding-left: 20px; /* Un pequeño espacio entre el texto y la imagen */
+}
 
-/* Ajustar elementos textuales */  
-.about-txt h2 {  
-    font-size: 2.5rem; /* Tamaño adaptativo */  
-    margin-bottom: 15px;  
-}  
+.about-txt h2 {
+    font-size: 20px;
+    color: #323232;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: -300px;
 
-.about-txt p {  
-    font-size: 1rem;  
-}  
+}
 
-/* Media Queries para pantallas pequeñas */  
-@media (max-width: 768px) {  
-    .about {  
-        flex-direction: column; /* Cambiar a columna */  
-        text-align: center; /* Centrar texto */  
-    }  
-    
-    .about-img {  
-        max-width: 100%; /* Asegurar que ocupe todo el ancho */  
-    }  
+.about-txt p {
+    font-size: 20px;
+    color: #818181;
+    margin-bottom: 20px;
+}
 
-    .about-txt {  
-        padding-left: 0; /* Remover padding en vista móvil */  
-    }  
-    
-    .about-txt h2 {  
-        font-size: 2rem; /* Reducir fuente en móvil */  
-    }  
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        padding: 50px 20px; /* Menos relleno en pantallas pequeñas */
+    }
 
-    .about-txt p {  
-        font-size: 0.9rem; /* Reducir fuente para párrafo en móvil */  
-    }  
-}  
+    .about-img,
+    .about-txt {
+        width: 100%; /* 100% de ancho en pantallas pequeñas */
+        margin-bottom: 20px; /* Espaciado entre imagen y texto */
+    }
+
+    .about-txt {
+        padding-left: 0; /* Elimino el padding izquierdo para pantallas pequeñas */
+    }
+}
+
 
 /* Servicios */
 .servicios {
@@ -351,39 +356,3 @@ ul li {
         margin-bottom: 20px;
     }
 }
-
-    
-
-@media (max-width: 480px) {
-    .header-txt h1,
-    .about-txt h2,
-    .servicios h2,
-    .pricing-card h3 {
-        font-size: 24px; /* Reducir el tamaño de letra */
-    }
-
-    .header-txt,
-    .about-txt,
-    .servicios-content,
-    .pricing-container {
-        padding: 10px;
-        margin: 0 auto;
-    }
-
-    /* Ajustes de botón */
-    button {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
-}
-
-/* Ajuste para centrar y reducir los elementos que causan desbordamiento en móviles */
-@media (max-width: 768px) {
-    /* Centrar contenido */
-    .header-txt, .about-txt, .servicios, .pricing-container {
-        padding: 0 20px;
-        margin: 0 auto;
-    }
-
-     }
-    

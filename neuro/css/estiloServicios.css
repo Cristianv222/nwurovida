@@ -73,7 +73,7 @@
 .modal {
     display: none; /* Por defecto, el modal está oculto */
     position: fixed;
-    z-index: 1;
+    z-index: 9999; /* Asegura que esté encima de otros elementos */
     left: 0;
     top: 0;
     width: 100%;
@@ -86,7 +86,7 @@
 
 /* Contenido del modal */
 .modal-content {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 1); /* Fondo blanco opaco */
     margin: 5% auto;
     padding: 30px;
     border-radius: 15px; /* Bordes redondeados */
@@ -178,6 +178,14 @@
         p {
             font-size: 16px;
         }
+        .card {
+            padding: 5px;
+        }
+        .card img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 10px;
+        }
     }
     
     /* Móviles: ajustar a una sola columna */
@@ -195,7 +203,12 @@
         }
     
         .card {
-            padding: 15px;
+            padding: 5px;
+        }
+        .card img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 10px;
         }
         .header-content {
             display: flex;
@@ -228,5 +241,10 @@
             margin-bottom: 10px;
             letter-spacing: 0;
             white-space: normal;
+        }
+        .card img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 10px;
         }
     }

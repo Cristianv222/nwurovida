@@ -3,6 +3,9 @@ session_start();
 error_reporting(0);
 include('includes/config.php');
 
+$msg = '';
+$error = '';
+
 if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
     header('Location: admin-login.php');
     exit();
@@ -10,9 +13,9 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
     if (isset($_POST['submit'])) {
         $class = $_POST['class'];
         $studentid = $_POST['studentid'];
-        $marks = $_POST['marks']; // Ahora es un array de selecciones
+        $marks = $_POST['marks'];
 
-        // Verificar si ya existe un registro de resultados para este estudiante y clase
+        // Verificar si ya existe un registro
         $checkQuery = $dbh->prepare("SELECT * FROM tblresult WHERE StudentId=:studentid AND ClassId=:class");
         $checkQuery->bindParam(':studentid', $studentid, PDO::PARAM_STR);
         $checkQuery->bindParam(':class', $class, PDO::PARAM_STR);
@@ -21,55 +24,149 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
         if ($checkQuery->rowCount() > 0) {
             $error = "Este estudiante ya tiene resultados registrados para esta clase.";
         } else {
-            // Obtener las materias asociadas a la clase
-            $stmt = $dbh->prepare("SELECT tblsubjects.SubjectName, tblsubjects.id FROM tblsubjectcombination JOIN tblsubjects ON tblsubjects.id=tblsubjectcombination.SubjectId WHERE tblsubjectcombination.ClassId=:cid ORDER BY tblsubjects.SubjectName");
-            $stmt->execute(array(':cid' => $class));
-            $sid1 = array();
+            // Iniciar transacción para asegurar la integridad de los datos
+            $dbh->beginTransaction();
+            try {
+                // Obtener materias
+                $stmt = $dbh->prepare("SELECT tblsubjects.SubjectName, tblsubjects.id FROM tblsubjectcombination 
+                                     JOIN tblsubjects ON tblsubjects.id=tblsubjectcombination.SubjectId 
+                                     WHERE tblsubjectcombination.ClassId=:cid ORDER BY tblsubjects.SubjectName");
+                $stmt->execute(array(':cid' => $class));
+                $sid1 = array();
 
-            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                array_push($sid1, $row['id']);
-            }
+                while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                    array_push($sid1, $row['id']);
+                }
 
-            // Guardar los resultados en la base de datos para cada materia
-            foreach ($marks as $index => $mark) {
-                $sid = $sid1[$index];
-                $sql = "INSERT INTO tblresult(StudentId, ClassId, SubjectId, marks) VALUES(:studentid, :class, :sid, :marks)";
-                $query = $dbh->prepare($sql);
-                $query->bindParam(':studentid', $studentid, PDO::PARAM_STR);
-                $query->bindParam(':class', $class, PDO::PARAM_STR);
-                $query->bindParam(':sid', $sid, PDO::PARAM_STR);
-                $query->bindParam(':marks', $mark, PDO::PARAM_STR);
-                $query->execute();
-                $lastInsertId = $dbh->lastInsertId();
+                // Insertar resultados y manejar imágenes
+                foreach ($marks as $index => $mark) {
+                    $sid = $sid1[$index];
+                    $sql = "INSERT INTO tblresult(StudentId, ClassId, SubjectId, marks, PostingDate) 
+                           VALUES(:studentid, :class, :sid, :marks, NOW())";
+                    $query = $dbh->prepare($sql);
+                    $query->bindParam(':studentid', $studentid, PDO::PARAM_STR);
+                    $query->bindParam(':class', $class, PDO::PARAM_STR);
+                    $query->bindParam(':sid', $sid, PDO::PARAM_STR);
+                    $query->bindParam(':marks', $mark, PDO::PARAM_STR);
+                    $query->execute();
+                    $resultId = $dbh->lastInsertId();
 
-                if ($lastInsertId) {
-                    // Manejo de imágenes
-                    if (isset($_FILES['images']) && count($_FILES['images']['name']) > 0) {
-                        for ($i = 0; $i < count($_FILES['images']['name']); $i++) {
-                            $targetDir = "uploads/"; // Asegúrate de que este directorio exista y tenga permisos adecuados
-                            $fileName = basename($_FILES['images']['name'][$i]);
-                            $targetFilePath = $targetDir . $fileName;
+                    // Procesar imágenes si existen
+                    if (isset($_FILES['images']) && !empty($_FILES['images']['name'][0])) {
+                        $allowedTypes = array('image/jpeg', 'image/png', 'image/gif');
+                        $maxFileSize = 5 * 1024 * 1024; // 5MB
+                        $uploadDir = "uploads/results/";
 
-                            // Solo procesar si la imagen es válida
-                            if (move_uploaded_file($_FILES['images']['tmp_name'][$i], $targetFilePath)) {
-                                // Guardar la ruta de la imagen en la base de datos si es necesario
-                                $imageSql = "INSERT INTO tblimages(ResultId, ImagePath) VALUES(:resultId, :imagePath)";
+                        // Crear directorio si no existe
+                        if (!file_exists($uploadDir)) {
+                            mkdir($uploadDir, 0777, true);
+                        }
+
+                        // Limitar a 4 imágenes máximo
+                        $imageCount = min(count($_FILES['images']['name']), 4);
+
+                        // Procesar imágenes si existen
+                        if (isset($_FILES['images']) && !empty($_FILES['images']['name'][0])) {
+                            $allowedTypes = array('image/jpeg', 'image/png', 'image/gif');
+                            $maxFileSize = 5 * 1024 * 1024; // 5MB
+
+                            // Arreglo para las imágenes
+                            $imageDataArray = [null, null, null, null];  // Almacenará las imágenes que se suben
+
+                            $imageDataArray = [];
+
+                            // Verificar imagen 1
+                            if (isset($_FILES['images']['error'][0]) && $_FILES['images']['error'][0] === UPLOAD_ERR_OK) {
+                                $fileType = $_FILES['images']['type'][0];
+                                $fileSize = $_FILES['images']['size'][0];
+
+                                if (in_array($fileType, $allowedTypes) && $fileSize <= $maxFileSize) {
+                                    $imageDataArray[0] = file_get_contents($_FILES['images']['tmp_name'][0]);
+                                } else {
+                                    throw new Exception("Tipo de archivo no válido o tamaño excedido para imagen 1");
+                                }
+                            }
+
+                            // Verificar imagen 2
+                            if (isset($_FILES['images']['error'][1]) && $_FILES['images']['error'][1] === UPLOAD_ERR_OK) {
+                                $fileType = $_FILES['images']['type'][1];
+                                $fileSize = $_FILES['images']['size'][1];
+
+                                if (in_array($fileType, $allowedTypes) && $fileSize <= $maxFileSize) {
+                                    $imageDataArray[1] = file_get_contents($_FILES['images']['tmp_name'][1]);
+                                } else {
+                                    throw new Exception("Tipo de archivo no válido o tamaño excedido para imagen 2");
+                                }
+                            }
+
+                            // Verificar imagen 3
+                            if (isset($_FILES['images']['error'][2]) && $_FILES['images']['error'][2] === UPLOAD_ERR_OK) {
+                                $fileType = $_FILES['images']['type'][2];
+                                $fileSize = $_FILES['images']['size'][2];
+
+                                if (in_array($fileType, $allowedTypes) && $fileSize <= $maxFileSize) {
+                                    $imageDataArray[2] = file_get_contents($_FILES['images']['tmp_name'][2]);
+                                } else {
+                                    throw new Exception("Tipo de archivo no válido o tamaño excedido para imagen 3");
+                                }
+                            }
+
+                            // Verificar imagen 4
+                            if (isset($_FILES['images']['error'][3]) && $_FILES['images']['error'][3] === UPLOAD_ERR_OK) {
+                                $fileType = $_FILES['images']['type'][3];
+                                $fileSize = $_FILES['images']['size'][3];
+
+                                if (in_array($fileType, $allowedTypes) && $fileSize <= $maxFileSize) {
+                                    $imageDataArray[3] = file_get_contents($_FILES['images']['tmp_name'][3]);
+                                } else {
+                                    throw new Exception("Tipo de archivo no válido o tamaño excedido para imagen 4");
+                                }
+                            }
+
+                            // Procesar las imágenes subidas
+                            if (!empty($imageDataArray)) {
+                                // Código para almacenar las imágenes en la base de datos o procesarlas
+                            }
+
+
+                            // Insertar las imágenes en la base de datos
+                            try {
+                                $imageSql = "INSERT INTO tblimages(StudentId, Image1, Image2, Image3, Image4) 
+                     VALUES(:studentid, :image1, :image2, :image3, :image4)";
                                 $imageQuery = $dbh->prepare($imageSql);
-                                $imageQuery->bindParam(':resultId', $lastInsertId, PDO::PARAM_STR);
-                                $imageQuery->bindParam(':imagePath', $fileName, PDO::PARAM_STR);
+
+                                // Asignar el studentid
+                                $imageQuery->bindParam(':studentid', $studentid, PDO::PARAM_INT);
+
+                                // Vincular las imágenes en las columnas correspondientes
+                                $imageQuery->bindParam(':image1', $imageDataArray[0], PDO::PARAM_LOB);
+                                $imageQuery->bindParam(':image2', $imageDataArray[1], PDO::PARAM_LOB);
+                                $imageQuery->bindParam(':image3', $imageDataArray[2], PDO::PARAM_LOB);
+                                $imageQuery->bindParam(':image4', $imageDataArray[3], PDO::PARAM_LOB);
+
+                                // Ejecutar la consulta
                                 $imageQuery->execute();
+                            } catch (Exception $e) {
+                                // Manejo de errores
+                                throw new Exception("Error al insertar las imágenes en la base de datos: " . $e->getMessage());
                             }
                         }
                     }
-                    $msg = "Resultado agregado correctamente.";
-                } else {
-                    $error = "Algo salió mal. Inténtalo de nuevo.";
                 }
+
+                // Confirmar transacción
+                $dbh->commit();
+                $msg = "Resultado e imágenes agregados correctamente.";
+            } catch (Exception $e) {
+                // Revertir cambios si hay error
+                $dbh->rollBack();
+                $error = "Error: " . $e->getMessage();
             }
         }
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="es">
@@ -147,7 +244,7 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                             </div>
 
                                             <div class="form-group" id="subjectsSection" style="display: none;">
-                                                <label for="subject" class="control-label">Calificaciones por Actividad</label>
+                                                <label for="subject" class="control-label ">Calificaciones por Actividad</label>
                                                 <div id="subjectsContainer"></div>
                                             </div>
 

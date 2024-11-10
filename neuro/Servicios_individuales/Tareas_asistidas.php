@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +10,20 @@
     <link rel="stylesheet" href="/includes/footer.css">
     <link rel="stylesheet" href="/neuro/css/tareasasistidas.css">
 </head>
+
 <body>
+ 
 <header class="header">
 <?php include "../../../nwurovida/includes/menu_nav.php"; ?>
     <div class="header-content container">
-            <div class="header-txt">
 
-            <h1>Tareas Dirigidas</h1>
-                <p>
-                
-                </p>
-                <a href="#" class="btn-1">Informacion</a>
+    <header class="header">
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Tareas Dirigidas</h1>
+                <div class="header-img">
+                    <img src="../images/man1.png" alt="">
+                </div>
             </div>
             <div class="header-img">
                 <img src="../images/tdir.png" alt=""> 
@@ -104,7 +108,7 @@
                 relaciones y desarrollar un sentido de pertenencia. 
                 </p>
             </div>
-    
+
         </div>
 
     </main>
@@ -158,4 +162,5 @@
     <?php include "../../../nwurovida/includes/footer.php"; ?>
 
 </body>
+
 </html>

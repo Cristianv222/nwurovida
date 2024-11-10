@@ -101,24 +101,7 @@ nav.scrolled {
     transform: translateY(-5px);
 }
 
-/* EFECTO Servicios */
-.services .dropdown-content {
-    display: none;
-    position: absolute;  /* Posiciona el contenido debajo del enlace */
-    background-color: #ffffff;  /* Color de fondo */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);  /* Sombra */
-    padding: 0px;
-    margin: 0px;  /* Elimina el margin */
-    width: 300px;
-    border-radius: 1%;
-    z-index: -14;
-}
 
-/* Muestra el contenido adicional cuando el mouse pasa sobre el enlace */
-.services:hover .dropdown-content {
-    display: block;
-    line-height: 1.2; /* Ajusta el espacio entre las líneas de texto */
-}
 
 
 /* Botón outline */
@@ -197,6 +180,8 @@ nav.scrolled {
         align-items: center; /* Centra los botones en el contenedor */
         gap: 8px; /* Espacio entre cada botón */
         text-align: center; /* Asegura que el texto de los botones esté centrado */
+        margin-top: 10px; /* Ajusta este valor según lo que necesites */
+
     }
 
     .buttons.active {

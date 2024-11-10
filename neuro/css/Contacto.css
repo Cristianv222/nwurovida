@@ -56,8 +56,8 @@
 }
 
 .map {
-    width: 650px; /* Ancho del mapa, ajustado para que haya menos espacio */
-    height: 650px; /* Altura igual al ancho para hacerlo cuadrado */
+    width: 650px; /* Ancho del mapa */
+    height: 650px; /* Altura igual al ancho */
     border: 2px solid #96D0EE; /* Borde del mapa */
     border-radius: 15px; /* Bordes redondeados */
     overflow: hidden; /* Asegura que el contenido no se desborde */
@@ -65,8 +65,10 @@
     display: flex; /* Para centrar el iframe */
     align-items: center; /* Centra verticalmente el iframe */
     justify-content: center; /* Centra horizontalmente el iframe */
-    margin: 15px 15px;
+    margin: 55px 15px;
+    margin-left: 200px; /* Ajusta este valor para mover más o menos a la derecha */
 }
+
 
 .map:hover {
     transform: scale(1.05); /* Escala del mapa al pasar el ratón */
@@ -167,6 +169,8 @@ input::placeholder, textarea::placeholder {
     .map {
         width: 100%;
         height: auto;
+        margin-left: 20px; /* Ajusta este valor para mover más o menos a la derecha */
+
     }
     .hero_contac-txt h1 {
         padding-top: 40px;

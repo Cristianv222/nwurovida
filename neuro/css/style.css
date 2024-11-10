@@ -60,8 +60,6 @@
 }
 
 
-
-
 .background-image {
   background-image: url('/neuro/images/imagen portada.webp'); /* Ruta de la imagen de fondo */
   background-size: cover; /* Ajusta la imagen para que cubra todo el div */
@@ -267,8 +265,8 @@
 }
 .carousel-container {
     position: relative;
-    width: 100%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1500px;
     margin: auto;
     overflow: hidden;
   }
@@ -293,7 +291,7 @@
   }
   
   .card img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     margin-bottom: 15px;
   }
@@ -301,7 +299,7 @@
   .card h3 {
     padding: 10px;
     font-size: 18px;
-    color: #333;
+    color: #02B1F4;
   }
   
   .ver-mas-container {
@@ -331,20 +329,15 @@
   /* Responsive */
   @media (max-width: 768px) {
     .card {
-      min-width: calc(50% - 20px); /* Muestra 2 cartas */
+      min-width: 100%; /* Una carta por fila */
     }
   }
   
+  /* Para pantallas muy pequeñas (hasta 480px), se muestra una carta */
   @media (max-width: 480px) {
     .card {
-      min-width: 100%; /* Muestra 1 carta */
+      min-width: 100%; /* Una carta por fila */
     }
-  }
-  .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
   }
   
 /* Botón para carrusel */

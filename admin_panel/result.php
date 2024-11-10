@@ -30,15 +30,14 @@ include('includes/config.php');
             background-repeat: no-repeat;
             background-size: contain;
             background-attachment: fixed;
-            position: relative;
-            min-height: 100vh;
-            width: 100%;
             color: #333;
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
+            width: 100%;
         }
 
-        /* Optional: Overlay semi-transparent to improve readability */
+        /* Overlay for readability */
         body::before {
             content: '';
             position: fixed;
@@ -50,11 +49,12 @@ include('includes/config.php');
             z-index: -1;
         }
 
-        /* Ensure containers have the correct semi-transparent background */
+        /* Container Styling */
         .header,
         .student-details,
         .results,
-        .progress-section {
+        .progress-section,
+        .student-images {
             background-color: rgba(252, 252, 252, 0.9);
             backdrop-filter: blur(5px);
             padding: 30px;
@@ -63,34 +63,28 @@ include('includes/config.php');
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
 
-        .header h1 {
-            font-size: 32px;
-            color: #333;
-        }
-
+        .header h1,
         .student-details h2,
-        .results h2 {
+        .results h2,
+        .student-images h2 {
             font-size: 28px;
-            color: #474444;
-        }
-
-        .results table,
-        .progress-section {
-            width: 100%;
+            color: #333;
+            text-align: center;
         }
 
         .student-info-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 20px;
         }
 
         .student-info-text {
             flex: 1;
-        }
-
-        .student-image {
-            margin-left: 20px;
+            min-width: 250px;
+            font-size: 1.2em;
         }
 
         .student-image img {
@@ -107,12 +101,7 @@ include('includes/config.php');
             transform: scale(1.05);
         }
 
-        .alert {
-            color: #c33;
-            text-align: center;
-            font-weight: bold;
-        }
-
+        /* Table Styling */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -122,10 +111,8 @@ include('includes/config.php');
         td {
             border: 1px solid #ddd;
             padding: 12px;
-            /* Increased padding */
             text-align: center;
             font-size: 16px;
-            /* Changed to 16px */
         }
 
         th {
@@ -133,54 +120,72 @@ include('includes/config.php');
             font-weight: bold;
         }
 
-        .results h2 {
-            font-size: 22px;
-            color: #333;
+        .alert {
+            color: #c33;
             text-align: center;
-            margin-bottom: 15px;
+            font-weight: bold;
         }
 
-        /* Base styles for the student info container */
-        .student-info-container {
+        /* Additional Images Section */
+        .student-images-container {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 30px;
-            padding: 20px;
+            gap: 15px;
             flex-wrap: wrap;
-            /* Allows elements to wrap on mobile */
+            justify-content: center;
         }
 
-        .student-info-text {
-            flex: 1;
-            min-width: 250px;
-            font-size: 1.3em; 
-            /* Ensures text has a minimum width */
+        .image-item {
+            flex: 1 1 150px;
+            max-width: 150px;
+            text-align: center;
         }
 
-        /* Styles for the student's image */
-        .student-image {
-            flex-shrink: 0;
-            margin-left: 30px;
-        }
-        .student-info-text p {
-    font-size: 1.2em; /* Incrementa el tamaño de fuente relativo */
-}
-
-.student-details h2 {
-    font-size: 1.5em; /* Aumenta el tamaño del título */
-}
-
-        /* Improvements in the student details section */
-        .student-details {
-            background-color: #fcfcfce8;
-            padding: 30px;
-            margin: 25px 50px;
-            border-radius: 20px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.438);
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Media queries for tablets */
+        .image-item img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Lightbox for Additional Images */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .lightbox-content {
+            max-width: 80%;
+            max-height: 80%;
+            margin: auto;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            font-size: 40px;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Responsive Adjustments */
         @media screen and (max-width: 768px) {
             .student-details {
                 margin: 15px 25px;
@@ -189,31 +194,19 @@ include('includes/config.php');
 
             .student-image img {
                 width: 250px;
-                /* Changed to 250px */
                 height: 250px;
-                /* Changed to 250px */
             }
 
-            .header h1 {
-                font-size: 28px;
-                /* Changed to 28px */
-            }
-
+            .header h1,
             .student-details h2,
-            .results h2 {
+            .results h2,
+            .student-images h2 {
                 font-size: 24px;
-                /* Changed to 24px */
             }
 
             .student-info-text p {
                 font-size: 16px;
-                /* Changed to 16px */
             }
-        }
-
-        /* Media queries for mobile */
-        @media screen and (max-width: 480px) {
-            /* Aquí puedes agregar estilos específicos para dispositivos móviles */
         }
     </style>
 
@@ -277,29 +270,31 @@ include('includes/config.php');
                             $stmt->execute();
                             $results = $stmt->fetchAll(PDO::FETCH_OBJ);
                             $cnt = 1;
-                            $totalMarks = 0;
 
                             if ($stmt->rowCount() > 0) {
-                                foreach ($results as $result) { ?>
+                                foreach ($results as $result) {
+                                    // Convertir la calificación a la categoría correspondiente
+                                    if ($result->marks >= 5) {
+                                        $calificacion = "Sobresaliente";
+                                    } elseif ($result->marks == 4) {
+                                        $calificacion = "Excelente";
+                                    } elseif ($result->marks == 3) {
+                                        $calificacion = "Bueno";
+                                    } elseif ($result->marks == 2) {
+                                        $calificacion = "Regular";
+                                    } else {
+                                        $calificacion = "Malo";
+                                    }
+                            ?>
                                     <tr>
                                         <td><?php echo htmlentities($cnt); ?></td>
                                         <td><?php echo htmlentities($result->SubjectName); ?></td>
-                                        <td><?php echo htmlentities($marks = $result->marks); ?></td>
+                                        <td><?php echo htmlentities($calificacion); ?></td>
                                     </tr>
                                 <?php
-                                    $totalMarks += $marks;
                                     $cnt++;
-                                } ?>
-                                <tr>
-                                    <td colspan="2">Total</td>
-                                    <td><b><?php echo htmlentities($totalMarks); ?></b> de <b><?php echo htmlentities(($cnt - 1) * 100); ?></b></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2">Porcentaje</td>
-                                    <td><b><?php $percentage = $totalMarks * 100 / (($cnt - 1) * 100);
-                                            echo htmlentities($percentage); ?> %</b></td>
-                                </tr>
-                            <?php } else { ?>
+                                }
+                            } else { ?>
                                 <tr>
                                     <td colspan="3" class="alert">No se encontraron resultados para este ID.</td>
                                 </tr>
@@ -307,6 +302,45 @@ include('includes/config.php');
                         </tbody>
                     </table>
                 </section>
+
+                <!-- Mostrar imágenes de la tabla tblimages -->
+                <section class="student-images">
+                    <h2>Imágenes Adicionales</h2>
+                    <div class="student-images-container">
+                        <?php
+                        $imageQuery = "SELECT image1, image2, image3, image4 FROM tblimages WHERE StudentId = (SELECT StudentId FROM tblstudents WHERE RollId = :rollid GROUP BY StudentId) LIMIT 1";
+                        $imageStmt = $dbh->prepare($imageQuery);
+                        $imageStmt->bindParam(':rollid', $rollid, PDO::PARAM_STR);
+                        $imageStmt->execute();
+                        $images = $imageStmt->fetch(PDO::FETCH_OBJ);
+
+                        if ($images) {
+                            foreach (['image1', 'image2', 'image3', 'image4'] as $imgColumn) {
+                                if (!empty($images->$imgColumn)) {
+                                    $imageData = base64_encode($images->$imgColumn);
+                                    echo '<div class="image-item">
+                            <a href="#" onclick="openLightbox(\'' . $imageData . '\')">
+                                <img src="data:image/jpeg;base64,' . $imageData . '" alt="Imagen adicional">
+                            </a>
+                          </div>';
+                                }
+                            }
+                        } else {
+                            echo '<p>No se encontraron imágenes adicionales.</p>';
+                        }
+                        ?>
+                    </div>
+                </section>
+
+                <!-- Lightbox Modal -->
+                <div id="lightbox" class="lightbox">
+                    <span class="close" onclick="closeLightbox()">&times;</span>
+                    <img class="lightbox-content" id="lightbox-img" src="" alt="Imagen ampliada">
+                </div>
+
+
+
+
             </div>
         </div>
         <footer>
@@ -314,5 +348,25 @@ include('includes/config.php');
         </footer>
     </div>
 </body>
+<script>
+    // Script para abrir y cerrar el modal con la imagen
+    document.querySelectorAll('.img-preview').forEach(img => {
+        img.addEventListener('click', function() {
+            document.getElementById('modalImage').src = this.src;
+            document.getElementById('imageModal').style.display = 'flex';
+        });
+    });
+
+    document.querySelector('.close').addEventListener('click', function() {
+        document.getElementById('imageModal').style.display = 'none';
+    });
+
+    // Cerrar el modal si se hace clic fuera de la imagen
+    window.onclick = function(event) {
+        if (event.target == document.getElementById('imageModal')) {
+            document.getElementById('imageModal').style.display = 'none';
+        }
+    };
+</script>
 
 </html>

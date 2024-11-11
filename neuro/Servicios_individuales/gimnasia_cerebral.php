@@ -12,9 +12,7 @@
 </head>
 
 <body>
-    <header class="header_gimnasia">
-    <?php include "../../../nwurovida/includes/menu_nav.php"; ?>
-    <div class="header-content container">
+<section>
 
         <div class="header-content container">
             <div class="header-txt">
@@ -43,7 +41,7 @@
             solo el aprendizaje sino también el bienestar emocional.
         </p>
     </div>
-</section>
+    </section>
     <main class="servicios">
         <h2>Beneficios</h2>
         <div class="servicios-content container">
@@ -124,49 +122,49 @@
     <section class="pricing">
         <div class="pricing-container">
             <div class="pricing-card">
-                <h3>Premium</h3>
-                <p class="price"><span>€</span>2.49<span>/mes</span></p>
+                <h3>Plan Diario</h3>
+                <p class="price"><span>$</span>2.49<span>/diario</span></p>
                 <p class="offer">2 meses GRATIS</p>
                 <button>Elegir plan</button>
                 <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
+                    <li>✓ SEO avanzado</li>
+                    <li>✓ Análisis de visitas</li>
+                    <li>✓ Chat en vivo con WhatsApp</li>
+                    <li>✓ Soporte técnico 24/7</li>
                 </ul>
             </div>
 
             <div class="pricing-card popular">
-                <h3>Business</h3>
+                <h3>Plan Mensual</h3>
                 <p class="price"><span>€</span>3.49<span>/mes</span></p>
                 <p class="offer">2 meses GRATIS</p>
                 <button>Elegir plan</button>
                 <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                    <li>Más espacio de almacenamiento</li>
+                    <li>✓ SEO avanzado</li>
+                    <li>✓ Análisis de visitas</li>
+                    <li>✓ Chat en vivo con WhatsApp</li>
+                    <li>✓ Soporte técnico 24/7</li>
+                    <li>✓ Más espacio de almacenamiento</li>
                 </ul>
             </div>
 
             <div class="pricing-card">
-                <h3>Cloud Startup</h3>
+                <h3>Plan semanal</h3>
                 <p class="price"><span>€</span>7.99<span>/mes</span></p>
                 <p class="offer">2 meses GRATIS</p>
                 <button>Elegir plan</button>
                 <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                    <li>Almacenamiento en la nube</li>
+                    <li>✓ SEO avanzado</li>
+                    <li> ✓ Análisis de visitas</li>
+                    <li>✓ Chat en vivo con WhatsApp</li>
+                    <li>✓ Soporte técnico 24/7</li>
+                    <li>✓ Almace namiento en la nube</ li>
                 </ul>
             </div>
         </div>
     </section>
     <div style="height: 40px; background-color: white;"></div>
-    <?php include "../../../nwurovida/includes/footer.php"; ?>
+</section>
 
 </body>
 

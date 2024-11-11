@@ -29,11 +29,9 @@
             <img src="../images/doula2.png" alt="">
         </div>
         <div class="about-txt">
-            <h2>Mujeres es estado de gestación</h2>
+            <h2>Desde 4 años en adelante cualquier público</h2>
             <p>
-                Es fundamental para el bienestar de las mujeres en gestación,
-                especialmente aquellas que enfrentan desafíos emocionales,
-                físicos o sociales.
+            Para todas las edades desde 4 años en adelante. Creaciones temáticas según la temporada (materiales no incluidos). Ideal para desarrollar creatividad y habilidades manuales en un ambiente divertido.
             </p>
 
         </div>
@@ -45,44 +43,28 @@
         <div class="servicios-content container">
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Apoyo emocional y físico </h3>
-                <p>
-                    Las Doulas proporcionan una presencia constante durante el embarazo,
-                    el parto y el posparto, lo que genera una sensación de seguridad
-                    y tranquilidad. 
+            <i class="fa-solid fa-palette"></i>                <h3>Desarrollo de la creatividad </h3>
+                <p>Fomenta la imaginación y la expresión personal a través de la creación de piezas únicas.
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-stethoscope"></i>
-                <h3>Empoderamiento </h3>
+            <i class="fa-solid fa-palette"></i>                <h3>Mejora de habilidades motoras </h3>
                 <p>
-                    Las doulas promueven el empoderamiento de la mujer durante
-                    su proceso de gestación, dándole herramientas para tomar decisiones
-                    informadas sobre su cuerpo y su parto. 
+                Ayuda a coordinar y fortalecer la motricidad fina al manipular diversos materiales.
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-book"></i>
-                <h3>Beneficios para la salud </h3>
-                <p>
-                    Estudios han mostrado que las mujeres que cuentan con el apoyo de una doula tienen menos
-                    probabilidades de requerir intervenciones médicas durante el
-                    parto, como cesáreas, y es más probable que experimenten un
-                    parto más corto y menos doloroso. 
+            <i class="fa-solid fa-palette"></i>                <h3>Relajación y enfoque </h3>
+                <p> Realizar manualidades reduce el estrés y promueve la concentración en una actividad recreativa.
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Acompañamiento continuo: </h3>
+            <i class="fa-solid fa-palette"></i>                <h3>Refuerzo de la autoestima </h3>
                 <p>
-                    Las doulas también juegan un papel crucial en el posparto,
-                    brindando apoyo en el cuidado del recién nacido, la lactancia y la adaptación a la maternidad.
-                    Esto es vital para las mujeres que se encuentran en condiciones de vulnerabilidad o estrés,
-                    ya que contribuye a la creación de un entorno más estable y amoroso para el bebé y la madre.
+                Completar proyectos creativos impulsa la autoconfianza y el sentido de logro en niños y adultos.
 
                 </p>
             </div>
@@ -136,10 +118,6 @@
     </div>
 </div>
     </section>
-
-    <div style="height: 40px; background-color: white;"></div>
-    <?php include "../../../nwurovida/includes/footer.php"; ?>
-
 </body>
 
 </html>

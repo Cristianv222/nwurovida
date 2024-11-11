@@ -13,20 +13,17 @@
 
 <body>
     <header class="header_doulas">
-    <?php include "../../../nwurovida/includes/menu_nav.php"; ?>
     <div class="header-content container">
             <div class="header-txt">
                 <h1>ACOMPAÑAMIENTO DE LAS DOULAS</h1>
                 <div class="header-img">
-                    <img src="/neuro/images/" alt="">
+                    <img src="/neuro/images/Acompañamiento de las Doulas.png" alt="">
                 </div>
             </div>
-
-
     </header>
     <section class="about container">
         <div class="about-img">
-            <img src="../images/doula2.png" alt="">
+            <img src="/neuro/images/Acompañamiento de las Doulas2.png" alt="">
         </div>
         <div class="about-txt">
             <h2>Mujeres es estado de gestación</h2>

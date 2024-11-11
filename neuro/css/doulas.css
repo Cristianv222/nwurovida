@@ -16,36 +16,23 @@
 }
 
 /* Contenedor general */
-.container {
-    max-width: 1100%;
-    margin: 0 auto;
-}
-
 .header-content {
     display: flex;
-}
-
-.header-img {
-    width: 40%;
-    padding-top: 100px;
-}
-
-.header-img img {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between; /* Separa la imagen y el texto */
+    padding-top: 100px; /* Ajusta este valor si es necesario */
 }
 
 .header-txt {
-    padding-top: 250px;
-    text-align: center;
+    width: 50%; /* Ajusta el ancho del texto */
+    text-align: right; /* Alinea el texto a la derecha */
 }
 
 .header-txt h1 {
     line-height: 1.2;
     color: #007BFF;
     text-transform: uppercase;
-    font-size: 50px; /* Tamaño de fuente para pantallas grandes */
+    font-size: 50px;
     margin-bottom: 10px;
 }
 
@@ -54,6 +41,19 @@
     color: #818181;
     margin-bottom: 45px;
 }
+
+.header-img {
+    width: 30%; /* Ajusta el ancho de la imagen */
+    margin-right: 120px; /* Ajusta este valor según el espacio que necesites */
+    margin-top: 10%;
+}
+
+.header-img img {
+    width: 100%;
+    height: auto;
+}
+
+
 
 /* About section */
 .about {
@@ -70,7 +70,7 @@
 }
 
 .about-img img {
-    width: 50%;
+    width: 70%;
     border-radius: 25px;
     display: block;
     margin-left: 20%;
@@ -118,7 +118,7 @@
     text-align: center;
     background-color: #fafafa;
     border-radius: 10px;
-    margin-top: 170px; /* Ajusta este valor según lo que necesites */
+    margin-top: 160px; /* Ajusta este valor según lo que necesites */
 }
 
 .servicios h2 {
@@ -137,8 +137,9 @@
     overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente a los hijos */
 }
 
+
 .servicio-1 {
-    padding: 15px;
+    padding: 25px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     flex-basis: calc(25% - 20px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;

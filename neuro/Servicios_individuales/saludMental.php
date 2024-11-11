@@ -10,22 +10,21 @@
 </head>
 
 <body>
-<header class="header">
-    <div class="header-content container">
-        <div class="header-txt">
-            <h1>Salud Mental</h1>
+    <header class="header">
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Salud Mental</h1>
+            </div>
+            <div class="header-img">
+                <img src="/neuro/images/Salud mental.png" alt="">
+            </div>
         </div>
-        <div class="header-img">
-            <img src="/neuro/images/Salud mental.png" alt="">
-        </div>
-    </div>
-</header>
-
-
+    </header>
     <section class="about container">
         <div class="about-img">
             <img src="/neuro/images/MODALMENTAL.png" alt="">
         </div>
+        
         <div class="about-txt">
             <h2>Desde 4 años en adelante cualquier público </h2>
             <p>
@@ -41,7 +40,8 @@
         <div class="servicios-content container">
 
             <div class="servicio-1">
-            <i class="fa-solid fa-head-side-virus"></i>                <h3>Hatha Yoga</h3>
+                <i class="fa-solid fa-head-side-virus"></i>
+                <h3>Hatha Yoga</h3>
                 <p>
                     Enfocado en posturas y técnicas de respiración,
                     ideal para principiantes.
@@ -49,7 +49,8 @@
             </div>
 
             <div class="servicio-1">
-            <i class="fa-solid fa-head-side-virus"></i>                <h3>Vinyasa Yoga</h3>
+                <i class="fa-solid fa-head-side-virus"></i>
+                <h3>Vinyasa Yoga</h3>
                 <p>
                     Flujo continuo de movimientos con respiración
                     sincronizada.
@@ -57,7 +58,8 @@
             </div>
 
             <div class="servicio-1">
-            <i class="fa-solid fa-head-side-virus"></i>                <h3> Kundalini Yoga</h3>
+                <i class="fa-solid fa-head-side-virus"></i>
+                <h3> Kundalini Yoga</h3>
                 <p>
                     Enfocado en la energía interna, con
                     meditación y cantos.
@@ -65,7 +67,8 @@
             </div>
 
             <div class="servicio-1">
-            <i class="fa-solid fa-head-side-virus"></i>                <h3>Yin Yoga:</h3>
+                <i class="fa-solid fa-head-side-virus"></i>
+                <h3>Yin Yoga:</h3>
                 <p>
                     Posturas mantenidas durante más tiempo, excelente
                     para flexibilidad y relajación profunda.

@@ -110,7 +110,7 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                                 <tr>
                                                     <th>#</th>
                                                     <th>Nombre de Estudiante</th>
-                                                    <th>ID Roll</th>
+                                                    <th>Cedula</th>
                                                     <th>Año</th>
                                                     <th>Fecha de Registro</th>
                                                     <th>Estado</th>

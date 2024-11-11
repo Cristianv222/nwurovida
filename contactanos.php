@@ -7,6 +7,8 @@
     <title>Neurovida Contáctanos</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./neuro/css/Contacto.css">
+    <link rel="shortcut icon" href="./neuro/images/ICO.png" type="image/x-icon">
+
 </head>
 
 <body>

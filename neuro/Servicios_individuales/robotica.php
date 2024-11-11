@@ -8,7 +8,7 @@
     <title>Robotica</title>
     <link rel="stylesheet" href="/neuro/css/robotica.css">
     <link rel="stylesheet" href="/includes/footer.css">
-    <link rel="shortcut icon" href="./neuro/images/apple-icon-144x144.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../neuro/images/apple-icon-144x144.png" type="image/x-icon">
 </head>
 
 <body>

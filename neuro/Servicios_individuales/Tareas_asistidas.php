@@ -14,33 +14,19 @@
 <body>
  
 <header class="header">
-<?php include "../../../nwurovida/includes/menu_nav.php"; ?>
     <div class="header-content container">
-
-    <header class="header">
-        <div class="header-content container">
-            <div class="header-txt">
-                <h1>Tareas Dirigidas</h1>
-                <div class="header-img">
-                    <img src="../images/man1.png" alt="">
-                </div>
-            </div>
-            <div class="header-img">
-                <img src="../images/tdir.png" alt=""> 
-
-            </div>
-           
+        <div class="header-txt">
+            <h1>Tareas dirigidas</h1>
         </div>
+        <div class="header-img">
+            <img src="/neuro/images/Tareas dirigidas.png" alt="">
+        </div>
+    </div>
+</header>
 
-
-    </header>
-
-
-    </header>
-
-    <section class="about container">
-        <div class="about-img">
-            <img src="../images/man2.jpg" alt="">
+<section class="about container">
+<div class="about-img">
+            <img src="/neuro/images/Tareas dirigidas2.png" alt="">
         </div>
         <div class="about-txt">
         <h2>Niños de cualquier edad </h2>

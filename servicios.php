@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./neuro/css/estiloServicios.css">
     <title>Neurovida-Servicios</title>
+    <link rel="shortcut icon" href="./neuro/images/ICO.png" type="image/x-icon">
 
 
 </head>

@@ -29,11 +29,9 @@
             <img src="../images/doula2.png" alt="">
         </div>
         <div class="about-txt">
-            <h2>Mujeres es estado de gestación</h2>
+            <h2>Niños desde 6 a 10 años en adelante</h2>
             <p>
-                Es fundamental para el bienestar de las mujeres en gestación,
-                especialmente aquellas que enfrentan desafíos emocionales,
-                físicos o sociales.
+            Niños de 6 a 9 años aprenderán introducción, diseño, construcción y ensamblaje de robots. Desde 10 años en adelante incluye programación avanzada, sensores, IA y aplicaciones prácticas.
             </p>
 
         </div>
@@ -45,51 +43,33 @@
         <div class="servicios-content container">
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Apoyo emocional y físico </h3>
+            <i class="fa-solid fa-robot"></i>                <h3>▪ Introducción a la Robótica
+                </h3>
                 <p>
-                    Las Doulas proporcionan una presencia constante durante el embarazo,
-                    el parto y el posparto, lo que genera una sensación de seguridad
-                    y tranquilidad. 
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-stethoscope"></i>
-                <h3>Empoderamiento </h3>
+            <i class="fa-solid fa-robot"></i>                <h3>▪ Diseño y Construcción de Robots
+                </h3>
                 <p>
-                    Las doulas promueven el empoderamiento de la mujer durante
-                    su proceso de gestación, dándole herramientas para tomar decisiones
-                    informadas sobre su cuerpo y su parto. 
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-book"></i>
-                <h3>Beneficios para la salud </h3>
+            <i class="fa-solid fa-robot"></i>                <h3>▪ Programación para Robótica
+                </h3>
                 <p>
-                    Estudios han mostrado que las mujeres que cuentan con el apoyo de una doula tienen menos
-                    probabilidades de requerir intervenciones médicas durante el
-                    parto, como cesáreas, y es más probable que experimenten un
-                    parto más corto y menos doloroso. 
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Acompañamiento continuo: </h3>
+            <i class="fa-solid fa-robot"></i>                <h3>▪ Ensamble robots 
+                </h3>
                 <p>
-                    Las doulas también juegan un papel crucial en el posparto,
-                    brindando apoyo en el cuidado del recién nacido, la lactancia y la adaptación a la maternidad.
-                    Esto es vital para las mujeres que se encuentran en condiciones de vulnerabilidad o estrés,
-                    ya que contribuye a la creación de un entorno más estable y amoroso para el bebé y la madre.
-
                 </p>
             </div>
-
-
         </div>
-
     </main>
 
     <section class="pricing">
@@ -136,10 +116,6 @@
     </div>
 </div>
     </section>
-
-    <div style="height: 40px; background-color: white;"></div>
-    <?php include "../../../nwurovida/includes/footer.php"; ?>
-
 </body>
 
 </html>

@@ -38,13 +38,15 @@
             </div>
 
 
-            <div class="card fade-up">
-                <img src="./neuro/images/Salud mental.png" alt="Servicio 2">
-                <h3>Salud mental</h3>
-                <p> Sesiones de yoga para embarazadas, niños y adultos, enfocadas en el bienestar físico y emocional.</p>
-                <button class="quick-view" data-id="./neuro/Servicios_individuales/saludMental.php" onclick="openModal(this)">Vista rápida</button>
+<div class="card fade-up" id="card">
+    <img src="./neuro/images/Salud mental.png" alt="Servicio 2">
+    <h3>Salud mental</h3>
+    <p>Sesiones de yoga para embarazadas, niños y adultos, enfocadas en el bienestar físico y emocional.</p>
+    <button class="quick-view" data-id="./neuro/Servicios_individuales/saludMental.php" onclick="openModal(this)">
+        Vista rápida
+    </button>
+</div>
 
-            </div>
             <div class="card fade-up">
                 <img src="./neuro/images/Tareas dirigidas.png" alt="Servicio 3">
                 <h3>Tareas dirigidas</h3>

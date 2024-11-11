@@ -46,32 +46,28 @@
         <div class="servicios-content container">
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Introducción a los Objetivos de Desarrollo Sostenible (ODS)</h3>
+            <i class="fa-solid fa-money-check-dollar"></i>                <h3>Introducción a los Objetivos de Desarrollo Sostenible (ODS)</h3>
                 <p>
 
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-stethoscope"></i>
-                <h3>Plan de negocios básico (Producto Mínimo Viable) </h3>
+            <i class="fa-solid fa-money-check-dollar"></i>                <h3>Plan de negocios básico (Producto Mínimo Viable) </h3>
                 <p>
 
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-book"></i>
-                <h3>Campaña básica de marketing </h3>
+            <i class="fa-solid fa-money-check-dollar"></i>                <h3>Campaña básica de marketing </h3>
                 <p>
 
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Ventas</h3>
+            <i class="fa-solid fa-money-check-dollar"></i>                <h3>Ventas</h3>
                 <p>
 
 
@@ -129,10 +125,6 @@
     </div>
 </div>
     </section>
-
-    <div style="height: 40px; background-color: white;"></div>
-    <?php include "../../../nwurovida/includes/footer.php"; ?>
-
 </body>
 
 </html>

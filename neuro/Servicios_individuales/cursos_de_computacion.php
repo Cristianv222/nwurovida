@@ -40,8 +40,7 @@
         <div class="servicios-content container">
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Word</h3>
+            <i class="fa-solid fa-computer"></i>                <h3>Word</h3>
                 <p>
                     Microsoft Word es un programa para escribir y editar documentos.
                     Con Word, puedes crear cartas, informes y tareas escolares. Tiene herramientas
@@ -51,8 +50,7 @@
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-stethoscope"></i>
-                <h3>Excel </h3>
+            <i class="fa-solid fa-computer"></i>                <h3>Excel </h3>
                 <p>
                     Microsoft Excel es una hoja de cálculo que te ayuda a organizar y analizar datos.
                     Puedes usarlo para hacer listas, llevar un control de tus gastos o crear gráficos
@@ -62,8 +60,7 @@
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-book"></i>
-                <h3>PowerPoint </h3>
+            <i class="fa-solid fa-computer"></i>                <h3>PowerPoint </h3>
                 <p>
                     Microsoft PowerPoint es un programa para hacer presentaciones.
                     Puedes crear diapositivas con texto, imágenes y videos para mostrar en
@@ -73,8 +70,7 @@
             </div>
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Canva</h3>
+            <i class="fa-solid fa-computer"></i>                <h3>Canva</h3>
                 <p>
                     Canva es una herramienta en línea que te permite diseñar de manera sencilla.
                     Puedes crear tarjetas, posters y gráficos para tus proyectos. Tiene muchas plantillas
@@ -85,8 +81,7 @@
             </div>
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Genially</h3>
+            <i class="fa-solid fa-computer"></i>                <h3>Genially</h3>
                 <p>
                     Genially es una plataforma para crear presentaciones interactivas, infografías y juegos.
                     Puedes agregar animaciones y enlaces para hacer que tus trabajos sean más divertidos
@@ -96,8 +91,7 @@
             </div>
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Paint</h3>
+            <i class="fa-solid fa-computer"></i>                <h3>Paint</h3>
                 <p>
                     Microsoft Paint es un programa básico de dibujo que te permite crear imágenes
                     y arte digital. Puedes usar herramientas como lápiz, pincel y relleno para dibujar

@@ -163,7 +163,6 @@
             </div>
         </div>
     </section>
-    <div style="height: 40px; background-color: white;"></div>
 </section>
 
 </body>

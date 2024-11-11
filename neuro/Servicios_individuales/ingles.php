@@ -12,9 +12,9 @@
 </head>
 
 <body>
-<header class="header">
-<?php include "../../../nwurovida/includes/menu_nav.php"; ?>
-    <div class="header-content container">
+    <header class="header">
+        <?php include "../../../nwurovida/includes/menu_nav.php"; ?>
+        <div class="header-content container">
             <div class="header-txt">
                 <h1>Ingles</h1>
             </div>
@@ -51,46 +51,63 @@
         <div class="servicios-content container">
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Manualidades según temporada</h3>
+                <i class="fa-solid fa-language"></i>
+                <h3>INTRO LEVEL 1 </h3>
                 <p>
+                    ▪ Directions <br>
+                    ▪ Classroom Objects<br>
+                    ▪ Use of A-AN<br>
+                    ▪ Parts of the body<br>
+                    ▪ Fruits and Vegetables<br>
+                    ▪ To have<br>
+                    ▪ Colors and adjectives<br>
+                    ▪ The family members<br>
+                    ▪ Singular and plural forms<br>
+                    ▪ Likes and deslikes<br>
+                </p>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-language"></i>
+                <h3>BEGINNER LEVEL 2
+                </h3>
+                <p>
+                    ▪ What are you doing?<br>
+                    ▪ Nationalities<br>
+                    ▪ Can and Can not<br>
+                    ▪ Days of the week<br>
+                    ▪ Months of the year<br>
+                    ▪ Food preferances<br>
+                    ▪ There be (forms)<br>
+                    ▪ Have and do not have<br>
+                    ▪ Public places<br>
+                    ▪ Wh questions<br>
+                    ▪ Leisure activities<br>
+
+
+
 
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-stethoscope"></i>
-                <h3></h3>
+                <i class="fa-solid fa-language"></i>
+                <h3>ELEMENTARY LEVEL 3
+                </h3>
                 <p>
-                    El curso "Manualidades Según Temporada" está diseñado
-                    para todas las edades, ofreciendo la oportunidad de crear
-                    proyectos creativos basados en cada estación del año.
-                    
-
+                    ▪ Spelling<br>
+                    ▪ On + days of the week<br>
+                    ▪ How many?<br>
+                    ▪ Telling the time<br>
+                    ▪ Present Simple<br>
+                    ▪ Reading Present stories<br>
+                    ▪ Talking about the city<br>
+                    ▪ Everyday Activities<br>
+                    ▪ Physical Apperances<br>
 
                 </p>
             </div>
 
-            <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-book"></i>
-                <h3> </h3>
-                <p>
-                    "Manualidades Según Temporada" es un curso que invita a niños y adultos
-                    a explorar su creatividad a través de manualidades estacionales.
-                    
-                </p>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3></h3>
-                <p>
-                    Este curso de "Manualidades Según Temporada" está orientado
-                    a fomentar la creatividad en personas de todas las edades.
-                 
-
-                </p>
-            </div>
 
         </div>
 
@@ -140,10 +157,6 @@
             </div>
         </div>
     </section>
-
-    <div style="height: 40px; background-color: white;"></div>
-    <?php include "../../../nwurovida/includes/footer.php"; ?>
-
 </body>
 
 </html>

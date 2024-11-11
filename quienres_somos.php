@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quines somos-NeuroVida</title>
+    <title>Document</title>
     <link rel="stylesheet" href="/neuro/css/somos.css">
 </head>
 
@@ -30,12 +30,6 @@
                     </section>
                 </section>
 
-            <h1>¿QUIENES SOMOS?</h1>
-
-
-                <a href="#" class="btn_somos">Agenda tu cita</a>
-             
-
             </div>
         </div>
     </header>
@@ -43,30 +37,9 @@
 
 
 
-    <section>
-        <div>
-        <canvas id="particleCanvas"></canvas>
-        </div>
-    </section>
-
-    <main>
-        <div>
-           
-        </div>
-    </main>
-
-
-
 <?php include './includes/footer.php'; ?>
 </body>
 </html>
-
-<style>
-        
-        canvas {
-            display: block;
-        }
-    </style>
 
 <script>
         const canvas = document.getElementById('particleCanvas');

@@ -56,43 +56,30 @@
         <div class="servicios-content container">
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Manualidades según temporada</h3>
+            <i class="fa-solid fa-code"></i>                <h3>Introducción a la programación
+            </h3>
                 <p>
-
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-stethoscope"></i>
-                <h3></h3>
+            <i class="fa-solid fa-code"></i>                <h3>Introducción a la inteligencia artificial
+            </h3>
                 <p>
-                    El curso "Manualidades Según Temporada" está diseñado
-                    para todas las edades, ofreciendo la oportunidad de crear
-                    proyectos creativos basados en cada estación del año.
-                    
-
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-book"></i>
-                <h3> </h3>
+            <i class="fa-solid fa-code"></i>                <h3>Creación de páginas web
+            </h3>
                 <p>
-                    "Manualidades Según Temporada" es un curso que invita a niños y adultos
-                    a explorar su creatividad a través de manualidades estacionales.
-                 
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3></h3>
+            <i class="fa-solid fa-code"></i>                <h3>Creación de juegos interactivos en Pyton 
+            </h3>
                 <p>
-                    Este curso de "Manualidades Según Temporada" está orientado
-                    a fomentar la creatividad en personas de todas las edades.
-                   
-
                 </p>
             </div>
 
@@ -144,9 +131,6 @@
             </div>
         </div>
     </section>
-
-    <div style="height: 40px; background-color: white;"></div>
-    <?php include "../../../nwurovida/includes/footer.php"; ?>
 
 </body>
 

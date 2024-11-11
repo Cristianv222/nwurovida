@@ -1,16 +1,29 @@
 .content-left {
-  display: flex; /* Usar flexbox para alinear los elementos dentro */
-  flex-direction: column; /* Alinea los elementos en columna */
-  align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
-  justify-content: center; /* Centra los elementos verticalmente */
-  height: 100%; /* Asegura que el contenedor llene la altura disponible */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-
 .logo-left {
-  width: 700px;
-  height: auto;
-  margin-bottom: 20px;
+  width: 800px;
+  height: auto;  
+
+}
+button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 4px 20px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
 }
 
 .btn-Inicio {
@@ -20,68 +33,78 @@
   border: none;
   border-radius: 5px;
   transition: background-color 0.3s;
-  margin-top: 250px;
-  margin-left: -270px; /* Ajusta el valor según lo que necesites */
-  text-decoration: none; /* Elimina el subrayado */
-
+  margin-top: 380px;
+  margin-left: -270px;
+  text-decoration: none;
 }
 
 .btn-Inicio:hover {
   background-color: #38c9b8;
 }
+
 .background-image {
-  background-image: url('/neuro/images/imagen portada.webp'); /* Ruta de la imagen de fondo */
-  background-size: cover; /* Ajusta la imagen para que cubra todo el div */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  height: 90vh; /* Ajusta la altura al tamaño de la ventana */
+  background-image: url('/neuro/images/imagen portada.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
-
   .btn-Inicio {
     padding: 10px 22px;
     font-size: 14px;
     width: auto;
-    margin-left: 0%;
-    margin-top: 350%;
-    text-decoration: none; /* Elimina el subrayado */
-
+    margin: 0;
+    text-decoration: none;
   }
+
   .logo-left {
-    width: 90%;       /* Ajusta el ancho del logo */
-    max-width: 50px;  
-    margin-top: -120px; /* Sube el logo hacia arriba */
+    width: 90%;
+    max-width: 150px;
+    margin-top: -120px;
+  }
+
+  .contenedor-principal {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .objetivos-container,
+  .profesionales-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+
+  .objetivos-img,
+  .profesionales-img {
+    margin: 0 auto 20px;
+    width: 150px;
+    height: auto;
+  }
+
+  .objetivos-texto,
+  .profesionales-texto {
+    padding-left: 0;
+  }
 }
 
-}
-
-
-.background-image {
-  background-image: url('/neuro/images/imagen portada.webp'); /* Ruta de la imagen de fondo */
-  background-size: cover; /* Ajusta la imagen para que cubra todo el div */
-  background-position: center; /* Centra la imagen */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  height: 90vh; /* Ajusta la altura al tamaño de la ventana */
+.valores-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
- /*CONTENEDOR VALORES*/
- .valores-container {
-  display: flex;
-  flex-wrap: wrap; /* Permite que las imágenes se reorganicen en varias filas */
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   padding: 20px;
 }
 
 .valor-img {
-  width: 40%; /* Ocupa aproximadamente el 50% del ancho, dejando espacio entre ellas */
+  width: 40%;
   height: auto;
   border-radius: 8px;
   transition: transform 0.3s;
@@ -91,268 +114,103 @@
   transform: scale(1.1);
 }
 
-/* Ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
   .valor-img {
-    width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
-    margin-bottom: 20px; /* Espacio inferior entre imágenes */
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
-  
-/* CONTENEDOR PRINCIPAL */
-
 .contenedor-principal {
-  display: flex; /* Usa flexbox para alinear los contenedores uno al lado del otro */
-  justify-content: space-between; /* Espacio entre los contenedores */
-  padding: 20px; /* Espacio alrededor del contenedor principal */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: auto;
 }
 
-/* DIVS DE INFORMACION LATERAL */
-/* CONTENEDOR PRINCIPAL */
-
-.contenedor-principal {
-  display: flex; /* Usa flexbox para alinear los contenedores uno al lado del otro */
-  justify-content: space-between; /* Espacio entre los contenedores */
-  height: 100vh; /* Ocupa toda la altura de la pantalla */
-}
-
-/* DIVS DE INFORMACION LATERAL */
-
-/* CONTENEDOR PRINCIPAL */
-
-.contenedor-principal {
-  display: flex; /* Usa flexbox para alinear los contenedores uno al lado del otro */
-  justify-content: space-between; /* Espacio entre los contenedores */
-  height: 100vh; /* Ocupa toda la altura de la pantalla */
-}
-
-/* CONTENEDOR PRINCIPAL */
-
-.contenedor-principal {
-  display: flex; /* Usa flexbox para alinear los contenedores uno al lado del otro */
-  justify-content: space-between; /* Espacio entre los contenedores */
-  height: auto; /* Cambiar a auto para que se ajuste al contenido */
-}
-
-/* CONTENEDOR PRINCIPAL */
-
-.contenedor-principal {
-  display: flex; /* Usa flexbox para alinear los contenedores uno al lado del otro */
-  justify-content: space-between; /* Espacio entre los contenedores */
-  height: auto; /* Cambiar a auto para que se ajuste al contenido */
-}
-
-/* DIVS DE INFORMACION LATERAL */
-
-.objetivos-container {
-  display: flex; /* Usar flexbox para alinear horizontalmente */
-  align-items: center; /* Centra verticalmente los elementos en el contenedor */
-  justify-content: flex-start; /* Alinea el contenido a la izquierda */
-  padding: 20px; /* Espacio alrededor del contenedor */
-  background-color: #CDE4CA; /* Color de fondo para el contenedor de objetivos */
-  width: 50%; /* Ocupa el 50% del ancho de la pantalla */
-  max-height: 600px; /* Altura máxima del contenedor de objetivos */
-  overflow-y: auto; /* Permite el desplazamiento vertical si el contenido excede la altura máxima */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
-  transition: transform 0.3s; /* Animación de transición para el efecto hover */
-  margin: 0; /* Eliminar márgenes para evitar espacio extra */
-  border-radius: 10px;
-}
-
-.objetivos-container:hover {
-  transform: scale(1.02); /* Efecto de aumento al pasar el mouse */
-}
-
-.objetivos-img {
-  width: 300px; /* Ajusta según sea necesario */
-  height: auto; /* Mantiene la proporción de la imagen */
-  margin-left: 30px; /* Espacio entre la imagen y el texto */
-}
-
-.objetivos-texto {
-  padding-left: 15%;
-  text-align: left; /* Alinea el texto a la izquierda */
-}
-
-.profesionales-container {
-  display: flex; /* Usar flexbox para alinear horizontalmente */
-  align-items: center; /* Centra verticalmente los elementos en el contenedor */
-  justify-content: flex-start; /* Alinea el contenido a la izquierda */
-  padding: 20px; /* Espacio alrededor del contenedor */
-  background-color: #96D0EE; /* Color de fondo para el contenedor de profesionales */
-  width: 50%; /* Ocupa el 50% del ancho de la pantalla */
-  max-height: 600px; /* Altura máxima del contenedor de profesionales */
-  overflow-y: auto; /* Permite el desplazamiento vertical si el contenido excede la altura máxima */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para un efecto de profundidad */
-  transition: transform 0.3s; /* Animación de transición para el efecto hover */
-  margin: 0; /* Eliminar márgenes para evitar espacio extra */
-  border-radius: 10px;
-}
-
-.profesionales-container:hover {
-  transform: scale(1.02); /* Efecto de aumento al pasar el mouse */
-}
-
-.profesionales-texto {
-  padding-left: 15%;
-  text-align: left; /* Alinea el texto a la izquierda */
-}
-
-.profesionales-img {
-  width: 450px; /* Ajusta según sea necesario */
-  height: auto; /* Mantiene la proporción de la imagen */
-
-}
 .objetivos-container,
 .profesionales-container {
-  display: flex; /* Asegura que funcione flex-direction en la media query */
+  display: flex;
   align-items: center;
-  margin: 20px 0; /* Espacio adicional entre los contenedores */
+  justify-content: flex-start;
+  padding: 20px;
+  background-color: #CDE4CA;
+  width: 50%;
+  max-height: 600px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  border-radius: 10px;
+}
+
+.objetivos-container:hover,
+.profesionales-container:hover {
+  transform: scale(1.02);
 }
 
 .objetivos-img,
 .profesionales-img {
-  margin-right: 20px; /* Margen entre imagen y texto en pantallas grandes */
-}
-@media (max-width: 768px) {
-  .contenedor-principal {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .objetivos-container,
-  .profesionales-container {
-    width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
-    flex-direction: column; /* Coloca el contenido en columna */
-    align-items: flex-start; /* Alinea al inicio */
-    margin: 10px 0; /* Espacio entre contenedores */
-  }
-
-  .objetivos-img,
-  .profesionales-img {
-    margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
-    margin-bottom: 20px; /* Espacio debajo de la imagen */
-    width: 150px; /* Cambia el valor a tu preferencia */
-    height: auto;
-    display: block; /* Asegura que la imagen se comporte como un bloque */
-    margin-left: auto; /* Centra la imagen a la izquierda */
-    margin-right: auto; /* Centra la imagen a la derecha */
-  }
-
-  .objetivos-texto,
-  .profesionales-texto {
-    padding-left: 0; /* Elimina el padding lateral */
-  }
+  width: 300px;
+  height: auto;
+  margin: 0 20px;
 }
 
-/*CONENEDOR CARUSEL*/
-.frase-content_sec1 {
+.objetivos-texto,
+.profesionales-texto {
+  padding-left: 15%;
+  text-align: left;
+}
+
+/* Carrusel y botón de estudios */
+.carousel-container {
+  position: relative;
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  min-width: calc(33.333% - 20px);
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  height: auto; /* Solo si quieres centrarlo en la pantalla completa */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.frase-content_sec1 h2 {
-  color: #274193; /* Cambia a cualquier color que desees */
+.card img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 15px;
 }
 
-.frase-content_sec1 .txt-p_sec1 {
-  color: #00ABAA; /* Cambia a cualquier color que desees */
+.card h3 {
+  padding: 10px;
+  font-size: 18px;
+  color: #02B1F4;
 }
-.carousel-container {
-    position: relative;
-    width: 90%;
-    max-width: 1500px;
-    margin: auto;
-    overflow: hidden;
-  }
-  
-  .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .card {
-    min-width: calc(33.333% - 20px); /* Muestra 3 cartas */
-    margin: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .card img {
-    max-width: 80%;
-    height: auto;
-    margin-bottom: 15px;
-  }
-  
-  .card h3 {
-    padding: 10px;
-    font-size: 18px;
-    color: #02B1F4;
-  }
-  
-  .ver-mas-container {
-    text-align: center;
-    margin: 30px 0;
-  }
-  
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    border: none;
-    padding: 0px;
-    cursor: pointer;
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .card {
-      min-width: 100%; /* Una carta por fila */
-    }
-  }
-  
-  /* Para pantallas muy pequeñas (hasta 480px), se muestra una carta */
-  @media (max-width: 480px) {
-    .card {
-      min-width: 100%; /* Una carta por fila */
-    }
-  }
-  
-/* Botón para carrusel */
+
 .btn-estud {
-  background-color: #00ABAA; /* Color de fondo del botón */
-  color: #fff; /* Color del texto del botón */
-  padding: 10px 20px; /* Añade espacio interno para agrandar el botón horizontal y verticalmente */
-  text-decoration: none; /* Elimina el subrayado del texto */
-  border-radius: 8px; /* Borde redondeado para el botón */
-  font-size: 16px; /* Tamaño de fuente del texto del botón */
-  font-weight: bold; /* Hace el texto en negrita */
-  transition: background-color 0.3s ease; /* Añade una transición suave al color de fondo cuando se haga hover */
+  background-color: #00ABAA;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-/* Cambia el color de fondo del botón cuando el cursor está encima */
 .btn-estud:hover {
-  background-color: #96D0EE; /* Color de fondo al pasar el cursor */
+  background-color: #96D0EE;
 }

@@ -158,9 +158,6 @@
 </div>
     </section>
 
-    <div style="height: 40px; background-color: white;"></div>
-    <?php include "../../../nwurovida/includes/footer.php"; ?>
-
 </body>
 
 </html>

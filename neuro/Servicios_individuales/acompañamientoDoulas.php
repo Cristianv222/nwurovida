@@ -45,8 +45,7 @@
         <div class="servicios-content container">
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Apoyo emocional y físico </h3>
+            <i class="fa-solid fa-person-pregnant"></i>                <h3>Apoyo emocional y físico </h3>
                 <p>
                     Las Doulas proporcionan una presencia constante durante el embarazo,
                     el parto y el posparto, lo que genera una sensación de seguridad
@@ -55,8 +54,7 @@
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-stethoscope"></i>
-                <h3>Empoderamiento </h3>
+            <i class="fa-solid fa-person-pregnant"></i>                <h3>Empoderamiento </h3>
                 <p>
                     Las doulas promueven el empoderamiento de la mujer durante
                     su proceso de gestación, dándole herramientas para tomar decisiones
@@ -65,8 +63,7 @@
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-book"></i>
-                <h3>Beneficios para la salud </h3>
+            <i class="fa-solid fa-person-pregnant"></i>                <h3>Beneficios para la salud </h3>
                 <p>
                     Estudios han mostrado que las mujeres que cuentan con el apoyo de una doula tienen menos
                     probabilidades de requerir intervenciones médicas durante el
@@ -76,8 +73,7 @@
             </div>
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Acompañamiento continuo: </h3>
+            <i class="fa-solid fa-person-pregnant"></i>                <h3>Acompañamiento continuo: </h3>
                 <p>
                     Las doulas también juegan un papel crucial en el posparto,
                     brindando apoyo en el cuidado del recién nacido, la lactancia y la adaptación a la maternidad.
@@ -136,9 +132,6 @@
     </div>
 </div>
     </section>
-
-    <div style="height: 40px; background-color: white;"></div>
-    <?php include "../../../nwurovida/includes/footer.php"; ?>
 
 </body>
 

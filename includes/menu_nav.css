@@ -146,15 +146,17 @@ nav.scrolled {
 }
 
 @media (max-width: 768px) {
+    /* Mostrar el icono de menú tipo "hamburguesa" */
     .hamburger {
         display: block;
         z-index: 101;
     }
 
+    /* Estilos para el menú de navegación móvil */
     .nav-links {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: -100%; /* Oculto inicialmente */
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -162,34 +164,36 @@ nav.scrolled {
         align-items: center;
         background: white;
         transition: right 0.3s ease;
-        gap: 1rem; /* Reducimos el espacio entre enlaces del menú */
-        text-align: center; /* Centra el texto dentro del contenedor */
+        gap: 1rem;
+        text-align: center;
     }
 
+    /* Menú de navegación cuando está activo */
     .nav-links.active {
         right: 0;
     }
 
+    /* Estilos para los botones en pantallas pequeñas */
     .buttons {
         position: fixed;
-        bottom: 18rem;
-        right: 100%;
+        bottom: 18rem; /* Ajusta este valor para controlar la posición vertical */
+        right: -100%; /* Oculto inicialmente */
         transition: right 0.3s ease;
         display: flex;
-        flex-direction: column; /* Coloca los botones uno debajo del otro */
-        align-items: center; /* Centra los botones en el contenedor */
-        gap: 8px; /* Espacio entre cada botón */
-        text-align: center; /* Asegura que el texto de los botones esté centrado */
-        margin-top: 10px; /* Ajusta este valor según lo que necesites */
-
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+        margin-top: 10px;
     }
 
+    /* Posiciona los botones cuando están activos */
     .buttons.active {
         right: 50%;
         transform: translateX(50%);
     }
 
-    /* Animación del menú hamburguesa */
+    /* Animación de icono de menú hamburguesa */
     .hamburger.active div:nth-child(1) {
         transform: rotate(45deg) translate(8px, 6px);
     }
@@ -200,18 +204,96 @@ nav.scrolled {
         transform: rotate(-45deg) translate(7px, -6px);
     }
 
+    /* Ajusta el tamaño y posición del logo en pantallas pequeñas */
     .logo-left {
-        max-width: 400px; /* Reducimos el tamaño del logo en móviles */
-        top: 60%; /* Bajamos un poco más el logo en pantallas pequeñas */
+        max-width: 200px; /* Reduce el tamaño del logo en móviles */
+        position: absolute;
+        top: 10%; /* Ajusta este valor para la ubicación deseada */
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
+    /* Reduce el padding del menú para que se adapte mejor en móviles */
     nav {
-        padding: 1rem; /* Reducimos el padding del menú para que se vea mejor */
+        padding: 0.5rem;
     }
 }
 
+
+@media (max-width: 375px) {
+    /* Icono de menú tipo "hamburguesa" en pantalla pequeña */
+    .hamburger {
+        display: block;
+        z-index: 101;
+    }
+
+    /* Menú de navegación móvil */
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Oculto inicialmente */
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        transition: right 0.3s ease;
+        gap: 1.5rem; /* Espacio entre enlaces */
+        text-align: center;
+        padding: 1rem; /* Espacio adicional en el contenedor */
+    }
+
+    /* Muestra el menú cuando está activo */
+    .nav-links.active {
+        right: 0;
+    }
+
+    /* Estilos para los botones en una columna */
+    .buttons {
+        position: fixed;
+        bottom: 5rem; /* Ajuste para que los botones queden visibles */
+        right: -100%; /* Ocultos inicialmente */
+        transition: right 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Espacio entre botones */
+        text-align: center;
+        margin-top: 0%;
+    }
+
+    /* Botones cuando están activos y centrados */
+    .buttons.active {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    /* Animación del icono de menú hamburguesa */
+    .hamburger.active div:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active div:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* Logo para pantallas de 375x667 */
+    .logo-left {
+        max-width: 180px; /* Tamaño del logo para pantalla pequeña */
+        position: absolute;
+        top: 8%; /* Posición ajustada */
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* Ajuste de padding del menú */
+    nav {
+        padding: 0.5rem; /* Menú compacto en pantalla pequeña */
+    }
+}
 
 
 /*seccion nueva sevicios*/

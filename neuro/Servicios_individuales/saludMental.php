@@ -7,21 +7,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Salud Mental</title>
     <link rel="stylesheet" href="/neuro/css/saludmental.css">
-    <link rel="stylesheet" href="/includes/footer.css">
     <link rel="shortcut icon" href="./neuro/images/apple-icon-144x144.png" type="image/x-icon">
 </head>
+
 <body>
-<header class="header">
-<?php include "../../../nwurovida/includes/menu_nav.php"; ?>
-  
-            <div class="header-content container">
+    <header class="header">
+        <?php include "../../../nwurovida/includes/menu_nav.php"; ?>
+        <div class="header-content container">
             <div class="header-txt">
                 <h1>Salud Mental</h1>
                 <div class="header-img">
-                    <img src="../images/gimnasia.png" alt="">
+                    <img src="../images/Salud mental.png" alt="">
                 </div>
             </div>
-            </div>
+        </div>
     </header>
 
     <section class="about container">
@@ -31,9 +30,8 @@
         <div class="about-txt">
             <h2>Desde 4 años en adelante cualquier público </h2>
             <p>
-                Este curso está diseñado para niños de 4 años en adelante
-                y cualquier persona interesada en explorar su creatividad
-                a través de manualidades. 
+                Yoga para todos: fortalece cuerpo y mente, alivia tensiones y reduce el estrés. Para embarazadas, niños y adultos, ofrece posturas y estilos adaptados a cada necesidad, promoviendo relajación, conexión y desarrollo saludable.
+
             </p>
 
         </div>
@@ -44,41 +42,35 @@
         <div class="servicios-content container">
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3>Manualidades según temporada</h3>
+            <i class="fa-solid fa-head-side-virus"></i>                <h3>Hatha Yoga</h3>
                 <p>
-
+                    Enfocado en posturas y técnicas de respiración,
+                    ideal para principiantes.
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-stethoscope"></i>
-                <h3></h3>
+            <i class="fa-solid fa-head-side-virus"></i>                <h3>Vinyasa Yoga</h3>
                 <p>
-                    El curso "Manualidades Según Temporada" está diseñado
-                    para todas las edades, ofreciendo la oportunidad de crear
-                    proyectos creativos basados en cada estación del año.
-
+                    Flujo continuo de movimientos con respiración
+                    sincronizada.
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-sharp fa-solid fa-book"></i>
-                <h3> </h3>
+            <i class="fa-solid fa-head-side-virus"></i>                <h3> Kundalini Yoga</h3>
                 <p>
-                    "Manualidades Según Temporada" es un curso que invita a niños y adultos
-                    a explorar su creatividad a través de manualidades estacionales.
-                    
+                    Enfocado en la energía interna, con
+                    meditación y cantos.
                 </p>
             </div>
 
             <div class="servicio-1">
-                <i class="fa-solid fa-brain"></i>
-                <h3></h3>
+            <i class="fa-solid fa-head-side-virus"></i>                <h3>Yin Yoga:</h3>
                 <p>
-                    Este curso de "Manualidades Según Temporada" está orientado
-                    a fomentar la creatividad en personas de todas las edades.
-                    
+                    Posturas mantenidas durante más tiempo, excelente
+                    para flexibilidad y relajación profunda.
+
                 </p>
             </div>
 
@@ -129,10 +121,6 @@
                 </ul>
             </div>
         </div>
-    </section>
-
-    <div style="height: 40px; background-color: white;"></div>
-    <?php include "../../../nwurovida/includes/footer.php"; ?>
 
 </body>
 

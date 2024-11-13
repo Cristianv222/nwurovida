@@ -29,8 +29,8 @@
 
 <main class="frase_sec1">
     <div class="frase-content_sec1 container">
-      <h2>Nuestos servicios</h2>
-      <p class="txt-p_sec1">En NeuroVida, creemos que la transformación y reconstrucción constante, es una oportunidad para crecer y mejorar.</p>
+      <h2><center>Nuestos servicios</center></h2>
+      <p class="txt-p_sec1"><center>En NeuroVida, creemos que la transformación y reconstrucción constante, es una oportunidad para crecer y mejorar.</center></p>
     </div>
     <div class="carousel-container">
       <div class="carousel">
@@ -74,9 +74,9 @@
       <img src="./neuro/images/flecha_izquierda.svg" alt="Flecha Izquierda" class="prev" onclick="moveCarousel(-1)">
       <img src="./neuro/images/flecha_derecha.svg" alt="Flecha Derecha" class="next" onclick="moveCarousel(1)">
       <div class="ver-mas-container">
-        <a href="/servicios.php" class="btn-estud">Agendar cita</a>
       </div>
     </div>
+    <a href="/servicios.php" class="btn-estud">Agendar cita</a>
   </main>
   <div class="valores-container">
     <img src="./neuro/images/Mision.png" alt="Valor 2" class="valor-img">

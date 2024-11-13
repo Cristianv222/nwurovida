@@ -15,7 +15,6 @@
   <meta property="og:image" content="./neuro/images/logotipo.png">
   <meta property="og:url" content="https://clubneurovida.com/">
   <?php include './includes/menu_nav.php'; ?>
-
   <link rel="stylesheet" href="./neuro/css/style.css">
   <script defer src="./neuro/script.js"></script>
 </head>

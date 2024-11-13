@@ -26,13 +26,13 @@
 }
 
 .header-img {
-    width: 40%;
+    width: 30%;
     padding-top: 100px;
 }
 
 .header-img img {
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     height: auto;
 }
 
@@ -77,6 +77,7 @@
 }
 
 .about-txt {
+    transform: translatey(10%); /* Mueve el contenedor 20% a la izquierda */
     padding-left: 20px; /* Un pequeño espacio entre el texto y la imagen */
 }
 
@@ -118,7 +119,7 @@
     text-align: center;
     background-color: #fafafa;
     border-radius: 10px;
-    margin-top: -55px; /* Ajusta este valor según lo que necesites */
+    margin-top: 65px; /* Ajusta este valor según lo que necesites */
 }
 
 .servicios h2 {

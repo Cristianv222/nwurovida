@@ -66,28 +66,12 @@
             </div>
             <div class="servicio-1">
                 <i class="fa-solid fa-computer"></i>
-                <h3>Paint</h3>
-                <p>
-                    Microsoft Paint es un programa básico de dibujo para crear arte digital con herramientas como lápiz, pincel y relleno, ideal para expresarte artísticamente.
-                </p>
-            </div>
-            <div class="servicio-1">
-                <i class="fa-solid fa-computer"></i>
                 <h3>Canva</h3>
                 <p>
                     Canva es una herramienta en línea para diseñar fácilmente tarjetas, posters y gráficos usando plantillas y elementos visuales.
 
                 </p>
             </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-computer"></i>
-                <h3>Genially</h3>
-                <p>
-                    Genially es una plataforma para crear presentaciones, infografías y juegos interactivos con animaciones y enlaces, ideal para proyectos creativos y atractivos.
-                </p>
-            </div>
-
 
 
         </div>

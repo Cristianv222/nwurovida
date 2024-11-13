@@ -130,6 +130,31 @@
 </html>
 
 <script>
+    function openModal(button) {
+    document.body.style.overflow = "hidden"; // Deshabilita el desplazamiento
+    var modal = document.getElementById("myModal");
+    var modalBody = document.getElementById("modal-body");
+    var contentUrl = button.getAttribute("data-id");
+
+    fetch(contentUrl)
+        .then(response => response.text())
+        .then(data => {
+            modalBody.innerHTML = data;
+            modal.style.display = "flex";
+        })
+        .catch(error => {
+            console.error('Error cargando el contenido:', error);
+        });
+}
+
+function closeModal(event) {
+    document.body.style.overflow = ""; // Habilita el desplazamiento nuevamente
+    var modal = document.getElementById("myModal");
+    if (event.target === modal || event.target.className === "close") {
+        modal.style.display = "none";
+    }
+}
+
     document.addEventListener('DOMContentLoaded', () => {
         const fadeInElements = document.querySelectorAll('.fade-in, .fade-up');
         fadeInElements.forEach((element) => {
@@ -146,31 +171,7 @@
         }, 300);
     });
 
-    function openModal(button) {
-    var modal = document.getElementById("myModal");
-    var modalBody = document.getElementById("modal-body");
 
-    // Obtener la ruta del archivo PHP desde el atributo data-id
-    var contentUrl = button.getAttribute("data-id");
-
-    // Realizamos la carga del contenido PHP dentro del modal
-    fetch(contentUrl)
-        .then(response => response.text())
-        .then(data => {
-            modalBody.innerHTML = data; // Inserta el contenido dentro del modal
-            modal.style.display = "flex"; // Muestra el modal usando flexbox
-        })
-        .catch(error => {
-            console.error('Error cargando el contenido:', error);
-        });
-}
-
-function closeModal(event) {
-    var modal = document.getElementById("myModal");
-    if (event.target === modal || event.target.className === "close") {
-        modal.style.display = "none"; // Cierra el modal
-    }
-}
 
 
 </script>

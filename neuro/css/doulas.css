@@ -114,11 +114,11 @@
 
 /* Servicios */
 .servicios {
-    padding: 50px 100px ;
+    padding: 20px 100px ;
     text-align: center;
     background-color: #fafafa;
     border-radius: 10px;
-    margin-top: -55px; /* Ajusta este valor según lo que necesites */
+    margin-top: 85px; /* Ajusta este valor según lo que necesites */
 }
 
 .servicios h2 {
@@ -128,11 +128,10 @@
 }
 
 .servicios-content {
-    margin-top: 55px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px; /* Ajusta el valor para el espacio entre los contenedores */
+    gap: 5px; /* Ajusta el valor para el espacio entre los contenedores */
     border-radius: 10px; /* Aquí defines el radio de los bordes redondeados */
     overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente a los hijos */
 }

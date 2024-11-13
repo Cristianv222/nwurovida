@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="assets/css/prism/prism.css" media="screen">
 
     <!-- Scripts -->
-    <script src="assets/js/modernizr/modernizr.min.js"></script>
 
     <!-- Inline CSS -->
     <style>
@@ -34,10 +33,38 @@
             padding: 0;
         }
 
+        /* Top Navbar */
         .navbar {
-            background-color: black;
-            border: none;
-            padding: 15px 20px;
+            background-color: #5ca9a8;
+            /* Color principal P 326 CP */
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+
+        .navbar .navbar-brand {
+            color: #fdf7c5;
+            /* Color secundario P 4-2 C */
+            font-weight: bold;
+        }
+
+        .navbar .nav>li>a {
+            color: #fff;
+        }
+
+        .navbar .nav>li>a:hover,
+        .navbar .nav>li>a.active {
+            color: #d2e3cb;
+            /* Color secundario P 142-2 C */
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar .navbar-toggle {
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .navbar .navbar-toggle .icon-bar {
+            background-color: #fff;
         }
 
         .navbar .navbar-brand {
@@ -142,8 +169,8 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
-
                         </button>
+
                     </div>
                     <!-- /.navbar-header -->
 

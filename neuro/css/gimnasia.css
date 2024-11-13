@@ -199,7 +199,7 @@ form h2 {
 @media (max-width: 991px) {
     .header {
         min-height: 0vh;
-        padding: 80px 30px 50px 30px; 
+        padding: 80px 80px 50px 30px; 
     }
 
     .header-content {
@@ -214,6 +214,7 @@ form h2 {
 
     .header-img {
         width: 100%;
+        margin-top: -20%;
     }
 
     .about {
@@ -230,18 +231,35 @@ form h2 {
         width: 100%;
         margin-left: 0;
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: 75px;
+        margin-top:300px; /* Ajusta este valor según lo necesites */
+
     }
 
     .servicios-content {
         flex-direction: column;
         align-items: center;
+        width: 140%; /* O aumenta este valor según lo necesites */
+        transform: translateX(-20%); /* Mueve el contenedor 20% a la izquierda */
+
     }
 
     .servicio-1 {
         flex-basis: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
+    .servicio-1 h3 {
+        font-size: 17px; /* Ajusta el tamaño según lo necesites */
+    }
+
+    .servicios h2 {
+        transform: translateX(-20%); /* Mueve el contenedor 20% a la izquierda */
+
+        font-size: 30px; /* Ajusta el tamaño según lo necesites */
+        text-align: center; /* Centra el texto dentro del h2 */
+        margin: 0; /* Asegúrate de que no haya márgenes indeseados */
+    }    
+    
 }
 
 /* Precios */

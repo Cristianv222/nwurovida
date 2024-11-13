@@ -16,23 +16,36 @@
 }
 
 /* Contenedor general */
+.container {
+    max-width: 1100%;
+    margin: 0 auto;
+}
+
 .header-content {
     display: flex;
-    align-items: center; /* Alinea verticalmente los elementos */
-    justify-content: space-between; /* Separa la imagen y el texto */
-    padding-top: 100px; /* Ajusta este valor si es necesario */
+}
+
+.header-img {
+    width: 40%;
+    padding-top: 100px;
+}
+
+.header-img img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
 }
 
 .header-txt {
-    width: 50%; /* Ajusta el ancho del texto */
-    text-align: right; /* Alinea el texto a la derecha */
+    padding-top: 250px;
+    text-align: center;
 }
 
 .header-txt h1 {
     line-height: 1.2;
     color: #007BFF;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 50px; /* Tamaño de fuente para pantallas grandes */
     margin-bottom: 10px;
 }
 
@@ -41,19 +54,6 @@
     color: #818181;
     margin-bottom: 45px;
 }
-
-.header-img {
-    width: 40%; /* Ajusta el ancho de la imagen */
-    margin-right: 120px; /* Ajusta este valor según el espacio que necesites */
-    margin-top: 10%;
-}
-
-.header-img img {
-    width: 100%;
-    height: auto;
-}
-
-
 
 /* About section */
 .about {
@@ -70,7 +70,7 @@
 }
 
 .about-img img {
-    width: 70%;
+    width: 50%;
     border-radius: 25px;
     display: block;
     margin-left: 20%;
@@ -118,7 +118,7 @@
     text-align: center;
     background-color: #fafafa;
     border-radius: 10px;
-    margin-top: 20px; /* Ajusta este valor según lo que necesites */
+    margin-top: -55px; /* Ajusta este valor según lo que necesites */
 }
 
 .servicios h2 {
@@ -139,7 +139,7 @@
 
 
 .servicio-1 {
-    padding: 15px;
+    padding: 25px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     flex-basis: calc(25% - 20px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -199,21 +199,27 @@ form h2 {
 @media (max-width: 991px) {
     .header {
         min-height: 0vh;
-        padding: 80px 30px 50px 30px; 
+        padding: 80px 80px 50px 30px; 
     }
 
     .header-content {
         flex-direction: column;
     }
 
-    .header-txt {
-        text-align: center;
-        width: 100%;
-        margin-bottom: 25px;
+    .header-txt h1 {
+        transform: translateX(5%); /* Mueve el contenedor 20% a la izquierda */
+
+        margin-bottom: 5px;
+        font-size: 40px; /* Ajusta el tamaño de fuente a lo que necesites */
+        line-height: 1.4; /* Opcional: ajusta el interlineado para mejorar la legibilidad */
     }
+    
 
     .header-img {
-        width: 100%;
+        width: 150%;
+        margin-top: -20%;
+        transform: translateX(5%); /* Mueve el contenedor 20% a la izquierda */
+
     }
 
     .about {
@@ -222,7 +228,7 @@ form h2 {
     }
 
     .about-img {
-        width: 100%;
+        width: 200%;
         order: 2;
     }
 
@@ -230,18 +236,35 @@ form h2 {
         width: 100%;
         margin-left: 0;
         text-align: center;
-        margin-bottom: 25px;
+        margin-bottom: 75px;
+        margin-top:300px; /* Ajusta este valor según lo necesites */
+
     }
 
     .servicios-content {
         flex-direction: column;
         align-items: center;
+        width: 140%; /* O aumenta este valor según lo necesites */
+        transform: translateX(-20%); /* Mueve el contenedor 20% a la izquierda */
+
     }
 
     .servicio-1 {
         flex-basis: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
+    .servicio-1 h3 {
+        font-size: 17px; /* Ajusta el tamaño según lo necesites */
+    }
+
+    .servicios h2 {
+        transform: translateX(-20%); /* Mueve el contenedor 20% a la izquierda */
+
+        font-size: 30px; /* Ajusta el tamaño según lo necesites */
+        text-align: center; /* Centra el texto dentro del h2 */
+        margin: 0; /* Asegúrate de que no haya márgenes indeseados */
+    }    
+    
 }
 
 /* Precios */

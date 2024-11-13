@@ -9,7 +9,6 @@
     <link rel="shortcut icon" href="./neuro/images/ICO.png" type="image/x-icon">
     <?php include './includes/menu_nav.php'; ?>
 </head>
-
 <body>
     <header class="hero">
         <div class="hero-content container">

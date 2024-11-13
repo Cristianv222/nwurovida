@@ -253,7 +253,7 @@
             justify-content: center; /* Centra horizontalmente */
             align-items: center;     /* Centra verticalmente */
             height: 20vh;    
-            margin-top: 20%;       /* Altura total de la ventana para centrar verticalmente */
+            margin-top: 10%;       /* Altura total de la ventana para centrar verticalmente */
         }
         .header-txt h1 {
             color: #56b1df;
@@ -267,5 +267,16 @@
             max-width: 80%;
             height: auto;
             margin-bottom: 10px;
+        }
+        .modal-content {
+            background-color: rgba(255, 255, 255, 1); /* Fondo blanco opaco */
+            margin: 5% auto;
+            padding: 50px;
+            border-radius: 15px; /* Bordes redondeados */
+            width: 100%;
+            max-width: 1200px; /* Modal más ancho */
+            overflow-y: auto; /* Permite desplazarse si el contenido es más largo */
+            max-height: 2200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     }

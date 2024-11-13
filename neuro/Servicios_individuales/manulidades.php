@@ -12,26 +12,24 @@
 </head>
 
 <body>
-    <header class="header_doulas">
-    <?php include "../../../nwurovida/includes/menu_nav.php"; ?>
-    <div class="header-content container">
+    <header class="header">
+        <div class="header-content container">
             <div class="header-txt">
                 <h1>Manualidades</h1>
-                <div class="header-img">
-                    <img src="/neuro/images/" alt="">
-                </div>
             </div>
-
-
+            <div class="header-img">
+                <img src="neuro/images/manualidades.png" alt="">
+            </div>
+        </div>
     </header>
     <section class="about container">
         <div class="about-img">
-            <img src="../images/doula2.png" alt="">
+            <img src="neuro/images/manualidades2.png" alt="">
         </div>
         <div class="about-txt">
             <h2>Desde 4 años en adelante cualquier público</h2>
             <p>
-            Para todas las edades desde 4 años en adelante. Creaciones temáticas según la temporada (materiales no incluidos). Ideal para desarrollar creatividad y habilidades manuales en un ambiente divertido.
+                Para todas las edades desde 4 años en adelante. Creaciones temáticas según la temporada (materiales no incluidos). Ideal para desarrollar creatividad y habilidades manuales en un ambiente divertido.
             </p>
 
         </div>
@@ -43,28 +41,32 @@
         <div class="servicios-content container">
 
             <div class="servicio-1">
-            <i class="fa-solid fa-palette"></i>                <h3>Desarrollo de la creatividad </h3>
+                <i class="fa-solid fa-palette"></i>
+                <h3>Desarrollo de la creatividad </h3>
                 <p>Fomenta la imaginación y la expresión personal a través de la creación de piezas únicas.
                 </p>
             </div>
 
             <div class="servicio-1">
-            <i class="fa-solid fa-palette"></i>                <h3>Mejora de habilidades motoras </h3>
+                <i class="fa-solid fa-palette"></i>
+                <h3>Mejora de habilidades motoras </h3>
                 <p>
-                Ayuda a coordinar y fortalecer la motricidad fina al manipular diversos materiales.
+                    Ayuda a coordinar y fortalecer la motricidad fina al manipular diversos materiales.
                 </p>
             </div>
 
             <div class="servicio-1">
-            <i class="fa-solid fa-palette"></i>                <h3>Relajación y enfoque </h3>
+                <i class="fa-solid fa-palette"></i>
+                <h3>Relajación y enfoque </h3>
                 <p> Realizar manualidades reduce el estrés y promueve la concentración en una actividad recreativa.
                 </p>
             </div>
 
             <div class="servicio-1">
-            <i class="fa-solid fa-palette"></i>                <h3>Refuerzo de la autoestima </h3>
+                <i class="fa-solid fa-palette"></i>
+                <h3>Refuerzo de la autoestima </h3>
                 <p>
-                Completar proyectos creativos impulsa la autoconfianza y el sentido de logro en niños y adultos.
+                    Completar proyectos creativos impulsa la autoconfianza y el sentido de logro en niños y adultos.
 
                 </p>
             </div>
@@ -75,48 +77,46 @@
     </main>
 
     <section class="pricing">
-    <div class="pricing-container">
-    <div class="pricing-card">
-        <h3>Premium</h3>
-        <p class="price"><span>$</span>30<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-        <li>✔ Asesoría en todas las materias</li>
-    <li>✔ Refuerzo en habilidades de estudio</li>
-    <li>✔ Apoyo emocional básico</li>
-    <li>✔ Seguimiento de progreso semanal</li>
-        </ul>
-    </div>
-    
-    <div class="pricing-card popular">
-        <h3>Business</h3>
-        <p class="price"><span>$</span>45<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-        <li>✔Todo lo incluido en Premium</li>
-        <li>✔Actividades para desarrollo socioemocional</li>
-        <li>✔Sesiones grupales para integración social</li>
-        <li>✔Asesoría personalizada en temas específicos</li>
-        <li>✔Reporte mensual de progreso académico</li>
-        </ul>
-    </div>
-    
-    <div class="pricing-card">
-        <h3>Cloud Startup</h3>
-        <p class="price"><span>€</span>60<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-        <li>✔Todo lo incluido en Business</li>
-        <li>✔Acceso a recursos educativos en la nube</li>
-        <li>✔Almacenamiento de materiales en línea</li>
-        <li>✔Sesiones especiales para integración de migrantes</li>
-        <li>✔Reporte trimestral de progreso académico</li>
-        </ul>
-    </div>
-</div>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <p class="price"><span>$</span>30<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card popular">
+                <h3>Business</h3>
+                <p class="price"><span>$</span>45<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Cloud Startup</h3>
+                <p class="price"><span>€</span>60<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                </ul>
+            </div>
+        </div>
     </section>
 </body>
 

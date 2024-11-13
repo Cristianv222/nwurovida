@@ -12,15 +12,17 @@
 </head>
 
 <body>
-    <header class="header_doulas">
-    <div class="header-content container">
+    <header class="header">
+        <div class="header-content container">
             <div class="header-txt">
-                <h1>ACOMPAÑAMIENTO DE LAS DOULAS</h1>
-                <div class="header-img">
-                    <img src="/neuro/images/Acompañamiento de las Doulas.png" alt="">
-                </div>
+                <h1>ACOMPAÑAMIENTO DE LAS DOULAS </h1>
             </div>
+            <div class="header-img">
+                <img src="/neuro/images/Acompañamiento de las Doulas.png" alt="">
+            </div>
+        </div>
     </header>
+
     <section class="about container">
         <div class="about-img">
             <img src="/neuro/images/Acompañamiento de las Doulas2.png" alt="">
@@ -42,35 +44,39 @@
         <div class="servicios-content container">
 
             <div class="servicio-1">
-            <i class="fa-solid fa-person-pregnant"></i>                <h3>Apoyo emocional y físico </h3>
+                <i class="fa-solid fa-person-pregnant"></i>
+                <h3>Apoyo emocional y físico </h3>
                 <p>
                     Las Doulas proporcionan una presencia constante durante el embarazo,
                     el parto y el posparto, lo que genera una sensación de seguridad
-                    y tranquilidad. 
+                    y tranquilidad.
                 </p>
             </div>
 
             <div class="servicio-1">
-            <i class="fa-solid fa-person-pregnant"></i>                <h3>Empoderamiento </h3>
+                <i class="fa-solid fa-person-pregnant"></i>
+                <h3>Empoderamiento </h3>
                 <p>
                     Las doulas promueven el empoderamiento de la mujer durante
                     su proceso de gestación, dándole herramientas para tomar decisiones
-                    informadas sobre su cuerpo y su parto. 
+                    informadas sobre su cuerpo y su parto.
                 </p>
             </div>
 
             <div class="servicio-1">
-            <i class="fa-solid fa-person-pregnant"></i>                <h3>Beneficios para la salud </h3>
+                <i class="fa-solid fa-person-pregnant"></i>
+                <h3>Beneficios para la salud </h3>
                 <p>
                     Estudios han mostrado que las mujeres que cuentan con el apoyo de una doula tienen menos
                     probabilidades de requerir intervenciones médicas durante el
                     parto, como cesáreas, y es más probable que experimenten un
-                    parto más corto y menos doloroso. 
+                    parto más corto y menos doloroso.
                 </p>
             </div>
 
             <div class="servicio-1">
-            <i class="fa-solid fa-person-pregnant"></i>                <h3>Acompañamiento continuo: </h3>
+                <i class="fa-solid fa-person-pregnant"></i>
+                <h3>Acompañamiento continuo: </h3>
                 <p>
                     Las doulas también juegan un papel crucial en el posparto,
                     brindando apoyo en el cuidado del recién nacido, la lactancia y la adaptación a la maternidad.
@@ -86,48 +92,46 @@
     </main>
 
     <section class="pricing">
-    <div class="pricing-container">
-    <div class="pricing-card">
-        <h3>Premium</h3>
-        <p class="price"><span>$</span>30<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-        <li>✔ Asesoría en todas las materias</li>
-    <li>✔ Refuerzo en habilidades de estudio</li>
-    <li>✔ Apoyo emocional básico</li>
-    <li>✔ Seguimiento de progreso semanal</li>
-        </ul>
-    </div>
-    
-    <div class="pricing-card popular">
-        <h3>Business</h3>
-        <p class="price"><span>$</span>45<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-        <li>✔Todo lo incluido en Premium</li>
-        <li>✔Actividades para desarrollo socioemocional</li>
-        <li>✔Sesiones grupales para integración social</li>
-        <li>✔Asesoría personalizada en temas específicos</li>
-        <li>✔Reporte mensual de progreso académico</li>
-        </ul>
-    </div>
-    
-    <div class="pricing-card">
-        <h3>Cloud Startup</h3>
-        <p class="price"><span>€</span>60<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-        <li>✔Todo lo incluido en Business</li>
-        <li>✔Acceso a recursos educativos en la nube</li>
-        <li>✔Almacenamiento de materiales en línea</li>
-        <li>✔Sesiones especiales para integración de migrantes</li>
-        <li>✔Reporte trimestral de progreso académico</li>
-        </ul>
-    </div>
-</div>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <p class="price"><span>$</span>30<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card popular">
+                <h3>Business</h3>
+                <p class="price"><span>$</span>45<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Cloud Startup</h3>
+                <p class="price"><span>€</span>60<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
 </body>

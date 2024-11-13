@@ -8,13 +8,11 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="./neuro/css/Contacto.css">
     <link rel="shortcut icon" href="./neuro/images/ICO.png" type="image/x-icon">
-
+    <?php include './includes/menu_nav.php'; ?>
 </head>
 
 <body>
-
     <header>
-        <?php include './includes/menu_nav.php'; ?>
         <header class="hero_contac">
             <div class="hero_contac-content container">
                 <div class="hero_contac-txt">

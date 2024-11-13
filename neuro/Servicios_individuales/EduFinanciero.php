@@ -12,29 +12,32 @@
 </head>
 
 <body>
-<header class="header-edufin">
-<?php include "../../../nwurovida/includes/menu_nav.php"; ?>
-    <div class="header-content container">
+    <header class="header">
+        <div class="header-content container">
             <div class="header-txt">
                 <h1>Educación Financiera y Emprendimiento </h1>
-                <div class="header-img">
-                    <img src="../images/ef1.webp" alt="">
-                </div>
             </div>
+            <div class="header-img">
+                <img src="/neuro/images/Educación Financiera y Emprendimiento.png" alt="">
+            </div>
+        </div>
     </header>
 
     <section class="about container">
         <div class="about-img">
-            <img src="../images/ccp2.jpeg" alt="">
+            <img src="/neuro/images/Educación Financiera y Emprendimiento 2.png" alt="">
         </div>
         <div class="about-txt">
             <h2>Niños de 9 a 12 años/cualquier público </h2>
             <p>
-                Este curso está diseñado para niños de 9 a 12 años y cualquier público interesado
-                en aprender sobre el manejo del dinero y cómo iniciar un negocio. A través de actividades
-                divertidas y dinámicas, los participantes descubrirán conceptos básicos de finanzas,
-                como el ahorro, la inversión y el presupuesto, así como las habilidades necesarias
-                para emprender, como la creatividad, la planificación y la toma de decisiones.
+                Curso dirigido a niños de 9 a 12 años y personas interesadas en aprender sobre finanzas y emprendimiento. A través de actividades dinámicas, los participantes conocerán conceptos básicos como ahorro, inversión y presupuesto, además de desarrollar habilidades para emprender, como creatividad, planificación y toma de decisiones.
+
+
+
+
+
+
+
             </p>
 
         </div>
@@ -46,28 +49,32 @@
         <div class="servicios-content container">
 
             <div class="servicio-1">
-            <i class="fa-solid fa-money-check-dollar"></i>                <h3>Introducción a los Objetivos de Desarrollo Sostenible (ODS)</h3>
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <h3>Introducción a los Objetivos de Desarrollo Sostenible (ODS)</h3>
                 <p>
 
                 </p>
             </div>
 
             <div class="servicio-1">
-            <i class="fa-solid fa-money-check-dollar"></i>                <h3>Plan de negocios básico (Producto Mínimo Viable) </h3>
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <h3>Plan de negocios básico (Producto Mínimo Viable) </h3>
                 <p>
 
                 </p>
             </div>
 
             <div class="servicio-1">
-            <i class="fa-solid fa-money-check-dollar"></i>                <h3>Campaña básica de marketing </h3>
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <h3>Campaña básica de marketing </h3>
                 <p>
 
                 </p>
             </div>
 
             <div class="servicio-1">
-            <i class="fa-solid fa-money-check-dollar"></i>                <h3>Ventas</h3>
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <h3>Ventas</h3>
                 <p>
 
 
@@ -82,48 +89,46 @@
 
     </main>
     <section class="pricing">
-    <div class="pricing-container">
-    <div class="pricing-card">
-        <h3>Premium</h3>
-        <p class="price"><span>$</span>30<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-        <li>✔ Asesoría en todas las materias</li>
-    <li>✔ Refuerzo en habilidades de estudio</li>
-    <li>✔ Apoyo emocional básico</li>
-    <li>✔ Seguimiento de progreso semanal</li>
-        </ul>
-    </div>
-    
-    <div class="pricing-card popular">
-        <h3>Business</h3>
-        <p class="price"><span>$</span>45<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-        <li>✔Todo lo incluido en Premium</li>
-        <li>✔Actividades para desarrollo socioemocional</li>
-        <li>✔Sesiones grupales para integración social</li>
-        <li>✔Asesoría personalizada en temas específicos</li>
-        <li>✔Reporte mensual de progreso académico</li>
-        </ul>
-    </div>
-    
-    <div class="pricing-card">
-        <h3>Cloud Startup</h3>
-        <p class="price"><span>€</span>60<span>/mes</span></p>
-        <p class="offer">2 meses GRATIS</p>
-        <button>Elegir plan</button>
-        <ul>
-        <li>✔Todo lo incluido en Business</li>
-        <li>✔Acceso a recursos educativos en la nube</li>
-        <li>✔Almacenamiento de materiales en línea</li>
-        <li>✔Sesiones especiales para integración de migrantes</li>
-        <li>✔Reporte trimestral de progreso académico</li>
-        </ul>
-    </div>
-</div>
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <p class="price"><span>$</span>30<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card popular">
+                <h3>Business</h3>
+                <p class="price"><span>$</span>45<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Cloud Startup</h3>
+                <p class="price"><span>€</span>60<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                </ul>
+            </div>
+        </div>
     </section>
 </body>
 

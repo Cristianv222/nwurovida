@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="./neuro/css/estiloServicios.css">
     <title>Neurovida-Servicios</title>
     <link rel="shortcut icon" href="./neuro/images/ICO.png" type="image/x-icon">
-
-
+    <?php include './includes/menu_nav.php'; ?>
 </head>
 
 <body>
     <header>
-        <?php include './includes/menu_nav.php'; ?>
     </header>
     <div class="header-content container">
         <div class="header-txt">

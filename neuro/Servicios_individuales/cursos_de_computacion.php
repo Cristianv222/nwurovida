@@ -15,16 +15,17 @@
     <header class="header">
         <div class="header-content container">
             <div class="header-txt">
-                <h1>Curso de Computación</h1>
-                <div class="header-img">
-                    <img src="../images/cp1.png" alt="">
-                </div>
+                <h1>Cursos de Computación </h1>
             </div>
+            <div class="header-img">
+                <img src="/neuro/images/Cursos de Computación.png" alt="">
+            </div>
+        </div>
     </header>
 
     <section class="about container">
         <div class="about-img">
-            <img src="../images/ccp2.jpeg" alt="">
+            <img src="/neuro/images/Cursos de Computación2.png" alt="">
         </div>
         <div class="about-txt">
             <h2>Niños de 9 a 12 años/cualquier público </h2>
@@ -40,65 +41,53 @@
         <div class="servicios-content container">
 
             <div class="servicio-1">
-            <i class="fa-solid fa-computer"></i>                <h3>Word</h3>
+                <i class="fa-solid fa-computer"></i>
+                <h3>Word</h3>
                 <p>
-                    Microsoft Word es un programa para escribir y editar documentos.
-                    Con Word, puedes crear cartas, informes y tareas escolares. Tiene herramientas
-                    para cambiar el tamaño de la letra, agregar imágenes y dar formato a tu texto,
-                    lo que hace que tus documentos se vean muy profesionales.
-                </p>
-            </div>
-
-            <div class="servicio-1">
-            <i class="fa-solid fa-computer"></i>                <h3>Excel </h3>
-                <p>
-                    Microsoft Excel es una hoja de cálculo que te ayuda a organizar y analizar datos.
-                    Puedes usarlo para hacer listas, llevar un control de tus gastos o crear gráficos
-                    para visualizar información. Es como un gran cuaderno donde puedes hacer cálculos
-                    automáticamente, lo que te ahorra tiempo.
-                </p>
-            </div>
-
-            <div class="servicio-1">
-            <i class="fa-solid fa-computer"></i>                <h3>PowerPoint </h3>
-                <p>
-                    Microsoft PowerPoint es un programa para hacer presentaciones.
-                    Puedes crear diapositivas con texto, imágenes y videos para mostrar en
-                    clase o en cualquier evento. Con PowerPoint, puedes hacer que tus ideas
-                    sean más interesantes y fáciles de entender, ¡y puedes agregar animaciones divertidas!
-                </p>
-            </div>
-
-            <div class="servicio-1">
-            <i class="fa-solid fa-computer"></i>                <h3>Canva</h3>
-                <p>
-                    Canva es una herramienta en línea que te permite diseñar de manera sencilla.
-                    Puedes crear tarjetas, posters y gráficos para tus proyectos. Tiene muchas plantillas
-                    y elementos visuales que puedes arrastrar y soltar, lo que hace que sea muy fácil para
-                    los principiantes crear diseños bonitos.
+                    Microsoft Word es un programa para crear y dar formato a documentos profesionales.
 
                 </p>
             </div>
 
             <div class="servicio-1">
-            <i class="fa-solid fa-computer"></i>                <h3>Genially</h3>
+                <i class="fa-solid fa-computer"></i>
+                <h3>Excel </h3>
                 <p>
-                    Genially es una plataforma para crear presentaciones interactivas, infografías y juegos.
-                    Puedes agregar animaciones y enlaces para hacer que tus trabajos sean más divertidos
-                    y atractivos. Es una forma creativa de mostrar información, ideal para
-                    proyectos escolares.
+                    Microsoft Excel es una hoja de cálculo para organizar, analizar datos y hacer cálculos automáticos.
                 </p>
             </div>
 
             <div class="servicio-1">
-            <i class="fa-solid fa-computer"></i>                <h3>Paint</h3>
+                <i class="fa-solid fa-computer"></i>
+                <h3>PowerPoint </h3>
                 <p>
-                    Microsoft Paint es un programa básico de dibujo que te permite crear imágenes
-                    y arte digital. Puedes usar herramientas como lápiz, pincel y relleno para dibujar
-                    lo que quieras. Es una forma divertida de expresarte artísticamente y experimentar con
-                    colores y formas.
+                    Microsoft PowerPoint es un programa para crear presentaciones con texto, imágenes y videos, ideal para hacer tus ideas más atractivas y fáciles de entender.
                 </p>
             </div>
+            <div class="servicio-1">
+                <i class="fa-solid fa-computer"></i>
+                <h3>Paint</h3>
+                <p>
+                    Microsoft Paint es un programa básico de dibujo para crear arte digital con herramientas como lápiz, pincel y relleno, ideal para expresarte artísticamente.
+                </p>
+            </div>
+            <div class="servicio-1">
+                <i class="fa-solid fa-computer"></i>
+                <h3>Canva</h3>
+                <p>
+                    Canva es una herramienta en línea para diseñar fácilmente tarjetas, posters y gráficos usando plantillas y elementos visuales.
+
+                </p>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-computer"></i>
+                <h3>Genially</h3>
+                <p>
+                    Genially es una plataforma para crear presentaciones, infografías y juegos interactivos con animaciones y enlaces, ideal para proyectos creativos y atractivos.
+                </p>
+            </div>
+
 
 
         </div>
@@ -109,45 +98,41 @@
         <div class="pricing-container">
             <div class="pricing-card">
                 <h3>Premium</h3>
-                <p class="price"><span>€</span>2.49<span>/mes</span></p>
+                <p class="price"><span>$</span>30<span>/mes</span></p>
                 <p class="offer">2 meses GRATIS</p>
                 <button>Elegir plan</button>
                 <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
                 </ul>
             </div>
 
             <div class="pricing-card popular">
                 <h3>Business</h3>
-                <p class="price"><span>€</span>3.49<span>/mes</span></p>
+                <p class="price"><span>$</span>45<span>/mes</span></p>
                 <p class="offer">2 meses GRATIS</p>
                 <button>Elegir plan</button>
                 <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                    <li>Más espacio de almacenamiento</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
                 </ul>
             </div>
 
             <div class="pricing-card">
                 <h3>Cloud Startup</h3>
-                <p class="price"><span>€</span>7.99<span>/mes</span></p>
+                <p class="price"><span>€</span>60<span>/mes</span></p>
                 <p class="offer">2 meses GRATIS</p>
                 <button>Elegir plan</button>
                 <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                    <li>Almacenamiento en la nube</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
                 </ul>
-
-
             </div>
         </div>
     </section>

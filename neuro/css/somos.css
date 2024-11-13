@@ -31,10 +31,11 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
-  padding-top: 150px; /* Ajusta la distancia superior si es necesario */
+  padding-top: 60px; /* Ajusta la distancia superior si es necesario */
 }
+
 .hero-txt {
   display: flex;
   flex-direction: row; /* Alinea las secciones horizontalmente */
@@ -46,52 +47,49 @@ button:active {
 .hero-txt h1 {
   color: #56b1df;
   text-transform: uppercase;
-  font-size: 60px; /* Tamaño de fuente para pantallas grandes */
+  font-size: 40px; /* Tamaño de fuente para pantallas grandes */
   line-height: 1.2;
   margin: 0;
-  margin-left: 320px; /* Mueve el texto hacia la derecha */
-
+  margin-left: 120px;
 }
 /* Contenedor principal que alinea las secciones horizontalmente */
 .contenedor-horizontal {
   display: flex;
   justify-content: space-between; /* Espacio entre los elementos */
-  gap: 2rem; /* Espacio entre las secciones */
 }
 .carrusel-container {
   display: flex;
   justify-content: left;
   overflow: hidden;
-  width: 700px; /* Este ancho debe coincidir con el ancho de las imágenes */
+  width: 600px; /* Este ancho debe coincidir con el ancho de las imágenes */
   height: auto;
 }
 
 .carrusel {
   display: flex;
   transition: transform 1s ease;
-
 }
 
 .carrusel img {
-  width: 700px; /* Asegúrate de que las imágenes tengan este tamaño */
+  width: 600px; /* Asegúrate de que las imágenes tengan este tamaño */
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
+
 }
 
 .imagenes-hover {
   display: flex;
   justify-content: center;
-  gap: 2rem;
 }
 
 .imagen-efecto {
-  width: 550px; /* Aumenta el tamaño de las imágenes */
+  width: 400px; /* Aumenta el tamaño de las imágenes */
   height: auto;
   transition: transform 0.3s ease;
 }
 
 .imagen-efecto:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 /* Media Queries para hacerlo responsive en dispositivos móviles */
 @media screen and (max-width: 768px) {

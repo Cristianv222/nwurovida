@@ -24,7 +24,7 @@
         <div class="about-img">
             <img src="/neuro/images/MODALMENTAL.png" alt="">
         </div>
-        
+    
         <div class="about-txt">
             <h2>Desde 4 años en adelante cualquier público </h2>
             <p>
@@ -79,50 +79,48 @@
         </div>
 
     </main>
-
     <section class="pricing">
         <div class="pricing-container">
             <div class="pricing-card">
                 <h3>Premium</h3>
-                <p class="price"><span>€</span>2.49<span>/mes</span></p>
+                <p class="price"><span>$</span>30<span>/mes</span></p>
                 <p class="offer">2 meses GRATIS</p>
                 <button>Elegir plan</button>
                 <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
                 </ul>
             </div>
 
             <div class="pricing-card popular">
                 <h3>Business</h3>
-                <p class="price"><span>€</span>3.49<span>/mes</span></p>
+                <p class="price"><span>$</span>45<span>/mes</span></p>
                 <p class="offer">2 meses GRATIS</p>
                 <button>Elegir plan</button>
                 <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                    <li>Más espacio de almacenamiento</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
                 </ul>
             </div>
 
             <div class="pricing-card">
                 <h3>Cloud Startup</h3>
-                <p class="price"><span>€</span>7.99<span>/mes</span></p>
+                <p class="price"><span>€</span>60<span>/mes</span></p>
                 <p class="offer">2 meses GRATIS</p>
                 <button>Elegir plan</button>
                 <ul>
-                    <li>SEO avanzado</li>
-                    <li>Análisis de visitas</li>
-                    <li>Chat en vivo con WhatsApp</li>
-                    <li>Soporte técnico 24/7</li>
-                    <li>Almacenamiento en la nube</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
                 </ul>
             </div>
         </div>
+    </section>
 
 </body>
 

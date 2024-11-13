@@ -36,6 +36,7 @@ nav {
     /* Agregado para suavizar la transición */
 }
 
+
 .navbar ul li a:hover {
     color: rgb(203, 156, 247);
 }
@@ -82,6 +83,30 @@ nav.scrolled {
     text-align: center;
 }
 
+/*EFECTO EN QUE PESTAÑA ESTOY*/
+
+/* Estilo para el enlace activo */
+.nav-links li a.active {
+    position: relative;
+    color: #007bff; /* Celeste */
+    border-radius: 50%; /* Forma de círculo */
+    padding: 10px;
+    box-shadow: 0 0 10px 2px rgba(0, 255, 0, 0.6); /* Sombra verde */
+    animation: pulse 1s infinite; /* Animación de pulso */
+}
+
+/* Animación de pulso */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 /* Botón sólido */
 

@@ -14,13 +14,13 @@
   <meta property="og:description" content="NeuroVida es el primer centro en Tulcán que ofrece servicios enfocados en el bienestar integral familiar, combinando neurociencia y salud mental. ¡Mejora tu calidad de vida con nosotros!">
   <meta property="og:image" content="./neuro/images/logotipo.png">
   <meta property="og:url" content="https://clubneurovida.com/">
+  <?php include './includes/menu_nav.php'; ?>
 
   <link rel="stylesheet" href="./neuro/css/style.css">
   <script defer src="./neuro/script.js"></script>
 </head>
  
 <body>
-<?php include './includes/menu_nav.php'; ?>
   <div class="background-image" id="backgroundDiv">
     <div class="content-left">
       <img src="/neuro/images/MARCA NEUROVIDA.svg" alt="Club Neurovida" class="logo-left">

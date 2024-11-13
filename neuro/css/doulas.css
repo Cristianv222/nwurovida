@@ -43,7 +43,7 @@
 }
 
 .header-img {
-    width: 30%; /* Ajusta el ancho de la imagen */
+    width: 40%; /* Ajusta el ancho de la imagen */
     margin-right: 120px; /* Ajusta este valor según el espacio que necesites */
     margin-top: 10%;
 }
@@ -118,7 +118,7 @@
     text-align: center;
     background-color: #fafafa;
     border-radius: 10px;
-    margin-top: 160px; /* Ajusta este valor según lo que necesites */
+    margin-top: 20px; /* Ajusta este valor según lo que necesites */
 }
 
 .servicios h2 {
@@ -139,7 +139,7 @@
 
 
 .servicio-1 {
-    padding: 25px;
+    padding: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     flex-basis: calc(25% - 20px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;

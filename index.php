@@ -88,8 +88,8 @@
       <div class="objetivos-texto">
         <h2>Objetivos</h2>
         <ul>
-  <li><strong>Desarrollar Habilidades Cognitivas:</strong> Fortalecer capacidades mentales mediante gimnasia cerebral para estimular el pensamiento crítico y la creatividad.</li>
-  <li><strong>Promover el Bienestar Emocional:</strong> Proveer herramientas para gestionar emociones, fomentando la autoestima y el bienestar.</li>
+  <li><strong>Desarrollar Habilidades Cognitivas:</strong> Fortalecer capacidades mentales mediante gimnasia cerebral </li>
+  <li><strong>Promover el Bienestar Emocional:</strong> Proveer herramientas para gestionar emociones.</li>
   <li><strong>Fomentar la Sostenibilidad y el Emprendimiento:</strong> Enseñar principios financieros y sostenibilidad para formar emprendedores conscientes.</li>
  
 </ul>
@@ -112,7 +112,7 @@
           <li>Inglés</li>
           <li>Computación</li>
           <li>Riesgos Financieros</li>
-          <li>Personal de apoyo: estudiantes de Educación Inicial, Educación Básica, Cultura Física, Computación, y Enfermería de la Universidad Politécnica Estatal del Carchi.</li>
+          <li>Personal de apoyo: Estudantes UPEC</li>
         </ul>
       </div>
     </div>

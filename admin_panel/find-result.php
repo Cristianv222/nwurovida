@@ -25,7 +25,7 @@ include('includes/config.php');
         }
         body {
             background-color: #0a4f62;
-            background-image: url(../neuro/images/imagen\ portada.jpg);
+            background-image: url(../neuro/images/imagen\ portada.webp);
             background-size: cover;
             background-position: center;
             display: flex;
@@ -120,7 +120,7 @@ include('includes/config.php');
 <body>
     <div class="login-card">
         <div class="illustration">
-        <img src="../neuro/images/computer-login-concept-illustration_114360-7962.avif" alt="Estudiante">
+        <img src="../neuro/images/logotipo.png" alt="Estudiante">
         </div>
         <div class="login-form">
             <h2>Inicio de sesión estudiante</h2>
@@ -151,6 +151,9 @@ include('includes/config.php');
             </form>
         </div>
     </div>
+
+
+    
 
     <!-- Scripts -->
     <script src="assets/js/jquery/jquery-2.2.4.min.js"></script>

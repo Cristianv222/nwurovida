@@ -82,7 +82,7 @@ if (isset($_POST['login'])) {
    }
 
    .background-pattern {
-      background-image: url(../neuro/images/vecteezy_vector-technology-concept-connected-lines-and-dots-network_15258828.jpg);
+      background-image: url(../neuro/images/imagen\ portada.webp);
       background-size: cover;
       background-position: center;
       height: 100%;

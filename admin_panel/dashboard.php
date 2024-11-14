@@ -13,7 +13,6 @@ if (strlen($_SESSION['alogin']) == "") {
         exit();
     }
 ?>
-
     <style>
         /* Fondo con imagen */
         body {

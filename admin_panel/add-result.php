@@ -166,23 +166,18 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
     }
 }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <title>Agregar Resultado</title>
     <link rel="stylesheet" href="path/to/your/css/bootstrap.min.css">
     <script src="path/to/your/js/jquery.min.js"></script>
 </head>
-
 <body>
     <style>
         /* Estilos base de la tabla y otros elementos */
     </style>
-
     <?php include('includes/topbar.php'); ?>
     <div class="content-wrapper">
         <div class="content-container">
@@ -191,9 +186,14 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
             <div class="main-page">
                 <div class="container-fluid">
                     <div class="row page-title-div">
-                        <div class="col-md-6">
-                            <h2 class="title">Agregar Resultado</h2>
+                        <div class="row page-title-div mt-4">
+                            <div class="col-sm-6">
+                                <div class="col-md-6">
+                                    <h2 class="title">Agregar Resultado</h2>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                     <div class="row breadcrumb-div">
                         <div class="col-md-6">

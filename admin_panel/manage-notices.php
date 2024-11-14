@@ -6,7 +6,7 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
     // Redirige al usuario a la página de inicio de sesión si no está autenticado
     header('Location: admin-login.php');
     exit();
-}else {
+} else {
     //For Deleting the notice
 
     if ($_GET['id']) {
@@ -33,9 +33,13 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                 <div class="container-fluid">
                     <div class="row page-title-div">
                         <div class="col-md-6">
-                            <h2 class="title">Gestionar Comunicado</h2>
-
+                            <div class="row page-title-div mt-4">
+                                <div class="col-sm-6">
+                                    <h2 class="title">Gestionar Comunicado</h2>
+                                </div>
+                            </div>
                         </div>
+
 
                         <!-- /.col-md-6 text-right -->
                     </div>

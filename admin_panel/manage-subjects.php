@@ -7,7 +7,6 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
     header('Location: admin-login.php');
     exit();
 } else {
-
 ?>
     <link rel="stylesheet" type="text/css" href="assets/js/DataTables/datatables.min.css" />
     <!-- ========== TOP NAVBAR ========== -->
@@ -16,15 +15,16 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
     <div class="content-wrapper">
         <div class="content-container">
             <?php include('includes/leftbar.php'); ?>
-
             <div class="main-page">
                 <div class="container-fluid">
                     <div class="row page-title-div">
-                        <div class="col-md-6">
-                            <h2 class="title">Gestionar Materias</h2>
-
+                        <div class="row page-title-div mt-4">
+                            <div class="col-sm-6">
+                                <div class="col-md-6">
+                                    <h2 class="title">Gestionar Materias</h2>
+                                </div>
+                            </div>
                         </div>
-
                         <!-- /.col-md-6 text-right -->
                     </div>
                     <!-- /.row -->
@@ -36,43 +36,35 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                 <li class="active">Gestionar Materias</li>
                             </ul>
                         </div>
-
                     </div>
                     <!-- /.row -->
                 </div>
                 <!-- /.container-fluid -->
-
-
                 <style>
                     @media (max-width: 768px) {
                         .table-responsive {
                             margin-bottom: 15px;
                             /* Espaciado inferior */
                         }
-
                         table {
                             width: 100%;
                             /* Asegúrate de que la tabla use el 100% de ancho */
                             table-layout: auto;
                             /* Permite que las columnas se ajusten */
                         }
-
                         th,
                         td {
                             white-space: nowrap;
                             /* Evita que el texto se divida en varias líneas */
                         }
-
                         th {
                             font-size: 14px;
                             /* Ajusta el tamaño de la fuente de los encabezados */
                         }
-
                         td {
                             font-size: 12px;
                             /* Ajusta el tamaño de la fuente de las celdas */
                         }
-
                         .btn {
                             padding: 5px 10px;
                             /* Reduce el tamaño de los botones en pantallas pequeñas */

@@ -39,9 +39,12 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
 
                 <div class="container-fluid">
                     <div class="row page-title-div">
-                        <div class="col-md-6">
-                            <h2 class="title">Crear Materia</h2>
-
+                        <div class="row page-title-div mt-4">
+                            <div class="col-sm-6">
+                                <div class="col-md-6">
+                                    <h2 class="title">Crear Materia</h2>
+                                </div>
+                            </div>
                         </div>
 
                         <!-- /.col-md-6 text-right -->

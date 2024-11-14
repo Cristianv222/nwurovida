@@ -17,9 +17,6 @@
             <div class="header-txt">
                 <h1>Manualidades</h1>
             </div>
-            <div class="header-img">
-                <img src="neuro/images/manualidades.png" alt="">
-            </div>
         </div>
     </header>
     <section class="about container">

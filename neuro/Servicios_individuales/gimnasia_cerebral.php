@@ -12,114 +12,76 @@
 </head>
 
 <body>
-    <section>
-
+    <section class="main-content">
+        <!-- Contenido de la cabecera -->
         <div class="header-content container">
             <div class="header-txt">
                 <h1>Gimnasia Cerebral</h1>
             </div>
-            <div class="header-img">
-                <img src="/neuro/images/gimnasia.png" alt="">
-            </div>
         </div>
-        </header>
-        <section class="about container">
+
+        <!-- Sección de Acerca de -->
+        <div class="about container">
             <div class="about-img">
                 <img src="/neuro/images/Niño y Viejo.png" alt="">
             </div>
             <div class="about-txt">
                 <h2>Niños de cualquier edad/Adultos mayores</h2>
                 <p>
-                    A través de ejercicios mentales diseñados
-                    para mejorar la memoria, la atención y el razonamiento, mantener
-                    su mente activa y saludable, ayudando a prevenir el deterioro
-                    cognitivo.
+                    A través de ejercicios mentales diseñados para mejorar la memoria, la atención y el razonamiento, mantener su mente activa y saludable, ayudando a prevenir el deterioro cognitivo.
                 </p>
                 <p>
-                    Mejora las habilidades cognitivas, sociales y físicas mediante
-                    ejercicios que activan ambos hemisferios del cerebro, mejorando no
-                    solo el aprendizaje sino también el bienestar emocional.
+                    Mejora las habilidades cognitivas, sociales y físicas mediante ejercicios que activan ambos hemisferios del cerebro, mejorando no solo el aprendizaje sino también el bienestar emocional.
                 </p>
             </div>
-        </section>
-        <main class="servicios">
+        </div>
+
+        <!-- Sección de Beneficios -->
+        <div class="servicios">
             <h2>Beneficios</h2>
             <div class="servicios-content container">
-
+                <!-- Lista de servicios o beneficios -->
                 <div class="servicio-1">
                     <i class="fa-solid fa-user"></i>
                     <h3>Coordinación Motora Fina y Gruesa </h3>
-                    <p>
-
-                    </p>
                 </div>
-
                 <div class="servicio-1">
                     <i class="fa-sharp fa-solid fa-stethoscope"></i>
                     <h3>Concentración y Memoria </h3>
-                    <p>
-
-                    </p>
                 </div>
-
                 <div class="servicio-1">
                     <i class="fa-sharp fa-solid fa-book"></i>
                     <h3>Creatividad y Resolución de Problemas </h3>
-                    <p>
-
-                    </p>
                 </div>
-
                 <div class="servicio-1">
                     <i class="fa-solid fa-hospital"></i>
                     <h3>Lateralidad y Equilibrio </h3>
-                    <p>
-
-                    </p>
                 </div>
-
                 <div class="servicio-1">
                     <i class="fa-solid fa-brain"></i>
                     <h3>Atención y Focalización </h3>
-                    <p>
-
-                    </p>
                 </div>
-
                 <div class="servicio-1">
                     <i class="fa-sharp fa-solid fa-user"></i>
                     <h3>Coordinación Ojo-Mano</h3>
-                    <p>
-
-                    </p>
                 </div>
                 <div class="servicio-1">
                     <i class="fa-solid fa-brain"></i>
                     <h3>Trabajo en Equipo y Comunicación </h3>
-                    <p>
-
-                    </p>
                 </div>
-
                 <div class="servicio-1">
                     <i class="fa-solid fa-book"></i>
                     <h3>Razonamiento Lógico </h3>
-                    <p>
-
-                    </p>
                 </div>
-
                 <div class="servicio-1">
                     <i class="fa-sharp fa-solid fa-user"></i>
                     <h3>Ejercicios Cruzados </h3>
-                    <p></p>
-
                 </div>
             </div>
-        </main>
+        </div>
 
-
-        <section class="pricing">
+        <!-- Sección de Precios -->
+        <div class="pricing">
             <div class="pricing-container">
                 <div class="pricing-card">
                     <h3>Premium</h3>
@@ -160,8 +122,8 @@
                     </ul>
                 </div>
             </div>
-        </section>
-
+        </div>
+    </section>
 </body>
 
 </html>

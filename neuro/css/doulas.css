@@ -36,24 +36,6 @@
     height: auto;
 }
 
-.header-txt {
-    padding-top: 250px;
-    text-align: center;
-}
-
-.header-txt h1 {
-    line-height: 1.2;
-    color: #007BFF;
-    text-transform: uppercase;
-    font-size: 50px; /* Tamaño de fuente para pantallas grandes */
-    margin-bottom: 10px;
-}
-
-.header-txt p {
-    font-size: 16px;
-    color: #818181;
-    margin-bottom: 45px;
-}
 
 /* About section */
 .about {

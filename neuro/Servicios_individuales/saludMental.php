@@ -15,9 +15,6 @@
             <div class="header-txt">
                 <h1>Salud Mental</h1>
             </div>
-            <div class="header-img">
-                <img src="/neuro/images/Salud mental.png" alt="">
-            </div>
         </div>
     </header>
     <section class="about container">

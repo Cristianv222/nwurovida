@@ -17,9 +17,6 @@
             <div class="header-txt">
                 <h1>ACOMPAÑAMIENTO DE LAS DOULAS </h1>
             </div>
-            <div class="header-img">
-                <img src="/neuro/images/Acompañamiento de las Doulas.png" alt="">
-            </div>
         </div>
     </header>
 

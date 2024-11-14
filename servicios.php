@@ -9,42 +9,38 @@
     <link rel="shortcut icon" href="./neuro/images/ICO.png" type="image/x-icon">
     <?php include './includes/menu_nav.php'; ?>
 </head>
-
-<body>
-    <header>
-    </header>
-    <div class="header-content container">
-        <div class="header-txt">
-            <h1>Conoce sobre nuestros servicios</h1>
+<header>
+    <div class="main-container">
+        <div class="content-wrap">
+            <div class="text-block">
+                <section class="services-title">Conoce sobre nuestros servicios</section>
+                <p class="fade-in">Descubre cómo nuestros servicios pueden ayudarte a lograr tus objetivos.</p>
+            </div>
         </div>
     </div>
+</header>
+
+
+
+<body>
     <div class="container_s">
-        <p class="fade-in">Descubre cómo nuestros servicios pueden ayudarte a lograr tus objetivos.</p>
         <div class="gallery">
             <div class="card fade-up">
                 <img src="./neuro/images/gimnasia.png" alt="Servicio 1">
                 <h3>Gimnasia Cerebral</h3>
                 <p>Mejora las habilidades cognitivas, sociales y físicas mediante ejercicios que activan ambos hemisferios del cerebro.</p>
                 <button class="quick-view" data-id="./neuro/Servicios_individuales/gimnasia_cerebral.php" onclick="openModal(this)">Vista rápida</button>
-                </div>
-
-            <!-- Modal -->
-            <div id="myModal" class="modal" onclick="closeModal(event)">
-                <div class="modal-content" onclick="event.stopPropagation()">
-                    <span class="close" onclick="closeModal(event)">&times;</span>
-                    <div id="modal-body"></div>
-                </div>
             </div>
 
 
-<div class="card fade-up" id="card">
-    <img src="./neuro/images/Salud mental.png" alt="Servicio 2">
-    <h3>Salud mental</h3>
-    <p>Sesiones de yoga para embarazadas, niños y adultos, enfocadas en el bienestar físico y emocional.</p>
-    <button class="quick-view" data-id="./neuro/Servicios_individuales/saludMental.php" onclick="openModal(this)">
-        Vista rápida
-    </button>
-</div>
+            <div class="card fade-up" id="card">
+                <img src="./neuro/images/Salud mental.png" alt="Servicio 2">
+                <h3>Salud mental</h3>
+                <p>Sesiones de yoga para embarazadas, niños y adultos, enfocadas en el bienestar físico y emocional.</p>
+                <button class="quick-view" data-id="./neuro/Servicios_individuales/saludMental.php" onclick="openModal(this)">
+                    Vista rápida
+                </button>
+            </div>
 
             <div class="card fade-up">
                 <img src="./neuro/images/Tareas dirigidas.png" alt="Servicio 3">
@@ -87,7 +83,7 @@
                     ▪ Canva<br>
                     ▪ Genially<br>
                     ▪ Paint<br></p>
-                    <button class="quick-view" data-id="./neuro/Servicios_individuales/cursos_de_computacion.php" onclick="openModal(this)">Vista rápida</button>
+                <button class="quick-view" data-id="./neuro/Servicios_individuales/cursos_de_computacion.php" onclick="openModal(this)">Vista rápida</button>
 
             </div>
             <div class="card fade-up">
@@ -97,7 +93,7 @@
                     ▪ Introducción a la inteligencia artificial<br>
                     ▪ Creación de páginas web<br>
                     ▪ Creación de juegos interactivos en Pyton<br></p>
-                    <button class="quick-view" data-id="./neuro/Servicios_individuales/programacion.php" onclick="openModal(this)">Vista rápida</button>
+                <button class="quick-view" data-id="./neuro/Servicios_individuales/programacion.php" onclick="openModal(this)">Vista rápida</button>
 
             </div>
             <div class="card fade-up">
@@ -123,6 +119,13 @@
 
             </div>
         </div>
+        <!-- Modal -->
+        <div id="myModal" class="modal" onclick="closeModal(event)">
+            <div class="modal-content" onclick="event.stopPropagation()">
+                <span class="close" onclick="closeModal(event)">&times;</span>
+                <div id="modal-body"></div>
+            </div>
+        </div>
     </div>
 </body>
 <?php include './includes/footer.php'; ?>
@@ -131,47 +134,27 @@
 
 <script>
     function openModal(button) {
-    document.body.style.overflow = "hidden"; // Deshabilita el desplazamiento
-    var modal = document.getElementById("myModal");
-    var modalBody = document.getElementById("modal-body");
-    var contentUrl = button.getAttribute("data-id");
+        document.body.style.overflow = "hidden"; // Deshabilita el desplazamiento
+        var modal = document.getElementById("myModal");
+        var modalBody = document.getElementById("modal-body");
+        var contentUrl = button.getAttribute("data-id");
 
-    fetch(contentUrl)
-        .then(response => response.text())
-        .then(data => {
-            modalBody.innerHTML = data;
-            modal.style.display = "flex";
-        })
-        .catch(error => {
-            console.error('Error cargando el contenido:', error);
-        });
-}
-
-function closeModal(event) {
-    document.body.style.overflow = ""; // Habilita el desplazamiento nuevamente
-    var modal = document.getElementById("myModal");
-    if (event.target === modal || event.target.className === "close") {
-        modal.style.display = "none";
-    }
-}
-
-    document.addEventListener('DOMContentLoaded', () => {
-        const fadeInElements = document.querySelectorAll('.fade-in, .fade-up');
-        fadeInElements.forEach((element) => {
-            element.style.opacity = '0';
-            element.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
-            element.style.transform = 'translateY(20px)';
-        });
-
-        setTimeout(() => {
-            fadeInElements.forEach((element) => {
-                element.style.opacity = '1';
-                element.style.transform = 'translateY(0)';
+        fetch(contentUrl)
+            .then(response => response.text())
+            .then(data => {
+                modalBody.innerHTML = data;
+                modal.style.display = "flex";
+            })
+            .catch(error => {
+                console.error('Error cargando el contenido:', error);
             });
-        }, 300);
-    });
+    }
 
-
-
-
+    function closeModal(event) {
+        document.body.style.overflow = ""; // Habilita el desplazamiento nuevamente
+        var modal = document.getElementById("myModal");
+        if (event.target === modal || event.target.className === "close") {
+            modal.style.display = "none";
+        }
+    }
 </script>

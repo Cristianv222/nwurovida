@@ -6,6 +6,67 @@
     padding: 0;
 }
 
+.main-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    justify-content: center;
+    background-color: rgba(85, 85, 85, 0.357); /* Cambiar a blanco sólido */
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ }
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    align-items: flex-start; /* Alineación hacia la parte superior */
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding-top: 50px; /* Espacio desde arriba */
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 95%; /* Mayor ancho */
+    max-width: 1300px; /* Control del ancho máximo */
+    margin-top: 100px; /* Distancia desde la parte superior */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Mostrar el modal */
+.modal.show {
+    display: flex;
+}
+
 /* Sección nueva servicios */
 .btn-1 { 
   display: inline-block;
@@ -17,12 +78,14 @@
 
 /* Contenedor general */
 .container {
-    max-width: 1100%;
+    max-width: 1100px; /* Ajuste a 1100px en lugar de 1100% */
     margin: 0 auto;
 }
 
 .header-content {
     display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
 }
 
 .header-img {
@@ -37,8 +100,8 @@
 }
 
 .header-txt {
-    padding-top: 250px;
     text-align: center;
+    padding-top: 30px;
 }
 
 .header-txt h1 {
@@ -46,14 +109,14 @@
     color: #007BFF;
     text-transform: uppercase;
     font-size: 50px; /* Tamaño de fuente para pantallas grandes */
-    margin-bottom: 10px;
 }
 
 .header-txt p {
     font-size: 16px;
     color: #818181;
-    margin-bottom: 45px;
 }
+
+
 
 /* About section */
 .about {
@@ -118,7 +181,7 @@
     text-align: center;
     background-color: #fafafa;
     border-radius: 10px;
-    margin-top: 35px; /* Ajusta este valor según lo que necesites */
+    margin-top: -55px; /* Ajusta este valor según lo que necesites */
 }
 
 .servicios h2 {
@@ -199,27 +262,17 @@ form h2 {
 @media (max-width: 991px) {
     .header {
         min-height: 0vh;
-        padding: 80px 80px 50px 30px; 
+        padding: 60px 80px 50px 30px; 
     }
 
     .header-content {
         flex-direction: column;
     }
 
-    .header-txt h1 {
-        transform: translateX(5%); /* Mueve el contenedor 20% a la izquierda */
-
-        margin-bottom: 5px;
-        font-size: 40px; /* Ajusta el tamaño de fuente a lo que necesites */
-        line-height: 1.4; /* Opcional: ajusta el interlineado para mejorar la legibilidad */
-    }
-    
-
-    .header-img {
-        width: 150%;
-        margin-top: -20%;
-        transform: translateX(5%); /* Mueve el contenedor 20% a la izquierda */
-
+    .header-txt {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 25px;
     }
 
     .about {
@@ -227,17 +280,11 @@ form h2 {
         flex-direction: column;
     }
 
-    .about-img {
-        width: 200%;
-        order: 2;
-    }
-
     .about-txt {
         width: 100%;
         margin-left: 0;
         text-align: center;
-        margin-bottom: 75px;
-        margin-top:300px; /* Ajusta este valor según lo necesites */
+        margin-top:30px; /* Ajusta este valor según lo necesites */
 
     }
 

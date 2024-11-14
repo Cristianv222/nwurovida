@@ -17,9 +17,6 @@
             <div class="header-txt">
                 <h1>Educación Financiera y Emprendimiento </h1>
             </div>
-            <div class="header-img">
-                <img src="/neuro/images/Educación Financiera y Emprendimiento.png" alt="">
-            </div>
         </div>
     </header>
 

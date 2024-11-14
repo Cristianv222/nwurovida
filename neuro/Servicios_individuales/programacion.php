@@ -17,9 +17,6 @@
             <div class="header-txt">
                                 <h1>Programación</h1>
                             </div>
-                            <div class="header-img">
-                                <img src="neuro/images/Programación.png" alt="">
-                            </div>
                         </div>
                     </header>
 

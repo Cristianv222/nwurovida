@@ -17,13 +17,7 @@
             <div class="header-txt">
                 <h1>Ingles</h1>
             </div>
-            <div class="header-img">
-                <img src="neuro/images/Inglés.png" alt="">
-
-            </div>
-
         </div>
-
     </header>
 
     <section class="about container">

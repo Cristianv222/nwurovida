@@ -17,9 +17,6 @@
             <div class="header-txt">
                 <h1>Cursos de Computación </h1>
             </div>
-            <div class="header-img">
-                <img src="/neuro/images/Cursos de Computación.png" alt="">
-            </div>
         </div>
     </header>
 

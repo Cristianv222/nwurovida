@@ -29,8 +29,8 @@
 
 <main class="frase_sec1">
     <div class="frase-content_sec1 container">
-      <h2>Nuestos servicios</h2>
-      <p class="txt-p_sec1">En NeuroVida, creemos que la transformación y reconstrucción constante, es una oportunidad para crecer y mejorar.</p>
+      <h2><center>Nuestos servicios</center></h2>
+      <p class="txt-p_sec1"><center>En NeuroVida, creemos que la transformación y reconstrucción constante, es una oportunidad para crecer y mejorar.</center></p>
     </div>
     <div class="carousel-container">
       <div class="carousel">
@@ -43,7 +43,7 @@
           <h3>Cursos de computacion</h3>
         </div>
         <div class="card">
-          <img src="./neuro/images/gimnasia.png" alt="Imagen 3">
+          <a href="./neuro/Servicios_individuales/gimnasia_cerebral.php"><img src="./neuro/images/gimnasia.png" alt="Imagen 3"></a>
           <h3>Gimnasia cerebral</h3>
         </div>
         <div class="card">
@@ -74,9 +74,11 @@
       <img src="./neuro/images/flecha_izquierda.svg" alt="Flecha Izquierda" class="prev" onclick="moveCarousel(-1)">
       <img src="./neuro/images/flecha_derecha.svg" alt="Flecha Derecha" class="next" onclick="moveCarousel(1)">
       <div class="ver-mas-container">
-        <a href="/servicios.php" class="btn-estud">Agendar cita</a>
       </div>
     </div>
+    <div class="container-btn">
+  <a href="#" class="btn-estud">Agendar cita</a>
+</div
   </main>
   <div class="valores-container">
     <img src="./neuro/images/Mision.png" alt="Valor 2" class="valor-img">
@@ -88,8 +90,8 @@
       <div class="objetivos-texto">
         <h2>Objetivos</h2>
         <ul>
-  <li><strong>Desarrollar Habilidades Cognitivas:</strong> Fortalecer capacidades mentales mediante gimnasia cerebral para estimular el pensamiento crítico y la creatividad.</li>
-  <li><strong>Promover el Bienestar Emocional:</strong> Proveer herramientas para gestionar emociones, fomentando la autoestima y el bienestar.</li>
+  <li><strong>Desarrollar Habilidades Cognitivas:</strong> Fortalecer capacidades mentales mediante gimnasia cerebral </li>
+  <li><strong>Promover el Bienestar Emocional:</strong> Proveer herramientas para gestionar emociones.</li>
   <li><strong>Fomentar la Sostenibilidad y el Emprendimiento:</strong> Enseñar principios financieros y sostenibilidad para formar emprendedores conscientes.</li>
  
 </ul>
@@ -112,7 +114,7 @@
           <li>Inglés</li>
           <li>Computación</li>
           <li>Riesgos Financieros</li>
-          <li>Personal de apoyo: estudiantes de Educación Inicial, Educación Básica, Cultura Física, Computación, y Enfermería de la Universidad Politécnica Estatal del Carchi.</li>
+          <li>Personal de apoyo: Estudantes UPEC</li>
         </ul>
       </div>
     </div>

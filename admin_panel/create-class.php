@@ -37,13 +37,17 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
             <!-- ========== LEFT SIDEBAR ========== -->
             <?php include('includes/leftbar.php'); ?>
             <!-- /.left-sidebar -->
-
             <div class="main-page">
                 <div class="container-fluid">
                     <div class="row page-title-div">
-                        <div class="col-md-6">
-                            <h2 class="title">Crear Año</h2>
+                        <div class="row page-title-div mt-4">
+                            <div class="col-sm-6">
+                                <div class="col-md-6">
+                                    <h2 class="title">Crear Año</h2>
+                                </div>
+                            </div>
                         </div>
+
 
                     </div>
                     <!-- /.row -->

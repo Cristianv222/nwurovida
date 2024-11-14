@@ -11,15 +11,12 @@ include('includes/config.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Avance del Estudiante</title>
-
-    <!-- Estilos originales y nuevos estilos -->
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
     <link rel="stylesheet" href="css/font-awesome.min.css" media="screen">
     <link rel="stylesheet" href="css/animate-css/animate.min.css" media="screen">
     <link rel="stylesheet" href="css/lobipanel/lobipanel.min.css" media="screen">
     <link rel="stylesheet" href="css/prism/prism.css" media="screen">
     <link rel="stylesheet" href="./assets/css/resultados/style.css">
-
     <style>
         /* General Styles */
         body {
@@ -244,9 +241,8 @@ include('includes/config.php');
                 font-size: 16px;
             }
         }
+        
     </style>
-
-    <script src="js/modernizr/modernizr.min.js"></script>
 </head>
 
 <body>
@@ -260,6 +256,7 @@ include('includes/config.php');
                 <section class="student-details">
                     <h2>Descripción del Estudiante</h2>
                     <?php
+                    // Consultar detalles del estudiante
                     $rollid = $_POST['rollid'];
                     $classid = $_POST['class'];
                     $query = "SELECT tblstudents.StudentName, tblstudents.RollId, tblstudents.ClassId, tblclasses.ClassName, tblclasses.Section, tblstudents.Image FROM tblstudents JOIN tblclasses ON tblclasses.id = tblstudents.ClassId WHERE tblstudents.RollId = :rollid AND tblstudents.ClassId = :classid";
@@ -289,73 +286,52 @@ include('includes/config.php');
 
                 <section class="results">
                     <h2>Resultados Académicos</h2>
-                    <table>
-                        <!-- Contenedor responsive para la tabla -->
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Materia</th>
-                                        <th>Calificación</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                    $query = "SELECT t.StudentName, t.RollId, t.ClassId, t.marks, SubjectId, tblsubjects.SubjectName FROM (SELECT sts.StudentName, sts.RollId, sts.ClassId, tr.marks, SubjectId FROM tblstudents AS sts JOIN tblresult AS tr ON tr.StudentId = sts.StudentId) AS t JOIN tblsubjects ON tblsubjects.id = t.SubjectId WHERE (t.RollId = :rollid AND t.ClassId = :classid)";
-                                    $stmt = $dbh->prepare($query);
-                                    $stmt->bindParam(':rollid', $rollid, PDO::PARAM_STR);
-                                    $stmt->bindParam(':classid', $classid, PDO::PARAM_STR);
-                                    $stmt->execute();
-                                    $results = $stmt->fetchAll(PDO::FETCH_OBJ);
-                                    $cnt = 1;
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Materia</th>
+                                    <th>Calificación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                // Consultar resultados académicos
+                                $query = "SELECT tblsubjects.SubjectName, tr.marks FROM tblresult AS tr JOIN tblsubjects ON tblsubjects.id = tr.SubjectId WHERE tr.StudentId = (SELECT StudentId FROM tblstudents WHERE RollId = :rollid)";
+                                $stmt = $dbh->prepare($query);
+                                $stmt->bindParam(':rollid', $rollid, PDO::PARAM_STR);
+                                $stmt->execute();
+                                $results = $stmt->fetchAll(PDO::FETCH_OBJ);
+                                $cnt = 1;
 
-                                    if ($stmt->rowCount() > 0) {
-                                        foreach ($results as $result) {
-                                            // Convertir la calificación a la categoría correspondiente
-                                            if ($result->marks >= 5) {
-                                                $calificacion = "Sobresaliente";
-                                            } elseif ($result->marks == 4) {
-                                                $calificacion = "Excelente";
-                                            } elseif ($result->marks == 3) {
-                                                $calificacion = "Bueno";
-                                            } elseif ($result->marks == 2) {
-                                                $calificacion = "Regular";
-                                            } else {
-                                                $calificacion = "Malo";
-                                            }
-                                    ?>
-                                            <tr>
-                                                <td><?php echo htmlentities($cnt); ?></td>
-                                                <td><?php echo htmlentities($result->SubjectName); ?></td>
-                                                <td><?php echo htmlentities($calificacion); ?></td>
-                                            </tr>
-                                        <?php
-                                            $cnt++;
-                                        }
-                                    } else { ?>
+                                if ($stmt->rowCount() > 0) {
+                                    foreach ($results as $result) {
+                                        $calificacion = $result->marks >= 5 ? "Sobresaliente" : ($result->marks == 4 ? "Excelente" : ($result->marks == 3 ? "Bueno" : ($result->marks == 2 ? "Regular" : "Malo")));
+                                ?>
                                         <tr>
-                                            <td colspan="3" class="alert">No se encontraron resultados para este ID.</td>
+                                            <td><?php echo htmlentities($cnt); ?></td>
+                                            <td><?php echo htmlentities($result->SubjectName); ?></td>
+                                            <td><?php echo htmlentities($calificacion); ?></td>
                                         </tr>
-                                    <?php } ?>
-                                </tbody>
-                            </table>
-                        </div>
-                    </table>
+                                    <?php $cnt++;
+                                    }
+                                } else { ?>
+                                    <tr>
+                                        <td colspan="3" class="alert">No se encontraron resultados para este ID.</td>
+                                    </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table>
+                    </div>
                 </section>
-
-                <!-- Agregar lightbox modal -->
-                <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-                    <span class="close" onclick="closeLightbox()">&times;</span>
-                    <img class="lightbox-content" id="lightbox-img" src="" alt="Imagen ampliada">
-                </div>
 
                 <!-- Sección de Imágenes Adicionales -->
                 <section class="student-images">
                     <h2>Imágenes Adicionales</h2>
                     <div class="student-images-container">
                         <?php
-                        // Recuperar y mostrar imágenes adicionales
+                        // Consultar imágenes adicionales
                         $imageQuery = "SELECT image1, image2, image3, image4 FROM tblimages WHERE StudentId = (SELECT StudentId FROM tblstudents WHERE RollId = :rollid GROUP BY StudentId) LIMIT 1";
                         $imageStmt = $dbh->prepare($imageQuery);
                         $imageStmt->bindParam(':rollid', $rollid, PDO::PARAM_STR);
@@ -367,10 +343,10 @@ include('includes/config.php');
                                 if (!empty($images->$imgColumn)) {
                                     $imageData = base64_encode($images->$imgColumn);
                                     echo '<div class="image-item">
-                        <a href="#" onclick="openLightbox(\'data:image/jpeg;base64,' . $imageData . '\')">
-                            <img src="data:image/jpeg;base64,' . $imageData . '" alt="Imagen adicional">
-                        </a>
-                      </div>';
+                                        <a href="#" onclick="openLightbox(\'data:image/jpeg;base64,' . $imageData . '\')">
+                                            <img src="data:image/jpeg;base64,' . $imageData . '" alt="Imagen adicional">
+                                        </a>
+                                    </div>';
                                 }
                             }
                         } else {
@@ -381,32 +357,31 @@ include('includes/config.php');
                 </section>
 
                 <!-- Lightbox Modal -->
-                <div id="lightbox" class="lightbox">
+                <div id="lightbox" class="lightbox" onclick="closeLightbox()">
                     <span class="close" onclick="closeLightbox()">&times;</span>
                     <img class="lightbox-content" id="lightbox-img" src="" alt="Imagen ampliada">
                 </div>
-
-
-
-
             </div>
         </div>
-        <footer>
-            <a href="../index.php" class="back-button">Volver</a>
-        </footer>
+        <form action="descargar_avance.php" method="post" target="_blank">
+            <input type="hidden" name="rollid" value="<?php echo htmlentities($rollid); ?>">
+            <input type="hidden" name="class" value="<?php echo htmlentities($classid); ?>">
+            <button type="submit" class="btn btn-primary">Descargar Avance en PDF</button>
+        </form>
     </div>
-</body>
-<script>
-    // Función para abrir el lightbox y mostrar la imagen ampliada
-    function openLightbox(imageSrc) {
-        document.getElementById('lightbox').style.display = 'flex';
-        document.getElementById('lightbox-img').src = imageSrc;
-    }
 
-    // Función para cerrar el lightbox
-    function closeLightbox() {
-        document.getElementById('lightbox').style.display = 'none';
-    }
-</script>
+    <a href="../index.php" class="btn-volver">Volver</a>        
+
+    <script>
+        function openLightbox(imageSrc) {
+            document.getElementById('lightbox-img').src = imageSrc;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+</body>
 
 </html>

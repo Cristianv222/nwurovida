@@ -6,7 +6,7 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
     // Redirige al usuario a la página de inicio de sesión si no está autenticado
     header('Location: admin-login.php');
     exit();
-}else {
+} else {
     if (isset($_POST['submit'])) {
         $ntitle = $_POST['noticetitle'];
         $ndetails = $_POST['noticedetails'];
@@ -38,12 +38,14 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
             <div class="main-page">
                 <div class="container-fluid">
                     <div class="row page-title-div">
-                        <div class="col-md-6">
-                            <h2 class="title">Agregar Comunicado</h2>
+                        <div class="row page-title-div mt-4">
+                            <div class="col-sm-6">
+                                <div class="col-md-6">
+                                    <h2 class="title">Agregar Comunicado</h2>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
-
                     <div class="row breadcrumb-div">
                         <div class="col-md-6">
                             <ul class="breadcrumb">

@@ -46,14 +46,16 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
         <div class="content-container">
             <?php include('includes/leftbar.php'); ?>
             <!-- /.left-sidebar -->
-
             <div class="main-page">
                 <div class="container-fluid">
                     <div class="row page-title-div">
-                        <div class="col-md-6">
-                            <h2 class="title">Cambiar Contraseña</h2>
+                        <div class="row page-title-div mt-4">
+                            <div class="col-sm-6">
+                                <div class="col-md-6">
+                                    <h2 class="title">Cambiar Contraseña</h2>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
                     <!-- /.row -->
                     <div class="row breadcrumb-div">
@@ -64,19 +66,12 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                 <li class="active">Cambiar Contraseña</li>
                             </ul>
                         </div>
-
                     </div>
                     <!-- /.row -->
                 </div>
                 <!-- /.container-fluid -->
-
                 <section class="section">
                     <div class="container-fluid">
-
-
-
-
-
                         <div class="row">
                             <div class="col-md-8 col-md-offset-2">
                                 <div class="panel">

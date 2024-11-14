@@ -28,6 +28,7 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
 
                 /* Estilos para escritorio */
                 @media screen and (min-width: 769px) {
+
                     .display.table th,
                     .display.table td {
                         padding: 0.75rem;
@@ -114,12 +115,18 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                 }
             </style>
             <div class="main-page">
-                <div class="container-fluid">
-                    <div class="row page-title-div">
-                        <div class="col-md-6">
-                            <h2 class="title">Gestionar Resultados</h2>
+                <div class="container-fluid m">
+                    <div class="row page-title-div mt-4">
+                        <div class="col-sm-6">
+                            <div class="row page-title-div">
+                                <div class="col-md-6">
+                                    <h2 class="title">Gestionar Resultados</h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+
                     <div class="row breadcrumb-div">
                         <div class="col-md-6">
                             <ul class="breadcrumb">

@@ -7,9 +7,7 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
     header('Location: admin-login.php');
     exit();
 } else {
-
 ?>
-
     <link rel="stylesheet" type="text/css" href="assets/js/DataTables/datatables.min.css" />
     <!-- ========== TOP NAVBAR ========== -->
     <?php include('includes/topbar.php'); ?>
@@ -17,15 +15,12 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
     <div class="content-wrapper">
         <div class="content-container">
             <?php include('includes/leftbar.php'); ?>
-
             <div class="main-page">
                 <div class="container-fluid">
                     <div class="row page-title-div">
                         <div class="col-md-6">
                             <h2 class="title">Gestión de Estudiantes</h2>
-
                         </div>
-
                         <!-- /.col-md-6 text-right -->
                     </div>
                     <!-- /.row -->
@@ -37,16 +32,12 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                 <li class="active">Gestión de Estudiantes</li>
                             </ul>
                         </div>
-
                     </div>
                     <!-- /.row -->
                 </div>
                 <!-- /.container-fluid -->
-
                 <section class="section">
                     <div class="container-fluid">
-
-
                         <style>
                             /* Asegura que la tabla se ajuste a diferentes pantallas */
                             @media (max-width: 768px) {
@@ -54,45 +45,41 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                     margin-bottom: 15px;
                                     /* Espaciado inferior */
                                 }
-
                                 table {
                                     width: 100%;
                                     /* Asegúrate de que la tabla use el 100% de ancho */
                                     table-layout: auto;
                                     /* Permite que las columnas se ajusten */
                                 }
-
                                 th,
                                 td {
                                     white-space: nowrap;
                                     /* Evita que el texto se divida en varias líneas */
                                 }
-
                                 th {
                                     font-size: 14px;
                                     /* Ajusta el tamaño de la fuente de los encabezados */
                                 }
-
                                 td {
                                     font-size: 12px;
                                     /* Ajusta el tamaño de la fuente de las celdas */
                                 }
-
                                 .btn {
                                     padding: 5px 10px;
                                     /* Reduce el tamaño de los botones en pantallas pequeñas */
                                 }
                             }
                         </style>
-
-                        </style>
                         <div class="row">
                             <div class="col-md-12">
-
                                 <div class="panel">
                                     <div class="panel-heading">
-                                        <div class="panel-title">
-                                            <h5>Ver Información de Estudiante</h5>
+                                        <div class="row page-title-div mt-4">
+                                            <div class="col-sm-6">
+                                                <div class="panel-title">
+                                                    <h5>Ver Información de Estudiante</h5>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <?php if ($msg) { ?>
@@ -145,19 +132,13 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
                                                 <?php $cnt = $cnt + 1;
                                                     }
                                                 } ?>
-
-
                                             </tbody>
                                         </table>
-
-
                                         <!-- /.col-md-12 -->
                                     </div>
                                 </div>
                             </div>
                             <!-- /.col-md-6 -->
-
-
                         </div>
                         <!-- /.col-md-12 -->
                     </div>
@@ -165,7 +146,6 @@ if (!isset($_SESSION['alogin']) || $_SESSION['alogin'] == '') {
             <!-- /.panel -->
         </div>
         <!-- /.col-md-6 -->
-
     </div>
     <!-- /.row -->
 

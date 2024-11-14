@@ -209,8 +209,13 @@ button:active {
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  display: inline-block; /* Ajuste para evitar que ocupe toda la anchura */
+  width: auto; /* Ajuste de ancho automático */
+  text-align: center;
+  margin: 20px auto; /* Centrado vertical */
 }
 
-.btn-estud:hover {
-  background-color: #96D0EE;
+.container-btn { 
+  display: flex;
+  justify-content: center; /* Centra el botón horizontalmente */
 }

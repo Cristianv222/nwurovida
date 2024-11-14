@@ -43,7 +43,7 @@
           <h3>Cursos de computacion</h3>
         </div>
         <div class="card">
-          <img src="./neuro/images/gimnasia.png" alt="Imagen 3">
+          <a href="./neuro/Servicios_individuales/gimnasia_cerebral.php"><img src="./neuro/images/gimnasia.png" alt="Imagen 3"></a>
           <h3>Gimnasia cerebral</h3>
         </div>
         <div class="card">
@@ -76,7 +76,9 @@
       <div class="ver-mas-container">
       </div>
     </div>
-    <a href="/servicios.php" class="btn-estud">Agendar cita</a>
+    <div class="container-btn">
+  <a href="#" class="btn-estud">Agendar cita</a>
+</div
   </main>
   <div class="valores-container">
     <img src="./neuro/images/Mision.png" alt="Valor 2" class="valor-img">

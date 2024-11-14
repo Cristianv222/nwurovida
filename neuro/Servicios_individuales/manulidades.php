@@ -30,49 +30,7 @@
             </p>
 
         </div>
-
     </section>
-
-    <main class="servicios">
-        <h2>Beneficios</h2>
-        <div class="servicios-content container">
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-palette"></i>
-                <h3>Desarrollo de la creatividad </h3>
-                <p>Fomenta la imaginación y la expresión personal a través de la creación de piezas únicas.
-                </p>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-palette"></i>
-                <h3>Mejora de habilidades motoras </h3>
-                <p>
-                    Ayuda a coordinar y fortalecer la motricidad fina al manipular diversos materiales.
-                </p>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-palette"></i>
-                <h3>Relajación y enfoque </h3>
-                <p> Realizar manualidades reduce el estrés y promueve la concentración en una actividad recreativa.
-                </p>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-palette"></i>
-                <h3>Refuerzo de la autoestima </h3>
-                <p>
-                    Completar proyectos creativos impulsa la autoconfianza y el sentido de logro en niños y adultos.
-
-                </p>
-            </div>
-
-
-        </div>
-
-    </main>
-
     <section class="pricing">
         <div class="pricing-container">
             <div class="pricing-card">
@@ -115,6 +73,42 @@
             </div>
         </div>
     </section>
+    <main class="servicios">
+        <h2>Beneficios</h2>
+        <div class="servicios-content container">
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Desarrollo de la creatividad </h3>
+                <p>Fomenta la imaginación y la expresión personal a través de la creación de piezas únicas.
+                </p>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Mejora de habilidades motoras </h3>
+                <p>
+                    Ayuda a coordinar y fortalecer la motricidad fina al manipular diversos materiales.
+                </p>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Relajación y enfoque </h3>
+                <p> Realizar manualidades reduce el estrés y promueve la concentración en una actividad recreativa.
+                </p>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Refuerzo de la autoestima </h3>
+                <p>
+                    Completar proyectos creativos impulsa la autoconfianza y el sentido de logro en niños y adultos.
+
+                </p>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

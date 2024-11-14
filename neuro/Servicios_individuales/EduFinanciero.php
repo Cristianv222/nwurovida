@@ -28,63 +28,11 @@
             <h2>Niños de 9 a 12 años/cualquier público </h2>
             <p>
                 Curso dirigido a niños de 9 a 12 años y personas interesadas en aprender sobre finanzas y emprendimiento. A través de actividades dinámicas, los participantes conocerán conceptos básicos como ahorro, inversión y presupuesto, además de desarrollar habilidades para emprender, como creatividad, planificación y toma de decisiones.
-
-
-
-
-
-
-
             </p>
 
         </div>
 
     </section>
-
-    <main class="servicios">
-        <h2>Beneficios</h2>
-        <div class="servicios-content container">
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-money-check-dollar"></i>
-                <h3>Introducción a los Objetivos de Desarrollo Sostenible (ODS)</h3>
-                <p>
-
-                </p>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-money-check-dollar"></i>
-                <h3>Plan de negocios básico (Producto Mínimo Viable) </h3>
-                <p>
-
-                </p>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-money-check-dollar"></i>
-                <h3>Campaña básica de marketing </h3>
-                <p>
-
-                </p>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-money-check-dollar"></i>
-                <h3>Ventas</h3>
-                <p>
-
-
-                </p>
-            </div>
-
-
-
-
-
-        </div>
-
-    </main>
     <section class="pricing">
         <div class="pricing-container">
             <div class="pricing-card">
@@ -127,6 +75,44 @@
             </div>
         </div>
     </section>
+    <main class="servicios">
+        <h2>Beneficios</h2>
+        <div class="servicios-content container">
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <h3>Introducción a los Objetivos de Desarrollo Sostenible (ODS)</h3>
+                <p>
+
+                </p>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <h3>Plan de negocios básico (Producto Mínimo Viable) </h3>
+                <p>
+
+                </p>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <h3>Campaña básica de marketing </h3>
+                <p>
+
+                </p>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <h3>Ventas</h3>
+                <p>
+
+
+                </p>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

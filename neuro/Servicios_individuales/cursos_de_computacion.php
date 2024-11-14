@@ -29,52 +29,7 @@
             <p>Este curso de 6 sesiones, dirigido a niños de 9 a 12 años y público general, enseña habilidades básicas en Office (Word, Excel, PowerPoint) y diseño gráfico con herramientas como Canva y Paint. Los estudiantes realizarán proyectos prácticos y al final presentarán un proyecto que combine programación y diseño.
             </p>
         </div>
-
     </section>
-
-    <main class="servicios">
-        <h2>Beneficios</h2>
-        <p>Manejo de principios básicos (Paquete Office) y herramientas de diseño gráfico</p>
-        <div class="servicios-content container">
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-computer"></i>
-                <h3>Word</h3>
-                <p>
-                    Microsoft Word es un programa para crear y dar formato a documentos profesionales.
-
-                </p>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-computer"></i>
-                <h3>Excel </h3>
-                <p>
-                    Microsoft Excel es una hoja de cálculo para organizar, analizar datos y hacer cálculos automáticos.
-                </p>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-computer"></i>
-                <h3>PowerPoint </h3>
-                <p>
-                    Microsoft PowerPoint es un programa para crear presentaciones con texto, imágenes y videos, ideal para hacer tus ideas más atractivas y fáciles de entender.
-                </p>
-            </div>
-            <div class="servicio-1">
-                <i class="fa-solid fa-computer"></i>
-                <h3>Canva</h3>
-                <p>
-                    Canva es una herramienta en línea para diseñar fácilmente tarjetas, posters y gráficos usando plantillas y elementos visuales.
-
-                </p>
-            </div>
-
-
-        </div>
-
-    </main>
-
     <section class="pricing">
         <div class="pricing-container">
             <div class="pricing-card">
@@ -117,12 +72,47 @@
             </div>
         </div>
     </section>
+    <main class="servicios">
+        <h2>Beneficios</h2>
+        <p>Manejo de principios básicos (Paquete Office) y herramientas de diseño gráfico</p>
+        <div class="servicios-content container">
 
+            <div class="servicio-1">
+                <i class="fa-solid fa-computer"></i>
+                <h3>Word</h3>
+                <p>
+                    Microsoft Word es un programa para crear y dar formato a documentos profesionales.
 
+                </p>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-computer"></i>
+                <h3>Excel </h3>
+                <p>
+                    Microsoft Excel es una hoja de cálculo para organizar, analizar datos y hacer cálculos automáticos.
+                </p>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-computer"></i>
+                <h3>PowerPoint </h3>
+                <p>
+                    Microsoft PowerPoint es un programa para crear presentaciones con texto, imágenes y videos, ideal para hacer tus ideas más atractivas y fáciles de entender.
+                </p>
+            </div>
+            <div class="servicio-1">
+                <i class="fa-solid fa-computer"></i>
+                <h3>Canva</h3>
+                <p>
+                    Canva es una herramienta en línea para diseñar fácilmente tarjetas, posters y gráficos usando plantillas y elementos visuales.
+
+                </p>
+            </div>
+        </div>
+    </main>
     </div>
     </div>
     </section>
-
 </body>
-
 </html>

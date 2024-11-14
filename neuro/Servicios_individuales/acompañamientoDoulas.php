@@ -35,7 +35,48 @@
         </div>
 
     </section>
+    <section class="pricing">
+        <div class="pricing-container">
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <p class="price"><span>$</span>30<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                </ul>
+            </div>
 
+            <div class="pricing-card popular">
+                <h3>Business</h3>
+                <p class="price"><span>$</span>45<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                </ul>
+            </div>
+
+            <div class="pricing-card">
+                <h3>Cloud Startup</h3>
+                <p class="price"><span>€</span>60<span>/mes</span></p>
+                <p class="offer">2 meses GRATIS</p>
+                <button>Elegir plan</button>
+                <ul>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                    <li>✔ Lorem Ipsum</li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <main class="servicios">
         <h2>Beneficios</h2>
         <div class="servicios-content container">
@@ -87,50 +128,6 @@
         </div>
 
     </main>
-
-    <section class="pricing">
-        <div class="pricing-container">
-            <div class="pricing-card">
-                <h3>Premium</h3>
-                <p class="price"><span>$</span>30<span>/mes</span></p>
-                <p class="offer">2 meses GRATIS</p>
-                <button>Elegir plan</button>
-                <ul>
-                    <li>✔ Lorem Ipsum</li>
-                    <li>✔ Lorem Ipsum</li>
-                    <li>✔ Lorem Ipsum</li>
-                    <li>✔ Lorem Ipsum</li>
-                </ul>
-            </div>
-
-            <div class="pricing-card popular">
-                <h3>Business</h3>
-                <p class="price"><span>$</span>45<span>/mes</span></p>
-                <p class="offer">2 meses GRATIS</p>
-                <button>Elegir plan</button>
-                <ul>
-                    <li>✔ Lorem Ipsum</li>
-                    <li>✔ Lorem Ipsum</li>
-                    <li>✔ Lorem Ipsum</li>
-                    <li>✔ Lorem Ipsum</li>
-                </ul>
-            </div>
-
-            <div class="pricing-card">
-                <h3>Cloud Startup</h3>
-                <p class="price"><span>€</span>60<span>/mes</span></p>
-                <p class="offer">2 meses GRATIS</p>
-                <button>Elegir plan</button>
-                <ul>
-                    <li>✔ Lorem Ipsum</li>
-                    <li>✔ Lorem Ipsum</li>
-                    <li>✔ Lorem Ipsum</li>
-                    <li>✔ Lorem Ipsum</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
 </body>
 
 </html>

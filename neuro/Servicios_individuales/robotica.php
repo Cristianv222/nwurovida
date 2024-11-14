@@ -28,49 +28,8 @@
             <p>
                 Niños de 6 a 9 años aprenderán introducción, diseño, construcción y ensamblaje de robots. Desde 10 años en adelante incluye programación avanzada, sensores, IA y aplicaciones prácticas.
             </p>
-
         </div>
-
     </section>
-
-    <main class="servicios">
-        <h2>Beneficios</h2>
-        <div class="servicios-content container">
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-robot"></i>
-                <h3>▪ Introducción a la Robótica
-                </h3>
-                <p>
-                </p>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-robot"></i>
-                <h3>▪ Diseño y Construcción de Robots
-                </h3>
-                <p>
-                </p>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-robot"></i>
-                <h3>▪ Programación para Robótica
-                </h3>
-                <p>
-                </p>
-            </div>
-
-            <div class="servicio-1">
-                <i class="fa-solid fa-robot"></i>
-                <h3>▪ Ensamble robots
-                </h3>
-                <p>
-                </p>
-            </div>
-        </div>
-    </main>
-
     <section class="pricing">
         <div class="pricing-container">
             <div class="pricing-card">
@@ -113,6 +72,43 @@
             </div>
         </div>
     </section>
+    <main class="servicios">
+        <h2>Beneficios</h2>
+        <div class="servicios-content container">
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-robot"></i>
+                <h3>▪ Introducción a la Robótica
+                </h3>
+                <p>
+                </p>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-robot"></i>
+                <h3>▪ Diseño y Construcción de Robots
+                </h3>
+                <p>
+                </p>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-robot"></i>
+                <h3>▪ Programación para Robótica
+                </h3>
+                <p>
+                </p>
+            </div>
+
+            <div class="servicio-1">
+                <i class="fa-solid fa-robot"></i>
+                <h3>▪ Ensamble robots
+                </h3>
+                <p>
+                </p>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
